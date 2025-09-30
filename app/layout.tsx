@@ -7,12 +7,24 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AIKA World – Anime co-op action RPG',
     description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
-    type: 'website'
+    type: 'website',
+    url: 'https://aikaworld.com/',
+    siteName: 'AIKA World',
+    locale: 'hu_HU',
+    images: [
+      {
+        url: 'https://media.aikaworld.com/og/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'AIKA World alap megosztási kép'
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AIKA World – Anime co-op action RPG',
-    description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.'
+    description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
+    images: ['https://media.aikaworld.com/og/og-default.jpg']
   }
 };
 
