@@ -23,8 +23,21 @@ export default function Page() {
             </a>
           </div>
           <div className="mt-10 aspect-video w-full rounded-2xl overflow-hidden border border-white/10">
-            {/* Ide mehet egy némított webm teaser posztbuild után */}
-            <img src="https://media.aikaworld.com/hero-keyart.jpg" alt="AIKA World key art" className="w-full h-full object-cover" />
+            <video
+              className="h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="https://media.aikaworld.com/teaser/teaser-poster.jpg"
+            >
+              <source src="https://media.aikaworld.com/teaser/teaser.webm" type="video/webm" />
+              <img
+                src="https://media.aikaworld.com/teaser/teaser-poster.jpg"
+                alt="AIKA World teaser poster"
+                className="h-full w-full object-cover"
+              />
+            </video>
           </div>
         </div>
       </section>
