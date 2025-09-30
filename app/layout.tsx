@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <a href="/" className="font-semibold tracking-wide">AIKA WORLD</a>
             <nav className="flex gap-4 text-sm">
               <a href="#modes" className="hover:opacity-80">Játékmódok</a>
-              <a href="#characters" className="hover:opacity-80">Karakterek</a>
+              <a href="/characters" className="hover:opacity-80">Karakterek</a>
               <a href="#media" className="hover:opacity-80">Média</a>
               <a href="#roadmap" className="hover:opacity-80">Roadmap</a>
               <a href="#community" className="hover:opacity-80">Közösség</a>
