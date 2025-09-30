@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     locale: 'hu_HU',
     images: [
       {
-        url: 'https://media.aikaworld.com/og/og-modes.jpg',
+        url: 'https://media.aikaworld.com/og-modes.jpg',
         width: 1200,
         height: 630,
         alt: 'AIKA World játékmódok grafika'
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: 'Játékmódok – AIKA World',
     description:
       'Ismerd meg a Raid Boss Arena és Infest Survival módok működését, jutalmait és ideális csapatfelállásait.',
-    images: ['https://media.aikaworld.com/og/og-modes.jpg']
+    images: ['https://media.aikaworld.com/og-modes.jpg']
   }
 };
 
