@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: 'hu_HU',
     images: [
       {
-        url: 'https://media.aikaworld.com/og/og-default.jpg',
+        url: 'https://media.aikaworld.com/og-default.png',
         width: 1200,
         height: 630,
         alt: 'AIKA World alap megosztási kép'
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'AIKA World – Anime co-op action RPG',
     description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
-    images: ['https://media.aikaworld.com/og/og-default.jpg']
+    images: ['https://media.aikaworld.com/og-default.png']
   }
 };
 

@@ -10,9 +10,9 @@ type HomePageProps = {
 };
 
 const mediaImages = [
-  { src: 'https://media.aikaworld.com/s1.jpg', alt: 'Screenshot 1' },
-  { src: 'https://media.aikaworld.com/s2.jpg', alt: 'Screenshot 2' },
-  { src: 'https://media.aikaworld.com/s3.jpg', alt: 'Screenshot 3' }
+  { src: 'https://media.aikaworld.com/s1.png', alt: 'Screenshot 1' },
+  { src: 'https://media.aikaworld.com/s2.png', alt: 'Screenshot 2' },
+  { src: 'https://media.aikaworld.com/s3.png', alt: 'Screenshot 3' }
 ];
 
 export default function HomePage({ steamUrl, discordUrl }: HomePageProps) {
@@ -106,11 +106,11 @@ export default function HomePage({ steamUrl, discordUrl }: HomePageProps) {
               loop
               playsInline
               preload="none"
-              poster="https://media.aikaworld.com/teaser/teaser-poster.jpg"
+              poster="https://media.aikaworld.com/teaser-poster.png"
             >
-              <source src="https://media.aikaworld.com/teaser/teaser.webm" type="video/webm" />
+              <source src="https://media.aikaworld.com/teaser.webm" type="video/webm" />
               <img
-                src="https://media.aikaworld.com/teaser/teaser-poster.jpg"
+                src="https://media.aikaworld.com/teaser-poster.png"
                 alt="AIKA World teaser poster"
                 className="h-full w-full object-cover"
                 loading="lazy"
