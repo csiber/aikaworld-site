@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import Lightbox from '../components/Lightbox';
 
 const mediaImages = [
@@ -12,6 +12,9 @@ const mediaImages = [
 
 export default function Page() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [feedback, setFeedback] = useState('');
 
   const openLightbox = (index: number) => {
     setLightboxIndex(index);
@@ -19,6 +22,52 @@ export default function Page() {
 
   const closeLightbox = () => {
     setLightboxIndex(null);
+  };
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const normalizedEmail = email.trim();
+
+    if (!normalizedEmail) {
+      setStatus('error');
+      setFeedback('Kérlek add meg az e-mail címed.');
+      return;
+    }
+
+    setStatus('loading');
+    setFeedback('');
+
+    try {
+      const response = await fetch('/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: normalizedEmail })
+      });
+
+      let data: { message?: string; error?: string } | null = null;
+
+      try {
+        data = await response.json();
+      } catch (error) {
+        data = null;
+      }
+
+      if (response.ok) {
+        setStatus('success');
+        setFeedback(data?.message ?? 'Sikeres feliratkozás.');
+        setEmail('');
+      } else {
+        const errorMessage = data?.error ?? 'Ismeretlen hiba történt.';
+        setStatus('error');
+        setFeedback(errorMessage);
+      }
+    } catch (error) {
+      setStatus('error');
+      setFeedback('Hálózati hiba történt. Próbáld újra később.');
+    }
   };
 
   return (
@@ -184,13 +233,42 @@ export default function Page() {
           <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href="https://store.steampowered.com/">Wishlist on Steam</a>
         </div>
 
-        <form id="newsletter" className="mt-6 max-w-md">
+        <form id="newsletter" className="mt-6 max-w-md" onSubmit={handleSubmit}>
           <label className="block text-sm mb-2">E-mail cím</label>
           <div className="flex gap-2">
-            <input required type="email" placeholder="te@pelda.hu" className="w-full px-3 py-2 rounded-md bg-white/10 border border-white/10 outline-none" />
-            <button className="px-4 rounded-md bg-accentB hover:opacity-90">Feliratkozom</button>
+            <input
+              required
+              type="email"
+              placeholder="te@pelda.hu"
+              className="w-full px-3 py-2 rounded-md bg-white/10 border border-white/10 outline-none"
+              value={email}
+              onChange={event => {
+                setEmail(event.target.value);
+                if (status !== 'idle') {
+                  setStatus('idle');
+                  setFeedback('');
+                }
+              }}
+              disabled={status === 'loading'}
+            />
+            <button
+              type="submit"
+              className="px-4 rounded-md bg-accentB hover:opacity-90 disabled:opacity-60 disabled:cursor-not-allowed"
+              disabled={status === 'loading'}
+            >
+              {status === 'loading' ? 'Küldés…' : 'Feliratkozom'}
+            </button>
           </div>
           <p className="mt-2 text-xs opacity-70">A feliratkozással elfogadod az Adatkezelési tájékoztatót.</p>
+          {feedback && (
+            <p
+              className={`mt-3 text-sm ${status === 'success' ? 'text-emerald-300' : 'text-rose-300'}`}
+              role="status"
+              aria-live="polite"
+            >
+              {feedback}
+            </p>
+          )}
         </form>
       </section>
     </div>
