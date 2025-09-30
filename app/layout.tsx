@@ -31,6 +31,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="hu">
+      <head>
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "ENV_CF_ANALYTICS_TOKEN"}'
+        />
+      </head>
       <body className="min-h-dvh antialiased">
         <header className="fixed inset-x-0 top-0 z-50 backdrop-blur bg-black/20 border-b border-white/10">
           <div className="mx-auto max-w-6xl px-4 h-14 flex items-center justify-between">
