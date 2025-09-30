@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import Header from '../components/Header';
 
 export const metadata: Metadata = {
@@ -53,12 +54,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="pt-14">{children}</main>
         <footer className="mt-24 border-t border-white/10">
           <div className="mx-auto max-w-6xl px-4 py-10 text-sm">
-            <span className="opacity-80">
-              © {new Date().getFullYear()} aikaworld.com • Privacy • Terms •
-            </span>{' '}
-            <a href="/presskit" className="opacity-80 hover:opacity-100">
+            <span className="opacity-80">© {new Date().getFullYear()} aikaworld.com • </span>
+            <Link href="/privacy" className="opacity-80 hover:opacity-100">
+              Adatkezelés
+            </Link>
+            <span className="opacity-80"> • </span>
+            <Link href="/terms" className="opacity-80 hover:opacity-100">
+              Felhasználási feltételek
+            </Link>
+            <span className="opacity-80"> • </span>
+            <Link href="/presskit" className="opacity-80 hover:opacity-100">
               Presskit
-            </a>
+            </Link>
           </div>
         </footer>
       </body>
