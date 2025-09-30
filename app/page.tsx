@@ -1,4 +1,25 @@
+'use client';
+
+import { useState } from 'react';
+import Lightbox from '../components/Lightbox';
+
+const mediaImages = [
+  { src: 'https://media.aikaworld.com/s1.jpg', alt: 'Screenshot 1' },
+  { src: 'https://media.aikaworld.com/s2.jpg', alt: 'Screenshot 2' },
+  { src: 'https://media.aikaworld.com/s3.jpg', alt: 'Screenshot 3' }
+];
+
 export default function Page() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+  };
+
+  const closeLightbox = () => {
+    setLightboxIndex(null);
+  };
+
   return (
     <div>
       {/* HERO */}
@@ -93,11 +114,29 @@ export default function Page() {
         <h2 className="text-2xl md:text-3xl font-bold">Média</h2>
         <p className="mt-2 opacity-90">Screenshotok, key artok, háttérképek.</p>
         <div className="mt-6 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <img className="rounded-lg border border-white/10" src="https://media.aikaworld.com/s1.jpg" alt="Screenshot" />
-          <img className="rounded-lg border border-white/10" src="https://media.aikaworld.com/s2.jpg" alt="Screenshot" />
-          <img className="rounded-lg border border-white/10" src="https://media.aikaworld.com/s3.jpg" alt="Screenshot" />
+          {mediaImages.map((image, index) => (
+            <button
+              key={image.src}
+              type="button"
+              onClick={() => openLightbox(index)}
+              className="group relative overflow-hidden rounded-lg border border-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB"
+            >
+              <img
+                className="h-full w-full object-cover transition duration-150 group-hover:scale-105"
+                src={image.src}
+                alt={image.alt}
+              />
+            </button>
+          ))}
         </div>
       </section>
+
+      <Lightbox
+        images={mediaImages}
+        isOpen={lightboxIndex !== null}
+        initialIndex={lightboxIndex ?? 0}
+        onClose={closeLightbox}
+      />
 
       {/* ROADMAP */}
       <section id="roadmap" className="mx-auto max-w-6xl px-4 py-16">
