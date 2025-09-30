@@ -4,7 +4,13 @@ import { useEffect, useState } from 'react';
 
 const SCROLL_THRESHOLD = 60;
 
-export default function Header() {
+type HeaderProps = {
+  steamUrl: string;
+  discordUrl: string;
+  siteUrl: string;
+};
+
+export default function Header({ steamUrl, discordUrl, siteUrl }: HeaderProps) {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -24,7 +30,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-        <a href="/" className="font-semibold tracking-wide">
+        <a href={siteUrl} className="font-semibold tracking-wide">
           AIKA WORLD
         </a>
         <nav className="flex gap-4 text-sm">
@@ -47,11 +53,11 @@ export default function Header() {
         <div className="hidden gap-2 sm:flex">
           <a
             className="rounded-md bg-accentA px-3 py-1.5 text-sm font-semibold hover:opacity-90"
-            href="https://store.steampowered.com/"
+            href={steamUrl}
           >
             Wishlist on Steam
           </a>
-          <a className="rounded-md bg-white/10 px-3 py-1.5 text-sm hover:bg-white/20" href="https://discord.gg/">
+          <a className="rounded-md bg-white/10 px-3 py-1.5 text-sm hover:bg-white/20" href={discordUrl}>
             Join Discord
           </a>
         </div>
