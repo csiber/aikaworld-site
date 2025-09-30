@@ -5,6 +5,15 @@ import Header from '../components/Header';
 export const metadata: Metadata = {
   title: 'AIKA World – Anime co-op action RPG',
   description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' }
+    ],
+    apple: '/apple-touch-icon.png'
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'AIKA World – Anime co-op action RPG',
     description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
