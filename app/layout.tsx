@@ -54,8 +54,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         <main className="pt-14">{children}</main>
         <footer className="mt-24 border-t border-white/10">
-          <div className="mx-auto max-w-6xl px-4 py-10 text-sm opacity-80">
-            © {new Date().getFullYear()} aikaworld.com • Privacy • Terms
+          <div className="mx-auto max-w-6xl px-4 py-10 text-sm">
+            <span className="opacity-80">
+              © {new Date().getFullYear()} aikaworld.com • Privacy • Terms •
+            </span>{' '}
+            <a href="/presskit" className="opacity-80 hover:opacity-100">
+              Presskit
+            </a>
           </div>
         </footer>
       </body>
