@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import Lightbox from '../components/Lightbox';
 
@@ -67,7 +68,7 @@ export default function Page() {
       <section id="modes" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-bold">Játékmódok</h2>
         <div className="mt-6 grid md:grid-cols-2 gap-6">
-          <div className="rounded-xl border border-white/10 p-6 bg-white/5">
+          <div className="rounded-xl border border-white/10 p-6 bg-white/5 flex flex-col">
             <h3 className="text-xl font-semibold">Raid Boss Arena</h3>
             <p className="mt-2 opacity-90">Skálázódó aréna-csaták, óriási bossokkal. A szinergia dönt.</p>
             <ul className="mt-4 list-disc list-inside opacity-80 text-sm">
@@ -75,8 +76,15 @@ export default function Page() {
               <li>Mechanikák és fázisok</li>
               <li>Csapat szerepkörök</li>
             </ul>
+            <Link
+              href="/modes#raid"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accentB hover:opacity-80"
+            >
+              Részletek megnyitása
+              <span aria-hidden>→</span>
+            </Link>
           </div>
-          <div className="rounded-xl border border-white/10 p-6 bg-white/5">
+          <div className="rounded-xl border border-white/10 p-6 bg-white/5 flex flex-col">
             <h3 className="text-xl font-semibold">Infest Survival</h3>
             <p className="mt-2 opacity-90">Végtelen hullámok, fokozódó tempó és checkpoint jutalmak.</p>
             <ul className="mt-4 list-disc list-inside opacity-80 text-sm">
@@ -84,6 +92,13 @@ export default function Page() {
               <li>Checkpoint rewards</li>
               <li>Meta-progress: kozmetika/boost</li>
             </ul>
+            <Link
+              href="/modes#infest"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accentB hover:opacity-80"
+            >
+              Részletek megnyitása
+              <span aria-hidden>→</span>
+            </Link>
           </div>
         </div>
       </section>
