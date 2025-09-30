@@ -100,6 +100,7 @@ export default function Page() {
               muted
               loop
               playsInline
+              preload="none"
               poster="https://media.aikaworld.com/teaser/teaser-poster.jpg"
             >
               <source src="https://media.aikaworld.com/teaser/teaser.webm" type="video/webm" />
@@ -107,6 +108,7 @@ export default function Page() {
                 src="https://media.aikaworld.com/teaser/teaser-poster.jpg"
                 alt="AIKA World teaser poster"
                 className="h-full w-full object-cover"
+                loading="lazy"
               />
             </video>
           </div>
@@ -189,6 +191,7 @@ export default function Page() {
                 className="h-full w-full object-cover transition duration-150 group-hover:scale-105"
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
               />
             </button>
           ))}
