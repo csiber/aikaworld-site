@@ -55,6 +55,7 @@ export default function CharacterPage({ params }: CharacterPageProps) {
             src={character.heroImage}
             alt={`${character.name} hero banner`}
             className="h-full w-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-black/60" />
         </div>

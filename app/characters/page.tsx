@@ -36,6 +36,7 @@ export default function CharactersPage() {
                 src={character.heroImage}
                 alt={`${character.name} hero art`}
                 className="h-full w-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="p-6">

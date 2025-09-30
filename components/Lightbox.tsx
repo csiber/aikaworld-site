@@ -124,6 +124,7 @@ export default function Lightbox({ images, isOpen, initialIndex = 0, onClose }: 
             src={currentImage.src}
             alt={currentImage.alt}
             className="max-h-full max-w-full rounded-xl border border-white/20 object-contain shadow-lg"
+            loading="lazy"
           />
         </div>
 
