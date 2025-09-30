@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '../components/Header';
+import { serverEnv } from '../lib/server-config';
 
 export const metadata: Metadata = {
   title: 'AIKA World – Anime co-op action RPG',
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     title: 'AIKA World – Anime co-op action RPG',
     description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
     type: 'website',
-    url: 'https://aikaworld.com/',
+    url: serverEnv.siteUrl,
     siteName: 'AIKA World',
     locale: 'hu_HU',
     images: [
@@ -50,7 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-dvh antialiased">
-        <Header />
+        <Header steamUrl={serverEnv.steamUrl} discordUrl={serverEnv.discordUrl} siteUrl={serverEnv.siteUrl} />
         <main className="pt-14">{children}</main>
         <footer className="mt-24 border-t border-white/10">
           <div className="mx-auto max-w-6xl px-4 py-10 text-sm">
