@@ -2,8 +2,10 @@
     "name": "aikaworld-site",
     "private": true,
     "scripts": {
-        "dev": "next dev",
-        "build": "next build",
+        "generate:build-info": "node ./scripts/generate-build-info.mjs",
+        "dev": "npm run generate:build-info && next dev",
+        "build": "npm run generate:build-info && next build",
+        "postbuild": "node ./scripts/wayback-save.mjs",
         "start": "next start"
     },
     "dependencies": {

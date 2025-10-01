@@ -1,4 +1,5 @@
 import type { Dictionary } from '../types';
+import { getLegalDocument, getLegalChangelog } from '../../legal/content';
 
 export const huDictionary: Dictionary = {
   locale: 'hu',
@@ -21,9 +22,23 @@ export const huDictionary: Dictionary = {
     }
   },
   footer: {
-    privacy: 'Adatkezelés',
-    terms: 'Felhasználási feltételek',
-    presskit: 'Presskit'
+    legalHeading: 'Jogi információk',
+    legalLinks: [
+      { path: '/privacy', label: 'Adatkezelési tájékoztató' },
+      { path: '/terms', label: 'Felhasználási feltételek' },
+      { path: '/legal/copyright', label: 'Szerzői jog / DMCA' },
+      { path: '/legal/fan-content', label: 'Rajongói tartalom szabályzat' },
+      { path: '/legal/trademark', label: 'Védjegyhasználati irányelvek' },
+      { path: '/legal/changelog', label: 'Változásnapló' },
+      { path: '/presskit', label: 'Presskit' }
+    ],
+    contactHeading: 'Kapcsolat / Jogi ügyek',
+    contactEmailLabel: 'E-mail',
+    contactEmail: 'legal@aikaworld.com',
+    contactAddressLabel: 'Postai cím',
+    contactAddressLines: ['AIKA World Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Magyarország'],
+    copyrightNotice: '© 2025 AIKA World. Minden jog fenntartva.',
+    lastBuildLabel: 'Utolsó build'
   },
   home: {
     hero: {
@@ -237,19 +252,13 @@ export const huDictionary: Dictionary = {
       }
     ]
   },
-  privacy: {
-    heading: 'Adatvédelmi tájékoztató',
-    body: [
-      'Ez egy ideiglenes szöveg, amíg a végleges adatvédelmi tájékoztatón dolgozunk. A teljes dokumentum hamarosan elérhető lesz ezen az oldalon.',
-      'Amennyiben sürgős kérdésed merül fel, kérjük, vedd fel velünk a kapcsolatot az info@aikaworld.com címen.'
-    ]
-  },
-  terms: {
-    heading: 'Felhasználási feltételek',
-    body: [
-      'Ez egy ideiglenes szöveg, amely a végleges felhasználási feltételek kiadásáig szolgál helykitöltőként.',
-      'Dolgozunk azon, hogy minden részlet pontosan és érthetően megfogalmazva jelenjen meg ezen az oldalon. Köszönjük a türelmed!'
-    ]
+  privacy: getLegalDocument('hu', 'privacy'),
+  terms: getLegalDocument('hu', 'terms'),
+  legal: {
+    copyright: getLegalDocument('hu', 'copyright'),
+    fanContent: getLegalDocument('hu', 'fanContent'),
+    trademark: getLegalDocument('hu', 'trademark'),
+    changelog: getLegalChangelog('hu')
   },
   notFound: {
     code: '404',
@@ -292,11 +301,31 @@ export const huDictionary: Dictionary = {
       },
       privacy: {
         title: 'Adatvédelmi tájékoztató – AIKA World',
-        description: 'Ismerd meg, hogyan kezeljük az adataidat az AIKA World világában. A részletes tájékoztató hamarosan érkezik.'
+        description: 'Tudd meg, hogyan kezeljük a sütiket, az analitikát és a kapcsolati adatokat az AIKA Worldben.'
       },
       terms: {
         title: 'Felhasználási feltételek – AIKA World',
-        description: 'Tudd meg, milyen szabályok mellett vehetsz részt az AIKA World közösségében. A részletes feltételek hamarosan elérhetők.'
+        description: 'Ismerd meg az AIKA World IP használatának, közösségi részvételének és felelősségi szabályait.'
+      },
+      legalCopyright: {
+        title: 'Szerzői jog / DMCA – AIKA World',
+        description: 'Jogbirtokosi értesítés, eltávolítási folyamat és ellenértesítés lépései az AIKA World tartalmakhoz.',
+        ogAlt: 'AIKA World szerzői jogi útmutató grafika'
+      },
+      legalFanContent: {
+        title: 'Rajongói tartalom szabályzat – AIKA World',
+        description: 'Útmutató fanart, AI generált képek és LoRA projektek biztonságos, nem kereskedelmi használatához.',
+        ogAlt: 'AIKA World rajongói tartalom grafika'
+      },
+      legalTrademark: {
+        title: 'Védjegyhasználati irányelvek – AIKA World',
+        description: 'Így hivatkozhatsz az AIKA World védjegyeire félrevezetés nélkül.',
+        ogAlt: 'AIKA World védjegy irányelvek grafika'
+      },
+      legalChangelog: {
+        title: 'Jogi változásnapló – AIKA World',
+        description: 'Időrendi áttekintés a jogi dokumentumok frissítéseiről és IP-védelmi lépésekről.',
+        ogAlt: 'AIKA World jogi változásnapló diagram'
       },
       notFound: {
         title: 'Oldal nem található – AIKA World',

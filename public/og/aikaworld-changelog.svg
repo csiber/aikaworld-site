@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description dc:title="AIKA World Legal Changelog" dc:creator="AIKA World" dc:rights="© 2025 AIKA World. All rights reserved." />
+    </rdf:RDF>
+  </metadata>
+  <defs>
+    <linearGradient id="changelogGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#101524" />
+      <stop offset="100%" stop-color="#2a4a73" />
+    </linearGradient>
+    <pattern id="changelogWatermark" width="140" height="140" patternUnits="userSpaceOnUse" patternTransform="rotate(-30)">
+      <text x="0" y="90" font-family="'Fira Sans', sans-serif" font-size="30" fill="rgba(255,255,255,0.05)">AIKA 2025</text>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#changelogGradient)" />
+  <rect width="1200" height="630" fill="url(#changelogWatermark)" />
+  <g fill="#ffffff">
+    <text x="80" y="170" font-family="'Fira Sans', sans-serif" font-size="54" opacity="0.9">Legal Changelog</text>
+    <text x="80" y="250" font-family="'Fira Sans', sans-serif" font-size="34" opacity="0.8">Timestamped evidence of every policy update.</text>
+    <text x="80" y="330" font-family="'Fira Sans', sans-serif" font-size="26" opacity="0.7">Archive automation &amp; DMCA workflow milestones.</text>
+  </g>
+</svg>
