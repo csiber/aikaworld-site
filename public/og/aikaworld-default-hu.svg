@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description dc:title="AIKA World Alap megosztási kép (HU)" dc:creator="AIKA World" dc:rights="© 2025 AIKA World. Minden jog fenntartva." />
+    </rdf:RDF>
+  </metadata>
+  <defs>
+    <linearGradient id="defaultGradientHu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080a16" />
+      <stop offset="100%" stop-color="#1b2750" />
+    </linearGradient>
+    <pattern id="aikaWatermarkHu" width="160" height="160" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+      <text x="0" y="120" font-family="'Fira Sans', sans-serif" font-size="42" fill="rgba(255,255,255,0.04)">AIKA WORLD</text>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#defaultGradientHu)" />
+  <rect width="1200" height="630" fill="url(#aikaWatermarkHu)" />
+  <g fill="#ffffff">
+    <text x="80" y="190" font-family="'Fira Sans', sans-serif" font-size="86" letter-spacing="0.32em" opacity="0.92">AIKA WORLD</text>
+    <text x="80" y="290" font-family="'Fira Sans', sans-serif" font-size="46" opacity="0.88">Anime co-op akció RPG</text>
+    <text x="80" y="360" font-family="'Fira Sans', sans-serif" font-size="30" opacity="0.75">Raid főellenfelek. Végtelen túlélés. Állítsd össze a csapatot.</text>
+    <text x="80" y="430" font-family="'Fira Sans', sans-serif" font-size="26" opacity="0.65">Hivatalos közösségi előnézet beágyazott jogi metaadattal.</text>
+  </g>
+  <text x="1080" y="570" font-family="'Fira Sans', sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="end">© 2025 AIKA World</text>
+</svg>

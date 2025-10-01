@@ -15,14 +15,32 @@ function baseUrl() {
   return serverEnv.siteUrl.replace(/\/$/, '');
 }
 
-const OG_IMAGES = {
-  default: '/og/aikaworld-default.svg',
-  legal: '/og/aikaworld-legal.svg',
-  changelog: '/og/aikaworld-changelog.svg'
+const OG_IMAGE_VARIANTS = {
+  default: {
+    en: '/og/aikaworld-default-en.svg',
+    hu: '/og/aikaworld-default-hu.svg'
+  },
+  legal: {
+    en: '/og/aikaworld-legal-en.svg',
+    hu: '/og/aikaworld-legal-hu.svg'
+  },
+  changelog: {
+    en: '/og/aikaworld-changelog-en.svg',
+    hu: '/og/aikaworld-changelog-hu.svg'
+  }
 } as const;
 
-function resolveOgImage(name: keyof typeof OG_IMAGES = 'default') {
-  return `${baseUrl()}${OG_IMAGES[name]}`;
+type OgImageVariant = keyof typeof OG_IMAGE_VARIANTS;
+type OgImageLocaleKey = keyof (typeof OG_IMAGE_VARIANTS)['default'];
+
+const ogLocaleMap: Record<Locale, { locale: string; alternateLocales: string[]; imageKey: OgImageLocaleKey }> = {
+  en: { locale: 'en_US', alternateLocales: ['hu_HU'], imageKey: 'en' },
+  hu: { locale: 'hu_HU', alternateLocales: ['en_US'], imageKey: 'hu' }
+};
+
+function resolveOgImage(name: OgImageVariant = 'default', locale: Locale) {
+  const { imageKey } = ogLocaleMap[locale] ?? ogLocaleMap[defaultLocale];
+  return `${baseUrl()}${OG_IMAGE_VARIANTS[name][imageKey]}`;
 }
 
 export function buildLocalizedUrl(locale: Locale, path: string): string {
@@ -52,14 +70,20 @@ export function buildAlternates(path: string, currentLocale: Locale) {
 
 type StaticSeoPage = Exclude<keyof Dictionary['seo']['pages'], 'character'>;
 
-const defaultOgByPage: Partial<Record<StaticSeoPage, string>> = {
-  privacy: resolveOgImage('legal'),
-  terms: resolveOgImage('legal'),
-  legalCopyright: resolveOgImage('legal'),
-  legalFanContent: resolveOgImage('legal'),
-  legalTrademark: resolveOgImage('legal'),
-  legalChangelog: resolveOgImage('changelog')
-};
+function resolveDefaultOgImage(page: StaticSeoPage, locale: Locale) {
+  switch (page) {
+    case 'privacy':
+    case 'terms':
+    case 'legalCopyright':
+    case 'legalFanContent':
+    case 'legalTrademark':
+      return resolveOgImage('legal', locale);
+    case 'legalChangelog':
+      return resolveOgImage('changelog', locale);
+    default:
+      return resolveOgImage('default', locale);
+  }
+}
 
 export function createStaticPageMetadata(
   locale: Locale,
@@ -72,7 +96,8 @@ export function createStaticPageMetadata(
   const alternates = buildAlternates(path, locale);
   const canonical = alternates.canonical;
   const openGraphAlt = options.ogAlt ?? ('ogAlt' in pageSeo ? (pageSeo as any).ogAlt : dictionary.seo.defaultOgAlt);
-  const ogImage = options.ogImage ?? defaultOgByPage[page] ?? resolveOgImage();
+  const ogImage = options.ogImage ?? resolveDefaultOgImage(page, locale);
+  const { locale: openGraphLocale, alternateLocales } = ogLocaleMap[locale] ?? ogLocaleMap[defaultLocale];
 
   return {
     title: pageSeo.title,
@@ -83,7 +108,8 @@ export function createStaticPageMetadata(
       description: pageSeo.description,
       url: canonical,
       siteName: 'AIKA World',
-      locale: dictionary.seo.defaultLocale,
+      locale: openGraphLocale,
+      alternateLocale: alternateLocales,
       type: 'website',
       images: [
         {
@@ -115,6 +141,7 @@ export function createCharacterMetadata(
   const description = pageSeo.description(character);
   const ogDescription = pageSeo.ogDescription(character);
   const ogAlt = pageSeo.ogAlt(character);
+  const { locale: openGraphLocale, alternateLocales } = ogLocaleMap[locale] ?? ogLocaleMap[defaultLocale];
 
   return {
     title: `${character.name} – ${character.title} | AIKA World`,
@@ -125,7 +152,8 @@ export function createCharacterMetadata(
       description: ogDescription,
       url: canonical,
       siteName: 'AIKA World',
-      locale: dictionary.seo.defaultLocale,
+      locale: openGraphLocale,
+      alternateLocale: alternateLocales,
       type: 'article',
       images: [
         {

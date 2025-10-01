@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description dc:title="AIKA World Legal Changelog Share Image (EN)" dc:creator="AIKA World" dc:rights="© 2025 AIKA World. All rights reserved." />
+    </rdf:RDF>
+  </metadata>
+  <defs>
+    <linearGradient id="changelogGradientEn" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0c111f" />
+      <stop offset="100%" stop-color="#2a4b78" />
+    </linearGradient>
+    <pattern id="changelogWatermarkEn" width="160" height="160" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+      <text x="0" y="120" font-family="'Fira Sans', sans-serif" font-size="42" fill="rgba(255,255,255,0.04)">AIKA WORLD</text>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#changelogGradientEn)" />
+  <rect width="1200" height="630" fill="url(#changelogWatermarkEn)" />
+  <g fill="#ffffff">
+    <text x="80" y="190" font-family="'Fira Sans', sans-serif" font-size="70" letter-spacing="0.22em" opacity="0.9">LEGAL CHANGELOG</text>
+    <text x="80" y="280" font-family="'Fira Sans', sans-serif" font-size="38" opacity="0.84">Time-stamped updates &amp; enforcement transparency.</text>
+    <text x="80" y="350" font-family="'Fira Sans', sans-serif" font-size="30" opacity="0.72">Archive automation, DMCA workflow milestones and audit trail.</text>
+  </g>
+  <text x="1080" y="570" font-family="'Fira Sans', sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="end">© 2025 AIKA World</text>
+</svg>
