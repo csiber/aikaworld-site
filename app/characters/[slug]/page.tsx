@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import SiteLayout from '../../../components/SiteLayout';
 import { getCharacter, characterSlugs } from '../../../lib/content/characters';
 import { getDictionary } from '../../../lib/i18n/dictionaries';
-import type { Locale } from '../../../lib/i18n/config';
 import { resolveRequestLocale } from '../../../lib/i18n/server-locale';
 import { createCharacterMetadata, createStaticPageMetadata } from '../../../lib/seo';
 
@@ -22,7 +21,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: CharacterPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const locale = resolveRequestLocale() as Locale;
+  const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const character = getCharacter(locale, slug);
 
@@ -35,7 +34,7 @@ export async function generateMetadata({ params }: CharacterPageProps): Promise<
 
 export default async function CharacterPage({ params }: CharacterPageProps) {
   const { slug } = await params;
-  const locale = resolveRequestLocale() as Locale;
+  const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const character = getCharacter(locale, slug);
 

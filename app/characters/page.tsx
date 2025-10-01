@@ -3,18 +3,17 @@ import Link from 'next/link';
 import SiteLayout from '../../components/SiteLayout';
 import { getCharacters } from '../../lib/content/characters';
 import { getDictionary } from '../../lib/i18n/dictionaries';
-import type { Locale } from '../../lib/i18n/config';
 import { resolveRequestLocale } from '../../lib/i18n/server-locale';
 import { createStaticPageMetadata } from '../../lib/seo';
 
-export function generateMetadata(): Metadata {
-  const locale = resolveRequestLocale() as Locale;
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   return createStaticPageMetadata(locale, dictionary, '/characters', 'characters');
 }
 
-export default function CharactersPage() {
-  const locale = resolveRequestLocale() as Locale;
+export default async function CharactersPage() {
+  const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const characters = getCharacters(locale);
   const basePath = locale === 'hu' ? '/hu' : '';

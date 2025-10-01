@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest'
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const locale = resolveRequestLocale();
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const locale = await resolveRequestLocale();
 
   return (
     <html lang={locale} suppressHydrationWarning>
