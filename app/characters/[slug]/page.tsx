@@ -8,30 +8,36 @@ import type { Locale } from '../../../lib/i18n/config';
 import { resolveRequestLocale } from '../../../lib/i18n/server-locale';
 import { createCharacterMetadata, createStaticPageMetadata } from '../../../lib/seo';
 
+type CharacterPageParams = {
+  slug: string;
+};
+
 type CharacterPageProps = {
-  params: { slug: string };
+  params: Promise<CharacterPageParams>;
 };
 
 export function generateStaticParams() {
   return characterSlugs.map(slug => ({ slug }));
 }
 
-export function generateMetadata({ params }: CharacterPageProps): Metadata {
+export async function generateMetadata({ params }: CharacterPageProps): Promise<Metadata> {
+  const { slug } = await params;
   const locale = resolveRequestLocale() as Locale;
   const dictionary = getDictionary(locale);
-  const character = getCharacter(locale, params.slug);
+  const character = getCharacter(locale, slug);
 
   if (!character) {
-    return createStaticPageMetadata(locale, dictionary, `/characters/${params.slug}`, 'notFound');
+    return createStaticPageMetadata(locale, dictionary, `/characters/${slug}`, 'notFound');
   }
 
-  return createCharacterMetadata(locale, dictionary, `/characters/${params.slug}`, character);
+  return createCharacterMetadata(locale, dictionary, `/characters/${slug}`, character);
 }
 
-export default function CharacterPage({ params }: CharacterPageProps) {
+export default async function CharacterPage({ params }: CharacterPageProps) {
+  const { slug } = await params;
   const locale = resolveRequestLocale() as Locale;
   const dictionary = getDictionary(locale);
-  const character = getCharacter(locale, params.slug);
+  const character = getCharacter(locale, slug);
 
   if (!character) {
     notFound();
