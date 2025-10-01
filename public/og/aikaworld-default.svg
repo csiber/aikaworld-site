@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description dc:title="AIKA World Default OG" dc:creator="AIKA World" dc:rights="© 2025 AIKA World. All rights reserved." />
+    </rdf:RDF>
+  </metadata>
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d19" />
+      <stop offset="100%" stop-color="#202a55" />
+    </linearGradient>
+    <pattern id="watermark" width="120" height="120" patternUnits="userSpaceOnUse" patternTransform="rotate(-15)">
+      <text x="0" y="90" font-family="'Fira Sans', sans-serif" font-size="32" fill="rgba(255,255,255,0.05)">AIKA WORLD</text>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#gradient)" />
+  <rect width="1200" height="630" fill="url(#watermark)" />
+  <g fill="#ffffff">
+    <text x="80" y="170" font-family="'Fira Sans', sans-serif" font-size="60" letter-spacing="0.3em" opacity="0.9">AIKA WORLD</text>
+    <text x="80" y="270" font-family="'Fira Sans', sans-serif" font-size="44" opacity="0.85">Anime co-op action RPG</text>
+    <text x="80" y="360" font-family="'Fira Sans', sans-serif" font-size="28" opacity="0.7">Official share image with embedded copyright metadata.</text>
+  </g>
+</svg>

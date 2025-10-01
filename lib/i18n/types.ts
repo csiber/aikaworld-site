@@ -142,9 +142,37 @@ export type PresskitDictionary = {
   }[];
 };
 
-export type SimplePageDictionary = {
+export type LegalListDictionary = {
+  type: 'bullet' | 'numbered';
+  items: string[];
+};
+
+export type LegalSectionDictionary = {
+  title: string;
+  paragraphs?: string[];
+  lists?: LegalListDictionary[];
+  afterParagraphs?: string[];
+  subsections?: LegalSectionDictionary[];
+};
+
+export type LegalDocumentDictionary = {
   heading: string;
-  body: string[];
+  lastUpdated: string;
+  intro?: string;
+  sections: LegalSectionDictionary[];
+};
+
+export type LegalChangelogEntryDictionary = {
+  version: string;
+  date: string;
+  summary: string;
+  details?: string[];
+};
+
+export type LegalChangelogDictionary = {
+  heading: string;
+  intro?: string;
+  entries: LegalChangelogEntryDictionary[];
 };
 
 export type NotFoundDictionary = {
@@ -171,10 +199,21 @@ export type HeaderDictionary = {
   locales: Record<Locale, string>;
 };
 
+export type FooterLinkDictionary = {
+  path: string;
+  label: string;
+};
+
 export type FooterDictionary = {
-  privacy: string;
-  terms: string;
-  presskit: string;
+  legalHeading: string;
+  legalLinks: FooterLinkDictionary[];
+  contactHeading: string;
+  contactEmailLabel: string;
+  contactEmail: string;
+  contactAddressLabel: string;
+  contactAddressLines: string[];
+  copyrightNotice: string;
+  lastBuildLabel: string;
 };
 
 export type SeoDictionary = {
@@ -194,6 +233,10 @@ export type SeoDictionary = {
     presskit: { title: string; description: string };
     privacy: { title: string; description: string };
     terms: { title: string; description: string };
+    legalCopyright: { title: string; description: string; ogAlt: string };
+    legalFanContent: { title: string; description: string; ogAlt: string };
+    legalTrademark: { title: string; description: string; ogAlt: string };
+    legalChangelog: { title: string; description: string; ogAlt: string };
     notFound: { title: string; description: string };
   };
 };
@@ -207,8 +250,14 @@ export type Dictionary = {
   charactersPage: CharactersDictionary;
   characterPage: CharacterPageDictionary;
   presskit: PresskitDictionary;
-  privacy: SimplePageDictionary;
-  terms: SimplePageDictionary;
+  privacy: LegalDocumentDictionary;
+  terms: LegalDocumentDictionary;
+  legal: {
+    copyright: LegalDocumentDictionary;
+    fanContent: LegalDocumentDictionary;
+    trademark: LegalDocumentDictionary;
+    changelog: LegalChangelogDictionary;
+  };
   notFound: NotFoundDictionary;
   lightbox: LightboxDictionary;
   seo: SeoDictionary;

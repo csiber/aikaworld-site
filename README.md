@@ -26,7 +26,7 @@ Az első indítás után minden módosítás automatikusan újratölti az oldalt
 A Cloudflare Pages publikáláshoz statikus exportot készítünk:
 
 ```bash
-# production build
+# production build (automatikus build-időbélyeg generálással)
 npm run build
 
 # production szerver futtatása (SSR preview)
@@ -52,6 +52,14 @@ Az `out` mappa tartalmazza a publikálható állományokat. A parancsokat egyben
 | Environment variables    | nincs szükség kötelező változóra |
 
 Publikáláskor a Cloudflare Pages automatikusan feltölti az `out` könyvtár tartalmát. Ha saját pipeline-t építesz, győződj meg róla, hogy a build során a fenti parancspárt futtatod le.
+
+## Jogi védelem és archiválás
+
+- **Új jogi oldalak:** elkészültek a kétnyelvű (EN/HU) Felhasználási feltételek, Adatkezelési tájékoztató, Copyright / DMCA, Fan Content Policy, Védjegyhasználati irányelvek és a változásnapló.
+- **Lábléc frissítés:** minden oldal alján megjelenik a „© 2025 AIKA World. All rights reserved.” szöveg, a build dátuma (`Last build: YYYY-MM-DD`), valamint a jogi linkek és a `legal@aikaworld.com` elérhetőség postai címmel.
+- **Open Graph képek:** a `public/og/` mappában található SVG-k vízjellel és beágyazott szerzői jogi metaadattal készülnek, a Meta/Twitter megosztások ezeket használják.
+- **Wayback Machine archiválás:** a `npm run build` parancs után automatikusan fut a `scripts/wayback-save.mjs`. Aktiválásához állítsd be a `WAYBACK_SAVE_ON_DEPLOY=true` környezeti változót (és add meg a `SITE_URL` értéket).
+- **Build-időbélyeg:** a `scripts/generate-build-info.mjs` minden build/fejlesztői indítás előtt létrehozza a `lib/generated/build-info.ts` fájlt. Gitből ignorált állomány, szükség esetén futtasd külön is: `npm run generate:build-info`.
 
 ## Cloudflare R2 média tárhely
 

@@ -15,6 +15,16 @@ function baseUrl() {
   return serverEnv.siteUrl.replace(/\/$/, '');
 }
 
+const OG_IMAGES = {
+  default: '/og/aikaworld-default.svg',
+  legal: '/og/aikaworld-legal.svg',
+  changelog: '/og/aikaworld-changelog.svg'
+} as const;
+
+function resolveOgImage(name: keyof typeof OG_IMAGES = 'default') {
+  return `${baseUrl()}${OG_IMAGES[name]}`;
+}
+
 export function buildLocalizedUrl(locale: Locale, path: string): string {
   const normalized = normalizePath(path);
   const prefix = locale === defaultLocale ? '' : '/hu';
@@ -42,6 +52,15 @@ export function buildAlternates(path: string, currentLocale: Locale) {
 
 type StaticSeoPage = Exclude<keyof Dictionary['seo']['pages'], 'character'>;
 
+const defaultOgByPage: Partial<Record<StaticSeoPage, string>> = {
+  privacy: resolveOgImage('legal'),
+  terms: resolveOgImage('legal'),
+  legalCopyright: resolveOgImage('legal'),
+  legalFanContent: resolveOgImage('legal'),
+  legalTrademark: resolveOgImage('legal'),
+  legalChangelog: resolveOgImage('changelog')
+};
+
 export function createStaticPageMetadata(
   locale: Locale,
   dictionary: Dictionary,
@@ -53,7 +72,7 @@ export function createStaticPageMetadata(
   const alternates = buildAlternates(path, locale);
   const canonical = alternates.canonical;
   const openGraphAlt = options.ogAlt ?? ('ogAlt' in pageSeo ? (pageSeo as any).ogAlt : dictionary.seo.defaultOgAlt);
-  const ogImage = options.ogImage ?? 'https://media.aikaworld.com/og-default.png';
+  const ogImage = options.ogImage ?? defaultOgByPage[page] ?? resolveOgImage();
 
   return {
     title: pageSeo.title,

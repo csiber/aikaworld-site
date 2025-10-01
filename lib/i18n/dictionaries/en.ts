@@ -1,4 +1,5 @@
 import type { Dictionary } from '../types';
+import { getLegalDocument, getLegalChangelog } from '../../legal/content';
 
 export const enDictionary: Dictionary = {
   locale: 'en',
@@ -21,9 +22,23 @@ export const enDictionary: Dictionary = {
     }
   },
   footer: {
-    privacy: 'Privacy',
-    terms: 'Terms',
-    presskit: 'Presskit'
+    legalHeading: 'Legal',
+    legalLinks: [
+      { path: '/privacy', label: 'Privacy Policy' },
+      { path: '/terms', label: 'Terms of Use' },
+      { path: '/legal/copyright', label: 'Copyright / DMCA' },
+      { path: '/legal/fan-content', label: 'Fan Content Policy' },
+      { path: '/legal/trademark', label: 'Trademark Guidelines' },
+      { path: '/legal/changelog', label: 'Changelog' },
+      { path: '/presskit', label: 'Presskit' }
+    ],
+    contactHeading: 'Contact / Legal',
+    contactEmailLabel: 'Email',
+    contactEmail: 'legal@aikaworld.com',
+    contactAddressLabel: 'Postal address',
+    contactAddressLines: ['AIKA World Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Hungary'],
+    copyrightNotice: '© 2025 AIKA World. All rights reserved.',
+    lastBuildLabel: 'Last build'
   },
   home: {
     hero: {
@@ -236,19 +251,13 @@ export const enDictionary: Dictionary = {
       }
     ]
   },
-  privacy: {
-    heading: 'Privacy Policy',
-    body: [
-      'This is temporary copy while we finalise the full privacy policy. The complete document will be available here soon.',
-      'If you have urgent questions, please contact us at info@aikaworld.com.'
-    ]
-  },
-  terms: {
-    heading: 'Terms of Use',
-    body: [
-      'This placeholder text remains until we publish the final terms of use document.',
-      'We are working to deliver a clear, detailed policy on this page. Thank you for your patience!'
-    ]
+  privacy: getLegalDocument('en', 'privacy'),
+  terms: getLegalDocument('en', 'terms'),
+  legal: {
+    copyright: getLegalDocument('en', 'copyright'),
+    fanContent: getLegalDocument('en', 'fanContent'),
+    trademark: getLegalDocument('en', 'trademark'),
+    changelog: getLegalChangelog('en')
   },
   notFound: {
     code: '404',
@@ -291,11 +300,31 @@ export const enDictionary: Dictionary = {
       },
       privacy: {
         title: 'Privacy Policy – AIKA World',
-        description: 'Learn how we handle your data in the AIKA World universe. Full policy coming soon.'
+        description: 'Learn how we process cookies, analytics and contact data to keep the AIKA World community secure.'
       },
       terms: {
         title: 'Terms of Use – AIKA World',
-        description: 'Understand the rules for joining the AIKA World community. Full terms coming soon.'
+        description: 'Understand the rules for using AIKA World IP, community spaces and downloadable assets.'
+      },
+      legalCopyright: {
+        title: 'Copyright Policy / DMCA – AIKA World',
+        description: 'Report infringement, review takedown steps and submit counter-notices for AIKA World content.',
+        ogAlt: 'AIKA World copyright policy graphic'
+      },
+      legalFanContent: {
+        title: 'Fan Content Policy – AIKA World',
+        description: 'Guidelines for fan art, AI creations, LoRA training and non-commercial community projects.',
+        ogAlt: 'AIKA World fan content guidance artwork'
+      },
+      legalTrademark: {
+        title: 'Trademark Guidelines – AIKA World',
+        description: 'How to reference AIKA World marks without implying official endorsement or partnership.',
+        ogAlt: 'AIKA World trademark guidance graphic'
+      },
+      legalChangelog: {
+        title: 'Legal changelog – AIKA World',
+        description: 'Timeline of legal policy updates, IP protection improvements and archival automation.',
+        ogAlt: 'AIKA World legal changelog diagram'
       },
       notFound: {
         title: 'Page not found – AIKA World',
