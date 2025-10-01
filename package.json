@@ -3,8 +3,12 @@
     "private": true,
     "scripts": {
         "generate:build-info": "node ./scripts/generate-build-info.mjs",
+        "validate:translations": "tsx ./scripts/validate-translations.ts",
+        "validate:sitemap": "tsx ./scripts/validate-sitemap.ts",
+        "check:a11y": "tsx ./scripts/run-a11y-check.ts",
+        "check:links": "linkinator http://localhost:3000 --recurse --skip \"^mailto:\" --skip \"^tel:\" --timeout 10000",
         "dev": "npm run generate:build-info && next dev",
-        "build": "npm run generate:build-info && next build",
+        "build": "npm run validate:translations && npm run generate:build-info && next build",
         "postbuild": "node ./scripts/wayback-save.mjs",
         "start": "next start"
     },
@@ -17,8 +21,12 @@
         "@types/node": "^24.6.0",
         "@types/react": "^19.1.16",
         "autoprefixer": "10.4.20",
+        "fast-xml-parser": "4.5.0",
+        "linkinator": "6.1.2",
+        "pa11y": "6.2.3",
         "postcss": "8.4.47",
         "tailwindcss": "3.4.13",
+        "tsx": "4.19.1",
         "typescript": "5.6.2"
     }
 }
