@@ -18,7 +18,14 @@ type SubscribePayload = {
   email?: unknown;
 };
 
-function jsonResponse(body: Record<string, unknown>, status = 200): Response {
+type SubscribeErrorCode = 'INVALID_JSON' | 'INVALID_EMAIL' | 'STORAGE_ERROR';
+type SubscribeSuccessCode = 'SUCCESS';
+
+type SubscribeResponseBody =
+  | { error: { code: SubscribeErrorCode } }
+  | { success: { code: SubscribeSuccessCode } };
+
+function jsonResponse(body: SubscribeResponseBody, status = 200): Response {
   return new Response(JSON.stringify(body), {
     status,
     headers: {
@@ -62,13 +69,13 @@ export const onRequestPost: PagesFunction<Env> = async context => {
   try {
     payload = (await request.json()) as SubscribePayload;
   } catch (error) {
-    return jsonResponse({ error: 'Érvénytelen JSON törzs.' }, 400);
+    return jsonResponse({ error: { code: 'INVALID_JSON' } }, 400);
   }
 
   const email = normalizeEmail(payload.email);
 
   if (!email) {
-    return jsonResponse({ error: 'Kérjük, érvényes e-mail címet adj meg.' }, 400);
+    return jsonResponse({ error: { code: 'INVALID_EMAIL' } }, 400);
   }
 
   const ip =
@@ -84,9 +91,9 @@ export const onRequestPost: PagesFunction<Env> = async context => {
     await env.AW_NEWSLETTER.put(email, value);
   } catch (error) {
     console.error('Newsletter KV error:', error);
-    return jsonResponse({ error: 'Nem sikerült menteni a feliratkozást.' }, 500);
+    return jsonResponse({ error: { code: 'STORAGE_ERROR' } }, 500);
   }
 
-  // TODO: Double opt-in folyamat bevezetése.
-  return jsonResponse({ message: 'Köszönjük a feliratkozást!' }, 200);
+  // TODO: Introduce double opt-in flow.
+  return jsonResponse({ success: { code: 'SUCCESS' } }, 200);
 };

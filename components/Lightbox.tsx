@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import type { LightboxDictionary } from '../lib/i18n/types';
 
 type LightboxImage = {
   src: string;
@@ -12,6 +13,7 @@ type LightboxProps = {
   isOpen: boolean;
   initialIndex?: number;
   onClose: () => void;
+  dictionary: LightboxDictionary;
 };
 
 const clampIndex = (index: number, length: number) => {
@@ -22,7 +24,7 @@ const clampIndex = (index: number, length: number) => {
   return (index + length) % length;
 };
 
-export default function Lightbox({ images, isOpen, initialIndex = 0, onClose }: LightboxProps) {
+export default function Lightbox({ images, isOpen, initialIndex = 0, onClose, dictionary }: LightboxProps) {
   const sanitizedInitialIndex = useMemo(() => clampIndex(initialIndex, images.length), [initialIndex, images.length]);
   const [currentIndex, setCurrentIndex] = useState(sanitizedInitialIndex);
 
@@ -92,7 +94,7 @@ export default function Lightbox({ images, isOpen, initialIndex = 0, onClose }: 
       className="fixed inset-0 z-50 flex flex-col bg-black/90 backdrop-blur"
       role="dialog"
       aria-modal
-      aria-label="Médiagaléria megnyitva"
+      aria-label={dictionary.ariaLabel}
       onClick={onClose}
     >
       <div className="flex items-center justify-between gap-4 p-4 text-white">
@@ -103,9 +105,9 @@ export default function Lightbox({ images, isOpen, initialIndex = 0, onClose }: 
           type="button"
           onClick={onClose}
           className="rounded-full border border-white/20 px-4 py-2 text-sm font-medium hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-          aria-label="Bezárás"
+          aria-label={dictionary.close}
         >
-          Bezárás (Esc)
+          {dictionary.closeHint}
         </button>
       </div>
 
@@ -114,7 +116,7 @@ export default function Lightbox({ images, isOpen, initialIndex = 0, onClose }: 
           type="button"
           onClick={showPrev}
           className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-white hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-          aria-label="Előző kép (bal nyíl)"
+          aria-label={dictionary.previous}
         >
           ←
         </button>
@@ -132,7 +134,7 @@ export default function Lightbox({ images, isOpen, initialIndex = 0, onClose }: 
           type="button"
           onClick={showNext}
           className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-white hover:bg-black/60 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-          aria-label="Következő kép (jobb nyíl)"
+          aria-label={dictionary.next}
         >
           →
         </button>

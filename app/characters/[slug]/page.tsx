@@ -1,54 +1,46 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { characters, getCharacter } from '../data';
+import SiteLayout from '../../../components/SiteLayout';
+import { getCharacter, characterSlugs } from '../../../lib/content/characters';
+import { getDictionary } from '../../../lib/i18n/dictionaries';
+import type { Locale } from '../../../lib/i18n/config';
+import { resolveRequestLocale } from '../../../lib/i18n/server-locale';
+import { createCharacterMetadata, createStaticPageMetadata } from '../../../lib/seo';
 
 type CharacterPageProps = {
-  params: {
-    slug: string;
-  };
+  params: { slug: string };
 };
 
-export function generateMetadata({ params }: CharacterPageProps): Metadata {
-  const character = getCharacter(params.slug);
-
-  if (!character) {
-    return {
-      title: 'Ismeretlen rezonátor – AIKA World'
-    };
-  }
-
-  return {
-    title: `${character.name} – ${character.title} | AIKA World`,
-    description: `${character.name} részletes profilja: ${character.role}, ${character.element} elem, játékmenet – tippek raidhez.`,
-    openGraph: {
-      title: `${character.name} – ${character.title}`,
-      description: `${character.role} ${character.element} rezonátor a csapatban.`,
-      images: [
-        {
-          url: character.heroImage,
-          width: 1280,
-          height: 720,
-          alt: `${character.name} hero bannere`
-        }
-      ]
-    }
-  };
+export function generateStaticParams() {
+  return characterSlugs.map(slug => ({ slug }));
 }
 
-export function generateStaticParams() {
-  return characters.map(character => ({ slug: character.slug }));
+export function generateMetadata({ params }: CharacterPageProps): Metadata {
+  const locale = resolveRequestLocale() as Locale;
+  const dictionary = getDictionary(locale);
+  const character = getCharacter(locale, params.slug);
+
+  if (!character) {
+    return createStaticPageMetadata(locale, dictionary, `/characters/${params.slug}`, 'notFound');
+  }
+
+  return createCharacterMetadata(locale, dictionary, `/characters/${params.slug}`, character);
 }
 
 export default function CharacterPage({ params }: CharacterPageProps) {
-  const character = getCharacter(params.slug);
+  const locale = resolveRequestLocale() as Locale;
+  const dictionary = getDictionary(locale);
+  const character = getCharacter(locale, params.slug);
 
   if (!character) {
     notFound();
   }
 
+  const basePath = locale === 'hu' ? '/hu' : '';
+
   return (
-    <div>
+    <SiteLayout locale={locale} dictionary={dictionary}>
       <section className="relative isolate">
         <div className="absolute inset-0 -z-10">
           <img
@@ -63,8 +55,8 @@ export default function CharacterPage({ params }: CharacterPageProps) {
           <nav aria-label="breadcrumb" className="text-sm text-white/80">
             <ol className="flex items-center gap-2">
               <li>
-                <Link href="/characters" className="hover:opacity-80">
-                  Characters
+                <Link href={`${basePath}/characters`} className="hover:opacity-80">
+                  {dictionary.characterPage.breadcrumbRoot}
                 </Link>
               </li>
               <li aria-hidden>/</li>
@@ -82,25 +74,25 @@ export default function CharacterPage({ params }: CharacterPageProps) {
       <section className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h2 className="text-lg font-semibold">Archetípus</h2>
+            <h2 className="text-lg font-semibold">{dictionary.characterPage.archetypeTitle}</h2>
             <dl className="mt-4 space-y-3 text-sm">
               <div>
-                <dt className="opacity-60">Szerep</dt>
+                <dt className="opacity-60">{dictionary.characterPage.roleLabel}</dt>
                 <dd className="font-medium">{character.role}</dd>
               </div>
               <div>
-                <dt className="opacity-60">Elem</dt>
+                <dt className="opacity-60">{dictionary.characterPage.elementLabel}</dt>
                 <dd className="font-medium">{character.element}</dd>
               </div>
               <div>
-                <dt className="opacity-60">Játékmód</dt>
+                <dt className="opacity-60">{dictionary.characterPage.playstyleLabel}</dt>
                 <dd className="font-medium">{character.playstyle}</dd>
               </div>
             </dl>
           </div>
 
           <div className="rounded-2xl border border-accentB/30 bg-accentB/10 p-6">
-            <h2 className="text-lg font-semibold">Tippgyűjtemény</h2>
+            <h2 className="text-lg font-semibold">{dictionary.characterPage.tipsTitle}</h2>
             <ul className="mt-4 list-disc list-inside space-y-2 text-sm">
               {character.tips.map(tip => (
                 <li key={tip} className="opacity-90">
@@ -111,6 +103,6 @@ export default function CharacterPage({ params }: CharacterPageProps) {
           </div>
         </div>
       </section>
-    </div>
+    </SiteLayout>
   );
 }
