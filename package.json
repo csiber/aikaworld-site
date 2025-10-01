@@ -3,12 +3,14 @@
     "private": true,
     "scripts": {
         "generate:build-info": "node ./scripts/generate-build-info.mjs",
+        "generate:static-icons": "tsx ./scripts/generate-static-icons.mjs",
         "validate:translations": "tsx ./scripts/validate-translations.ts",
         "validate:sitemap": "tsx ./scripts/validate-sitemap.ts",
         "check:a11y": "tsx ./scripts/run-a11y-check.ts",
         "check:links": "linkinator http://localhost:3000 --recurse --skip \"^mailto:\" --skip \"^tel:\" --timeout 10000",
-        "dev": "npm run generate:build-info && next dev",
-        "build": "npm run validate:translations && npm run generate:build-info && next build",
+        "dev": "npm run generate:static-icons && npm run generate:build-info && next dev",
+        "build": "npm run build:next && opennextjs-cloudflare build --skipNextBuild --openNextConfigPath open-next.config.mjs",
+        "build:next": "npm run generate:static-icons && npm run validate:translations && npm run generate:build-info && next build",
         "postbuild": "node ./scripts/wayback-save.mjs",
         "start": "next start"
     },
@@ -18,6 +20,7 @@
         "react-dom": "18.3.1"
     },
     "devDependencies": {
+        "@opennextjs/cloudflare": "^1.9.0",
         "@types/node": "^24.6.0",
         "@types/react": "^19.1.16",
         "autoprefixer": "10.4.20",
