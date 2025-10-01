@@ -2,12 +2,11 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import SiteLayout from '../../components/SiteLayout';
 import { getDictionary } from '../../lib/i18n/dictionaries';
-import type { Locale } from '../../lib/i18n/config';
 import { resolveRequestLocale } from '../../lib/i18n/server-locale';
 import { createStaticPageMetadata } from '../../lib/seo';
 
-export function generateMetadata(): Metadata {
-  const locale = resolveRequestLocale() as Locale;
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   return createStaticPageMetadata(locale, dictionary, '/modes', 'modes', {
     ogImage: 'https://media.aikaworld.com/og-modes.jpg',
@@ -15,8 +14,8 @@ export function generateMetadata(): Metadata {
   });
 }
 
-export default function ModesPage() {
-  const locale = resolveRequestLocale() as Locale;
+export default async function ModesPage() {
+  const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const sections = dictionary.modes.sections;
   const homeHref = locale === 'hu' ? '/hu' : '/';

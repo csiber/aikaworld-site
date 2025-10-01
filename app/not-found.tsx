@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import { getDictionary } from '../lib/i18n/dictionaries';
-import type { Locale } from '../lib/i18n/config';
 import { resolveRequestLocale } from '../lib/i18n/server-locale';
 
-export default function NotFound() {
-  const locale = resolveRequestLocale() as Locale;
+export default async function NotFound() {
+  const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const homeHref = locale === 'hu' ? '/hu' : '/';
   const charactersHref = locale === 'hu' ? '/hu/characters' : '/characters';

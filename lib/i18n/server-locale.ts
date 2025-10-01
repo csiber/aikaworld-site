@@ -1,10 +1,11 @@
 import { headers } from 'next/headers';
+import type { Locale } from './config';
 import { defaultLocale, isLocale } from './config';
 
 const HU_PREFIX = '/hu';
 
-export function resolveRequestLocale(): string {
-  const headerList = headers();
+export async function resolveRequestLocale(): Promise<Locale> {
+  const headerList = await headers();
   const headerLocale = headerList.get('x-aika-locale');
 
   if (isLocale(headerLocale)) {
