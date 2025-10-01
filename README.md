@@ -1,92 +1,119 @@
-# AIKA World marketing oldal
+# AIKA World Marketing Site
 
-Ez a repository az AIKA World marketing site Next.js alapú forráskódját tartalmazza.
+A statically exported Next.js 14 application that powers the public marketing presence of AIKA World. The project ships in English by default and provides a fully localised Hungarian experience for all published pages, including legal content.
 
-## Fejlesztői környezet és telepítés
+## Development Environment
 
-### Előfeltételek
+### Prerequisites
 
-- Node.js 18 vagy újabb (ajánlott a [Volta](https://volta.sh/) vagy az [nvm](https://github.com/nvm-sh/nvm) használata a verzió kezeléséhez)
+- Node.js 18 or newer (we recommend using [Volta](https://volta.sh/) or [nvm](https://github.com/nvm-sh/nvm) for version pinning)
 - npm 9+
 
-### Gyorsindítás
+### Quick start
 
 ```bash
-# függőségek telepítése
+# install dependencies
 npm install
 
-# fejlesztői szerver indítása http://localhost:3000 címen
+# launch the development server at http://localhost:3000
 npm run dev
 ```
 
-Az első indítás után minden módosítás automatikusan újratölti az oldalt. A projekt teljesen statikus, ezért nincs szükség külön adatbázisra vagy háttérrendszerre a lokális fejlesztéshez.
+Hot reloading is enabled out of the box. The site is fully static and does not require a database or additional backend services for local development.
 
-## Build és exportálás
+## Build & Export
 
-A Cloudflare Pages publikáláshoz statikus exportot készítünk:
+Static exports are produced for Cloudflare Pages deployments:
 
 ```bash
-# production build (automatikus build-időbélyeg generálással)
+# production build (generates build metadata automatically)
 npm run build
 
-# production szerver futtatása (SSR preview)
+# optional SSR preview of the production build
 npm run start
 
-# statikus fájlok exportja az ./out mappába
+# export static files into ./out
 npx next export
 
-# opcionális: előnézet lokálisan az export után
+# optional: preview the exported bundle locally
 npx serve out
 ```
 
-Az `out` mappa tartalmazza a publikálható állományokat. A parancsokat egyben is futtathatod: `npm run build && npx next export`.
+The `out` directory contains the artefacts that should be deployed. You can chain everything together with `npm run build && npx next export`.
 
-## Cloudflare Pages beállítások
+## Cloudflare Pages Configuration
 
-| Beállítás                | Érték                      |
-|--------------------------|----------------------------|
-| Framework preset         | *None* (egyedi konfiguráció)|
-| Build parancs            | `npm run build && npx next export` |
-| Build output directory   | `out`                       |
-| Node.js verzió           | `18`                        |
-| Environment variables    | nincs szükség kötelező változóra |
+| Setting                 | Value                                   |
+|-------------------------|-----------------------------------------|
+| Framework preset        | *None* (custom configuration)           |
+| Build command           | `npm run build && npx next export`      |
+| Build output directory  | `out`                                   |
+| Node.js version         | `18`                                    |
+| Environment variables   | `WAYBACK_SAVE_ON_DEPLOY` (optional)     |
 
-Publikáláskor a Cloudflare Pages automatikusan feltölti az `out` könyvtár tartalmát. Ha saját pipeline-t építesz, győződj meg róla, hogy a build során a fenti parancspárt futtatod le.
+Ensure the build step runs the exact command pair above when setting up your own CI pipeline.
 
-## Jogi védelem és archiválás
+## Internationalisation (i18n)
 
-- **Új jogi oldalak:** elkészültek a kétnyelvű (EN/HU) Felhasználási feltételek, Adatkezelési tájékoztató, Copyright / DMCA, Fan Content Policy, Védjegyhasználati irányelvek és a változásnapló.
-- **Lábléc frissítés:** minden oldal alján megjelenik a „© 2025 AIKA World. All rights reserved.” szöveg, a build dátuma (`Last build: YYYY-MM-DD`), valamint a jogi linkek és a `legal@aikaworld.com` elérhetőség postai címmel.
-- **Open Graph képek:** a `public/og/` mappában található SVG-k vízjellel és beágyazott szerzői jogi metaadattal készülnek, a Meta/Twitter megosztások ezeket használják.
-- **Wayback Machine archiválás:** a `npm run build` parancs után automatikusan fut a `scripts/wayback-save.mjs`. Aktiválásához állítsd be a `WAYBACK_SAVE_ON_DEPLOY=true` környezeti változót (és add meg a `SITE_URL` értéket).
-- **Build-időbélyeg:** a `scripts/generate-build-info.mjs` minden build/fejlesztői indítás előtt létrehozza a `lib/generated/build-info.ts` fájlt. Gitből ignorált állomány, szükség esetén futtasd külön is: `npm run generate:build-info`.
+- Supported locales are defined in `lib/i18n/config.ts`. English (`en`) is the `defaultLocale`, Hungarian (`hu`) is the alternate locale, and locale detection is disabled in `next.config.js` to keep routing predictable.
+- The middleware (`middleware.ts`) sets the `aika_locale` cookie, honours a visitor's `Accept-Language` header on first visit and redirects Hungarian speakers to `/hu` while keeping English traffic on the root paths.
+- Translated strings live in `lib/i18n/dictionaries/en.ts` and `lib/i18n/dictionaries/hu.ts`. All components consume typed sections from these dictionaries via `getDictionary(locale)` so that TypeScript can warn on missing keys.
+- New namespaces or strings must be added to both dictionaries at the same structural position. The `scripts/validate-translations.ts` script catches missing or mismatched keys during `npm run build`.
 
-## Cloudflare R2 média tárhely
+## Translation Workflow
 
-A marketing oldal minden képi és videós tartalma a `https://media.aikaworld.com` aldomainről töltődik be, amely egy Cloudflare R2 bucketet fed le. A struktúra főbb mappái:
+1. Update the English copy first inside `lib/i18n/dictionaries/en.ts` (or `lib/legal/content.ts` for legal documents). Keep keys descriptive and group related strings into nested objects rather than flat maps.
+2. Mirror the structure in `lib/i18n/dictionaries/hu.ts`, providing the Hungarian equivalent for every string. Keys cannot be omitted.
+3. Run `npm run validate:translations` to confirm structural parity before committing.
+4. Start the dev server (`npm run dev`) and review both `/` and `/hu` to confirm runtime rendering.
+5. When translations touch SEO metadata, also verify Open Graph previews (`public/og/*`) and update alt text or captions accordingly.
 
-- `presskit/` – logók, key art és screenshotok sajtó számára
-- `teaser/` – a főoldali videó posztere (`teaser-poster.jpg`) és a videófájlok (`teaser.webm`, `teaser.mp4`)
-- `characters/` – karakterek hero képei
-- `og/` – Open Graph megosztási képek
-- `screenshots/` – általános játékképek
+## Editing Legal Pages
 
-Új asset feltöltéséhez a fenti struktúrát kövesd, majd a Next.js komponensekben a teljes URL-t (`https://media.aikaworld.com/<útvonal>`) add meg. A domain egy CDN-ként működik, ezért a friss fájlok néhány perc cache-invalidation után jelennek meg.
+All legal content is centralised in `lib/legal/content.ts`. Each document (Terms of Use, Privacy Policy, Copyright/DMCA, Fan Content Policy, Trademark Guidelines and the changelog) is stored as a typed object that holds both English and Hungarian variants.
 
-## Teljesítmény audit
+- Update the appropriate `sections`, `lists` and `subsections` arrays to modify copy. Use paragraphs for prose, lists for bullet/ordered content and keep metadata such as `lastUpdated` in ISO format (`YYYY-MM-DD`).
+- The `LEGAL_EMAIL` constant and postal address definitions should be kept in sync when contact details change. Update both the English and Hungarian address blocks.
+- Pages under `app/legal/*`, `app/privacy` and `app/terms` automatically render the shared content. No additional Markdown files are needed.
+- After making changes, run `npm run build` to ensure the TypeScript structures compile and the Wayback archiving hook (see below) remains valid.
 
-A 13. feladat során az alábbi optimalizációkat valósítottuk meg a Lighthouse pontszámok javítása érdekében:
+## Media Watermarking & Rights Metadata
 
-- Minden tartalmi kép `loading="lazy"` attribútumot kapott a fölösleges betöltés elkerülésére.
-- A hős videó `preload="none"` beállítást kapott, így csak felhasználói interakció esetén töltődik be.
-- A jelenlegi verzió külső betűkészletet nem használ, ezért preconnect konfigurációra nincs szükség.
+All Open Graph and press assets are stored under `public/og/` (for static exports) and on the external CDN at `https://media.aikaworld.com`.
 
-> **Megjegyzés:** A repository szabályai miatt Lighthouse screenshot nem kerülhet a verziókövetésbe. Kérlek futtasd le lokálisan a Lighthouse tesztet a `npm run build && npm run start` parancsok után, majd készíts saját képernyőfotót a riportból.
+1. Always work from the canonical design source (Figma or layered SVG) that includes the AIKA World watermark group. Do not delete or rename the watermark layers when exporting.
+2. When exporting SVGs, embed copyright metadata inside `<metadata>` tags (author, licence, source URL). Existing files provide examples that should be mirrored.
+3. For raster assets (JPG/PNG) hosted on the CDN, apply the semi-transparent watermark in the bottom-right corner at 160px width for 1920px assets (scale proportionally for other sizes).
+4. Optimise images with `svgo` (for SVG) or `squoosh`/`cwebp` (for raster) before committing. Avoid stripping metadata during optimisation.
+5. Update component references to point at the new file names and validate share previews with the Facebook Sharing Debugger and Twitter Card Validator.
 
-### Javasolt mérési lépések
+## Archiving & Compliance
+
+- After `npm run build`, the `scripts/wayback-save.mjs` hook triggers if `WAYBACK_SAVE_ON_DEPLOY=true` is set. Provide a public `SITE_URL` (e.g. `https://aikaworld.com`) to request archival snapshots for both English and Hungarian routes.
+- The script targets the homepage, primary marketing sections and all legal URLs. Failures are logged but do not break the deployment.
+- Manual replays can be triggered locally with `WAYBACK_SAVE_ON_DEPLOY=true SITE_URL=https://staging.aikaworld.com npm run build`.
+
+## Cloudflare R2 Media Storage
+
+All imagery and video is delivered from `https://media.aikaworld.com`, backed by Cloudflare R2. Folder conventions:
+
+- `presskit/` – logos, key art and screenshots for the press
+- `teaser/` – homepage hero video poster (`teaser-poster.jpg`) and video assets (`teaser.webm`, `teaser.mp4`)
+- `characters/` – hero images for character profiles
+- `og/` – Open Graph preview images
+- `screenshots/` – general gameplay captures
+
+Follow the existing structure when adding new assets. Reference full URLs (`https://media.aikaworld.com/<path>`) inside Next.js components. CDN caching may require a few minutes to refresh.
+
+## Performance Audit Checklist
+
+The improvements from task 13 should be preserved. To re-run the audit:
 
 1. `npm run build`
 2. `npm run start`
-3. Futtasd a Lighthouse auditot (Chrome DevTools vagy `npx lighthouse http://localhost:3000 --view`).
-4. Ellenőrizd, hogy a Desktop pontszám 90+, a Mobile pontszám 85+ tartományban legyen.
+3. Execute a Lighthouse audit (Chrome DevTools or `npx lighthouse http://localhost:3000 --view`).
+4. Ensure desktop scores remain ≥ 90 and mobile scores ≥ 85. Capture screenshots locally; version control should not include binary audit artefacts.
 
+## Contact
+
+For legal matters reach out via `legal@aikaworld.com` or the postal address listed on each legal page. For marketing collaboration requests, contact the studio through the press kit page.
