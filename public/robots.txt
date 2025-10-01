@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://aikaworld.com/sitemap.xml
