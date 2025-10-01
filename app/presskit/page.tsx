@@ -4,6 +4,7 @@ import { getDictionary } from '../../lib/i18n/dictionaries';
 import type { Locale } from '../../lib/i18n/config';
 import { resolveRequestLocale } from '../../lib/i18n/server-locale';
 import { createStaticPageMetadata } from '../../lib/seo';
+import { serverEnv } from '../../lib/server-config';
 
 export function generateMetadata(): Metadata {
   const locale = resolveRequestLocale() as Locale;
@@ -14,10 +15,23 @@ export function generateMetadata(): Metadata {
 export default function PresskitPage() {
   const locale = resolveRequestLocale() as Locale;
   const dictionary = getDictionary(locale);
+  const siteUrl = serverEnv.siteUrl.replace(/\/$/, '');
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'AIKA World',
+    url: siteUrl,
+    logo: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.svg'
+  } as const;
 
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <section>
           <h1 className="text-3xl md:text-4xl font-bold">{dictionary.presskit.heading}</h1>
           <p className="mt-4 text-base md:text-lg opacity-90">{dictionary.presskit.description}</p>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <metadata>
+    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+      <rdf:Description dc:title="AIKA World Default Share Image (EN)" dc:creator="AIKA World" dc:rights="© 2025 AIKA World. All rights reserved." />
+    </rdf:RDF>
+  </metadata>
+  <defs>
+    <linearGradient id="defaultGradientEn" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080a16" />
+      <stop offset="100%" stop-color="#1b2750" />
+    </linearGradient>
+    <pattern id="aikaWatermark" width="160" height="160" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)">
+      <text x="0" y="120" font-family="'Fira Sans', sans-serif" font-size="42" fill="rgba(255,255,255,0.04)">AIKA WORLD</text>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#defaultGradientEn)" />
+  <rect width="1200" height="630" fill="url(#aikaWatermark)" />
+  <g fill="#ffffff">
+    <text x="80" y="190" font-family="'Fira Sans', sans-serif" font-size="86" letter-spacing="0.32em" opacity="0.92">AIKA WORLD</text>
+    <text x="80" y="290" font-family="'Fira Sans', sans-serif" font-size="46" opacity="0.88">Anime co-op action RPG</text>
+    <text x="80" y="360" font-family="'Fira Sans', sans-serif" font-size="30" opacity="0.75">Raid bosses. Endless survival. Squad up.</text>
+    <text x="80" y="430" font-family="'Fira Sans', sans-serif" font-size="26" opacity="0.65">Official social preview artwork with embedded rights metadata.</text>
+  </g>
+  <text x="1080" y="570" font-family="'Fira Sans', sans-serif" font-size="24" fill="rgba(255,255,255,0.8)" text-anchor="end">© 2025 AIKA World</text>
+</svg>
