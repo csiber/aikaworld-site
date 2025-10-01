@@ -1,6 +1,7 @@
-const requiredEnv = ['STEAM_URL', 'DISCORD_URL', 'SITE_URL'] as const;
+const requiredEnv = ['SITE_URL'] as const;
+const optionalEnv = ['STEAM_URL', 'DISCORD_URL'] as const;
 
-function readEnv(name: (typeof requiredEnv)[number]) {
+function readRequiredEnv(name: (typeof requiredEnv)[number]) {
   const value = process.env[name];
   if (!value) {
     throw new Error(`Missing required environment variable: ${name}`);
@@ -8,10 +9,15 @@ function readEnv(name: (typeof requiredEnv)[number]) {
   return value;
 }
 
+function readOptionalEnv(name: (typeof optionalEnv)[number]) {
+  const value = process.env[name];
+  return value && value.trim().length > 0 ? value : null;
+}
+
 export const serverEnv = {
-  steamUrl: readEnv('STEAM_URL'),
-  discordUrl: readEnv('DISCORD_URL'),
-  siteUrl: readEnv('SITE_URL')
+  steamUrl: readOptionalEnv('STEAM_URL'),
+  discordUrl: readOptionalEnv('DISCORD_URL'),
+  siteUrl: readRequiredEnv('SITE_URL')
 } as const;
 
 export type ServerEnv = typeof serverEnv;

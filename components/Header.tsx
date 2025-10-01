@@ -9,8 +9,8 @@ const SCROLL_THRESHOLD = 60;
 const LOCALE_COOKIE_MAX_AGE = 60 * 60 * 24 * 365;
 
 type HeaderProps = {
-  steamUrl: string;
-  discordUrl: string;
+  steamUrl: string | null;
+  discordUrl: string | null;
   locale: Locale;
   dictionary: HeaderDictionary;
 };
@@ -105,15 +105,19 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
             ))}
           </select>
           <div className="hidden gap-2 sm:flex">
-            <a
-              className="rounded-md bg-accentA px-3 py-1.5 text-sm font-semibold hover:opacity-90"
-              href={steamUrl}
-            >
-              {dictionary.wishlistCta}
-            </a>
-            <a className="rounded-md bg-white/10 px-3 py-1.5 text-sm hover:bg-white/20" href={discordUrl}>
-              {dictionary.discordCta}
-            </a>
+            {steamUrl && (
+              <a
+                className="rounded-md bg-accentA px-3 py-1.5 text-sm font-semibold hover:opacity-90"
+                href={steamUrl}
+              >
+                {dictionary.wishlistCta}
+              </a>
+            )}
+            {discordUrl && (
+              <a className="rounded-md bg-white/10 px-3 py-1.5 text-sm hover:bg-white/20" href={discordUrl}>
+                {dictionary.discordCta}
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -15,8 +15,8 @@ type SubscribeResponse = {
 };
 
 type HomePageProps = {
-  steamUrl: string;
-  discordUrl: string;
+  steamUrl: string | null;
+  discordUrl: string | null;
   locale: Locale;
   dictionary: HomeDictionary;
   lightboxDictionary: LightboxDictionary;
@@ -109,12 +109,16 @@ export default function HomePage({
             {dictionary.hero.description}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            <a className="px-5 py-3 rounded-lg bg-accentA hover:opacity-90 font-semibold" href={steamUrl}>
-              {dictionary.hero.wishlistCta}
-            </a>
-            <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={discordUrl}>
-              {dictionary.hero.discordCta}
-            </a>
+            {steamUrl && (
+              <a className="px-5 py-3 rounded-lg bg-accentA hover:opacity-90 font-semibold" href={steamUrl}>
+                {dictionary.hero.wishlistCta}
+              </a>
+            )}
+            {discordUrl && (
+              <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={discordUrl}>
+                {dictionary.hero.discordCta}
+              </a>
+            )}
             <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href="#newsletter">
               {dictionary.hero.subscribeCta}
             </a>
@@ -240,12 +244,16 @@ export default function HomePage({
         <h2 className="text-2xl md:text-3xl font-bold">{dictionary.community.title}</h2>
         <p className="mt-2 opacity-90">{dictionary.community.description}</p>
         <div className="mt-6 flex flex-col sm:flex-row gap-3">
-          <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={discordUrl}>
-            {dictionary.community.discordCta}
-          </a>
-          <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={steamUrl}>
-            {dictionary.community.wishlistCta}
-          </a>
+          {discordUrl && (
+            <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={discordUrl}>
+              {dictionary.community.discordCta}
+            </a>
+          )}
+          {steamUrl && (
+            <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={steamUrl}>
+              {dictionary.community.wishlistCta}
+            </a>
+          )}
         </div>
 
         <form id="newsletter" className="mt-6 max-w-md" onSubmit={handleSubmit}>
