@@ -42,9 +42,10 @@ export const enDictionary: Dictionary = {
   },
   home: {
     hero: {
-      title: 'Anime co-op action RPG – Raid. Survive. ',
-      highlight: 'Resonance.',
-      description: 'Five Resonators. Towering bosses. Endless waves.',
+      title: 'Dark anime co-op slaughter RPG – Blood. Ruin. ',
+      highlight: 'Sadistic waifus.',
+      description:
+        'Five Resonators. Ruined megastructures. Perpetual slaughter. Blood and screams every round.',
       wishlistCta: 'Wishlist on Steam',
       discordCta: 'Join Discord',
       subscribeCta: 'Subscribe',
@@ -55,14 +56,14 @@ export const enDictionary: Dictionary = {
       cards: [
         {
           title: 'Raid Boss Arena',
-          description: 'Scaling arena fights with colossal bosses. Synergy decides.',
+          description: 'Brutal arenas, merciless bosses. Only synergy keeps you breathing.',
           points: ['Party-size scaling', 'Mechanics and multi-phase fights', 'Team roles'],
           linkLabel: 'View details',
           href: '/modes#raid'
         },
         {
           title: 'Infest Survival',
-          description: 'Endless waves, rising tempo and checkpoint rewards.',
+          description: 'Endless waves, gore and shredded limbs. Only the strongest endure.',
           points: ['Wave-based carnage', 'Checkpoint rewards', 'Meta progression: cosmetics & boosts'],
           linkLabel: 'View details',
           href: '/modes#infest'
