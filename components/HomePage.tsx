@@ -36,6 +36,18 @@ export default function HomePage({
 
   const basePath = useMemo(() => (locale === 'hu' ? '/hu' : ''), [locale]);
 
+  const resolveLocalizedHref = (href: string) => {
+    if (!href) {
+      return '#';
+    }
+
+    if (href.startsWith('#') || href.startsWith('http')) {
+      return href;
+    }
+
+    return `${basePath}${href}`;
+  };
+
   const openLightbox = (index: number) => {
     setLightboxIndex(index);
   };
@@ -271,17 +283,41 @@ export default function HomePage({
       <section id="community" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-bold">{dictionary.community.title}</h2>
         <p className="mt-2 opacity-90">{dictionary.community.description}</p>
-        <div className="mt-6 flex flex-col sm:flex-row gap-3">
-          {discordUrl && (
-            <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={discordUrl}>
-              {dictionary.community.discordCta}
-            </a>
-          )}
-          {steamUrl && (
-            <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={steamUrl}>
-              {dictionary.community.wishlistCta}
-            </a>
-          )}
+
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+          {dictionary.community.cards.map(card => {
+            const href = resolveLocalizedHref(card.ctaHref);
+
+            return (
+              <div
+                key={card.id}
+                className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-6"
+              >
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accentB">
+                  {card.eyebrow}
+                </p>
+                <h3 className="mt-3 text-xl font-semibold">{card.title}</h3>
+                <p className="mt-3 text-sm md:text-base opacity-80">{card.description}</p>
+                <div className="mt-auto pt-6 flex flex-col gap-2">
+                  <a
+                    href={href}
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-accentB px-4 py-2 text-sm font-semibold text-black transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  >
+                    {card.ctaLabel}
+                    <span aria-hidden>→</span>
+                  </a>
+                  {card.note && <p className="text-xs opacity-70">{card.note}</p>}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div id="community-newsletter" className="mt-12 max-w-xl">
+          <h3 className="text-xl font-semibold">{dictionary.community.newsletterTitle}</h3>
+          <p className="mt-2 text-sm md:text-base opacity-80">
+            {dictionary.community.newsletterDescription}
+          </p>
         </div>
 
         <form id="newsletter" className="mt-6 max-w-md" onSubmit={handleSubmit}>

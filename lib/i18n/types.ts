@@ -81,10 +81,45 @@ export type HomeDictionary = {
   community: {
     title: string;
     description: string;
-    discordCta: string;
-    wishlistCta: string;
+    cards: {
+      id: string;
+      eyebrow: string;
+      title: string;
+      description: string;
+      note?: string;
+      ctaLabel: string;
+      ctaHref: string;
+    }[];
+    newsletterTitle: string;
+    newsletterDescription: string;
   };
   newsletter: NewsletterDictionary;
+};
+
+export type ProgramPageSectionDictionary = {
+  id: string;
+  title: string;
+  description: string;
+  bullets?: string[];
+};
+
+export type ProgramPageFaqDictionary = {
+  question: string;
+  answer: string;
+};
+
+export type ProgramPageDictionary = {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  sections: ProgramPageSectionDictionary[];
+  faqTitle: string;
+  faqs: ProgramPageFaqDictionary[];
+  cta: {
+    label: string;
+    href: string;
+    note: string;
+  };
 };
 
 export type ModesDictionary = {
@@ -268,6 +303,8 @@ export type SeoDictionary = {
     home: { title: string; description: string; ogAlt: string };
     modes: { title: string; description: string; ogAlt: string };
     progression: { title: string; description: string; ogAlt: string };
+    playtests: { title: string; description: string; ogAlt: string };
+    creatorProgram: { title: string; description: string; ogAlt: string };
     characters: { title: string; description: string };
     character: {
       description: (character: Character) => string;
@@ -292,6 +329,8 @@ export type Dictionary = {
   home: HomeDictionary;
   modes: ModesDictionary;
   progression: ProgressionDictionary;
+  playtests: ProgramPageDictionary;
+  creatorProgram: ProgramPageDictionary;
   charactersPage: CharactersDictionary;
   characterPage: CharacterPageDictionary;
   presskit: PresskitDictionary;

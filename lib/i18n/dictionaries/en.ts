@@ -147,42 +147,6 @@ export const enDictionary: Dictionary = {
       }
     ]
   },
-  progression: {
-    title: 'Progression teaser',
-    intro: 'A spoiler-free glimpse at how squads grow in AIKA World before full reveals.',
-    sections: [
-      {
-        id: 'resonance-skill',
-        title: 'Resonance skill',
-        summary: 'Signature resonance bursts deepen with coordinated play without exposing the complete skill web.',
-        bullets: [
-          'Chain resonance windows to unlock optional augment slots that alter your ultimate flow.',
-          'Earn resonance sparks from flawless clears to reroute ability behaviours between missions.',
-          'Blend support catalysts to extend combo uptime and rewrite finisher effects for the squad.'
-        ]
-      },
-      {
-        id: 'gear-evolution',
-        title: 'Gear evolution',
-        summary: 'Weapons and suits adapt through modular crafting loops instead of tier spreadsheets.',
-        bullets: [
-          'Refine expedition drops into adaptive cores that shift perk loadouts per activity.',
-          'Slot evolution plates to morph silhouettes and add traversal bonuses without revealing stats.',
-          'Trade duplicate finds for forge favours that fast-track bespoke weapon paths.'
-        ]
-      },
-      {
-        id: 'hub-customization',
-        title: 'Hub customization',
-        summary: 'Your safe hub grows with mood pieces and utilities as bonds deepen—no plot spoilers.',
-        bullets: [
-          'Curate district wings with earned decor sets that boost resting bonuses.',
-          'Unlock rehearsal rooms that rotate social buffs and mini training encounters.',
-          'Commission ambient tracks and lighting presets to broadcast your squad identity.'
-        ]
-      }
-    ]
-  },
   characters: {
     title: 'Resonators',
       description: 'Pick your resonance. Each of the five girls excels at a different specialty.',
@@ -224,10 +188,42 @@ export const enDictionary: Dictionary = {
       ]
     },
     community: {
-      title: 'Community & Newsletter',
-      description: 'Join the Discord and sign up for playtest news.',
-      discordCta: 'Join Discord',
-      wishlistCta: 'Wishlist on Steam'
+      title: 'Community hub',
+      description: 'Stay close to the squad with our flagship programs and upcoming challenges.',
+      cards: [
+        {
+          id: 'playtests',
+          eyebrow: 'Hands-on access',
+          title: 'Playtests',
+          description:
+            'Apply to hop into curated co-op sessions, share feedback directly with the team and help us fine-tune combat pacing.',
+          note: 'Invites roll out in planned waves.',
+          ctaLabel: 'Apply',
+          ctaHref: '/playtests'
+        },
+        {
+          id: 'creator-program',
+          eyebrow: 'Signal boost',
+          title: 'Creator Program',
+          description:
+            'Creators get early briefings, capture tips and co-stream opportunities so you can spotlight AIKA World with confidence.',
+          note: 'Creator onboarding opens in planned waves.',
+          ctaLabel: 'Apply',
+          ctaHref: '/creator-program'
+        },
+        {
+          id: 'community-challenges',
+          eyebrow: 'Squad goals',
+          title: 'Community Challenges',
+          description:
+            'Seasonal squad objectives, hub events and puzzle drops launch via Discord and the newsletter for coordinated play.',
+          note: 'Challenge briefings release in planned waves.',
+          ctaLabel: 'Read more',
+          ctaHref: '#community-newsletter'
+        }
+      ],
+      newsletterTitle: 'Stay notified',
+      newsletterDescription: 'Subscribe for playtest waves, creator beats and challenge announcements.'
     },
     newsletter: {
       emailLabel: 'Email address',
@@ -328,6 +324,166 @@ export const enDictionary: Dictionary = {
         ]
       }
     ]
+  },
+  progression: {
+    title: 'Progression teaser',
+    intro: 'A spoiler-free glimpse at how squads grow in AIKA World before full reveals.',
+    sections: [
+      {
+        id: 'resonance-skill',
+        title: 'Resonance skill',
+        summary: 'Signature resonance bursts deepen with coordinated play without exposing the complete skill web.',
+        bullets: [
+          'Chain resonance windows to unlock optional augment slots that alter your ultimate flow.',
+          'Earn resonance sparks from flawless clears to reroute ability behaviours between missions.',
+          'Blend support catalysts to extend combo uptime and rewrite finisher effects for the squad.'
+        ]
+      },
+      {
+        id: 'gear-evolution',
+        title: 'Gear evolution',
+        summary: 'Weapons and suits adapt through modular crafting loops instead of tier spreadsheets.',
+        bullets: [
+          'Refine expedition drops into adaptive cores that shift perk loadouts per activity.',
+          'Slot evolution plates to morph silhouettes and add traversal bonuses without revealing stats.',
+          'Trade duplicate finds for forge favours that fast-track bespoke weapon paths.'
+        ]
+      },
+      {
+        id: 'hub-customization',
+        title: 'Hub customization',
+        summary: 'Your safe hub grows with mood pieces and utilities as bonds deepen—no plot spoilers.',
+        bullets: [
+          'Curate district wings with earned decor sets that boost resting bonuses.',
+          'Unlock rehearsal rooms that rotate social buffs and mini training encounters.',
+          'Commission ambient tracks and lighting presets to broadcast your squad identity.'
+        ]
+      }
+    ]
+  },
+  playtests: {
+    eyebrow: 'Hands-on squads',
+    title: 'AIKA World Playtests',
+    intro:
+      'Apply to join curated co-op sessions that stress-test combat pacing, hub flow and onboarding. Selected squads explore focused builds with developer support, and invites ship in planned waves so everyone has room to report findings.',
+    sections: [
+      {
+        id: 'structure',
+        title: 'How sessions run',
+        description:
+          'Each playtest wave targets a specific objective and pairs your squad with on-call support from the team.',
+        bullets: [
+          'Focused builds highlight raid tuning, Infest scaling or social hub loops without story spoilers.',
+          'Session briefs outline goals, success metrics and checklist moments to watch for.',
+          'Developers staff feedback channels during every wave to clarify mechanics in real time.'
+        ]
+      },
+      {
+        id: 'expectations',
+        title: 'What we ask from testers',
+        description: 'We keep requirements lightweight, but we need actionable observations from each squad.',
+        bullets: [
+          'Play at least two sessions per wave and complete the quick debrief survey afterward.',
+          'Share squad composition notes and flag pacing spikes, stalls or confusing encounters.',
+          'Log bugs or blockers with reproduction steps inside the testing portal so we can follow up.'
+        ]
+      },
+      {
+        id: 'support',
+        title: 'Tools & support',
+        description:
+          'Every accepted squad gains access to private coordination spaces and structured reporting tools.',
+        bullets: [
+          'Private Discord channels with developer responders for live Q&A during test windows.',
+          'Template-based issue tracking that separates combat, UI and onboarding feedback.',
+          'Optional voice roundtables after each wave to prioritise hot topics for the next build.'
+        ]
+      }
+    ],
+    faqTitle: 'Frequently asked questions',
+    faqs: [
+      {
+        question: 'Who can apply?',
+        answer:
+          'Co-op players comfortable coordinating in English or Hungarian voice/text channels. We welcome friend groups and organised communities alike.'
+      },
+      {
+        question: 'How are invites sent?',
+        answer:
+          'We review submissions regularly, group them by hardware, region and experience level, then email accepted squads in planned waves with timing and onboarding details.'
+      },
+      {
+        question: 'Do I need to stream or record?',
+        answer:
+          'Recordings are optional. Share clips or notes if you capture footage, but priority goes to clear written feedback through the provided forms.'
+      }
+    ],
+    cta: {
+      label: 'Apply',
+      href: '#',
+      note: 'Application form placeholder — invite emails are dispatched in planned waves.'
+    }
+  },
+  creatorProgram: {
+    eyebrow: 'Share the resonance',
+    title: 'AIKA World Creator Program',
+    intro:
+      'Apply to collaborate on coverage, showcase Resonators and host co-op segments with direct studio support. We onboard creators in planned waves to keep every partnership personal.',
+    sections: [
+      {
+        id: 'who',
+        title: 'Who we partner with',
+        description: 'We prioritise storytellers who celebrate co-op energy and community vibes.',
+        bullets: [
+          'You publish consistent co-op, anime or action RPG content on platforms like YouTube, Twitch, TikTok or podcasts.',
+          'You cultivate respectful communities that blend hype with constructive insight.',
+          'You can align uploads or streams with our planned beats while keeping surprises intact.'
+        ]
+      },
+      {
+        id: 'benefits',
+        title: 'What you receive',
+        description: 'Creators get resources that make producing AIKA World content faster and more expressive.',
+        bullets: [
+          'Early briefings with lore context, system breakdowns and challenge overviews.',
+          'Capture kits, overlay packages and music beds cleared for streaming and editing.',
+          'Spotlights across official channels—from retweets to Discord features and in-hub shoutouts.'
+        ]
+      },
+      {
+        id: 'collaboration',
+        title: 'How collaboration works',
+        description: 'We treat creator partnerships as ongoing dialogues built around community impact.',
+        bullets: [
+          'Monthly sync calls to plan co-op segments, interviews or challenge coverage.',
+          'Shared content calendar highlighting planned waves for reveals and community events.',
+          'Direct access to a community manager who routes requests, assets and follow-up feedback.'
+        ]
+      }
+    ],
+    faqTitle: 'Frequently asked questions',
+    faqs: [
+      {
+        question: 'What platforms qualify?',
+        answer:
+          'Any channel with consistent storytelling or analysis around co-op games, anime worlds or character-driven action—YouTube, Twitch, TikTok, newsletters and podcasts all count.'
+      },
+      {
+        question: 'What content can I publish?',
+        answer:
+          'Guides, reaction segments, behind-the-scenes chats, community spotlights and co-op sessions are all welcome. We will flag spoiler-sensitive material ahead of time so you can plan safely.'
+      },
+      {
+        question: 'When will I hear back?',
+        answer:
+          'We evaluate applications continuously and respond in planned waves via email. If we cannot onboard immediately we keep your details for the next wave.'
+      }
+    ],
+    cta: {
+      label: 'Apply',
+      href: '#',
+      note: 'Application form placeholder — approvals roll out in planned waves.'
+    }
   },
   charactersPage: {
     breadcrumb: 'Characters',
@@ -432,6 +588,18 @@ export const enDictionary: Dictionary = {
         title: 'Progression teaser – AIKA World',
         description: 'Spoiler-free look at resonance skills, gear evolution and hub customization loops in AIKA World.',
         ogAlt: 'AIKA World progression teaser artwork'
+      },
+      playtests: {
+        title: 'Playtests – AIKA World',
+        description:
+          'Apply for AIKA World playtests to join planned waves, share feedback and tune co-op combat with the dev team.',
+        ogAlt: 'AIKA World playtests program graphic'
+      },
+      creatorProgram: {
+        title: 'Creator Program – AIKA World',
+        description:
+          'Join the AIKA World Creator Program for early briefings, capture kits and community spotlight opportunities released in planned waves.',
+        ogAlt: 'AIKA World creator program artwork'
       },
       characters: {
         title: 'Resonators – AIKA World',
