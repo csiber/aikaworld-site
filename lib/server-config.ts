@@ -1,4 +1,4 @@
-const optionalEnv = ['STEAM_URL', 'DISCORD_URL'] as const;
+const optionalEnv = ['STEAM_URL', 'DISCORD_URL', 'CF_ANALYTICS_TOKEN'] as const;
 
 function readOptionalEnv(name: (typeof optionalEnv)[number]) {
   const value = process.env[name];
@@ -39,7 +39,8 @@ function resolveSiteUrl() {
 export const serverEnv = {
   steamUrl: readOptionalEnv('STEAM_URL'),
   discordUrl: readOptionalEnv('DISCORD_URL'),
-  siteUrl: resolveSiteUrl()
+  siteUrl: resolveSiteUrl(),
+  cfAnalyticsToken: readOptionalEnv('CF_ANALYTICS_TOKEN')
 } as const;
 
 export type ServerEnv = typeof serverEnv;
