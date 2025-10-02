@@ -53,6 +53,58 @@ export const enDictionary: Dictionary = {
       subscribeCta: 'Subscribe',
       videoPosterAlt: 'AIKA World teaser poster'
     },
+    world: {
+      title: 'World & Factions',
+      intro:
+        'Five rival power blocs shape the neon dusk of AIKA World. Align with the ideology that keeps your squad alive.',
+      factions: [
+        {
+          name: 'Emberforge Combine',
+          tagline: 'Industrial firebrands who temper the city in magma-fed forges.',
+          bullets: [
+            'Fire-reactor foundries forge modular weaponry overnight.',
+            'Logistics guilds keep squads stocked with incendiary ordnance.',
+            'Engineers retrofit armor with heat-reactive plating.'
+          ]
+        },
+        {
+          name: 'Verdant Circuit Assembly',
+          tagline: 'Druidatech innovators weaving nature-grown circuitry with ritual.',
+          bullets: [
+            'Biofiber drones scout rooftops while pollinating safe zones.',
+            'Healing greenhouses double as respawn sanctuaries for squads.',
+            'Councils broker truces through data-bloom ceremonies.'
+          ]
+        },
+        {
+          name: 'Abyssal Veil Court',
+          tagline: 'Waterborne aristocracy ruling through shadowed etiquette.',
+          bullets: [
+            'Courtiers trade secrets via tide-locked encrypted mirrors.',
+            'Shadow entourages escort squads through submerged backstreets.',
+            'Oaths signed in abyssal ink carry lethal enforcement.'
+          ]
+        },
+        {
+          name: 'Silver Vow Order',
+          tagline: 'Knightly guardians wielding relic lances and luminous shields.',
+          bullets: [
+            'Paladin companies drill cooperative formations for raids.',
+            'Shield-chaplains sanctify gear against corruption pulses.',
+            'Pilgrimage supply lines secure safe corridors between hubs.'
+          ]
+        },
+        {
+          name: 'Neon Veil Collective',
+          tagline: 'Cyberpunk underground thriving in glitch-lit tunnels.',
+          bullets: [
+            'Signal jammers mask squads from corporate trackers.',
+            'Cybernetic medics patch wounds with improvised firmware.',
+            'Street alliances unlock black market upgrades between runs.'
+          ]
+        }
+      ]
+    },
     modes: {
       title: 'Game Modes',
       cards: [
@@ -320,7 +372,7 @@ export const enDictionary: Dictionary = {
     pages: {
       home: {
         title: 'AIKA World – Anime co-op action RPG',
-        description: 'Co-op raid arenas, dark anime visuals and deep progression systems with five unique Resonators.',
+        description: 'Co-op raid arenas, dark fantasy factions and deep progression systems with five unique Resonators.',
         ogAlt: 'AIKA World hero artwork'
       },
       modes: {

@@ -33,6 +33,15 @@ export type HomeDictionary = {
     subscribeCta: string;
     videoPosterAlt: string;
   };
+  world: {
+    title: string;
+    intro: string;
+    factions: {
+      name: string;
+      tagline: string;
+      bullets: string[];
+    }[];
+  };
   modes: {
     title: string;
     cards: {
