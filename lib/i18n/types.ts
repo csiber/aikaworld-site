@@ -105,6 +105,19 @@ export type ModesDictionary = {
   }[];
 };
 
+export type ProgressionSectionDictionary = {
+  id: string;
+  title: string;
+  summary: string;
+  bullets: string[];
+};
+
+export type ProgressionDictionary = {
+  title: string;
+  intro: string;
+  sections: ProgressionSectionDictionary[];
+};
+
 export type CharactersDictionary = {
   breadcrumb: string;
   heading: string;
@@ -220,6 +233,7 @@ export type HeaderDictionary = {
     roadmap: HeaderNavItem;
     community: HeaderNavItem;
     modesPage: HeaderNavItem;
+    progression: HeaderNavItem;
     presskit: HeaderNavItem;
   };
   wishlistCta: string;
@@ -253,6 +267,7 @@ export type SeoDictionary = {
   pages: {
     home: { title: string; description: string; ogAlt: string };
     modes: { title: string; description: string; ogAlt: string };
+    progression: { title: string; description: string; ogAlt: string };
     characters: { title: string; description: string };
     character: {
       description: (character: Character) => string;
@@ -276,6 +291,7 @@ export type Dictionary = {
   footer: FooterDictionary;
   home: HomeDictionary;
   modes: ModesDictionary;
+  progression: ProgressionDictionary;
   charactersPage: CharactersDictionary;
   characterPage: CharacterPageDictionary;
   presskit: PresskitDictionary;

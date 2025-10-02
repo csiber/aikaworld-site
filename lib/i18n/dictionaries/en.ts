@@ -13,6 +13,7 @@ export const enDictionary: Dictionary = {
       roadmap: { label: 'Roadmap', href: '#roadmap' },
       community: { label: 'Community', href: '#community' },
       modesPage: { label: 'Detailed game modes', href: '/modes' },
+      progression: { label: 'Progression teaser', href: '/progression' },
       presskit: { label: 'Presskit', href: '/presskit' }
     },
     wishlistCta: 'Wishlist on Steam',
@@ -105,11 +106,11 @@ export const enDictionary: Dictionary = {
         }
       ]
     },
-    modes: {
-      title: 'Game Modes',
-      cards: [
-        {
-          title: 'Raid Boss Arena',
+  modes: {
+    title: 'Game Modes',
+    cards: [
+      {
+        title: 'Raid Boss Arena',
           description:
             "Drop into a five-player co-op boss gauntlet where every arena reveals layered mechanics without spoiling the finale. Master tells, stagger windows, and arena hazards to carve openings for your Resonators. Coordinated cooldowns and revives decide whether the squad extracts rare materials or wipes.",
           points: [
@@ -143,11 +144,47 @@ export const enDictionary: Dictionary = {
           ],
           linkLabel: 'See details',
           href: '#'
-        }
-      ]
-    },
-    characters: {
-      title: 'Resonators',
+      }
+    ]
+  },
+  progression: {
+    title: 'Progression teaser',
+    intro: 'A spoiler-free glimpse at how squads grow in AIKA World before full reveals.',
+    sections: [
+      {
+        id: 'resonance-skill',
+        title: 'Resonance skill',
+        summary: 'Signature resonance bursts deepen with coordinated play without exposing the complete skill web.',
+        bullets: [
+          'Chain resonance windows to unlock optional augment slots that alter your ultimate flow.',
+          'Earn resonance sparks from flawless clears to reroute ability behaviours between missions.',
+          'Blend support catalysts to extend combo uptime and rewrite finisher effects for the squad.'
+        ]
+      },
+      {
+        id: 'gear-evolution',
+        title: 'Gear evolution',
+        summary: 'Weapons and suits adapt through modular crafting loops instead of tier spreadsheets.',
+        bullets: [
+          'Refine expedition drops into adaptive cores that shift perk loadouts per activity.',
+          'Slot evolution plates to morph silhouettes and add traversal bonuses without revealing stats.',
+          'Trade duplicate finds for forge favours that fast-track bespoke weapon paths.'
+        ]
+      },
+      {
+        id: 'hub-customization',
+        title: 'Hub customization',
+        summary: 'Your safe hub grows with mood pieces and utilities as bonds deepen—no plot spoilers.',
+        bullets: [
+          'Curate district wings with earned decor sets that boost resting bonuses.',
+          'Unlock rehearsal rooms that rotate social buffs and mini training encounters.',
+          'Commission ambient tracks and lighting presets to broadcast your squad identity.'
+        ]
+      }
+    ]
+  },
+  characters: {
+    title: 'Resonators',
       description: 'Pick your resonance. Each of the five girls excels at a different specialty.',
       cards: [
         { slug: 'akari', name: 'Akari', role: 'Fire', color: 'accentA' },
@@ -390,6 +427,11 @@ export const enDictionary: Dictionary = {
         description:
           'Detailed overview of the Raid Boss Arena and Infest Survival modes: mechanics, rewards and team roles in AIKA World.',
         ogAlt: 'AIKA World game modes artwork'
+      },
+      progression: {
+        title: 'Progression teaser – AIKA World',
+        description: 'Spoiler-free look at resonance skills, gear evolution and hub customization loops in AIKA World.',
+        ogAlt: 'AIKA World progression teaser artwork'
       },
       characters: {
         title: 'Resonators – AIKA World',

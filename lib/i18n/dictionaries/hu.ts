@@ -13,6 +13,7 @@ export const huDictionary: Dictionary = {
       roadmap: { label: 'Roadmap', href: '#roadmap' },
       community: { label: 'Közösség', href: '#community' },
       modesPage: { label: 'Részletes játékmódok', href: '/hu/modes' },
+      progression: { label: 'Fejlődés teaser', href: '/hu/progression' },
       presskit: { label: 'Presskit', href: '/hu/presskit' }
     },
     wishlistCta: 'Wishlist a Steamen',
@@ -105,11 +106,11 @@ export const huDictionary: Dictionary = {
         }
       ]
     },
-    modes: {
-      title: 'Játékmódok',
-      cards: [
-        {
-          title: 'Raid Boss Arena',
+  modes: {
+    title: 'Játékmódok',
+    cards: [
+      {
+        title: 'Raid Boss Arena',
           description:
             'Öt fős kooperatív boss aréna, ahol a pályák rétegről rétegre tárják fel a mechanikákat, spoilerek nélkül. Olvasd a teleket, kezeld a fázisváltásokat, és védd a csapatot a csapdáktól. A koordinált ultik, élesztések és pozíciócserék döntik el, hogy zsákmányolsz vagy wipe-olsz.',
           points: [
@@ -292,6 +293,43 @@ export const huDictionary: Dictionary = {
       }
     ]
   },
+  progression: {
+    title: 'Fejlődés teaser',
+    intro: 'Spoilermentes ízelítő arról, hogyan fejlődik a csapat az AIKA Worldben.',
+    sections: [
+      {
+        id: 'resonance-skill',
+        title: 'Rezonancia-képesség',
+        summary: 'A szignatúra rezonancia végső koordinált játékkal mélyül, a teljes képességfa felfedése nélkül.',
+        bullets: [
+          'Fűzd össze a rezonancia ablakokat, hogy opcionális augment slotokat oldj fel és átformáld az ulti ritmusát.',
+          'Tökéletes teljesítésekből rezonancia-szikrákat gyűjtesz, amelyekkel küldetések között átírhatod a képességviselkedést.',
+          'Támogató katalizátorokkal kitolod a kombóidőt, és új befejező hatásokat hangolsz a csapatnak.'
+        ]
+      },
+      {
+        id: 'gear-evolution',
+        title: 'Felszerelés evolúció',
+        summary: 'A fegyverek és öltözékek moduláris kraftolással alkalmazkodnak, tier táblázatok nélkül.',
+        bullets: [
+          'Az expedíciós droppokból adaptív magokat finomítasz, amelyek aktivitásonként átrendezik a perk készletet.',
+          'Evolúciós lapkákat pattintasz a páncélra, hogy formát és mozgásbónuszokat válts statisztika-spoiler nélkül.',
+          'A duplikált leleteket kovácsműhely-szívességekre cseréled, így saját fegyverútvonalakat gyorsítasz.'
+        ]
+      },
+      {
+        id: 'hub-customization',
+        title: 'Hub testreszabás',
+        summary:
+          'A biztonságos hub hangulati elemekkel és hasznos funkciókkal bővül, ahogy mélyülnek a kötelékek – történetspoilerek nélkül.',
+        bullets: [
+          'Negyedszárnyakat rendezel be megszerzett dekor szettekkel, amelyek pihenési bónuszokat adnak.',
+          'Próbaszobákat nyitsz, ahol forgó közösségi buffok és mini edzések érhetők el.',
+          'Ambient zenéket és fény preseteket rendelsz meg, hogy sugározd a csapat identitását.'
+        ]
+      }
+    ]
+  },
   charactersPage: {
     breadcrumb: 'Karakterek',
     heading: 'AIKA World Rezonátorok',
@@ -391,6 +429,12 @@ export const huDictionary: Dictionary = {
         description:
           'Részletes áttekintés a Raid Boss Arena és az Infest Survival módokról: mechanikák, jutalmak, csapat szerepek az AIKA Worldben.',
         ogAlt: 'AIKA World játékmódok grafika'
+      },
+      progression: {
+        title: 'Fejlődés teaser – AIKA World',
+        description:
+          'Spoilermentes betekintés a rezonancia-képességekbe, a felszerelés evolúciójába és a hub testreszabásába az AIKA Worldben.',
+        ogAlt: 'AIKA World fejlődés teaser grafika'
       },
       characters: {
         title: 'Rezonátorok – AIKA World',
