@@ -205,7 +205,12 @@ export const enDictionary: Dictionary = {
     roleLabel: 'Role',
     elementLabel: 'Element',
     playstyleLabel: 'Playstyle',
-    tipsTitle: 'Tip collection'
+    tipsTitle: 'Tip collection',
+    loreTitle: 'Who she is',
+    mentalityTitle: 'Mindset',
+    likesTitle: 'Loves',
+    dislikesTitle: 'Loathes',
+    quoteTitle: 'Signature quote'
   },
   presskit: {
     heading: 'AIKA World Presskit',
