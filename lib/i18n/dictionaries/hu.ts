@@ -42,9 +42,10 @@ export const huDictionary: Dictionary = {
   },
   home: {
     hero: {
-      title: 'Anime co-op action RPG – Raid. Survive. ',
-      highlight: 'Resonance.',
-      description: 'Öt Rezonátor. Óriási bossok. Végtelen hullámok.',
+      title: 'Sötét anime co-op hentelős RPG – Vér. Romok. ',
+      highlight: 'Szadista waifuk.',
+      description:
+        'Öt Rezonátor. Összeroskadt világromok. Örökké tartó hentelés. Vér és sikoly minden körben.',
       wishlistCta: 'Wishlist a Steamen',
       discordCta: 'Csatlakozz Discordon',
       subscribeCta: 'Feliratkozom',
@@ -55,14 +56,14 @@ export const huDictionary: Dictionary = {
       cards: [
         {
           title: 'Raid Boss Arena',
-          description: 'Skálázódó aréna-csaták, óriási bossokkal. A szinergia dönt.',
+          description: 'Brutális arénák, könyörtelen bossok. Csak a szinergia tart életben.',
           points: ['Party-size skálázás', 'Mechanikák és fázisok', 'Csapat szerepkörök'],
           linkLabel: 'Részletek megnyitása',
           href: '/hu/modes#raid'
         },
         {
           title: 'Infest Survival',
-          description: 'Végtelen hullámok, fokozódó tempó és checkpoint jutalmak.',
+          description: 'Végtelen hullámok, vér, cafatok, csak a legerősebbek élik túl.',
           points: ['Wave-alapú hentelés', 'Checkpoint jutalmak', 'Meta-progress: kozmetika/boost'],
           linkLabel: 'Részletek megnyitása',
           href: '/hu/modes#infest'
