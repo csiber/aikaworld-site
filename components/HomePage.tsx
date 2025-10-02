@@ -282,7 +282,16 @@ export default function HomePage({
               {status === 'loading' ? dictionary.newsletter.submitLoading : dictionary.newsletter.submitIdle}
             </button>
           </div>
-          <p className="mt-2 text-xs opacity-70">{dictionary.newsletter.consent}</p>
+          <p className="mt-2 text-xs opacity-70">
+            {dictionary.newsletter.consentPrefix}
+            <Link
+              href={`${basePath}/privacy`}
+              className="underline decoration-dotted underline-offset-2 hover:text-accentB"
+            >
+              {dictionary.newsletter.consentLinkLabel}
+            </Link>
+            {dictionary.newsletter.consentSuffix}
+          </p>
           {feedback && (
             <p
               className={`mt-3 text-sm ${status === 'success' ? 'text-emerald-300' : 'text-rose-300'}`}
