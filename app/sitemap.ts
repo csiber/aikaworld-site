@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import type { MetadataRoute } from 'next';
 import { characterSlugs } from '../lib/content/characters';
 import { defaultLocale } from '../lib/i18n/config';
