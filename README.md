@@ -49,9 +49,11 @@ The `out` directory contains the artefacts that should be deployed. You can chai
 | Build command           | `npm run build && npx next export`      |
 | Build output directory  | `out`                                   |
 | Node.js version         | `18`                                    |
-| Environment variables   | `WAYBACK_SAVE_ON_DEPLOY` (optional)     |
+| Environment variables   | `CF_ANALYTICS_TOKEN` (kötelező), `WAYBACK_SAVE_ON_DEPLOY` (opcionális) |
 
 Ensure the build step runs the exact command pair above when setting up your own CI pipeline.
+
+A Cloudflare Insights beacon csak akkor töltődik be, ha a `CF_ANALYTICS_TOKEN` környezeti változó meg van adva; ennek a tokennek a beállítása kötelező az éles telepítéshez.
 
 ## Internationalisation (i18n)
 

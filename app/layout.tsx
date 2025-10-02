@@ -2,6 +2,7 @@ export const runtime = 'edge';
 import './globals.css';
 import type { Metadata } from 'next';
 import { resolveRequestLocale } from '../lib/i18n/server-locale';
+import { serverEnv } from '../lib/server-config';
 
 export const metadata: Metadata = {
   icons: {
@@ -22,11 +23,13 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "ENV_CF_ANALYTICS_TOKEN"}'
-        />
+        {serverEnv.cfAnalyticsToken && (
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon={JSON.stringify({ token: serverEnv.cfAnalyticsToken })}
+          />
+        )}
       </head>
       <body className="min-h-dvh antialiased bg-[#05060a] text-white">
         {children}
