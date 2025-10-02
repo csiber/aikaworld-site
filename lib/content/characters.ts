@@ -8,6 +8,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Akari',
       title: 'Blazeblade Vanguard',
       heroImage: 'https://media.aikaworld.com/akari-banner.png',
+      heroImageAlt: 'Akari charges forward with a blazing greatsword amid flying sparks.',
       role: 'Frontline DPS',
       element: 'Fire',
       playstyle:
@@ -30,6 +31,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Komi',
       title: 'Tideweaver Oracle',
       heroImage: 'https://media.aikaworld.com/komi-banner.png',
+      heroImageAlt: 'Komi stands calm as ribbons of water swirl around her hands.',
       role: 'Support control',
       element: 'Water',
       playstyle:
@@ -52,6 +54,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Yui',
       title: 'Gale Dancer',
       heroImage: 'https://media.aikaworld.com/yui-banner.png',
+      heroImageAlt: 'Yui flips through a neon skyline with twin daggers drawn mid-air.',
       role: 'Mobility DPS',
       element: 'Wind',
       playstyle:
@@ -73,6 +76,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Hina',
       title: 'Edge Serenade',
       heroImage: 'https://media.aikaworld.com/hina-banner.png',
+      heroImageAlt: 'Hina holds her violin blade poised as crimson petals drift around.',
       role: 'Assassin burst',
       element: 'Blade',
       playstyle:
@@ -94,6 +98,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Miyu',
       title: 'Luminous Aegis',
       heroImage: 'https://media.aikaworld.com/miyu-banner.png',
+      heroImageAlt: 'Miyu raises a radiant shield while luminous vines spiral from her arm.',
       role: 'Shield-focused healer',
       element: 'Light',
       playstyle:
@@ -117,6 +122,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Akari',
       title: 'Blazeblade Vanguard',
       heroImage: 'https://media.aikaworld.com/akari-banner.png',
+      heroImageAlt: 'Akari lángoló karddal rohan előre, körülötte szikrák villannak.',
       role: 'Frontvonal DPS',
       element: 'Tűz',
       playstyle:
@@ -141,6 +147,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Komi',
       title: 'Tideweaver Oracle',
       heroImage: 'https://media.aikaworld.com/komi-banner.png',
+      heroImageAlt: 'Komi mozdulatlan nyugalommal áll, miközben vízszalagok örvénylenek a kezei körül.',
       role: 'Támogató kontroll',
       element: 'Víz',
       playstyle:
@@ -165,6 +172,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Yui',
       title: 'Gale Dancer',
       heroImage: 'https://media.aikaworld.com/yui-banner.png',
+      heroImageAlt: 'Yui két pengével pörög a neonfényes ég alatt, a levegőben lebegve.',
       role: 'Mobility DPS',
       element: 'Szél',
       playstyle:
@@ -189,6 +197,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Hina',
       title: 'Edge Serenade',
       heroImage: 'https://media.aikaworld.com/hina-banner.png',
+      heroImageAlt: 'Hina felemelt hegedűpengével áll, miközben bíborszirmok lebegnek körülötte.',
       role: 'Assassin Burst',
       element: 'Penge',
       playstyle:
@@ -213,6 +222,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       name: 'Miyu',
       title: 'Luminous Aegis',
       heroImage: 'https://media.aikaworld.com/miyu-banner.png',
+      heroImageAlt: 'Miyu fénylő pajzsot emel, és ragyogó indák tekerednek a karjáról.',
       role: 'Gyógyító pajzsfókusz',
       element: 'Fény',
       playstyle:

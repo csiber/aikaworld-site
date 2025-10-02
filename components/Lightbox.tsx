@@ -134,7 +134,7 @@ export default function Lightbox({ images, isOpen, initialIndex = 0, onClose, di
       closeButtonRef.current,
       prevButtonRef.current,
       nextButtonRef.current,
-    ].filter((element): element is HTMLElement => element !== null);
+    ].filter((element): element is HTMLButtonElement => element !== null);
 
     firstFocusableRef.current = focusableElements[0] ?? null;
     lastFocusableRef.current = focusableElements[focusableElements.length - 1] ?? firstFocusableRef.current;

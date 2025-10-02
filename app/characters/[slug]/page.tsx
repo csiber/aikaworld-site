@@ -50,7 +50,7 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
         <div className="absolute inset-0 -z-10">
           <img
             src={character.heroImage}
-            alt={`${character.name} hero banner`}
+            alt={character.heroImageAlt}
             className="h-full w-full object-cover"
             loading="lazy"
           />
