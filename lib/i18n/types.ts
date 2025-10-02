@@ -13,7 +13,9 @@ export type NewsletterDictionary = {
   emailPlaceholder: string;
   submitIdle: string;
   submitLoading: string;
-  consent: string;
+  consentPrefix: string;
+  consentLinkLabel: string;
+  consentSuffix: string;
   missingEmail: string;
   invalidEmail: string;
   success: string;
