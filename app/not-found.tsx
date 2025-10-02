@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import Link from 'next/link';
 import { getDictionary } from '../lib/i18n/dictionaries';
 import { resolveRequestLocale } from '../lib/i18n/server-locale';
