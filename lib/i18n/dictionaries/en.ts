@@ -42,10 +42,10 @@ export const enDictionary: Dictionary = {
   },
   home: {
     hero: {
-      title: 'Dark anime co-op slaughter RPG – Blood. Ruin. ',
-      highlight: 'Sadistic waifus.',
+      title: 'Co-op anime action RPG – Squad. Style. Progression.',
+      highlight: 'Stylish Resonators, tactical synergy.',
       description:
-        'Five Resonators. Ruined megastructures. Perpetual slaughter. Blood and screams every round.',
+        'Five Resonators mastering raid arenas and survival waves together. A dark anime world with dynamic combat and deep progression systems built for long-term squad growth.',
       wishlistCta: 'Wishlist on Steam',
       discordCta: 'Join Discord',
       subscribeCta: 'Subscribe',
@@ -275,13 +275,13 @@ export const enDictionary: Dictionary = {
   },
   seo: {
     defaultTitle: 'AIKA World – Anime co-op action RPG',
-    defaultDescription: 'Raid boss arenas and endless waves. Five unique Resonators.',
+    defaultDescription: 'Co-op raid arenas, dark anime visuals and deep progression systems with five unique Resonators.',
     defaultOgAlt: 'AIKA World default share image',
     defaultLocale: 'en_US',
     pages: {
       home: {
         title: 'AIKA World – Anime co-op action RPG',
-        description: 'Raid boss arenas and endless waves. Five unique Resonators.',
+        description: 'Co-op raid arenas, dark anime visuals and deep progression systems with five unique Resonators.',
         ogAlt: 'AIKA World hero artwork'
       },
       modes: {
