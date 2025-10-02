@@ -111,6 +111,11 @@ export type CharacterPageDictionary = {
   elementLabel: string;
   playstyleLabel: string;
   tipsTitle: string;
+  loreTitle: string;
+  mentalityTitle: string;
+  likesTitle: string;
+  dislikesTitle: string;
+  quoteTitle: string;
 };
 
 export type Character = {
@@ -122,6 +127,11 @@ export type Character = {
   element: string;
   playstyle: string;
   tips: string[];
+  lore: string;
+  mentality: string;
+  likes: string;
+  dislikes: string;
+  quote: string;
 };
 
 export type PresskitDictionary = {

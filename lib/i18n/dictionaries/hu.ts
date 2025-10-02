@@ -206,7 +206,12 @@ export const huDictionary: Dictionary = {
     roleLabel: 'Szerep',
     elementLabel: 'Elem',
     playstyleLabel: 'Játékmód',
-    tipsTitle: 'Tippgyűjtemény'
+    tipsTitle: 'Tippgyűjtemény',
+    loreTitle: 'Ki ő',
+    mentalityTitle: 'Mentalitás',
+    likesTitle: 'Mit szeret',
+    dislikesTitle: 'Mit utál',
+    quoteTitle: 'Jellegzetes idézet'
   },
   presskit: {
     heading: 'AIKA World Presskit',

@@ -108,6 +108,46 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
           </div>
         </div>
       </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
+          <article className="rounded-2xl border border-white/10 bg-white/5 p-6">
+            <h2 className="text-lg font-semibold">{dictionary.characterPage.loreTitle}</h2>
+            <p className="mt-3 text-sm leading-relaxed text-white/90">{character.lore}</p>
+
+            <div className="mt-6 space-y-6">
+              <div>
+                <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-accentB">
+                  {dictionary.characterPage.mentalityTitle}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/80">{character.mentality}</p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-xl border border-accentA/40 bg-accentA/10 p-4">
+                  <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-accentA">
+                    {dictionary.characterPage.likesTitle}
+                  </h3>
+                  <p className="mt-2 text-sm text-white/85">{character.likes}</p>
+                </div>
+                <div className="rounded-xl border border-accentD/40 bg-accentD/10 p-4">
+                  <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-accentD">
+                    {dictionary.characterPage.dislikesTitle}
+                  </h3>
+                  <p className="mt-2 text-sm text-white/85">{character.dislikes}</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <aside className="rounded-2xl border border-accentE/40 bg-accentE/10 p-6">
+            <h2 className="text-lg font-semibold">{dictionary.characterPage.quoteTitle}</h2>
+            <blockquote className="mt-4 border-l-4 border-accentE/80 pl-4 text-base italic text-white/90">
+              <p>{character.quote}</p>
+            </blockquote>
+          </aside>
+        </div>
+      </section>
     </SiteLayout>
   );
 }
