@@ -53,7 +53,21 @@ export function middleware(request: NextRequest) {
   }
 
   const currentLocale = detectLocaleFromPath(pathname);
-  const response = NextResponse.next();
+
+  const localePrefix = '/hu';
+  const shouldRewriteHu = currentLocale === 'hu';
+
+  const response = shouldRewriteHu
+    ? (() => {
+        const rewriteUrl = request.nextUrl.clone();
+        if (pathname === localePrefix || pathname === `${localePrefix}/`) {
+          rewriteUrl.pathname = '/';
+        } else {
+          rewriteUrl.pathname = pathname.replace(/^\/hu/, '') || '/';
+        }
+        return NextResponse.rewrite(rewriteUrl);
+      })()
+    : NextResponse.next();
   response.headers.set('x-aika-locale', currentLocale);
 
   const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
