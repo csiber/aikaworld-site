@@ -42,10 +42,10 @@ export const huDictionary: Dictionary = {
   },
   home: {
     hero: {
-      title: 'Sötét anime co-op hentelős RPG – Vér. Romok. ',
-      highlight: 'Szadista waifuk.',
+      title: 'Kooperatív anime akció RPG – Csapat. Látvány. Fejlődés.',
+      highlight: 'Stílusos Rezonátorok, taktikus szinergiák.',
       description:
-        'Öt Rezonátor. Összeroskadt világromok. Örökké tartó hentelés. Vér és sikoly minden körben.',
+        'Öt Rezonátor, akik együtt uralják a raid arénákat és túlélő hullámokat. Sötét anime világ, dinamikus kombók és mély fejlődési rendszerek a hosszú távú csapatépítéshez.',
       wishlistCta: 'Wishlist a Steamen',
       discordCta: 'Csatlakozz Discordon',
       subscribeCta: 'Feliratkozom',
@@ -276,13 +276,13 @@ export const huDictionary: Dictionary = {
   },
   seo: {
     defaultTitle: 'AIKA World – Anime co-op action RPG',
-    defaultDescription: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
+    defaultDescription: 'Kooperatív raid arénák, sötét anime látvány és mély fejlődési rendszerek öt egyedi Rezonátorral.',
     defaultOgAlt: 'AIKA World alap megosztási kép',
     defaultLocale: 'hu_HU',
     pages: {
       home: {
         title: 'AIKA World – Anime co-op action RPG',
-        description: 'Raid boss arénák és végtelen hullámok. 5 egyedi Rezonátor.',
+        description: 'Kooperatív raid arénák, sötét anime látvány és mély fejlődési rendszerek öt egyedi Rezonátorral.',
         ogAlt: 'AIKA World hős grafika'
       },
       modes: {
