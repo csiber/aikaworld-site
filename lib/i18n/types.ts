@@ -123,6 +123,7 @@ export type Character = {
   name: string;
   title: string;
   heroImage: string;
+  heroImageAlt: string;
   role: string;
   element: string;
   playstyle: string;

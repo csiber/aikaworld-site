@@ -44,7 +44,7 @@ export default async function CharactersPage() {
               <div className="aspect-[16/9] w-full overflow-hidden">
                 <img
                   src={character.heroImage}
-                  alt={`${character.name} hero art`}
+                  alt={character.heroImageAlt}
                   className="h-full w-full object-cover"
                   loading="lazy"
                 />
