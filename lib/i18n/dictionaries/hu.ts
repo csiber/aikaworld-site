@@ -53,6 +53,58 @@ export const huDictionary: Dictionary = {
       subscribeCta: 'Feliratkozom',
       videoPosterAlt: 'AIKA World teaser poszter'
     },
+    world: {
+      title: 'Világ és frakciók',
+      intro:
+        'Öt rivális hatalmi tömb uralja az AIKA World neon-alkonyát. Állj arra, amelyik életben tartja a csapatod.',
+      factions: [
+        {
+          name: 'Emberforge Combine',
+          tagline: 'Ipari lángharcosok, akik magma-táplált kohókban edzik a várost.',
+          bullets: [
+            'Tűzreaktoros kohók egy éjszaka alatt moduláris fegyvereket öntenek.',
+            'Logisztikai céhek gondoskodnak az égő lőszerek folyamatos utánpótlásáról.',
+            'Mérnökeik hőre reagáló páncélrétegekkel szerelik fel a csapatokat.'
+          ]
+        },
+        {
+          name: 'Verdant Circuit Assembly',
+          tagline: 'Druidatech újítók, akik természetben nőtt áramköröket fonnak rítusokkal.',
+          bullets: [
+            'Biofibrás drónjaik felderítik a tetőket és közben biztonságos zónákat poroznak be.',
+            'Gyógyító üvegházaik egyben respawn menedékek a csapatnak.',
+            'Tanácsaik adat-virágzás ceremóniákon közvetítenek fegyverszünetet.'
+          ]
+        },
+        {
+          name: 'Abyssal Veil Court',
+          tagline: 'Vízre épült arisztokrácia, akik árnyékos etikettel uralkodnak.',
+          bullets: [
+            'Udvaroncok dagályra hangolt titkos tükrökön cserélik a bizalmas információkat.',
+            'Árnyékkíséreteik elárasztott sikátorokon vezetik át a csapatokat.',
+            'A mélységi tintával írt eskük halálos következményekkel járnak.'
+          ]
+        },
+        {
+          name: 'Silver Vow Order',
+          tagline: 'Lovagi őrség, relikvia-lándzsákkal és fénylő pajzsokkal.',
+          bullets: [
+            'Paladin szakaszaik kooperatív formációkat gyakorolnak a raidhez.',
+            'Pajzskaplánjaik megszentelik a felszerelést a korrupciós hullámok ellen.',
+            'Zarándok szállítmányaik biztonságos folyosókat nyitnak a hubok között.'
+          ]
+        },
+        {
+          name: 'Neon Veil Collective',
+          tagline: 'Cyberpunk földalatti hálózat, glitch-fényű alagutakban.',
+          bullets: [
+            'Jelzészavaróik elrejtik a csapatot a vállalati követők elől.',
+            'Kiborg medikusok rögtönzött firmware-rel foltozzák be a sebeket.',
+            'Utcai szövetségeik fekete piaci fejlesztéseket oldanak fel a menetek között.'
+          ]
+        }
+      ]
+    },
     modes: {
       title: 'Játékmódok',
       cards: [
@@ -321,7 +373,7 @@ export const huDictionary: Dictionary = {
     pages: {
       home: {
         title: 'AIKA World – Anime co-op action RPG',
-        description: 'Kooperatív raid arénák, sötét anime látvány és mély fejlődési rendszerek öt egyedi Rezonátorral.',
+        description: 'Co-op raid arénák, sötét fantasy frakciók és mély fejlődési rendszerek öt egyedi Rezonátorral.',
         ogAlt: 'AIKA World hős grafika'
       },
       modes: {

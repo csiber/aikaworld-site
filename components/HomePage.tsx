@@ -145,6 +145,34 @@ export default function HomePage({
         </div>
       </section>
 
+      {/* WORLD & FACTIONS */}
+      <section id="world" className="mx-auto max-w-6xl px-4 py-16">
+        <h2 className="text-2xl md:text-3xl font-bold">{dictionary.world.title}</h2>
+        <p className="mt-3 opacity-90 max-w-3xl">{dictionary.world.intro}</p>
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          {dictionary.world.factions.map(faction => (
+            <div
+              key={faction.name}
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col"
+            >
+              <div>
+                <h3 className="text-xl font-semibold">{faction.name}</h3>
+                <p className="mt-2 text-sm font-semibold text-accentB">{faction.tagline}</p>
+              </div>
+              <ul className="mt-4 list-disc list-inside text-sm opacity-80 space-y-2">
+                {faction.bullets.map(bullet => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+              <div className="mt-auto pt-6 flex items-center gap-2 text-sm font-semibold text-accentB">
+                <span>Learn more</span>
+                <span aria-hidden>→</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* MODES */}
       <section id="modes" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-bold">{dictionary.modes.title}</h2>
