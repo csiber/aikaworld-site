@@ -110,29 +110,39 @@ export const enDictionary: Dictionary = {
       cards: [
         {
           title: 'Raid Boss Arena',
-          description: 'Brutal arenas, merciless bosses. Only synergy keeps you breathing.',
-          points: ['Party-size scaling', 'Mechanics and multi-phase fights', 'Team roles'],
-          linkLabel: 'View details',
-          href: '/modes#raid'
+          description:
+            "Drop into a five-player co-op boss gauntlet where every arena reveals layered mechanics without spoiling the finale. Master tells, stagger windows, and arena hazards to carve openings for your Resonators. Coordinated cooldowns and revives decide whether the squad extracts rare materials or wipes.",
+          points: [
+            'Five-player co-op boss encounters',
+            'Layered mechanics without spoilers',
+            'Shared loot and mastery rewards'
+          ],
+          linkLabel: 'See details',
+          href: '#'
         },
         {
           title: 'Infest Survival',
-          description: 'Endless waves, gore and shredded limbs. Only the strongest endure.',
-          points: ['Wave-based carnage', 'Checkpoint rewards', 'Meta progression: cosmetics & boosts'],
-          linkLabel: 'View details',
-          href: '/modes#infest'
+          description:
+            'Hold choke points against endless waves that escalate with corrupt variants while keeping momentum spoiler-free. Every cleared milestone unlocks checkpoint rewards—temporary buffs, crafting drops, or extraction intel—before the swarm resets. Rotate roles, bank resources, and decide when to push deeper or secure the run.',
+          points: [
+            'Endless wave escalation',
+            'Checkpoint rewards to bank',
+            'Risk-versus-reward extractions'
+          ],
+          linkLabel: 'See details',
+          href: '#'
         },
         {
-          title: 'Story Mode',
+          title: 'Open World Expedition',
           description:
-            'Character-driven episodes, choice-based dialogue and slice-of-life downtime with your squad.',
+            "Scout the overworld at your squad's pace, uncovering biomes, hubs, and lore breadcrumbs without revealing twists. Parkour routes, traversal gadgets, and dynamic weather alter every expedition. Track world events, unlock shortcuts, and gather intel that fuels raids and infest runs while staying spoiler-safe.",
           points: [
-            'Episodic missions with new hub locations',
-            'Reputation branches and multiple endings',
-            'Co-op social decisions and light roleplay'
+            'Exploration-first pacing',
+            'Traversal tools and weather shifts',
+            'Intel that feeds raids and infest'
           ],
-          linkLabel: 'View details',
-          href: '/modes#story'
+          linkLabel: 'See details',
+          href: '#'
         }
       ]
     },
