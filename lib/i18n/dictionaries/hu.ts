@@ -7,11 +7,13 @@ export const huDictionary: Dictionary = {
     brand: 'AIKA WORLD',
     navLabel: 'Fő navigáció',
     nav: {
-      modes: 'Játékmódok',
-      characters: 'Karakterek',
-      media: 'Média',
-      roadmap: 'Roadmap',
-      community: 'Közösség'
+      modes: { label: 'Játékmódok', href: '#modes' },
+      characters: { label: 'Karakterek', href: '/characters' },
+      media: { label: 'Média', href: '#media' },
+      roadmap: { label: 'Roadmap', href: '#roadmap' },
+      community: { label: 'Közösség', href: '#community' },
+      modesPage: { label: 'Részletes játékmódok', href: '/hu/modes' },
+      presskit: { label: 'Presskit', href: '/hu/presskit' }
     },
     wishlistCta: 'Wishlist a Steamen',
     discordCta: 'Csatlakozz Discordon',

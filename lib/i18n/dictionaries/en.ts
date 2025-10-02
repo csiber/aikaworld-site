@@ -7,11 +7,13 @@ export const enDictionary: Dictionary = {
     brand: 'AIKA WORLD',
     navLabel: 'Primary navigation',
     nav: {
-      modes: 'Modes',
-      characters: 'Characters',
-      media: 'Media',
-      roadmap: 'Roadmap',
-      community: 'Community'
+      modes: { label: 'Modes', href: '#modes' },
+      characters: { label: 'Characters', href: '/characters' },
+      media: { label: 'Media', href: '#media' },
+      roadmap: { label: 'Roadmap', href: '#roadmap' },
+      community: { label: 'Community', href: '#community' },
+      modesPage: { label: 'Detailed game modes', href: '/modes' },
+      presskit: { label: 'Presskit', href: '/presskit' }
     },
     wishlistCta: 'Wishlist on Steam',
     discordCta: 'Join Discord',
