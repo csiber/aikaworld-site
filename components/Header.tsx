@@ -61,6 +61,36 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
     [dictionary.locales]
   );
 
+  const navItems = useMemo(
+    () =>
+      [
+        dictionary.nav.modes,
+        dictionary.nav.modesPage,
+        dictionary.nav.characters,
+        dictionary.nav.media,
+        dictionary.nav.roadmap,
+        dictionary.nav.community,
+        dictionary.nav.presskit
+      ],
+    [dictionary.nav]
+  );
+
+  const resolveHref = (href: string) => {
+    if (href.startsWith('#')) {
+      return `${basePath}${href}`;
+    }
+
+    if (href.startsWith('http://') || href.startsWith('https://')) {
+      return href;
+    }
+
+    if (basePath && href.startsWith(basePath)) {
+      return href;
+    }
+
+    return `${basePath}${href}`;
+  };
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b border-white/10 backdrop-blur transition-colors ${
@@ -72,21 +102,11 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
           {dictionary.brand}
         </a>
         <nav className="hidden items-center gap-4 text-sm md:flex" aria-label={dictionary.navLabel}>
-          <a href={`${basePath}#modes`} className="hover:opacity-80">
-            {dictionary.nav.modes}
-          </a>
-          <a href={`${basePath}/characters`} className="hover:opacity-80">
-            {dictionary.nav.characters}
-          </a>
-          <a href={`${basePath}#media`} className="hover:opacity-80">
-            {dictionary.nav.media}
-          </a>
-          <a href={`${basePath}#roadmap`} className="hover:opacity-80">
-            {dictionary.nav.roadmap}
-          </a>
-          <a href={`${basePath}#community`} className="hover:opacity-80">
-            {dictionary.nav.community}
-          </a>
+          {navItems.map(item => (
+            <a key={item.label} href={resolveHref(item.href)} className="hover:opacity-80">
+              {item.label}
+            </a>
+          ))}
         </nav>
         <div className="flex items-center gap-2">
           <label className="sr-only" htmlFor="locale-switcher">

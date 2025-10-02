@@ -196,15 +196,22 @@ export type NotFoundDictionary = {
   charactersCta: string;
 };
 
+export type HeaderNavItem = {
+  label: string;
+  href: string;
+};
+
 export type HeaderDictionary = {
   brand: string;
   navLabel: string;
   nav: {
-    modes: string;
-    characters: string;
-    media: string;
-    roadmap: string;
-    community: string;
+    modes: HeaderNavItem;
+    characters: HeaderNavItem;
+    media: HeaderNavItem;
+    roadmap: HeaderNavItem;
+    community: HeaderNavItem;
+    modesPage: HeaderNavItem;
+    presskit: HeaderNavItem;
   };
   wishlistCta: string;
   discordCta: string;
