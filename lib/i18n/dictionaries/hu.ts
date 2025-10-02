@@ -67,6 +67,18 @@ export const huDictionary: Dictionary = {
           points: ['Wave-alapú hentelés', 'Checkpoint jutalmak', 'Meta-progress: kozmetika/boost'],
           linkLabel: 'Részletek megnyitása',
           href: '/hu/modes#infest'
+        },
+        {
+          title: 'Story Mode',
+          description:
+            'Karakterközpontú epizódok, döntés alapú dialógusok és slice-of-life pillanatok a csapat mindennapjaiból.',
+          points: [
+            'Epizodikus küldetések új hub-helyszínekkel',
+            'Reputáció ágak és több befejezés',
+            'Közösségi kooperációs döntések és szerepjáték'
+          ],
+          linkLabel: 'Részletek megnyitása',
+          href: '/hu/modes#story'
         }
       ]
     },
@@ -140,7 +152,7 @@ export const huDictionary: Dictionary = {
     navLabel: 'Szöveges horgonyok',
     heading: 'AIKA World játékmódok',
     intro:
-      'Merülj el a kooperatív kihívásokban: a Raid Boss Arena a precíz végrehajtást, míg az Infest Survival az adaptív túlélést jutalmazza. Az alábbi útmutatók segítenek felkészülni mindkét módra.',
+      'Merülj el a kooperatív kihívásokban: a Raid Boss Arena a precíz végrehajtást, az Infest Survival az adaptív túlélést jutalmazza, a Story Mode pedig mélyíti a narratívát és a karakterkapcsolatokat. Az alábbi útmutatók segítenek felkészülni mindegyik módra.',
     backToHome: 'Vissza a főoldalra',
     sections: [
       {
@@ -187,6 +199,29 @@ export const huDictionary: Dictionary = {
           'Crowd Control Specialist: AoE rezgésekkel ritkítja a swarmot és lassítja a sprintereket.',
           'Objective Runner: mozgékony karakter, aki aktiválja a relay pontokat és hozza a supply dropokat.',
           'Field Medic: gyors revive és stimul injekció, amely stackelő sebzéscsökkentést ad a csapatnak.'
+        ]
+      },
+      {
+        id: 'story',
+        title: 'Story Mode',
+        tagline: 'Narratív kooperáció döntésekkel, karakterfejlődéssel és hub-építéssel.',
+        mechanicsTitle: 'Kulcsmechanikák',
+        rewardsTitle: 'Jutalmak',
+        rolesTitle: 'Csapat szerepek',
+        mechanics: [
+          'Branching dialógusok, amelyek befolyásolják a Resonatorok közötti kapcsolatokat és a hub állapotát.',
+          'Kooperatív döntéshozatal: a squad szavaz a kritikus moral choice jelenetekben.',
+          'Taktikai social encounters, amelyek a combat buildedet és a narratív statjaidat is használják.'
+        ],
+        rewards: [
+          'Story Essence, amely feloldja a személyes skill kiterjesztéseket és karakter cinematicokat.',
+          'Hub fejlesztési modulok: új crafting állomások, pihenő zónák és interaktív minijátékok.',
+          'Exkluzív vizuális kozmetikák és emote-ok, amelyek a történeti döntéseidet tükrözik.'
+        ],
+        roles: [
+          'Narrative Lead: magas empathy stattal moderálja a beszélgetéseket és extra dialógus ágakat nyit.',
+          'Intel Specialist: felderíti a környezetet, lore információkat gyűjt és rejtett jutalmakat fedez fel.',
+          'Anchor Player: koordinálja a kooperatív döntéseket, követi a quest célokat és időkereteket.'
         ]
       }
     ]

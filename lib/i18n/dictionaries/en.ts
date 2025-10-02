@@ -67,6 +67,18 @@ export const enDictionary: Dictionary = {
           points: ['Wave-based carnage', 'Checkpoint rewards', 'Meta progression: cosmetics & boosts'],
           linkLabel: 'View details',
           href: '/modes#infest'
+        },
+        {
+          title: 'Story Mode',
+          description:
+            'Character-driven episodes, choice-based dialogue and slice-of-life downtime with your squad.',
+          points: [
+            'Episodic missions with new hub locations',
+            'Reputation branches and multiple endings',
+            'Co-op social decisions and light roleplay'
+          ],
+          linkLabel: 'View details',
+          href: '/modes#story'
         }
       ]
     },
@@ -140,7 +152,7 @@ export const enDictionary: Dictionary = {
     navLabel: 'Section navigation',
     heading: 'AIKA World game modes',
     intro:
-      'Immerse yourself in co-op challenges: the Raid Boss Arena rewards precision, while Infest Survival celebrates adaptive endurance. Use these guides to prepare your squad for both.',
+      'Immerse yourself in co-op challenges: the Raid Boss Arena rewards precision, Infest Survival celebrates adaptive endurance, and Story Mode deepens narrative bonds. Use these guides to prepare your squad for every mode.',
     backToHome: 'Back to homepage',
     sections: [
       {
@@ -187,6 +199,29 @@ export const enDictionary: Dictionary = {
           'Crowd Control Specialist: thins the swarm with AoE resonance and slows sprinters.',
           'Objective Runner: agile character who activates relay points and retrieves supply drops.',
           'Field Medic: fast revives and stim injections that stack defensive damage reduction.'
+        ]
+      },
+      {
+        id: 'story',
+        title: 'Story Mode',
+        tagline: 'Narrative co-op with impactful choices, character growth and hub building.',
+        mechanicsTitle: 'Core mechanics',
+        rewardsTitle: 'Rewards',
+        rolesTitle: 'Team roles',
+        mechanics: [
+          'Branching dialogue that shapes Resonator relationships and the state of your hub.',
+          'Cooperative decision voting during pivotal moral-choice set pieces.',
+          'Tactical social encounters that leverage both combat builds and narrative stats.'
+        ],
+        rewards: [
+          'Story Essence used to unlock personal skill extensions and cinematic scenes.',
+          'Hub upgrade modules: new crafting stations, relaxation zones and interactive minigames.',
+          'Exclusive cosmetics and emotes reflecting the narrative paths you chose.'
+        ],
+        roles: [
+          'Narrative Lead: high empathy stat to steer conversations and open bonus dialogue branches.',
+          'Intel Specialist: scouts environments, gathers lore intel and uncovers hidden rewards.',
+          'Anchor Player: coordinates group decisions, tracks quest objectives and timing windows.'
         ]
       }
     ]
