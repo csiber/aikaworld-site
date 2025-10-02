@@ -15,7 +15,7 @@
         "build": "npm run generate:static-icons && npm run validate:translations && npm run generate:build-info && next build",
         "postbuild": "node ./scripts/wayback-save.mjs",
         "start": "next start",
-        "export:cf": "npx @cloudflare/next-on-pages@1"
+        "export:cf": "npx vercel build && node ./scripts/patch-vercel-output.mjs && npx @cloudflare/next-on-pages@1 --skip-build"
     },
     "dependencies": {
         "next": "^15.0.0",
