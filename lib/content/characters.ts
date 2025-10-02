@@ -10,7 +10,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/akari-banner.png',
       role: 'Frontline DPS',
       element: 'Fire',
-      playstyle: 'Burst combos built on melee rhythm with high mobility.',
+      playstyle:
+        'Akari charges the front line with a grin, priming every charge to bloom into fire and shrapnel. She syncs her heartbeat to the detonation and giggles when the screams harmonize. Anyone left standing is just tinder for the next blast.',
       tips: [
         'After filling the resonance gauge, always open with Forgestep dash to stack maximum burn charges.',
         'During boss phase swaps, activating the Pyreguard shield turns into party-wide protection—call everyone in.',
@@ -31,7 +32,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/komi-banner.png',
       role: 'Support control',
       element: 'Water',
-      playstyle: 'Ranged crowd-control with strong cleanses and reactive buffs.',
+      playstyle:
+        'Komi’s small frame hides a glacier’s malice. She waits in absolute silence until the squad blinks, then carves through tendons with frost-tipped threads. The air never even warms enough to carry a warning.',
       tips: [
         'Keep the tide field underneath the squad; in motion, use wave dash so it flows with them.',
         'Purge Bubble removes most debuffs—time it with raid mechanics.',
@@ -52,7 +54,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/yui-banner.png',
       role: 'Mobility DPS',
       element: 'Wind',
-      playstyle: 'Aerial combos with constant evasion and stacking damage-over-time.',
+      playstyle:
+        'Yui melts into the shadow between heartbeats, reappearing only to rake her blades through soft arteries. The spray of blood paints the battlefield she dances across at impossible speed. She laughs hardest when prey thinks they’ve escaped the dark.',
       tips: [
         'Chain Skystring grapples to extend airtime and trigger the Cyclone perk bonus.',
         'Zephyr Mark stacks when you tag separate targets—rotate enemies during multi-add phases.',
@@ -72,7 +75,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/hina-banner.png',
       role: 'Assassin burst',
       element: 'Blade',
-      playstyle: 'Rapid execution rotations with stealth-based repositioning.',
+      playstyle:
+        'Hina wears a saintly smile as she wipes her blade clean, whispering benedictions that curdle into threats. Each slice is punctuated by a coy, cynical aside about the sins she’s correcting. Mercy is just another note in her macabre hymn.',
       tips: [
         'After Shadow Veil the opening strike always duplicates—line it up with boss vulnerability windows.',
         'Echo Slash stacks fall off when you take a hit, so play aggressively around dash iframes.',
@@ -92,7 +96,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/miyu-banner.png',
       role: 'Shield-focused healer',
       element: 'Light',
-      playstyle: 'Constant barrier management with timed burst healing.',
+      playstyle:
+        'Miyu coos like a mother soothing children, all while her luminous vines burrow through armor and tear foes apart. She thanks them for feeding the garden as the light drains from their eyes. Under her gentle glow, no corpse is wasted.',
       tips: [
         'Radiant Ward shields stack—rotate them across the party so everyone keeps coverage.',
         'Solaris Pulse heals hardest with three light orbs prepared—pre-plan for heavy raid damage.',
@@ -114,7 +119,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/akari-banner.png',
       role: 'Frontvonal DPS',
       element: 'Tűz',
-      playstyle: 'Közelharci ütemre épülő burst kombók, magas mozgékonysággal.',
+      playstyle:
+        'Akari vigyorogva rohan az élre, minden töltetet úgy állít be, hogy tűz és repeszek virágozzanak. A szívverését a robbanáshoz igazítja, és kuncog, amikor a sikolyok ráfekszenek a ritmusra. Akinek marad ideje felállni, az csak gyújtós a következő detonációhoz.',
       tips: [
         'A rezgésmérő feltöltése után mindig kezdd a Forgestep dashsel a maximális égési töltetekhez.',
         'A boss fázisváltásai alatt a Pyreguard pajzs aktiválása csapatvédelemmé válik – szólítsd össze a party-t.',
@@ -137,7 +143,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/komi-banner.png',
       role: 'Támogató kontroll',
       element: 'Víz',
-      playstyle: 'Távolsági crowd-control, erős cleanse és reaktív buffok.',
+      playstyle:
+        'Komi apró termete gleccsernyi rosszindulatot rejt. Mozdulatlan csendben vár, míg a csapat pislog, aztán fagyott szálakkal metsz inakat. A levegő még arra sem melegszik fel, hogy figyelmeztetést vigyen.',
       tips: [
         'Az árapály mezőt tartsd a csapat alatt; mozgó harcban használj hullám dash-t, hogy velük együtt sodródjon.',
         'A Purge Bubble megszakítja a legtöbb debuffot – időzítsd a raid mechanikákhoz.',
@@ -160,7 +167,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/yui-banner.png',
       role: 'Mobility DPS',
       element: 'Szél',
-      playstyle: 'Légi kombók, folyamatos kitérés és DOT sebzés.',
+      playstyle:
+        'Yui a szívdobbanások közti árnyékba olvad, és csak akkor bukkan elő, hogy pengéit puha artériákba rántsa. A vérpermet festi meg a csatateret, amelyen lehetetlen sebességgel táncol. Akkor nevet a legjobban, amikor a préda azt hiszi, kijutott a sötétből.',
       tips: [
         'A Skystring grapplinggel láncold össze a levegőben töltött időt, így aktiválod a Cyclone perk bónuszát.',
         'A Zephyr Mark felhalmozódik, ha külön célpontokat érintesz – területi fázisokban váltogasd az ellenfeleket.',
@@ -183,7 +191,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/hina-banner.png',
       role: 'Assassin Burst',
       element: 'Penge',
-      playstyle: 'Gyors kivégző rotáció, stealth alapú reposition.',
+      playstyle:
+        'Hina szent mosollyal törli tisztára a pengét, közben áldásokat súg, amelyek fenyegetéssé savanyodnak. Minden vágást egy cinikus megjegyzéssel zár a bűnökről, amelyeket állítólag rendbe tesz. Nála a kegyelem is csak egy hang a kísérteties himnuszban.',
       tips: [
         'A Shadow Veil után az első találat garantáltan megkettőződik – ezt a boss sebezhető ablakaiban használd ki.',
         'Az Echo Slash stackjeit akkor veszíti el, ha találatot kapsz, ezért a dash iframe-jeivel játssz agresszívan.',
@@ -206,7 +215,8 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/miyu-banner.png',
       role: 'Gyógyító pajzsfókusz',
       element: 'Fény',
-      playstyle: 'Állandó pajzsmenedzsment és időzített burst heal.',
+      playstyle:
+        'Miyu úgy dorombol, mint egy anyai dajka, miközben fénylő indái páncélon fúrják át magukat és széttépik az ellent. Megköszöni a testüknek, hogy táplálják a kertet, miközben a fény kihuny a szemükből. Gyengéd ragyogása alatt egyetlen hulla sem vész kárba.',
       tips: [
         'A Radiant Ward pajzsok stackelődnek – cseréld rotáció szerint a party tagok között, hogy mindenkinek maradjon.',
         'A Solaris Pulse heal akkor a legerősebb, ha 3 fénygömb aktív – készülj fel előre a nagy sebzés hullámokra.',
