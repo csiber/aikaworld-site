@@ -639,7 +639,14 @@ export const huDictionary: Dictionary = {
     description:
       'Úgy tűnik, egy olyan oldalra tévedtél, ami még nincs behangolva az AIKA World univerzumában. Nézz vissza a főoldalra vagy fedezd fel a Rezonátorokat.',
     homeCta: 'Vissza a főoldalra',
-    charactersCta: 'Rezonátorok felfedezése'
+    charactersCta: 'Rezonátorok felfedezése',
+    supportHeading: 'Segítünk visszatalálni',
+    supportDescription:
+      'Használd az alábbi gyorslinkeket, hogy folytasd az utad, vagy jelezd a csapatnak, melyik frekvencia tűnt el, és gyorsan visszaállítjuk.',
+    faqCta: 'GYIK megnyitása',
+    discordCta: 'Kérdezz a közösségben Discordon',
+    contactCta: 'Írj az AIKA csapatnak',
+    contactSubject: '404 jelentés – Hiányzó AIKA World oldal'
   },
   seo: {
     defaultTitle: 'AIKA World – Anime co-op action RPG',

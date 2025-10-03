@@ -6,3 +6,6 @@ lib/generated/build-info.ts
 public/android-chrome-192x192.png
 public/android-chrome-512x512.png
 public/apple-touch-icon.png
+playwright-report
+test-results
+blob-report

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Locale } from '../lib/i18n/config';
 import { getDictionary } from '../lib/i18n/dictionaries';
 
@@ -84,7 +84,11 @@ function detectLocale(): Locale {
   return 'en';
 }
 
-export default function NotFoundContent() {
+type NotFoundContentProps = {
+  discordUrl: string | null;
+};
+
+export default function NotFoundContent({ discordUrl }: NotFoundContentProps) {
   const [locale, setLocale] = useState<Locale>('en');
 
   useEffect(() => {
@@ -94,6 +98,23 @@ export default function NotFoundContent() {
   const dictionary = getDictionary(locale);
   const homeHref = locale === 'hu' ? '/hu' : '/';
   const charactersHref = locale === 'hu' ? '/hu/characters' : '/characters';
+  const faqHref = locale === 'hu' ? '/hu/faq' : '/faq';
+  const contactEmail = dictionary.footer.contactEmail;
+  const contactSubject = encodeURIComponent(dictionary.notFound.contactSubject);
+  const contactHref = `mailto:${contactEmail}?subject=${contactSubject}`;
+
+  const supportLinks = useMemo(() => {
+    const links: Array<{ key: string; href: string; label: string; external?: boolean }> = [
+      { key: 'faq', href: faqHref, label: dictionary.notFound.faqCta }
+    ];
+
+    if (discordUrl) {
+      links.push({ key: 'discord', href: discordUrl, label: dictionary.notFound.discordCta, external: true });
+    }
+
+    links.push({ key: 'contact', href: contactHref, label: dictionary.notFound.contactCta, external: true });
+    return links;
+  }, [contactHref, dictionary.notFound.contactCta, dictionary.notFound.discordCta, dictionary.notFound.faqCta, discordUrl, faqHref]);
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-24 text-center">
@@ -108,6 +129,37 @@ export default function NotFoundContent() {
           {dictionary.notFound.charactersCta}
         </Link>
       </div>
+      <section className="mt-12 rounded-2xl border border-white/10 bg-white/5 px-6 py-6 text-left sm:px-8">
+        <h2 className="text-lg font-semibold md:text-xl">{dictionary.notFound.supportHeading}</h2>
+        <p className="mt-2 text-sm opacity-80 md:text-base">{dictionary.notFound.supportDescription}</p>
+        <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          {supportLinks.map(link => {
+            if (link.external) {
+              return (
+                <a
+                  key={link.key}
+                  className="rounded-lg border border-white/10 px-4 py-2 text-center text-sm font-semibold transition hover:bg-white/10 md:text-base"
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {link.label}
+                </a>
+              );
+            }
+
+            return (
+              <Link
+                key={link.key}
+                className="rounded-lg border border-white/10 px-4 py-2 text-center text-sm font-semibold transition hover:bg-white/10 md:text-base"
+                href={link.href}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
+      </section>
     </div>
   );
 }
