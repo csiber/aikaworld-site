@@ -71,6 +71,7 @@ export const enDictionary: Dictionary = {
       title: 'World & Factions',
       intro:
         'Five rival power blocs shape the neon dusk of AIKA World. Align with the ideology that keeps your squad alive.',
+      ctaLabel: 'Learn more',
       factions: [
         {
           name: 'Emberforge Combine',

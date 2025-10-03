@@ -71,6 +71,7 @@ export const huDictionary: Dictionary = {
       title: 'Világ és frakciók',
       intro:
         'Öt rivális hatalmi tömb uralja az AIKA World neon-alkonyát. Állj arra, amelyik életben tartja a csapatod.',
+      ctaLabel: 'Bővebben',
       factions: [
         {
           name: 'Emberforge Combine',
