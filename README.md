@@ -116,6 +116,17 @@ The improvements from task 13 should be preserved. To re-run the audit:
 3. Execute a Lighthouse audit (Chrome DevTools or `npx lighthouse http://localhost:3000 --view`).
 4. Ensure desktop scores remain ≥ 90 and mobile scores ≥ 85. Capture screenshots locally; version control should not include binary audit artefacts.
 
+## Minimum QA checklist
+
+These steps provide baseline coverage for every marketing page and the global navigation links.
+
+1. Telepítsd a Playwright böngészőket, ha korábban még nem tetted meg: `npx playwright install --with-deps`
+2. Futtasd a több nézetes vizuális pillanatképeket: `npm run test:visual`
+   - A parancs automatikusan elindítja a helyi Next.js szervert, és minden fő marketing, jogi, devlog és karakter oldalról ment egy snapshotot iPhone 12, iPad és 1440p desktop nézetben. Az eredmények a `test-results/` mappában jönnek létre, de nincsenek verziókezelve.
+3. Indítsd el a fejlesztői szervert (`npm run dev`), majd egy második terminálban futtasd a törött link ellenőrzést: `npm run check:links`
+   - A Linkinator 4xx/5xx státuszkódokat keres. A futás közben a szervert ne állítsd le.
+4. Győződj meg arról, hogy a 404 oldal használható CTA-kat és kapcsolatfelvételi lehetőséget kínál mind EN, mind HU nyelven.
+
 ## Contact
 
 For legal matters reach out via `legal@aikaworld.com` or the postal address listed on each legal page. For marketing collaboration requests, contact the studio through the press kit page.

@@ -269,6 +269,12 @@ export type NotFoundDictionary = {
   description: string;
   homeCta: string;
   charactersCta: string;
+  supportHeading: string;
+  supportDescription: string;
+  faqCta: string;
+  discordCta: string;
+  contactCta: string;
+  contactSubject: string;
 };
 
 export type HeaderNavItem = {

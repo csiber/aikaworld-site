@@ -637,7 +637,14 @@ export const enDictionary: Dictionary = {
     description:
       "Looks like you tuned into a page that hasn't been harmonised in the AIKA World universe yet. Return to the homepage or explore the Resonators.",
     homeCta: 'Back to homepage',
-    charactersCta: 'Explore Resonators'
+    charactersCta: 'Explore Resonators',
+    supportHeading: 'Need a signal boost?',
+    supportDescription:
+      'Use the quick links below to continue your journey or let the team know which frequency dropped out so we can restore it fast.',
+    faqCta: 'Open the FAQ',
+    discordCta: 'Ask the community on Discord',
+    contactCta: 'Email the AIKA team',
+    contactSubject: '404 report – Missing AIKA World page'
   },
   seo: {
     defaultTitle: 'AIKA World – Anime co-op action RPG',
