@@ -64,16 +64,11 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
   const navItems = useMemo(
     () =>
       [
+        dictionary.nav.world,
         dictionary.nav.modes,
-        dictionary.nav.modesPage,
         dictionary.nav.progression,
-        dictionary.nav.characters,
-        dictionary.nav.media,
-        dictionary.nav.roadmap,
         dictionary.nav.devlog,
-        dictionary.nav.community,
-        dictionary.nav.faq,
-        dictionary.nav.presskit
+        dictionary.nav.faq
       ],
     [dictionary.nav]
   );
@@ -94,6 +89,39 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
     return `${basePath}${href}`;
   };
 
+  const normalizePath = (value: string) => {
+    if (!value) {
+      return '/';
+    }
+
+    const withoutQuery = value.replace(/[?#].*$/, '');
+    if (!withoutQuery || withoutQuery === '') {
+      return '/';
+    }
+
+    if (withoutQuery === '/') {
+      return '/';
+    }
+
+    return withoutQuery.endsWith('/') ? withoutQuery.slice(0, -1) : withoutQuery;
+  };
+
+  const normalizedPathname = normalizePath(pathname);
+  const homePath = normalizePath(basePath || '/');
+
+  const isNavItemActive = (href: string) => {
+    if (href.startsWith('http://') || href.startsWith('https://')) {
+      return false;
+    }
+
+    if (href.startsWith('#')) {
+      return normalizedPathname === homePath;
+    }
+
+    const resolved = resolveHref(href);
+    return normalizePath(resolved) === normalizedPathname;
+  };
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b border-white/10 backdrop-blur transition-colors ${
@@ -101,15 +129,30 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
       }`}
     >
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
-        <a href={basePath || '/'} className="font-semibold tracking-wide">
+        <a
+          href={basePath || '/'}
+          className="font-semibold tracking-wide focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+        >
           {dictionary.brand}
         </a>
         <nav className="hidden items-center gap-4 text-sm md:flex" aria-label={dictionary.navLabel}>
-          {navItems.map(item => (
-            <a key={item.label} href={resolveHref(item.href)} className="hover:opacity-80">
-              {item.label}
-            </a>
-          ))}
+          {navItems.map(item => {
+            const href = resolveHref(item.href);
+            const isActive = isNavItemActive(item.href);
+
+            return (
+              <a
+                key={item.label}
+                href={href}
+                aria-current={isActive ? 'page' : undefined}
+                className={`rounded-md px-2 py-1 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB focus-visible:ring-offset-2 focus-visible:ring-offset-black ${
+                  isActive ? 'bg-white/10 text-white' : 'text-white/80 hover:text-white'
+                }`}
+              >
+                {item.label}
+              </a>
+            );
+          })}
         </nav>
         <div className="flex items-center gap-2">
           <label className="sr-only" htmlFor="locale-switcher">
@@ -117,7 +160,7 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
           </label>
           <select
             id="locale-switcher"
-            className="rounded-md border border-white/20 bg-black/40 px-2 py-1 text-xs uppercase tracking-wide hover:border-white/40 focus:border-accentB focus:outline-none"
+            className="rounded-md border border-white/20 bg-black/40 px-2 py-1 text-xs uppercase tracking-wide hover:border-white/40 focus:border-accentB focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             value={locale}
             onChange={event => handleLocaleChange(event.target.value as Locale)}
           >
@@ -130,14 +173,17 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
           <div className="hidden gap-2 sm:flex">
             {steamUrl && (
               <a
-                className="rounded-md bg-accentA px-3 py-1.5 text-sm font-semibold hover:opacity-90"
+                className="rounded-md bg-accentA px-3 py-1.5 text-sm font-semibold hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 href={steamUrl}
               >
                 {dictionary.wishlistCta}
               </a>
             )}
             {discordUrl && (
-              <a className="rounded-md bg-white/10 px-3 py-1.5 text-sm hover:bg-white/20" href={discordUrl}>
+              <a
+                className="rounded-md bg-white/10 px-3 py-1.5 text-sm transition hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                href={discordUrl}
+              >
                 {dictionary.discordCta}
               </a>
             )}

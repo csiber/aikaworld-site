@@ -7,16 +7,11 @@ export const enDictionary: Dictionary = {
     brand: 'AIKA WORLD',
     navLabel: 'Primary navigation',
     nav: {
-      modes: { label: 'Modes', href: '#modes' },
-      characters: { label: 'Characters', href: '/characters' },
-      media: { label: 'Media', href: '#media' },
-      roadmap: { label: 'Roadmap', href: '#roadmap' },
+      world: { label: 'World', href: '/#world' },
+      modes: { label: 'Modes', href: '/modes' },
+      progression: { label: 'Progression', href: '/progression' },
       devlog: { label: 'Devlog', href: '/devlog' },
-      community: { label: 'Community', href: '#community' },
-      modesPage: { label: 'Detailed game modes', href: '/modes' },
-      progression: { label: 'Progression teaser', href: '/progression' },
-      faq: { label: 'FAQ', href: '/faq' },
-      presskit: { label: 'Presskit', href: '/presskit' }
+      faq: { label: 'FAQ', href: '/faq' }
     },
     wishlistCta: 'Wishlist on Steam',
     discordCta: 'Join Discord',
@@ -27,6 +22,21 @@ export const enDictionary: Dictionary = {
     }
   },
   footer: {
+    links: {
+      navigationHeading: 'Explore',
+      navigation: [
+        { path: '/#world', label: 'World' },
+        { path: '/modes', label: 'Modes' },
+        { path: '/progression', label: 'Progression' },
+        { path: '/devlog', label: 'Devlog' },
+        { path: '/faq', label: 'FAQ' }
+      ],
+      socialHeading: 'Community',
+      social: [
+        { label: 'Wishlist on Steam', envKey: 'steamUrl' },
+        { label: 'Join Discord', envKey: 'discordUrl' }
+      ]
+    },
     legalHeading: 'Legal',
     legalLinks: [
       { path: '/faq', label: 'FAQ' },
