@@ -3,15 +3,11 @@ import Link from 'next/link';
 import SiteLayout from '../../../components/SiteLayout';
 import { getDictionary } from '../../../lib/i18n/dictionaries';
 import { resolveRequestLocale } from '../../../lib/i18n/server-locale';
-import { locales } from '../../../lib/i18n/config';
 import { createStaticPageMetadata } from '../../../lib/seo';
 import { getDevlogSummaries } from '../../../lib/devlog';
 
-export const runtime = 'nodejs';
-
-export function generateStaticParams(): Record<string, never>[] {
-  return locales.map(() => ({}));
-}
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await resolveRequestLocale();

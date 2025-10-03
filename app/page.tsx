@@ -7,7 +7,8 @@ import { createStaticPageMetadata } from '../lib/seo';
 import { resolveRequestLocale } from '../lib/i18n/server-locale';
 import { getLatestDevlogSummaries } from '../lib/devlog';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await resolveRequestLocale();
