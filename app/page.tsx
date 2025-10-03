@@ -14,7 +14,6 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   return createStaticPageMetadata(locale, dictionary, '/', 'home', {
-    ogImage: 'https://media.aikaworld.com/og-default.png',
     ogAlt: dictionary.seo.pages.home.ogAlt
   });
 }

@@ -688,7 +688,8 @@ export const huDictionary: Dictionary = {
       },
       characters: {
         title: 'Rezonátorok – AIKA World',
-        description: 'Akari, Komi, Yui, Hina és Miyu részletes karakterprofilja az AIKA World világából.'
+        description: 'Akari, Komi, Yui, Hina és Miyu részletes karakterprofilja az AIKA World világából.',
+        ogAlt: 'AIKA World rezonátor felállás grafika'
       },
       character: {
         description: character =>
@@ -698,7 +699,8 @@ export const huDictionary: Dictionary = {
       },
       presskit: {
         title: 'AIKA World – Presskit',
-        description: 'Letölthető logók, key artok, screenshotok és fontos információk az AIKA World sajtó számára.'
+        description: 'Letölthető logók, key artok, screenshotok és fontos információk az AIKA World sajtó számára.',
+        ogAlt: 'AIKA World sajtócsomag áttekintő grafika'
       },
       faq: {
         title: 'GYIK – AIKA World',
@@ -707,11 +709,13 @@ export const huDictionary: Dictionary = {
       },
       privacy: {
         title: 'Adatvédelmi tájékoztató – AIKA World',
-        description: 'Tudd meg, hogyan kezeljük a sütiket, az analitikát és a kapcsolati adatokat az AIKA Worldben.'
+        description: 'Tudd meg, hogyan kezeljük a sütiket, az analitikát és a kapcsolati adatokat az AIKA Worldben.',
+        ogAlt: 'AIKA World adatvédelmi illusztráció'
       },
       terms: {
         title: 'Felhasználási feltételek – AIKA World',
-        description: 'Ismerd meg az AIKA World IP használatának, közösségi részvételének és felelősségi szabályait.'
+        description: 'Ismerd meg az AIKA World IP használatának, közösségi részvételének és felelősségi szabályait.',
+        ogAlt: 'AIKA World felhasználási feltételek illusztráció'
       },
       legalCopyright: {
         title: 'Szerzői jog / DMCA – AIKA World',
@@ -735,7 +739,8 @@ export const huDictionary: Dictionary = {
       },
       notFound: {
         title: 'Oldal nem található – AIKA World',
-        description: 'A keresett rezgés hiányzik. Térj vissza a főoldalra vagy böngészd a karaktereket.'
+        description: 'A keresett rezgés hiányzik. Térj vissza a főoldalra vagy böngészd a karaktereket.',
+        ogAlt: 'AIKA World hiányzó rezonancia illusztráció'
       }
     }
   }

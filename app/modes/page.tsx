@@ -9,7 +9,6 @@ export async function generateMetadata(): Promise<Metadata> {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   return createStaticPageMetadata(locale, dictionary, '/modes', 'modes', {
-    ogImage: 'https://media.aikaworld.com/og-modes.jpg',
     ogAlt: dictionary.seo.pages.modes.ogAlt
   });
 }

@@ -333,7 +333,7 @@ export type SeoDictionary = {
     progression: { title: string; description: string; ogAlt: string };
     playtests: { title: string; description: string; ogAlt: string };
     creatorProgram: { title: string; description: string; ogAlt: string };
-    characters: { title: string; description: string };
+    characters: { title: string; description: string; ogAlt: string };
     character: {
       description: (character: Character) => string;
       ogDescription: (character: Character) => string;
@@ -345,15 +345,15 @@ export type SeoDictionary = {
       description: (summary: string) => string;
       ogAlt: (postTitle: string) => string;
     };
-    presskit: { title: string; description: string };
+    presskit: { title: string; description: string; ogAlt: string };
     faq: { title: string; description: string; ogAlt: string };
-    privacy: { title: string; description: string };
-    terms: { title: string; description: string };
+    privacy: { title: string; description: string; ogAlt: string };
+    terms: { title: string; description: string; ogAlt: string };
     legalCopyright: { title: string; description: string; ogAlt: string };
     legalFanContent: { title: string; description: string; ogAlt: string };
     legalTrademark: { title: string; description: string; ogAlt: string };
     legalChangelog: { title: string; description: string; ogAlt: string };
-    notFound: { title: string; description: string };
+    notFound: { title: string; description: string; ogAlt: string };
   };
 };
 
