@@ -61,7 +61,7 @@ export const enDictionary: Dictionary = {
       title: 'Co-op anime action RPG – Squad. Style. Progression.',
       highlight: 'Stylish Resonators, tactical synergy.',
       description:
-        'Five Resonators mastering raid arenas and survival waves together. A dark anime world with dynamic combat and deep progression systems built for long-term squad growth.',
+        'Five Resonators mastering raid arenas and survival waves together, drawing power from Pyro, Verdefa, Nerei, Aurelia and Nocturnis. A dark anime world with dynamic combat and deep progression systems built for long-term squad growth.',
       wishlistCta: 'Wishlist on Steam',
       discordCta: 'Join Discord',
       subscribeCta: 'Subscribe',
@@ -70,52 +70,52 @@ export const enDictionary: Dictionary = {
     world: {
       title: 'World & Factions',
       intro:
-        'Five rival power blocs shape the neon dusk of AIKA World. Align with the ideology that keeps your squad alive.',
+        'Five rival power blocs shape the neon dusk of AIKA World: Pyro, Verdefa, Nerei, Aurelia and Nocturnis. Align with the ideology that keeps your squad alive.',
       ctaLabel: 'Learn more',
       factions: [
         {
-          name: 'Emberforge Combine',
-          tagline: 'Industrial firebrands who temper the city in magma-fed forges.',
+          name: 'Pyro',
+          tagline: "Volcanic tacticians forging wargear beneath Vulkara's flame.",
           bullets: [
-            'Fire-reactor foundries forge modular weaponry overnight.',
-            'Logistics guilds keep squads stocked with incendiary ordnance.',
-            'Engineers retrofit armor with heat-reactive plating.'
+            "Capital Vulkara's magma railways deliver modular artillery to frontline squads.",
+            'Thermal engineers tune resonance armor to vent Pyro pressure waves before raids.',
+            'Inferna brigades deploy ember shields that harden during coordinated overdrives.'
           ]
         },
         {
-          name: 'Verdant Circuit Assembly',
-          tagline: 'Druidatech innovators weaving nature-grown circuitry with ritual.',
+          name: 'Verdefa',
+          tagline: "Bio-arcane stewards weaving Sylvara's living circuitries.",
           bullets: [
-            'Biofiber drones scout rooftops while pollinating safe zones.',
-            'Healing greenhouses double as respawn sanctuaries for squads.',
-            'Councils broker truces through data-bloom ceremonies.'
+            "Sylvara's canopy servers map safe corridors and share live intel between cells.",
+            'Ritualists braid bio-circuit sigils that amplify restorative blooms mid-engagement.',
+            'Scout leagues grow root tunnels to bypass corporate blockades without detection.'
           ]
         },
         {
-          name: 'Abyssal Veil Court',
-          tagline: 'Waterborne aristocracy ruling through shadowed etiquette.',
+          name: 'Nerei',
+          tagline: "Tidebound sovereigns enforcing Nerivia's abyssal edicts.",
           bullets: [
-            'Courtiers trade secrets via tide-locked encrypted mirrors.',
-            'Shadow entourages escort squads through submerged backstreets.',
-            'Oaths signed in abyssal ink carry lethal enforcement.'
+            "Nerivia's tide-locked palaces encrypt diplomacy between strike teams and envoys.",
+            'Veilcouriers flood alleys with pressure domes to screen infiltration routes.',
+            'Abyssal oaths imprint resonance marks that trigger lethal countermeasures on traitors.'
           ]
         },
         {
-          name: 'Silver Vow Order',
-          tagline: 'Knightly guardians wielding relic lances and luminous shields.',
+          name: 'Aurelia',
+          tagline: "Radiant oathkeepers defending Auris' silver bastions.",
           bullets: [
-            'Paladin companies drill cooperative formations for raids.',
-            'Shield-chaplains sanctify gear against corruption pulses.',
-            'Pilgrimage supply lines secure safe corridors between hubs.'
+            'Auris keep-factories mint vow-sealed plate for squads rotating through the citadel.',
+            'Shield-chaplains anoint resonance gear with lumen wards before corruption surges.',
+            'Pilgrimage caravans chart protected corridors linking enclave sanctums.'
           ]
         },
         {
-          name: 'Neon Veil Collective',
-          tagline: 'Cyberpunk underground thriving in glitch-lit tunnels.',
+          name: 'Nocturnis',
+          tagline: "Umbral information brokers ruling Noxhaven's undercity.",
           bullets: [
-            'Signal jammers mask squads from corporate trackers.',
-            'Cybernetic medics patch wounds with improvised firmware.',
-            'Street alliances unlock black market upgrades between runs.'
+            'Noxhaven vaults hoard ghost archives that decode enemy targeting sweeps.',
+            'Cipher-runners seed blackout clouds to hide squad deployments in neon streets.',
+            'Augury cells trade resonance blueprints that unlock clandestine upgrades between runs.'
           ]
         }
       ]
@@ -163,7 +163,8 @@ export const enDictionary: Dictionary = {
   },
   characters: {
     title: 'Resonators',
-      description: 'Pick your resonance. Each of the five girls excels at a different specialty.',
+    description:
+      'Find your resonance. Each of the five girls channels Pyro, Verdefa, Nerei, Aurelia or Nocturnis in a different way.',
       cards: [
         { slug: 'akari', name: 'Akari', role: 'Fire', color: 'accentA' },
         { slug: 'komi', name: 'Komi', role: 'Water', color: 'accentB' },
@@ -271,7 +272,7 @@ export const enDictionary: Dictionary = {
     navLabel: 'Section navigation',
     heading: 'AIKA World game modes',
     intro:
-      'Immerse yourself in co-op challenges: the Raid Boss Arena rewards precision, Infest Survival celebrates adaptive endurance, and Story Mode deepens narrative bonds. Use these guides to prepare your squad for every mode.',
+      'Immerse yourself in co-op challenges forged across Pyro, Verdefa, Nerei, Aurelia and Nocturnis: the Raid Boss Arena rewards precision, Infest Survival celebrates adaptive endurance, and Story Mode deepens narrative bonds. Use these guides to prepare your squad for every mode.',
     backToHome: 'Back to homepage',
     sections: [
       {
@@ -647,14 +648,16 @@ export const enDictionary: Dictionary = {
     contactSubject: '404 report – Missing AIKA World page'
   },
   seo: {
-    defaultTitle: 'AIKA World – Anime co-op action RPG',
-    defaultDescription: 'Co-op raid arenas, dark anime visuals and deep progression systems with five unique Resonators.',
+    defaultTitle: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+    defaultDescription:
+      'Co-op raid arenas, dark anime visuals and deep progression systems featuring the factions of Pyro, Verdefa, Nerei, Aurelia and Nocturnis.',
     defaultOgAlt: 'AIKA World default share image',
     defaultLocale: 'en_US',
     pages: {
       home: {
-        title: 'AIKA World – Anime co-op action RPG',
-        description: 'Co-op raid arenas, dark fantasy factions and deep progression systems with five unique Resonators.',
+        title: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+        description:
+          'Co-op raid arenas, dark fantasy factions and deep progression systems featuring Pyro, Verdefa, Nerei, Aurelia and Nocturnis.',
         ogAlt: 'AIKA World hero artwork'
       },
       modes: {
