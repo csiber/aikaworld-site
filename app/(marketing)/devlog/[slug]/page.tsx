@@ -5,17 +5,13 @@ import SiteLayout from '../../../../components/SiteLayout';
 import { getDictionary } from '../../../../lib/i18n/dictionaries';
 import { resolveRequestLocale } from '../../../../lib/i18n/server-locale';
 import { createDevlogPostMetadata, createStaticPageMetadata } from '../../../../lib/seo';
-import { getDevlogSummaries, getDevlogPost } from '../../../../lib/devlog';
+import { getDevlogPost } from '../../../../lib/devlog';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 type DevlogPostParams = { slug: string };
 type DevlogMetadataProps = { params: Promise<DevlogPostParams> };
-
-export async function generateStaticParams() {
-  const posts = await getDevlogSummaries();
-  return posts.map(post => ({ slug: post.slug }));
-}
 
 export async function generateMetadata({ params }: DevlogMetadataProps): Promise<Metadata> {
   const { slug } = await params;
@@ -62,9 +58,10 @@ export default async function DevlogPostPage({ params }: { params: Promise<Devlo
         <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
           <img src={resolvedPost.cover} alt={resolvedPost.title} className="h-full w-full object-cover" />
         </div>
-        <div className="devlog-content mt-10 space-y-6 text-base leading-relaxed">
-          {resolvedPost.content}
-        </div>
+        <div
+          className="devlog-content mt-10 space-y-6 text-base leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: resolvedPost.content }}
+        />
       </article>
     </SiteLayout>
   );
