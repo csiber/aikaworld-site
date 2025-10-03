@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { defaultLocale, type Locale } from './i18n/config';
 import type { Dictionary, Character } from './i18n/types';
+import type { DevlogPost } from './devlog';
 import { serverEnv } from './server-config';
 
 function normalizePath(path: string): string {
@@ -68,7 +69,7 @@ export function buildAlternates(path: string, currentLocale: Locale) {
   };
 }
 
-type StaticSeoPage = Exclude<keyof Dictionary['seo']['pages'], 'character'>;
+type StaticSeoPage = Exclude<keyof Dictionary['seo']['pages'], 'character' | 'devlogPost'>;
 
 function resolveDefaultOgImage(page: StaticSeoPage, locale: Locale) {
   switch (page) {
@@ -169,6 +170,51 @@ export function createCharacterMetadata(
       title: `${character.name} – ${character.title}`,
       description,
       images: [character.heroImage]
+    }
+  } satisfies Metadata;
+}
+
+export function createDevlogPostMetadata(
+  locale: Locale,
+  dictionary: Dictionary,
+  path: string,
+  post: DevlogPost
+): Metadata {
+  const alternates = buildAlternates(path, locale);
+  const canonical = alternates.canonical;
+  const pageSeo = dictionary.seo.pages.devlogPost;
+  const title = pageSeo.title(post.title);
+  const description = pageSeo.description(post.summary);
+  const ogAlt = pageSeo.ogAlt(post.title);
+  const { locale: openGraphLocale, alternateLocales } = ogLocaleMap[locale] ?? ogLocaleMap[defaultLocale];
+
+  return {
+    title,
+    description,
+    alternates,
+    openGraph: {
+      title,
+      description,
+      url: canonical,
+      siteName: 'AIKA World',
+      locale: openGraphLocale,
+      alternateLocale: alternateLocales,
+      type: 'article',
+      publishedTime: post.date,
+      images: [
+        {
+          url: post.cover,
+          width: 1200,
+          height: 630,
+          alt: ogAlt
+        }
+      ]
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [post.cover]
     }
   } satisfies Metadata;
 }

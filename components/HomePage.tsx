@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { FormEvent, useMemo, useState } from 'react';
 import type { Locale } from '../lib/i18n/config';
 import type { HomeDictionary, LightboxDictionary } from '../lib/i18n/types';
+import type { DevlogPostSummary } from '../lib/devlog';
 import Lightbox from './Lightbox';
 
 type SubscribeErrorCode = 'INVALID_JSON' | 'INVALID_EMAIL' | 'STORAGE_ERROR';
@@ -20,6 +21,7 @@ type HomePageProps = {
   locale: Locale;
   dictionary: HomeDictionary;
   lightboxDictionary: LightboxDictionary;
+  devlogPosts: DevlogPostSummary[];
 };
 
 export default function HomePage({
@@ -27,7 +29,8 @@ export default function HomePage({
   discordUrl,
   locale,
   dictionary,
-  lightboxDictionary
+  lightboxDictionary,
+  devlogPosts
 }: HomePageProps) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const [email, setEmail] = useState('');
@@ -106,6 +109,8 @@ export default function HomePage({
       setFeedback(dictionary.newsletter.networkError);
     }
   };
+
+  const hasDevlogPosts = devlogPosts.length > 0;
 
   return (
     <div>
@@ -277,6 +282,52 @@ export default function HomePage({
             </li>
           ))}
         </ol>
+      </section>
+
+      {/* DEVLOG TEASERS */}
+      <section className="mx-auto max-w-6xl px-4 py-16">
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="max-w-3xl space-y-3">
+            <h2 className="text-2xl md:text-3xl font-bold">{dictionary.devlog.title}</h2>
+            <p className="text-sm md:text-base opacity-90">{dictionary.devlog.description}</p>
+          </div>
+          <Link
+            href={resolveLocalizedHref('/devlog')}
+            className="inline-flex items-center gap-2 self-start rounded-full border border-white/20 px-4 py-2 text-sm font-semibold hover:bg-white/10"
+          >
+            {dictionary.devlog.viewAllLabel}
+            <span aria-hidden>→</span>
+          </Link>
+        </div>
+
+        {hasDevlogPosts && (
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {devlogPosts.map(post => (
+              <article
+                key={post.slug}
+                className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-lg shadow-black/20"
+              >
+                <div className="aspect-[16/9] w-full overflow-hidden">
+                  <img src={post.cover} alt={post.title} className="h-full w-full object-cover" loading="lazy" />
+                </div>
+                <div className="flex flex-1 flex-col gap-4 p-6">
+                  <time className="text-xs uppercase tracking-wide text-white/60" dateTime={post.date}>
+                    {post.date}
+                  </time>
+                  <h3 className="text-xl font-semibold">{post.title}</h3>
+                  <p className="text-sm md:text-base opacity-80">{post.summary}</p>
+                  <Link
+                    href={resolveLocalizedHref(`/devlog/${post.slug}`)}
+                    className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-accentB hover:opacity-80"
+                  >
+                    {dictionary.devlog.readMoreLabel}
+                    <span aria-hidden>→</span>
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* COMMUNITY / NEWSLETTER */}

@@ -93,6 +93,12 @@ export type HomeDictionary = {
     newsletterTitle: string;
     newsletterDescription: string;
   };
+  devlog: {
+    title: string;
+    description: string;
+    viewAllLabel: string;
+    readMoreLabel: string;
+  };
   newsletter: NewsletterDictionary;
 };
 
@@ -277,6 +283,7 @@ export type HeaderDictionary = {
     characters: HeaderNavItem;
     media: HeaderNavItem;
     roadmap: HeaderNavItem;
+    devlog: HeaderNavItem;
     community: HeaderNavItem;
     modesPage: HeaderNavItem;
     progression: HeaderNavItem;
@@ -323,6 +330,12 @@ export type SeoDictionary = {
       ogDescription: (character: Character) => string;
       ogAlt: (character: Character) => string;
     };
+    devlog: { title: string; description: string; ogAlt: string };
+    devlogPost: {
+      title: (postTitle: string) => string;
+      description: (summary: string) => string;
+      ogAlt: (postTitle: string) => string;
+    };
     presskit: { title: string; description: string };
     faq: { title: string; description: string; ogAlt: string };
     privacy: { title: string; description: string };
@@ -359,4 +372,19 @@ export type Dictionary = {
   notFound: NotFoundDictionary;
   lightbox: LightboxDictionary;
   seo: SeoDictionary;
+  devlog: DevlogDictionary;
+};
+
+export type DevlogDictionary = {
+  heading: string;
+  intro: string;
+  list: {
+    timelineLabel: string;
+    empty: string;
+    readMore: string;
+  };
+  post: {
+    backToList: string;
+    publishedOn: string;
+  };
 };

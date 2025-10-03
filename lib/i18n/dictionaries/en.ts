@@ -11,6 +11,7 @@ export const enDictionary: Dictionary = {
       characters: { label: 'Characters', href: '/characters' },
       media: { label: 'Media', href: '#media' },
       roadmap: { label: 'Roadmap', href: '#roadmap' },
+      devlog: { label: 'Devlog', href: '/devlog' },
       community: { label: 'Community', href: '#community' },
       modesPage: { label: 'Detailed game modes', href: '/modes' },
       progression: { label: 'Progression teaser', href: '/progression' },
@@ -227,6 +228,12 @@ export const enDictionary: Dictionary = {
       newsletterTitle: 'Stay notified',
       newsletterDescription: 'Subscribe for playtest waves, creator beats and challenge announcements.'
     },
+    devlog: {
+      title: 'Latest devlog highlights',
+      description: 'Peek behind the curtain with new AIKA World development updates every sprint.',
+      viewAllLabel: 'Browse all entries',
+      readMoreLabel: 'Read more'
+    },
     newsletter: {
       emailLabel: 'Email address',
       emailPlaceholder: 'you@example.com',
@@ -362,6 +369,19 @@ export const enDictionary: Dictionary = {
         ]
       }
     ]
+  },
+  devlog: {
+    heading: 'Devlog timeline',
+    intro: 'Track how AIKA World evolves sprint by sprint straight from the development team.',
+    list: {
+      timelineLabel: 'Development updates',
+      empty: 'No devlog entries are available yet. Check back soon!',
+      readMore: 'Read update'
+    },
+    post: {
+      backToList: 'Back to devlog',
+      publishedOn: 'Published on'
+    }
   },
   playtests: {
     eyebrow: 'Hands-on squads',
@@ -629,6 +649,16 @@ export const enDictionary: Dictionary = {
         title: 'Progression teaser – AIKA World',
         description: 'Spoiler-free look at resonance skills, gear evolution and hub customization loops in AIKA World.',
         ogAlt: 'AIKA World progression teaser artwork'
+      },
+      devlog: {
+        title: 'Devlog – AIKA World',
+        description: 'Follow the AIKA World development timeline with sprint recaps, art drops and system previews.',
+        ogAlt: 'AIKA World devlog key art'
+      },
+      devlogPost: {
+        title: postTitle => `${postTitle} – Devlog | AIKA World`,
+        description: summary => summary || 'Latest AIKA World development update.',
+        ogAlt: postTitle => `${postTitle} devlog illustration`
       },
       playtests: {
         title: 'Playtests – AIKA World',

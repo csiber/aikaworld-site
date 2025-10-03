@@ -11,6 +11,7 @@ export const huDictionary: Dictionary = {
       characters: { label: 'Karakterek', href: '/characters' },
       media: { label: 'Média', href: '#media' },
       roadmap: { label: 'Roadmap', href: '#roadmap' },
+      devlog: { label: 'Devlog', href: '/hu/devlog' },
       community: { label: 'Közösség', href: '#community' },
       modesPage: { label: 'Részletes játékmódok', href: '/hu/modes' },
       progression: { label: 'Fejlődés teaser', href: '/hu/progression' },
@@ -227,6 +228,12 @@ export const huDictionary: Dictionary = {
       newsletterTitle: 'Maradj értesült',
       newsletterDescription: 'Iratkozz fel a playtest hullámokra, a készítői hírekre és a kihívás bejelentésekre.'
     },
+    devlog: {
+      title: 'Friss devlog bejegyzések',
+      description: 'Sprintről sprintre megmutatjuk, min dolgozik az AIKA World csapata.',
+      viewAllLabel: 'Összes bejegyzés',
+      readMoreLabel: 'Elolvasom'
+    },
     newsletter: {
       emailLabel: 'E-mail cím',
       emailPlaceholder: 'te@pelda.hu',
@@ -363,6 +370,19 @@ export const huDictionary: Dictionary = {
         ]
       }
     ]
+  },
+  devlog: {
+    heading: 'Devlog idővonal',
+    intro: 'Kövesd sprintről sprintre, min dolgozik az AIKA World fejlesztői csapata.',
+    list: {
+      timelineLabel: 'Fejlesztői bejegyzések',
+      empty: 'Még nincs devlog bejegyzés. Nézz vissza hamarosan!',
+      readMore: 'Bejegyzés megnyitása'
+    },
+    post: {
+      backToList: 'Vissza a devloghoz',
+      publishedOn: 'Megjelenés dátuma:'
+    }
   },
   playtests: {
     eyebrow: 'Korai csapatok',
@@ -632,6 +652,17 @@ export const huDictionary: Dictionary = {
         description:
           'Spoilermentes betekintés a rezonancia-képességekbe, a felszerelés evolúciójába és a hub testreszabásába az AIKA Worldben.',
         ogAlt: 'AIKA World fejlődés teaser grafika'
+      },
+      devlog: {
+        title: 'Devlog – AIKA World',
+        description:
+          'Kövesd az AIKA World fejlesztési idővonalát sprint összefoglalókkal, látványtervekkel és rendszerelőzetesekkel.',
+        ogAlt: 'AIKA World devlog grafika'
+      },
+      devlogPost: {
+        title: postTitle => `${postTitle} – Devlog | AIKA World`,
+        description: summary => summary || 'Legújabb AIKA World fejlesztői frissítés.',
+        ogAlt: postTitle => `${postTitle} devlog illusztráció`
       },
       playtests: {
         title: 'Playtestek – AIKA World',
