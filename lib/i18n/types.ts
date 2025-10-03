@@ -279,16 +279,11 @@ export type HeaderDictionary = {
   brand: string;
   navLabel: string;
   nav: {
+    world: HeaderNavItem;
     modes: HeaderNavItem;
-    characters: HeaderNavItem;
-    media: HeaderNavItem;
-    roadmap: HeaderNavItem;
-    devlog: HeaderNavItem;
-    community: HeaderNavItem;
-    modesPage: HeaderNavItem;
     progression: HeaderNavItem;
+    devlog: HeaderNavItem;
     faq: HeaderNavItem;
-    presskit: HeaderNavItem;
   };
   wishlistCta: string;
   discordCta: string;
@@ -301,7 +296,21 @@ export type FooterLinkDictionary = {
   label: string;
 };
 
+export type FooterExternalLinkDictionary = {
+  label: string;
+  href?: string;
+  envKey?: 'steamUrl' | 'discordUrl';
+};
+
+export type FooterLinksDictionary = {
+  navigationHeading: string;
+  navigation: FooterLinkDictionary[];
+  socialHeading: string;
+  social: FooterExternalLinkDictionary[];
+};
+
 export type FooterDictionary = {
+  links: FooterLinksDictionary;
   legalHeading: string;
   legalLinks: FooterLinkDictionary[];
   contactHeading: string;

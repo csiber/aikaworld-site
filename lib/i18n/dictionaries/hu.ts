@@ -7,16 +7,11 @@ export const huDictionary: Dictionary = {
     brand: 'AIKA WORLD',
     navLabel: 'Fő navigáció',
     nav: {
-      modes: { label: 'Játékmódok', href: '#modes' },
-      characters: { label: 'Karakterek', href: '/characters' },
-      media: { label: 'Média', href: '#media' },
-      roadmap: { label: 'Roadmap', href: '#roadmap' },
-      devlog: { label: 'Devlog', href: '/hu/devlog' },
-      community: { label: 'Közösség', href: '#community' },
-      modesPage: { label: 'Részletes játékmódok', href: '/hu/modes' },
-      progression: { label: 'Fejlődés teaser', href: '/hu/progression' },
-      faq: { label: 'GYIK', href: '/hu/faq' },
-      presskit: { label: 'Presskit', href: '/hu/presskit' }
+      world: { label: 'Világ', href: '/#world' },
+      modes: { label: 'Játékmódok', href: '/modes' },
+      progression: { label: 'Fejlődés', href: '/progression' },
+      devlog: { label: 'Fejlesztői napló', href: '/devlog' },
+      faq: { label: 'GYIK', href: '/faq' }
     },
     wishlistCta: 'Wishlist a Steamen',
     discordCta: 'Csatlakozz Discordon',
@@ -27,6 +22,21 @@ export const huDictionary: Dictionary = {
     }
   },
   footer: {
+    links: {
+      navigationHeading: 'Fedezd fel',
+      navigation: [
+        { path: '/#world', label: 'Világ' },
+        { path: '/modes', label: 'Játékmódok' },
+        { path: '/progression', label: 'Fejlődés' },
+        { path: '/devlog', label: 'Fejlesztői napló' },
+        { path: '/faq', label: 'GYIK' }
+      ],
+      socialHeading: 'Közösség',
+      social: [
+        { label: 'Wishlist a Steamen', envKey: 'steamUrl' },
+        { label: 'Csatlakozz Discordon', envKey: 'discordUrl' }
+      ]
+    },
     legalHeading: 'Jogi információk',
     legalLinks: [
       { path: '/faq', label: 'GYIK' },
