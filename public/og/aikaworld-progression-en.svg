@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="progression-en-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2a1c" />
+      <stop offset="100%" stop-color="#2e7a63" />
+    </linearGradient>
+    <radialGradient id="progression-en-radial" cx="80%" cy="20%" r="70%">
+      <stop offset="0%" stop-color="#8cf3c5" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8cf3c5" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#progression-en-gradient)" />
+  <rect width="1200" height="630" fill="url(#progression-en-radial)" />
+  <g fill="rgba(255,255,255,0.12)">
+    <circle cx="1060" cy="120" r="110" />
+    <circle cx="980" cy="520" r="160" />
+  </g>
+  <g fill="#ffffff">
+    <text x="80" y="190" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="84" font-weight="700" letter-spacing="0.08em">Progression</text>
+    <text x="80" y="270" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="48" font-weight="600" opacity="0.9">Resonance, gear, hub</text>
+    <text x="80" y="340" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="30" opacity="0.82">Unlock skills, craft builds and tune your hideout.</text>
+  </g>
+  <g transform="translate(80, 420)" fill="#ffffff" opacity="0.72">
+    <text font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="22">AIKA WORLD</text>
+    <text y="40" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="18" opacity="0.8">www.aikaworld.com</text>
+  </g>
+</svg>

@@ -21,6 +21,50 @@ const OG_IMAGE_VARIANTS = {
     en: '/og/aikaworld-default-en.svg',
     hu: '/og/aikaworld-default-hu.svg'
   },
+  home: {
+    en: '/og/aikaworld-home-en.svg',
+    hu: '/og/aikaworld-home-hu.svg'
+  },
+  modes: {
+    en: '/og/aikaworld-modes-en.svg',
+    hu: '/og/aikaworld-modes-hu.svg'
+  },
+  progression: {
+    en: '/og/aikaworld-progression-en.svg',
+    hu: '/og/aikaworld-progression-hu.svg'
+  },
+  playtests: {
+    en: '/og/aikaworld-playtests-en.svg',
+    hu: '/og/aikaworld-playtests-hu.svg'
+  },
+  creator: {
+    en: '/og/aikaworld-creator-en.svg',
+    hu: '/og/aikaworld-creator-hu.svg'
+  },
+  characters: {
+    en: '/og/aikaworld-characters-en.svg',
+    hu: '/og/aikaworld-characters-hu.svg'
+  },
+  devlog: {
+    en: '/og/aikaworld-devlog-en.svg',
+    hu: '/og/aikaworld-devlog-hu.svg'
+  },
+  faq: {
+    en: '/og/aikaworld-faq-en.svg',
+    hu: '/og/aikaworld-faq-hu.svg'
+  },
+  presskit: {
+    en: '/og/aikaworld-presskit-en.svg',
+    hu: '/og/aikaworld-presskit-hu.svg'
+  },
+  privacy: {
+    en: '/og/aikaworld-privacy-en.svg',
+    hu: '/og/aikaworld-privacy-hu.svg'
+  },
+  terms: {
+    en: '/og/aikaworld-terms-en.svg',
+    hu: '/og/aikaworld-terms-hu.svg'
+  },
   legal: {
     en: '/og/aikaworld-legal-en.svg',
     hu: '/og/aikaworld-legal-hu.svg'
@@ -28,6 +72,10 @@ const OG_IMAGE_VARIANTS = {
   changelog: {
     en: '/og/aikaworld-changelog-en.svg',
     hu: '/og/aikaworld-changelog-hu.svg'
+  },
+  notfound: {
+    en: '/og/aikaworld-notfound-en.svg',
+    hu: '/og/aikaworld-notfound-hu.svg'
   }
 } as const;
 
@@ -71,19 +119,28 @@ export function buildAlternates(path: string, currentLocale: Locale) {
 
 type StaticSeoPage = Exclude<keyof Dictionary['seo']['pages'], 'character' | 'devlogPost'>;
 
+const STATIC_PAGE_IMAGE_VARIANTS: Partial<Record<StaticSeoPage, OgImageVariant>> = {
+  home: 'home',
+  modes: 'modes',
+  progression: 'progression',
+  playtests: 'playtests',
+  creatorProgram: 'creator',
+  characters: 'characters',
+  devlog: 'devlog',
+  faq: 'faq',
+  presskit: 'presskit',
+  privacy: 'privacy',
+  terms: 'terms',
+  legalCopyright: 'legal',
+  legalFanContent: 'legal',
+  legalTrademark: 'legal',
+  legalChangelog: 'changelog',
+  notFound: 'notfound'
+};
+
 function resolveDefaultOgImage(page: StaticSeoPage, locale: Locale) {
-  switch (page) {
-    case 'privacy':
-    case 'terms':
-    case 'legalCopyright':
-    case 'legalFanContent':
-    case 'legalTrademark':
-      return resolveOgImage('legal', locale);
-    case 'legalChangelog':
-      return resolveOgImage('changelog', locale);
-    default:
-      return resolveOgImage('default', locale);
-  }
+  const variant = STATIC_PAGE_IMAGE_VARIANTS[page] ?? 'default';
+  return resolveOgImage(variant, locale);
 }
 
 export function createStaticPageMetadata(

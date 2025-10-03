@@ -684,7 +684,8 @@ export const enDictionary: Dictionary = {
       },
       characters: {
         title: 'Resonators – AIKA World',
-        description: 'Detailed profiles for Akari, Komi, Yui, Hina and Miyu from the world of AIKA.'
+        description: 'Detailed profiles for Akari, Komi, Yui, Hina and Miyu from the world of AIKA.',
+        ogAlt: 'AIKA World Resonators lineup artwork'
       },
       character: {
         description: character =>
@@ -694,7 +695,8 @@ export const enDictionary: Dictionary = {
       },
       presskit: {
         title: 'AIKA World – Presskit',
-        description: 'Downloadable logos, key art, screenshots and essential info for press.'
+        description: 'Downloadable logos, key art, screenshots and essential info for press.',
+        ogAlt: 'AIKA World presskit asset overview graphic'
       },
       faq: {
         title: 'FAQ – AIKA World',
@@ -703,11 +705,13 @@ export const enDictionary: Dictionary = {
       },
       privacy: {
         title: 'Privacy Policy – AIKA World',
-        description: 'Learn how we process cookies, analytics and contact data to keep the AIKA World community secure.'
+        description: 'Learn how we process cookies, analytics and contact data to keep the AIKA World community secure.',
+        ogAlt: 'AIKA World privacy policy illustration'
       },
       terms: {
         title: 'Terms of Use – AIKA World',
-        description: 'Understand the rules for using AIKA World IP, community spaces and downloadable assets.'
+        description: 'Understand the rules for using AIKA World IP, community spaces and downloadable assets.',
+        ogAlt: 'AIKA World terms of use illustration'
       },
       legalCopyright: {
         title: 'Copyright Policy / DMCA – AIKA World',
@@ -731,7 +735,8 @@ export const enDictionary: Dictionary = {
       },
       notFound: {
         title: 'Page not found – AIKA World',
-        description: 'The requested resonance is missing. Return to the homepage or browse characters.'
+        description: 'The requested resonance is missing. Return to the homepage or browse characters.',
+        ogAlt: 'AIKA World missing resonance illustration'
       }
     }
   }
