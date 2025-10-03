@@ -5,6 +5,9 @@ import { getDictionary } from '../lib/i18n/dictionaries';
 import { serverEnv } from '../lib/server-config';
 import { createStaticPageMetadata } from '../lib/seo';
 import { resolveRequestLocale } from '../lib/i18n/server-locale';
+import { getLatestDevlogSummaries } from '../lib/devlog';
+
+export const runtime = 'nodejs';
 
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await resolveRequestLocale();
@@ -18,6 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Page() {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
+  const devlogTeasers = await getLatestDevlogSummaries(2);
 
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>
@@ -27,6 +31,7 @@ export default async function Page() {
         locale={locale}
         dictionary={dictionary.home}
         lightboxDictionary={dictionary.lightbox}
+        devlogPosts={devlogTeasers}
       />
     </SiteLayout>
   );
