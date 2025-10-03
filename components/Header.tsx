@@ -71,6 +71,7 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
         dictionary.nav.media,
         dictionary.nav.roadmap,
         dictionary.nav.community,
+        dictionary.nav.faq,
         dictionary.nav.presskit
       ],
     [dictionary.nav]

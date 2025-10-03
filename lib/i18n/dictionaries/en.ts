@@ -14,6 +14,7 @@ export const enDictionary: Dictionary = {
       community: { label: 'Community', href: '#community' },
       modesPage: { label: 'Detailed game modes', href: '/modes' },
       progression: { label: 'Progression teaser', href: '/progression' },
+      faq: { label: 'FAQ', href: '/faq' },
       presskit: { label: 'Presskit', href: '/presskit' }
     },
     wishlistCta: 'Wishlist on Steam',
@@ -27,6 +28,7 @@ export const enDictionary: Dictionary = {
   footer: {
     legalHeading: 'Legal',
     legalLinks: [
+      { path: '/faq', label: 'FAQ' },
       { path: '/privacy', label: 'Privacy Policy' },
       { path: '/terms', label: 'Terms of Use' },
       { path: '/legal/copyright', label: 'Copyright / DMCA' },
@@ -485,6 +487,45 @@ export const enDictionary: Dictionary = {
       note: 'Application form placeholder — approvals roll out in planned waves.'
     }
   },
+  faq: {
+    title: 'AIKA World FAQ',
+    intro:
+      'Quick answers to the most common squad questions about platforms, progression and support.',
+    items: [
+      {
+        question: 'Which platforms are you targeting?',
+        answer: 'We are focusing on PC via Steam first while we evaluate additional platform partners.'
+      },
+      {
+        question: 'Is the whole game co-op?',
+        answer: 'Yes. Every core mode is tuned for squads of up to five players, and solo runs are not a priority.'
+      },
+      {
+        question: 'How do purchases work?',
+        answer: 'All monetization is optional and cosmetic only—no gameplay power or progression shortcuts.'
+      },
+      {
+        question: 'Will there be crossplay or cross-save?',
+        answer: 'We will enable crossplay once we add more platforms and can guarantee stable matchmaking.'
+      },
+      {
+        question: 'Which languages will be available?',
+        answer: 'English and Hungarian ship with full interface and subtitle support, with more localisations reviewed later.'
+      },
+      {
+        question: 'What is the minimum spec?',
+        answer: 'We recommend a modern quad-core CPU, 16 GB RAM and a GTX 1060 / RX 580 class GPU for 1080p play.'
+      },
+      {
+        question: 'Can I use a controller?',
+        answer: 'Yes. The PC build fully supports Xbox, PlayStation and Steam Input controllers.'
+      },
+      {
+        question: 'What release model are you following?',
+        answer: 'We plan a premium launch supported by free seasonal updates and optional cosmetic drops.'
+      }
+    ]
+  },
   charactersPage: {
     breadcrumb: 'Characters',
     heading: 'AIKA World Resonators',
@@ -614,6 +655,11 @@ export const enDictionary: Dictionary = {
       presskit: {
         title: 'AIKA World – Presskit',
         description: 'Downloadable logos, key art, screenshots and essential info for press.'
+      },
+      faq: {
+        title: 'FAQ – AIKA World',
+        description: 'Essential answers about platforms, co-op focus, cosmetic monetization and hardware needs.',
+        ogAlt: 'AIKA World FAQ overview graphic'
       },
       privacy: {
         title: 'Privacy Policy – AIKA World',

@@ -122,6 +122,17 @@ export type ProgramPageDictionary = {
   };
 };
 
+export type FaqItemDictionary = {
+  question: string;
+  answer: string;
+};
+
+export type FaqDictionary = {
+  title: string;
+  intro: string;
+  items: FaqItemDictionary[];
+};
+
 export type ModesDictionary = {
   navLabel: string;
   heading: string;
@@ -269,6 +280,7 @@ export type HeaderDictionary = {
     community: HeaderNavItem;
     modesPage: HeaderNavItem;
     progression: HeaderNavItem;
+    faq: HeaderNavItem;
     presskit: HeaderNavItem;
   };
   wishlistCta: string;
@@ -312,6 +324,7 @@ export type SeoDictionary = {
       ogAlt: (character: Character) => string;
     };
     presskit: { title: string; description: string };
+    faq: { title: string; description: string; ogAlt: string };
     privacy: { title: string; description: string };
     terms: { title: string; description: string };
     legalCopyright: { title: string; description: string; ogAlt: string };
@@ -331,6 +344,7 @@ export type Dictionary = {
   progression: ProgressionDictionary;
   playtests: ProgramPageDictionary;
   creatorProgram: ProgramPageDictionary;
+  faq: FaqDictionary;
   charactersPage: CharactersDictionary;
   characterPage: CharacterPageDictionary;
   presskit: PresskitDictionary;
