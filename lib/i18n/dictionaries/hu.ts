@@ -61,7 +61,7 @@ export const huDictionary: Dictionary = {
       title: 'Kooperatív anime akció RPG – Csapat. Látvány. Fejlődés.',
       highlight: 'Stílusos Rezonátorok, taktikus szinergiák.',
       description:
-        'Öt Rezonátor, akik együtt uralják a raid arénákat és túlélő hullámokat. Sötét anime világ, dinamikus kombók és mély fejlődési rendszerek a hosszú távú csapatépítéshez.',
+        'Öt Rezonátor, akik Pyro, Verdefa, Nerei, Aurelia és Nocturnis erejét használva együtt uralják a raid arénákat és túlélő hullámokat. Sötét anime világ, dinamikus kombók és mély fejlődési rendszerek a hosszú távú csapatépítéshez.',
       wishlistCta: 'Wishlist a Steamen',
       discordCta: 'Csatlakozz Discordon',
       subscribeCta: 'Feliratkozom',
@@ -70,52 +70,52 @@ export const huDictionary: Dictionary = {
     world: {
       title: 'Világ és frakciók',
       intro:
-        'Öt rivális hatalmi tömb uralja az AIKA World neon-alkonyát. Állj arra, amelyik életben tartja a csapatod.',
+        'Öt rivális hatalmi tömb uralja az AIKA World neon-alkonyát: Pyro, Verdefa, Nerei, Aurelia és Nocturnis. Állj arra, amelyik életben tartja a csapatod.',
       ctaLabel: 'Bővebben',
       factions: [
         {
-          name: 'Emberforge Combine',
-          tagline: 'Ipari lángharcosok, akik magma-táplált kohókban edzik a várost.',
+          name: 'Pyro',
+          tagline: 'Vulkara lángjára esküdött taktikus hadigépezet.',
           bullets: [
-            'Tűzreaktoros kohók egy éjszaka alatt moduláris fegyvereket öntenek.',
-            'Logisztikai céhek gondoskodnak az égő lőszerek folyamatos utánpótlásáról.',
-            'Mérnökeik hőre reagáló páncélrétegekkel szerelik fel a csapatokat.'
+            'Fővárosuk, Vulkara, lávahajtású sínpályákkal szórja szét a moduláris tüzérséget.',
+            'Termál mérnökök Pyro rezonanciáját vezetik el, hogy a páncél ne hevüljön túl a raid előtt.',
+            'Inferna századok izzáskupolái koordinált túlterheléseknél páncéllá keményednek.'
           ]
         },
         {
-          name: 'Verdant Circuit Assembly',
-          tagline: 'Druidatech újítók, akik természetben nőtt áramköröket fonnak rítusokkal.',
+          name: 'Verdefa',
+          tagline: 'Sylvara lombkatedrálisai között szőtt bio-rituális hálózat.',
           bullets: [
-            'Biofibrás drónjaik felderítik a tetőket és közben biztonságos zónákat poroznak be.',
-            'Gyógyító üvegházaik egyben respawn menedékek a csapatnak.',
-            'Tanácsaik adat-virágzás ceremóniákon közvetítenek fegyverszünetet.'
+            'Sylvara lombszerverei térképezik a biztonságos folyosókat és élő adatfolyamot küldenek a celláknak.',
+            'Rituálmesterek bioáramkör rúnákkal erősítik fel a gyógyító virágzást csata közben.',
+            'Felderítő ligák gyökéralagutakat nevelnek, hogy észrevétlenül kerüljék ki a blokádokat.'
           ]
         },
         {
-          name: 'Abyssal Veil Court',
-          tagline: 'Vízre épült arisztokrácia, akik árnyékos etikettel uralkodnak.',
+          name: 'Nerei',
+          tagline: 'Ár-apályra hangolt uralkodók Nerivia mélységi törvényeivel.',
           bullets: [
-            'Udvaroncok dagályra hangolt titkos tükrökön cserélik a bizalmas információkat.',
-            'Árnyékkíséreteik elárasztott sikátorokon vezetik át a csapatokat.',
-            'A mélységi tintával írt eskük halálos következményekkel járnak.'
+            'Nerivia árapály-zárt palotái titkosítják a rajtaütő csapatok diplomáciáját.',
+            'Fátyolfutárok nyomáskupolákkal árasztják el a sikátorokat, hogy fedezzék az infiltrációt.',
+            'A mélységi eskük rezonancia-jeleket égetnek a hűtlenekre, amelyek halálos ellenlépést indítanak.'
           ]
         },
         {
-          name: 'Silver Vow Order',
-          tagline: 'Lovagi őrség, relikvia-lándzsákkal és fénylő pajzsokkal.',
+          name: 'Aurelia',
+          tagline: 'Auris ezüst erődjeit őrző ragyogó esküvők.',
           bullets: [
-            'Paladin szakaszaik kooperatív formációkat gyakorolnak a raidhez.',
-            'Pajzskaplánjaik megszentelik a felszerelést a korrupciós hullámok ellen.',
-            'Zarándok szállítmányaik biztonságos folyosókat nyitnak a hubok között.'
+            'Auris kaszárnya-kohói esküvel lezárt páncélt adnak a citadellán átutazó rajoknak.',
+            'Pajzskaplánok fényvédelmet kennek a felszerelésre a korrupciós hullámok előtt.',
+            'Zarándok karavánok védett útvonalakat jelölnek ki a szentélyek között.'
           ]
         },
         {
-          name: 'Neon Veil Collective',
-          tagline: 'Cyberpunk földalatti hálózat, glitch-fényű alagutakban.',
+          name: 'Nocturnis',
+          tagline: 'Noxhaven árnyékpiacait uraló információs szindikátus.',
           bullets: [
-            'Jelzészavaróik elrejtik a csapatot a vállalati követők elől.',
-            'Kiborg medikusok rögtönzött firmware-rel foltozzák be a sebeket.',
-            'Utcai szövetségeik fekete piaci fejlesztéseket oldanak fel a menetek között.'
+            'Noxhaven széfjei szellemadat-archívumokat őriznek, amelyek visszafejtik az ellenséges célzást.',
+            'Kódfutárok áramszünet felhőket vetnek be, hogy eltakarják a csapatmozgást a neon utcákban.',
+            'Augur sejtjeik rezonancia-terveket cserélnek, amelyek titkos fejlesztéseket nyitnak meg a menetek között.'
           ]
         }
       ]
@@ -163,7 +163,8 @@ export const huDictionary: Dictionary = {
     },
     characters: {
       title: 'Rezonátorok',
-      description: 'Találd meg a rezonanciád. Az öt lány mind másban zseniális.',
+      description:
+        'Találd meg a rezonanciád. Az öt lány Pyro, Verdefa, Nerei, Aurelia vagy Nocturnis erejét csatornázza egyedi módon.',
       cards: [
         { slug: 'akari', name: 'Akari', role: 'Tűz', color: 'accentA' },
         { slug: 'komi', name: 'Komi', role: 'Víz', color: 'accentB' },
@@ -271,7 +272,7 @@ export const huDictionary: Dictionary = {
     navLabel: 'Szöveges horgonyok',
     heading: 'AIKA World játékmódok',
     intro:
-      'Merülj el a kooperatív kihívásokban: a Raid Boss Arena a precíz végrehajtást, az Infest Survival az adaptív túlélést jutalmazza, a Story Mode pedig mélyíti a narratívát és a karakterkapcsolatokat. Az alábbi útmutatók segítenek felkészülni mindegyik módra.',
+      'Merülj el Pyro, Verdefa, Nerei, Aurelia és Nocturnis kooperatív kihívásaiban: a Raid Boss Arena a precíz végrehajtást, az Infest Survival az adaptív túlélést jutalmazza, a Story Mode pedig mélyíti a narratívát és a karakterkapcsolatokat. Az alábbi útmutatók segítenek felkészülni mindegyik módra.',
     backToHome: 'Vissza a főoldalra',
     sections: [
       {
@@ -649,14 +650,16 @@ export const huDictionary: Dictionary = {
     contactSubject: '404 jelentés – Hiányzó AIKA World oldal'
   },
   seo: {
-    defaultTitle: 'AIKA World – Anime co-op action RPG',
-    defaultDescription: 'Kooperatív raid arénák, sötét anime látvány és mély fejlődési rendszerek öt egyedi Rezonátorral.',
+    defaultTitle: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+    defaultDescription:
+      'Kooperatív raid arénák, sötét anime látvány és mély fejlődési rendszerek Pyro, Verdefa, Nerei, Aurelia és Nocturnis frakcióival.',
     defaultOgAlt: 'AIKA World alap megosztási kép',
     defaultLocale: 'hu_HU',
     pages: {
       home: {
-        title: 'AIKA World – Anime co-op action RPG',
-        description: 'Co-op raid arénák, sötét fantasy frakciók és mély fejlődési rendszerek öt egyedi Rezonátorral.',
+        title: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+        description:
+          'Co-op raid arénák, sötét fantasy frakciók és mély fejlődési rendszerek Pyro, Verdefa, Nerei, Aurelia és Nocturnis erejével.',
         ogAlt: 'AIKA World hős grafika'
       },
       modes: {
