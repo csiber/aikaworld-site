@@ -14,6 +14,7 @@ export const huDictionary: Dictionary = {
       community: { label: 'Közösség', href: '#community' },
       modesPage: { label: 'Részletes játékmódok', href: '/hu/modes' },
       progression: { label: 'Fejlődés teaser', href: '/hu/progression' },
+      faq: { label: 'GYIK', href: '/hu/faq' },
       presskit: { label: 'Presskit', href: '/hu/presskit' }
     },
     wishlistCta: 'Wishlist a Steamen',
@@ -27,6 +28,7 @@ export const huDictionary: Dictionary = {
   footer: {
     legalHeading: 'Jogi információk',
     legalLinks: [
+      { path: '/faq', label: 'GYIK' },
       { path: '/privacy', label: 'Adatkezelési tájékoztató' },
       { path: '/terms', label: 'Felhasználási feltételek' },
       { path: '/legal/copyright', label: 'Szerzői jog / DMCA' },
@@ -486,6 +488,45 @@ export const huDictionary: Dictionary = {
       note: 'Ideiglenes jelentkezési űrlap – jóváhagyások ütemezett hullámokban mennek ki.'
     }
   },
+  faq: {
+    title: 'AIKA World GYIK',
+    intro:
+      'Rövid válaszok a leggyakoribb platform, co-op és támogatási kérdésekre.',
+    items: [
+      {
+        question: 'Milyen platformokra céloztok?',
+        answer: 'Elsőként PC-re (Steam) fókuszálunk, a további platformpartnereket folyamatosan értékeljük.'
+      },
+      {
+        question: 'A játék teljesen kooperatív?',
+        answer: 'Igen. Minden fő mód maximum öt fős csapatokra van hangolva, az egyszemélyes futam nem központi cél.'
+      },
+      {
+        question: 'Hogyan működik a monetizáció?',
+        answer: 'Minden vásárlás opcionális és kizárólag kozmetikai, játékmeneti előny nélkül.'
+      },
+      {
+        question: 'Lesz crossplay vagy cross-save?',
+        answer: 'Amint új platformok csatlakoznak és stabil a matchmaking, bekapcsoljuk a crossplay támogatást.'
+      },
+      {
+        question: 'Milyen nyelvi támogatás várható?',
+        answer: 'Induláskor angol és magyar felületet és feliratokat adunk, további lokalizációkat később vizsgálunk.'
+      },
+      {
+        question: 'Mik a minimális gépigények?',
+        answer: 'Modern négymagos CPU, 16 GB RAM és GTX 1060 / RX 580 kategóriájú GPU ajánlott 1080p-re.'
+      },
+      {
+        question: 'Támogatjátok a kontrollereket?',
+        answer: 'Igen, a PC-s verzió teljes Xbox, PlayStation és Steam Input kompatibilitást kínál.'
+      },
+      {
+        question: 'Milyen megjelenési modellre számíthatunk?',
+        answer: 'Prémium rajt után ingyenes szezonális frissítéseket és opcionális kozmetikai csomagokat tervezünk.'
+      }
+    ]
+  },
   charactersPage: {
     breadcrumb: 'Karakterek',
     heading: 'AIKA World Rezonátorok',
@@ -617,6 +658,11 @@ export const huDictionary: Dictionary = {
       presskit: {
         title: 'AIKA World – Presskit',
         description: 'Letölthető logók, key artok, screenshotok és fontos információk az AIKA World sajtó számára.'
+      },
+      faq: {
+        title: 'GYIK – AIKA World',
+        description: 'Válaszok a legfontosabb platform, co-op fókusz, kozmetikai monetizáció és gépigény kérdésekre.',
+        ogAlt: 'AIKA World GYIK grafika'
       },
       privacy: {
         title: 'Adatvédelmi tájékoztató – AIKA World',
