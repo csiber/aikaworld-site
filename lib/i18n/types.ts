@@ -36,6 +36,7 @@ export type HomeDictionary = {
   world: {
     title: string;
     intro: string;
+    ctaLabel: string;
     factions: {
       name: string;
       tagline: string;

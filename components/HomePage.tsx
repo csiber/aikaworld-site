@@ -6,6 +6,29 @@ import type { Locale } from '../lib/i18n/config';
 import type { HomeDictionary, LightboxDictionary } from '../lib/i18n/types';
 import type { DevlogPostSummary } from '../lib/devlog';
 import Lightbox from './Lightbox';
+import Card from './ui/Card';
+
+const factionIconClassNames = [
+  'bg-accentA/15 text-accentA dark:bg-accentA/25',
+  'bg-accentB/15 text-accentB dark:bg-accentB/25',
+  'bg-accentC/15 text-accentC dark:bg-accentC/25',
+  'bg-accentD/15 text-accentD dark:bg-accentD/25',
+  'bg-accentE/15 text-accentE dark:bg-accentE/25'
+] as const;
+
+const communityIconStyles: Record<string, { label: string; className: string }> = {
+  playtests: { label: 'PT', className: 'bg-accentA/15 text-accentA dark:bg-accentA/25' },
+  'creator-program': { label: 'CP', className: 'bg-accentB/15 text-accentB dark:bg-accentB/25' },
+  'community-challenges': { label: 'CC', className: 'bg-accentD/15 text-accentD dark:bg-accentD/25' }
+};
+
+const createMonogram = (value: string) =>
+  value
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map(part => part.charAt(0).toUpperCase())
+    .join('');
 
 type SubscribeErrorCode = 'INVALID_JSON' | 'INVALID_EMAIL' | 'STORAGE_ERROR';
 type SubscribeSuccessCode = 'SUCCESS';
@@ -167,26 +190,36 @@ export default function HomePage({
         <h2 className="text-2xl md:text-3xl font-bold">{dictionary.world.title}</h2>
         <p className="mt-3 opacity-90 max-w-3xl">{dictionary.world.intro}</p>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
-          {dictionary.world.factions.map(faction => (
-            <div
-              key={faction.name}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6 flex flex-col"
-            >
-              <div>
-                <h3 className="text-xl font-semibold">{faction.name}</h3>
-                <p className="mt-2 text-sm font-semibold text-accentB">{faction.tagline}</p>
-              </div>
-              <ul className="mt-4 list-disc list-inside text-sm opacity-80 space-y-2">
-                {faction.bullets.map(bullet => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
-              <div className="mt-auto pt-6 flex items-center gap-2 text-sm font-semibold text-accentB">
-                <span>Learn more</span>
-                <span aria-hidden>→</span>
-              </div>
-            </div>
-          ))}
+          {dictionary.world.factions.map((faction, index) => {
+            const iconClassName = factionIconClassNames[index % factionIconClassNames.length];
+            const monogram = createMonogram(faction.name);
+
+            return (
+              <Card key={faction.name}>
+                <Card.Title icon={monogram} iconClassName={iconClassName}>
+                  {faction.name}
+                </Card.Title>
+                <Card.Body>
+                  <p className="font-semibold text-accentB dark:text-accentB">{faction.tagline}</p>
+                  <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed text-slate-600 dark:text-white/70 sm:text-base">
+                    {faction.bullets.map(bullet => (
+                      <li key={bullet}>{bullet}</li>
+                    ))}
+                  </ul>
+                </Card.Body>
+                <Card.Actions className="text-slate-900 dark:text-accentB">
+                  <span className="inline-flex items-center gap-2 text-inherit">
+                    <span className="underline decoration-accentB decoration-2 underline-offset-4">
+                      {dictionary.world.ctaLabel}
+                    </span>
+                    <span className="text-accentB dark:text-accentB" aria-hidden>
+                      →
+                    </span>
+                  </span>
+                </Card.Actions>
+              </Card>
+            );
+          })}
         </div>
       </section>
 
@@ -336,30 +369,38 @@ export default function HomePage({
         <p className="mt-2 opacity-90">{dictionary.community.description}</p>
 
         <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
-          {dictionary.community.cards.map(card => {
+          {dictionary.community.cards.map((card, index) => {
             const href = resolveLocalizedHref(card.ctaHref);
+            const iconConfig = communityIconStyles[card.id] ?? {
+              label: createMonogram(card.title),
+              className: factionIconClassNames[index % factionIconClassNames.length]
+            };
 
             return (
-              <div
-                key={card.id}
-                className="flex h-full flex-col rounded-2xl border border-white/10 bg-white/5 p-6"
-              >
-                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accentB">
-                  {card.eyebrow}
-                </p>
-                <h3 className="mt-3 text-xl font-semibold">{card.title}</h3>
-                <p className="mt-3 text-sm md:text-base opacity-80">{card.description}</p>
-                <div className="mt-auto pt-6 flex flex-col gap-2">
+              <Card key={card.id}>
+                <Card.Title
+                  eyebrow={card.eyebrow}
+                  icon={iconConfig.label}
+                  iconClassName={iconConfig.className}
+                >
+                  {card.title}
+                </Card.Title>
+                <Card.Body>
+                  <p>{card.description}</p>
+                </Card.Body>
+                <Card.Actions className="flex-col items-start gap-2 text-accentB dark:text-accentB">
                   <a
                     href={href}
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-accentB px-4 py-2 text-sm font-semibold text-black transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-accentB px-4 py-2 text-sm text-black transition hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-accentB focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-[#05060a]"
                   >
                     {card.ctaLabel}
                     <span aria-hidden>→</span>
                   </a>
-                  {card.note && <p className="text-xs opacity-70">{card.note}</p>}
-                </div>
-              </div>
+                  {card.note ? (
+                    <p className="text-xs font-normal text-slate-500 dark:text-white/60">{card.note}</p>
+                  ) : null}
+                </Card.Actions>
+              </Card>
             );
           })}
         </div>
