@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { type ReactElement, type ReactNode } from 'react';
 
 function cn(...classes: Array<string | false | null | undefined>) {
   return classes.filter(Boolean).join(' ');
@@ -9,10 +9,10 @@ type CardRootProps = {
   className?: string;
 };
 
-type CardComponent = ((props: CardRootProps) => JSX.Element) & {
-  Title: (props: CardTitleProps) => JSX.Element;
-  Body: (props: CardBodyProps) => JSX.Element;
-  Actions: (props: CardActionsProps) => JSX.Element;
+type CardComponent = ((props: CardRootProps) => ReactElement) & {
+  Title: (props: CardTitleProps) => ReactElement;
+  Body: (props: CardBodyProps) => ReactElement;
+  Actions: (props: CardActionsProps) => ReactElement;
 };
 
 const Card = (({ children, className }: CardRootProps) => {
