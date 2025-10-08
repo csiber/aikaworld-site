@@ -216,6 +216,13 @@ export type Character = {
 export type PresskitDictionary = {
   heading: string;
   description: string;
+  about: {
+    title: string;
+    intro: string;
+    keyMessage: string;
+    craft: string;
+    tagline: string;
+  };
   factSheetTitle: string;
   downloadsTitle: string;
   usageTitle: string;

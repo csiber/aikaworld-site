@@ -640,6 +640,14 @@ export const enDictionary: Dictionary = {
   presskit: {
     heading: 'AIKA World Presskit',
     description: 'All press and creator assets in one place. Free to use under the conditions below.',
+    about: {
+      title: 'About the Game',
+      intro:
+        'AIKA World is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
+      keyMessage: 'No multiplayer. No loot. No ranking—only story, sound, and light.',
+      craft: 'Built with Unreal Engine. Composed by the Resonance.',
+      tagline: 'You don’t play AIKA World. You remember it.'
+    },
     factSheetTitle: 'Fact sheet',
     downloadsTitle: 'Downloadable assets',
     usageTitle: 'Usage guidelines',
