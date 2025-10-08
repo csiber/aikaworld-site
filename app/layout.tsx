@@ -1,6 +1,8 @@
 export const runtime = 'edge';
 import './globals.css';
 import type { Metadata } from 'next';
+import Starfield from '../components/backgrounds/Starfield';
+import SmoothScrollProvider from '../components/providers/SmoothScrollProvider';
 import { resolveRequestLocale } from '../lib/i18n/server-locale';
 import { serverEnv } from '../lib/server-config';
 
@@ -31,7 +33,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           />
         )}
       </head>
-      <body className="min-h-dvh antialiased text-white">
+      <body className="min-h-dvh bg-[#05060a] font-sans antialiased text-white">
+        <SmoothScrollProvider />
+        <Starfield />
         {children}
       </body>
     </html>

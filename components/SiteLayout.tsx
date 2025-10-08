@@ -4,6 +4,7 @@ import type { Locale } from '../lib/i18n/config';
 import { serverEnv } from '../lib/server-config';
 import type { Dictionary } from '../lib/i18n/types';
 import { buildInfo } from '../lib/generated/build-info';
+import PageTransition from './animations/PageTransition';
 import Header from './Header';
 
 type SiteLayoutProps = {
@@ -58,7 +59,9 @@ export default function SiteLayout({ locale, dictionary, children }: SiteLayoutP
         locale={locale}
         dictionary={dictionary.header}
       />
-      <main className="pt-14">{children}</main>
+      <main className="pt-14">
+        <PageTransition>{children}</PageTransition>
+      </main>
       <footer className="mt-24 border-t border-white/10">
         <div className="mx-auto max-w-5xl px-4 py-12 text-sm">
           <div className="grid gap-10 md:grid-cols-3">

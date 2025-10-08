@@ -124,8 +124,10 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 border-b border-white/10 backdrop-blur transition-colors ${
-        isScrolled ? 'bg-black/60' : 'bg-black/20'
+      className={`fixed inset-x-0 top-0 z-50 border-b border-white/10 backdrop-blur transition-[background,box-shadow] duration-500 ${
+        isScrolled
+          ? 'bg-black/70 shadow-[0_18px_45px_-20px_rgba(79,70,229,0.75)]'
+          : 'bg-black/20 shadow-[0_10px_40px_-30px_rgba(79,70,229,0.45)]'
       }`}
     >
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4">
