@@ -250,7 +250,7 @@ export default function HomePage({
             >
               <div className={`h-36 w-full rounded-lg bg-${character.color}`} />
               <div className="mt-3 font-semibold">{character.name}</div>
-              <div className="text-sm opacity-80">{character.role}</div>
+              <div className="text-sm opacity-80">{character.element}</div>
             </Link>
           ))}
         </div>

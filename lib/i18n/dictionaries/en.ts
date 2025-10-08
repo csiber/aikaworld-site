@@ -165,15 +165,16 @@ export const enDictionary: Dictionary = {
   characters: {
     title: 'Resonators',
     description:
-      'Find your resonance. Each of the five girls channels Pyro, Verdefa, Nerei, Aurelia or Nocturnis in a different way.',
-      cards: [
-        { slug: 'akari', name: 'Akari', role: 'Fire', color: 'accentA' },
-        { slug: 'komi', name: 'Komi', role: 'Water', color: 'accentB' },
-        { slug: 'yui', name: 'Yui', role: 'Wind', color: 'accentC' },
-        { slug: 'hina', name: 'Hina', role: 'Blade', color: 'accentD' },
-        { slug: 'miyu', name: 'Miyu', role: 'Support', color: 'accentE' }
-      ]
-    },
+      'Find your resonance. Six vowbound figures channel Fire, Nature, Water, Light, Shadow and Void under AIKA’s design.',
+    cards: [
+      { slug: 'akari', name: 'Akari', element: 'Fire / Discipline', color: 'accentA' },
+      { slug: 'miyu', name: 'Miyu', element: 'Nature / Mercy', color: 'accentE' },
+      { slug: 'komi', name: 'Komi', element: 'Water / Truth', color: 'accentB' },
+      { slug: 'hina', name: 'Hina', element: 'Light / Law', color: 'accentD' },
+      { slug: 'yui', name: 'Yui', element: 'Shadow / Freedom', color: 'accentC' },
+      { slug: 'aika', name: 'AIKA', element: 'Void / Creation', color: 'accentF' }
+    ]
+  },
     media: {
       title: 'Media',
       description: 'Screenshots, key art and wallpapers.',
@@ -562,24 +563,12 @@ export const enDictionary: Dictionary = {
   charactersPage: {
     breadcrumb: 'Characters',
     heading: 'AIKA World Resonators',
-    intro: "Get to know each lead character's abilities, roles and best practices before entering the raid arenas.",
-    roleLabel: 'Role',
-    elementLabel: 'Element',
-    playstyleLabel: 'Playstyle',
-    profileCta: 'Open profile'
+    intro: 'Meet the vowbound figures AIKA guides—six resonators etched in element, city and hunger.',
+    profileCta: 'Enter the echo'
   },
   characterPage: {
     breadcrumbRoot: 'Characters',
-    archetypeTitle: 'Archetype',
-    roleLabel: 'Role',
-    elementLabel: 'Element',
-    playstyleLabel: 'Playstyle',
-    tipsTitle: 'Tip collection',
-    loreTitle: 'Who she is',
-    mentalityTitle: 'Mindset',
-    likesTitle: 'Loves',
-    dislikesTitle: 'Loathes',
-    quoteTitle: 'Signature quote'
+    quoteTitle: 'Resonance whisper'
   },
   lore: {
     elyndra: {
@@ -769,13 +758,14 @@ export const enDictionary: Dictionary = {
       },
       characters: {
         title: 'Resonators – AIKA World',
-        description: 'Detailed profiles for Akari, Komi, Yui, Hina and Miyu from the world of AIKA.',
+        description:
+          'Dark poetic dossiers for Akari, Miyu, Komi, Hina, Yui and AIKA—resonators bound by element, city and oath.',
         ogAlt: 'AIKA World Resonators lineup artwork'
       },
       character: {
         description: character =>
-          `${character.name} profile: ${character.role}, ${character.element} element, playstyle tips for raids.`,
-        ogDescription: character => `${character.role} ${character.element} Resonator for your squad.`,
+          `${character.name} profile: ${character.element} resonance, origin whispers and a signature vow.`,
+        ogDescription: character => `${character.name} channels ${character.element} under AIKA's gaze.`,
         ogAlt: character => `${character.name} hero banner`
       },
       presskit: {
