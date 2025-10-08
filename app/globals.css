@@ -17,6 +17,60 @@ body {
     color: #E6EDF7;
 }
 
+@keyframes aurora-glide {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 200% 50%;
+    }
+}
+
+.btn-aurora {
+    position: relative;
+    overflow: hidden;
+    border-radius: 9999px;
+    padding: 0.85rem 2.5rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.15), rgba(88, 207, 255, 0.65), rgba(255, 255, 255, 0.1));
+    background-size: 200% 100%;
+    box-shadow: 0 16px 35px -20px rgba(88, 207, 255, 0.75);
+}
+
+.btn-aurora::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
+    transform: translateX(-120%);
+    transition: transform 260ms ease;
+}
+
+.btn-aurora:hover,
+.btn-aurora:focus-visible {
+    transform: translateY(-2px) scale(1.02);
+    animation: aurora-glide 1.6s linear infinite;
+    box-shadow: 0 20px 40px -18px rgba(88, 207, 255, 0.85);
+}
+
+.btn-aurora:hover::after,
+.btn-aurora:focus-visible::after {
+    transform: translateX(140%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn-aurora,
+    .btn-aurora::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
 a {
     text-decoration: none;
 }
