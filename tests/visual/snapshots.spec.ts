@@ -7,7 +7,7 @@ const staticRoutes = [
   '/',
   '/modes',
   '/playtests',
-  '/devlog',
+  '/dev-journal',
   '/presskit',
   '/faq',
   '/characters',
@@ -34,7 +34,7 @@ function getDevlogRoutes(): string[] {
     .map(fileName => fileName.replace(/\.mdx$/, ''))
     .sort((a, b) => (a < b ? 1 : a > b ? -1 : 0));
 
-  return latest ? [`/devlog/${latest}`] : [];
+  return latest ? [`/dev-journal/${latest}`] : [];
 }
 
 const allRoutes = Array.from(new Set([...staticRoutes, ...getCharacterRoutes(), ...getDevlogRoutes()]));

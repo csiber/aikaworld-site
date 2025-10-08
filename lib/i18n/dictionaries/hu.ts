@@ -10,7 +10,7 @@ export const huDictionary: Dictionary = {
       world: { label: 'Világ', href: '/lore/elyndra' },
       modes: { label: 'Játékmódok', href: '/modes' },
       progression: { label: 'Fejlődés', href: '/progression' },
-      devlog: { label: 'Fejlesztői napló', href: '/devlog' },
+      devlog: { label: 'Fejlesztői napló', href: '/dev-journal' },
       faq: { label: 'GYIK', href: '/faq' }
     },
     wishlistCta: 'Wishlist a Steamen',
@@ -29,7 +29,7 @@ export const huDictionary: Dictionary = {
         { path: '/#world', label: 'Világ' },
         { path: '/modes', label: 'Játékmódok' },
         { path: '/progression', label: 'Fejlődés' },
-        { path: '/devlog', label: 'Fejlesztői napló' },
+        { path: '/dev-journal', label: 'Fejlesztői napló' },
         { path: '/faq', label: 'GYIK' }
       ],
       socialHeading: 'Közösség',
@@ -200,48 +200,49 @@ export const huDictionary: Dictionary = {
       }
     },
     community: {
-      title: 'Közösségi központ',
-      description: 'Maradj közel a csapathoz a zászlóshajó programokkal és közelgő kihívásokkal.',
+      title: 'Archívum & napló',
+      description:
+        'Az AIKA World egyszemélyes narratív projekt. Fedezd fel a megőrzött fejlesztői jegyzeteket és a történet alapjait.',
       cards: [
         {
-          id: 'playtests',
-          eyebrow: 'Korai hozzáférés',
-          title: 'Playtestek',
+          id: 'dev-journal',
+          eyebrow: 'Kulisszák mögött',
+          title: 'Fejlesztői napló',
           description:
-            'Jelentkezz, hogy belenézz a kurált kooperatív buildekbe, add visszajelzésed közvetlenül a csapatnak, és velünk csiszold a harci tempót.',
-          note: 'Meghívók ütemezett hullámokban mennek ki.',
-          ctaLabel: 'Jelentkezem',
-          ctaHref: '/playtests'
+            'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Worldhöz.',
+          note: 'Nagyobb mérföldköveknél frissül.',
+          ctaLabel: 'Bejegyzések',
+          ctaHref: '/dev-journal'
         },
         {
-          id: 'creator-program',
-          eyebrow: 'Jelerősítés',
-          title: 'Creator Program',
+          id: 'lore-archive',
+          eyebrow: 'Mítosz archívum',
+          title: 'Lore archívum',
           description:
-            'Készítők előzetes brífeket, felvételi tippeket és közös stream lehetőségeket kapnak, hogy magabiztosan mutassák be az AIKA Worldöt.',
-          note: 'A készítői felvétel ütemezett hullámokban nyílik.',
-          ctaLabel: 'Jelentkezem',
-          ctaHref: '/creator-program'
+            'Spoilermentes összefoglalók Elyndra frakcióiról, mítoszairól és kulcsfontosságú helyszíneiről.',
+          note: 'Fejezetenként bővítve.',
+          ctaLabel: 'Lore megnyitása',
+          ctaHref: '/lore/elyndra'
         },
         {
-          id: 'community-challenges',
-          eyebrow: 'Csapatcélok',
-          title: 'Közösségi kihívások',
+          id: 'signals',
+          eyebrow: 'Maradj hangolva',
+          title: 'Jelzések',
           description:
-            'Szezonális csapatfeladatok, hub események és rejtvény dropok a Discordon és a hírlevélben indulnak a koordinált játékért.',
-          note: 'A kihívás brífek ütemezett hullámokban érkeznek.',
-          ctaLabel: 'Bővebben',
+            'E-mailben szólunk, ha új Fejlesztői napló vagy lore frissítés érkezik.',
+          note: 'Nincs spam, bármikor leiratkozhatsz.',
+          ctaLabel: 'Feliratkozom',
           ctaHref: '#community-newsletter'
         }
       ],
-      newsletterTitle: 'Maradj értesült',
-      newsletterDescription: 'Iratkozz fel a playtest hullámokra, a készítői hírekre és a kihívás bejelentésekre.'
+      newsletterTitle: 'Hírlevél',
+      newsletterDescription: 'Kérj Dev Journal értesítéseket és lore frissítéseket közvetlenül a postaládádba.'
     },
     devlog: {
-      title: 'Friss devlog bejegyzések',
-      description: 'Sprintről sprintre megmutatjuk, min dolgozik az AIKA World csapata.',
-      viewAllLabel: 'Összes bejegyzés',
-      readMoreLabel: 'Elolvasom'
+      title: 'Legfrissebb Dev Journal bejegyzések',
+      description: 'Kulisszák mögötti jegyzetek az egyszemélyes AIKA World fejlesztéséről.',
+      viewAllLabel: 'Dev Journal megnyitása',
+      readMoreLabel: 'Részletek'
     },
     newsletter: {
       emailLabel: 'E-mail cím',
@@ -349,140 +350,140 @@ export const huDictionary: Dictionary = {
       'Haladj emlékeken és rezonancia visszhangokon át. Tárd fel AIKA múltjának töredékeit, új jeleneteket és átírt perspektívákat.'
   },
   devlog: {
-    heading: 'Devlog idővonal',
-    intro: 'Kövesd sprintről sprintre, min dolgozik az AIKA World fejlesztői csapata.',
+    heading: 'Fejlesztői napló',
+    intro: 'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Worldhöz.',
     list: {
-      timelineLabel: 'Fejlesztői bejegyzések',
-      empty: 'Még nincs devlog bejegyzés. Nézz vissza hamarosan!',
-      readMore: 'Bejegyzés megnyitása'
+      timelineLabel: 'Dev Journal idővonal',
+      empty: 'Még nincs Dev Journal bejegyzés. Nézz vissza hamarosan!',
+      readMore: 'Részletek megnyitása'
     },
     post: {
-      backToList: 'Vissza a devloghoz',
-      publishedOn: 'Megjelenés dátuma:'
+      backToList: 'Vissza a Dev Journalhoz',
+      publishedOn: 'Megjelenés dátuma'
     }
   },
   playtests: {
-    eyebrow: 'Korai csapatok',
-    title: 'AIKA World Playtestek',
+    eyebrow: 'Archivált program',
+    title: 'AIKA World Playtestek (archívum)',
     intro:
-      'Jelentkezz, hogy kurált kooperatív sessionökben teszteld a harci tempót, a hub áramlást és az onboardingot. A kiválasztott squadok fókuszált buildeket kapnak fejlesztői támogatással. Meghívók ütemezett hullámokban érkeznek, így mindenkinek jut idő a visszajelzésre.',
+      'A közösségi playtest kezdeményezés jelenleg szünetel, mert az AIKA World egyszemélyes narratív játékként készül. Az alábbi információk archív jelleggel maradnak elérhetők.',
     sections: [
       {
         id: 'structure',
-        title: 'Hogyan futnak a sessionök',
+        title: 'Hogyan zajlottak a sessionök',
         description:
-          'Minden playtest hullám konkrét célt kap, és a csapatot közvetlenül elérhető fejlesztőkkel párosítjuk.',
+          'Minden korábbi playtest hullám konkrét célt kapott, és a csapatokat közvetlenül elérhető fejlesztőkkel párosítottuk.',
         bullets: [
-          'Fókusz build-ek raid finomhangolást, Infest skálázást vagy hub loopokat vizsgálnak spoiler nélkül.',
-          'A session brífek célokat, sikerkritériumokat és figyelendő pillanatokat adnak.',
-          'A fejlesztők minden hullám alatt jelen vannak a visszajelző csatornákban, hogy azonnal tisztázzák a mechanikákat.'
+          'Fókusz buildek raid finomhangolást, Infest skálázást vagy hub loopokat vizsgáltak spoiler nélkül.',
+          'A session brífek célokat, sikerkritériumokat és figyelendő pillanatokat adtak.',
+          'A fejlesztők minden hullám alatt jelen voltak a visszajelző csatornákban, hogy azonnal tisztázzák a mechanikákat.'
         ]
       },
       {
         id: 'expectations',
-        title: 'Mit várunk a tesztelőktől',
-        description: 'Könnyű elvárásokat tartunk, de minden csapattól használható megfigyeléseket kérünk.',
+        title: 'Mit adtak a tesztelők',
+        description: 'Az archív elvárások megmutatják, milyen együttműködés működött a program aktív időszakában.',
         bullets: [
-          'Hullámonként legalább két sessiont játssz és töltsd ki a gyors összegző kérdőívet.',
-          'Oszd meg a squad összetételét, és jelezd, hol torpan vagy gyorsul túl a tempó.',
-          'A hibákat vagy blokkolókat reprodukciós lépésekkel logold a tesztelő portálon, hogy követni tudjuk.'
+          'Hullámonként legalább két sessiont játszottak és kitöltötték a gyors összegző kérdőívet.',
+          'Megosztották a squad összetételét, és jelezték, hol torpant vagy gyorsult túl a tempó.',
+          'A hibákat vagy blokkolókat reprodukciós lépésekkel logolták a tesztelő portálon, hogy követni tudtuk.'
         ]
       },
       {
         id: 'support',
         title: 'Eszközök és támogatás',
         description:
-          'Minden elfogadott csapat privát egyeztető tereket és strukturált riport eszközöket kap.',
+          'Az elfogadott csapatok privát egyeztető tereket és strukturált riport eszközöket kaptak.',
         bullets: [
           'Privát Discord csatornák fejlesztői válaszolókkal a teszt ablakok alatt.',
-          'Sablonos hibajegy-kezelés, ami szétválasztja a harc, UI és onboarding visszajelzéseket.',
+          'Sablonos hibajegy-kezelés, ami szétválasztotta a harc, UI és onboarding visszajelzéseket.',
           'Opcionális voice roundtable beszélgetések minden hullám után a következő build fókuszainak priorizálására.'
         ]
       }
     ],
-    faqTitle: 'Gyakori kérdések',
+    faqTitle: 'Archív kérdések',
     faqs: [
       {
-        question: 'Kik jelentkezhetnek?',
+        question: 'Kik jelentkezhettek?',
         answer:
-          'Bárki, aki szeret kooperatívban játszani és angol vagy magyar voice/text csatornákon tud egyeztetni. Baráti csapatokat és szervezett közösségeket is várunk.'
+          'A program szünetel, de a történelmi feltételek megmaradnak: kooperatív játékosok, akik angol vagy magyar voice/text csatornákon tudnak egyeztetni, legyenek baráti csapatok vagy szervezett közösségek.'
       },
       {
-        question: 'Hogyan külditek ki a meghívókat?',
+        question: 'Hogyan küldtétek ki a meghívókat?',
         answer:
-          'Heti rendszerességgel átnézzük a jelentkezéseket, hardver, régió és tapasztalat alapján csoportosítunk, majd ütemezett hullámokban küldünk e-mailt az elfogadott squadoknak az időzítéssel és onboarding infóval.'
+          'Heti rendszerességgel átnéztük a jelentkezéseket, hardver, régió és tapasztalat alapján csoportosítottunk, majd ütemezett hullámokban küldtünk e-mailt az elfogadott squadoknak az időzítéssel és onboarding infóval.'
       },
       {
-        question: 'Kell streamelnem vagy felvennem?',
+        question: 'Kellett streamelni vagy felvenni?',
         answer:
-          'Nem kötelező. Ha rögzítesz, oszd meg a klipeket vagy jegyzeteket, de a legfontosabb, hogy a biztosított űrlapokon tiszta visszajelzést adj.'
+          'Nem volt kötelező. Ha rögzítettél, megoszthattad a klipeket vagy jegyzeteket, de a legfontosabb a tiszta írásos visszajelzés volt a biztosított űrlapokon.'
       }
     ],
     cta: {
-      label: 'Jelentkezem',
-      href: '#',
-      note: 'Ideiglenes jelentkezési űrlap – meghívó e-mailek ütemezett hullámokban érkeznek.'
+      label: 'Fejlesztői napló megnyitása',
+      href: '/dev-journal',
+      note: 'A playtest program szünetel, fókuszban az egyszemélyes történet.'
     }
   },
   creatorProgram: {
-    eyebrow: 'Oszd meg a rezonanciát',
-    title: 'AIKA World Creator Program',
+    eyebrow: 'Archivált program',
+    title: 'AIKA World Creator Program (archívum)',
     intro:
-      'Jelentkezz, hogy közösen készítsünk tartalmat, mutasd be a Rezonátorokat és vezess kooperatív blokkokat közvetlen stúdiótámogatással. A készítőket személyes figyelem miatt ütemezett hullámokban vesszük fel.',
+      'Jelenleg nem vonunk be új készítőket, amíg az AIKA World egyszemélyes narratív projektre fókuszál. Az alábbi tartalom archív hivatkozásként marad elérhető.',
     sections: [
       {
         id: 'who',
-        title: 'Kikkel dolgozunk együtt',
-        description: 'Azokat részesítjük előnyben, akik a kooperatív energiát és a közösségi hangulatot emelik ki.',
+        title: 'Kikkel dolgoztunk együtt',
+        description: 'Azokat részesítettük előnyben, akik a kooperatív energiát és a közösségi hangulatot emelték ki.',
         bullets: [
-          'Rendszeresen publikálsz kooperatív, anime vagy akció RPG tartalmat YouTube-on, Twitch-en, TikTokon vagy podcast formában.',
-          'Olyan közösséget építesz, ahol a hype és az építő kritika egyensúlyban van.',
-          'A publikálást az ütemezett beatjeinkhez tudod igazítani anélkül, hogy lelőnéd a meglepetéseket.'
+          'Rendszeresen publikáltak kooperatív, anime vagy akció RPG tartalmat YouTube-on, Twitch-en, TikTokon vagy podcast formában.',
+          'Olyan közösséget építettek, ahol a hype és az építő kritika egyensúlyban maradt.',
+          'A publikálást az ütemezett beatjeinkhez tudták igazítani anélkül, hogy lelőtték volna a meglepetéseket.'
         ]
       },
       {
         id: 'benefits',
-        title: 'Mit kapsz tőlünk',
-        description: 'Olyan eszközöket adunk, amelyek gyorsítják és színesítik az AIKA World tartalomgyártást.',
+        title: 'Mit kaptak a partnerek',
+        description: 'Az archív lista jelzi, mire számíthatsz, ha a program egyszer visszatér.',
         bullets: [
           'Előzetes brífek lore kontextussal, rendszer bontásokkal és kihívás áttekintésekkel.',
-          'Felvételi csomagok, overlay szettek és streamelhető zenék, amelyeket szabadon használhatsz.',
+          'Felvételi csomagok, overlay szettek és streamelhető zenék, amelyeket szabadon használhattak.',
           'Kiemelések az official csatornákon – retweetektől a Discord feature-ökig és hub shoutoutokig.'
         ]
       },
       {
         id: 'collaboration',
-        title: 'Hogyan zajlik az együttműködés',
-        description: 'A partneri kapcsolat folyamatos párbeszéd, aminek fókusza a közösségi hatás.',
+        title: 'Hogyan támogattuk a készítőket',
+        description: 'Minden partneri kapcsolat folyamatos párbeszéd volt, amely a közösségi hatásra épült.',
         bullets: [
-          'Havi egyeztető hívások kooperatív blokkok, interjúk vagy kihívás coverage megtervezéséhez.',
-          'Megosztott tartalomnaptár, ami jelzi a reveal-ek és közösségi események ütemezett hullámait.',
-          'Közvetlen community manager, aki intézi a kéréseket, asseteket és az utókövetést.'
+          'Havi egyeztető hívások segítettek megtervezni a kooperatív blokkokat, interjúkat vagy kihívás coverage-et.',
+          'Megosztott tartalomnaptár jelezte a reveal-ek és közösségi események ütemezett hullámait.',
+          'Közvetlen community manager intézte a kéréseket, asseteket és az utókövetést.'
         ]
       }
     ],
-    faqTitle: 'Gyakori kérdések',
+    faqTitle: 'Archív kérdések',
     faqs: [
       {
-        question: 'Milyen platformok számítanak?',
+        question: 'Milyen platformok számítottak?',
         answer:
-          'Bármely csatorna, ahol következetes történetmesélés vagy elemzés van kooperatív játékokról, anime világokról vagy karakterközpontú akcióról – YouTube, Twitch, TikTok, hírlevél és podcast is belefér.'
+          'Bármely csatorna, ahol következetes történetmesélés vagy elemzés volt kooperatív játékokról, anime világokról vagy karakterközpontú akcióról – YouTube, Twitch, TikTok, hírlevél és podcast egyaránt.'
       },
       {
-        question: 'Milyen tartalmat készíthetek?',
+        question: 'Milyen tartalmat készíthettek a partnerek?',
         answer:
-          'Üdvözlünk guide-okat, reakciókat, backstage beszélgetéseket, közösségi spotlightokat és co-op sessionöket is. Előre jelezzük, ha spoilerérzékeny anyag közeledik, hogy biztonságosan tervezhess.'
+          'Guide-ok, reakciók, backstage beszélgetések, közösségi spotlightok és co-op sessionök egyaránt belefértek. Előre jeleztük, ha spoilerérzékeny anyag közeledett, hogy biztonságosan tervezhessenek.'
       },
       {
-        question: 'Mikor kapok visszajelzést?',
+        question: 'Mikor érkezett visszajelzés?',
         answer:
-          'Folyamatosan értékeljük a jelentkezéseket és e-mailben válaszolunk ütemezett hullámokban. Ha most nem fér bele, megőrizzük az adataid a következő körre.'
+          'A jelentkezéseket ütemezett hullámokban bíráltuk el és e-mailben válaszoltunk. Ha valaki nem fért be az adott körbe, az adatait megőriztük a következő lehetőséghez.'
       }
     ],
     cta: {
-      label: 'Jelentkezem',
-      href: '#',
-      note: 'Ideiglenes jelentkezési űrlap – jóváhagyások ütemezett hullámokban mennek ki.'
+      label: 'Lore archívum megnyitása',
+      href: '/lore/elyndra',
+      note: 'A készítői partnerségek szünetelnek, fókuszban az egyszemélyes történet.'
     }
   },
   faq: {
@@ -708,27 +709,27 @@ export const huDictionary: Dictionary = {
         ogAlt: 'AIKA elmeséli Elyndra mítoszát'
       },
       devlog: {
-        title: 'Devlog – AIKA World',
+        title: 'Dev Journal – AIKA World',
         description:
-          'Kövesd az AIKA World fejlesztési idővonalát sprint összefoglalókkal, látványtervekkel és rendszerelőzetesekkel.',
-        ogAlt: 'AIKA World devlog grafika'
+          'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Worldhöz.',
+        ogAlt: 'AIKA World Dev Journal grafika'
       },
       devlogPost: {
-        title: postTitle => `${postTitle} – Devlog | AIKA World`,
-        description: summary => summary || 'Legújabb AIKA World fejlesztői frissítés.',
-        ogAlt: postTitle => `${postTitle} devlog illusztráció`
+        title: postTitle => `${postTitle} – Dev Journal | AIKA World`,
+        description: summary => summary || 'Legfrissebb Dev Journal frissítés az AIKA Worldhöz.',
+        ogAlt: postTitle => `${postTitle} Dev Journal illusztráció`
       },
       playtests: {
-        title: 'Playtestek – AIKA World',
+        title: 'Playtest archívum – AIKA World',
         description:
-          'Jelentkezz az AIKA World playtestekre, lépj be ütemezett hullámokba, ossz meg visszajelzést és hangold a kooperatív harcot a fejlesztőkkel.',
-        ogAlt: 'AIKA World playtest program grafika'
+          'A közösségi playtest kezdeményezés jelenleg szünetel, amíg az AIKA World egyszemélyes történetként készül. Az oldal archív hivatkozásként marad elérhető.',
+        ogAlt: 'AIKA World playtest archívum grafika'
       },
       creatorProgram: {
-        title: 'Creator Program – AIKA World',
+        title: 'Creator Program archívum – AIKA World',
         description:
-          'Csatlakozz az AIKA World Creator Programhoz előzetes brífekért, felvételi csomagokért és közösségi spotlightokért, amelyek ütemezett hullámokban érkeznek.',
-        ogAlt: 'AIKA World creator program grafika'
+          'A készítői partnerségek szünetelnek az egyszemélyes fejlesztési fókusz idején. A korábbi irányelvek tájékoztatásként maradnak.',
+        ogAlt: 'AIKA World creator program archívum grafika'
       },
       characters: {
         title: 'Rezonátorok – AIKA World',

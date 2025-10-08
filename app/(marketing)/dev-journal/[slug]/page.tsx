@@ -20,13 +20,13 @@ export async function generateMetadata({ params }: DevlogMetadataProps): Promise
   const post = await getDevlogPost(slug).catch(() => null);
 
   if (!post) {
-    return createStaticPageMetadata(locale, dictionary, '/devlog', 'devlog');
+    return createStaticPageMetadata(locale, dictionary, '/dev-journal', 'devlog');
   }
 
-  return createDevlogPostMetadata(locale, dictionary, `/devlog/${post.slug}`, post);
+  return createDevlogPostMetadata(locale, dictionary, `/dev-journal/${post.slug}`, post);
 }
 
-export default async function DevlogPostPage({ params }: { params: Promise<DevlogPostParams> }) {
+export default async function DevJournalPostPage({ params }: { params: Promise<DevlogPostParams> }) {
   const { slug } = await params;
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
@@ -43,7 +43,7 @@ export default async function DevlogPostPage({ params }: { params: Promise<Devlo
     <SiteLayout locale={locale} dictionary={dictionary}>
       <article className="mx-auto max-w-3xl px-4 py-16">
         <div>
-          <Link href={`${basePath}/devlog`} className="text-sm font-semibold text-accentB hover:opacity-80">
+          <Link href={`${basePath}/dev-journal`} className="text-sm font-semibold text-accentB hover:opacity-80">
             ← {dictionary.devlog.post.backToList}
           </Link>
         </div>
