@@ -196,14 +196,15 @@ export default function HomePage({
                   </ul>
                 </Card.Body>
                 <Card.Actions className="text-slate-900 dark:text-accentB">
-                  <span className="inline-flex items-center gap-2 text-inherit">
-                    <span className="underline decoration-accentB decoration-2 underline-offset-4">
-                      {dictionary.world.ctaLabel}
-                    </span>
+                  <Link
+                    href={resolveLocalizedHref(dictionary.world.ctaHref)}
+                    className="inline-flex items-center gap-2 text-inherit underline decoration-accentB decoration-2 underline-offset-4 hover:opacity-80"
+                  >
+                    {dictionary.world.ctaLabel}
                     <span className="text-accentB dark:text-accentB" aria-hidden>
                       →
                     </span>
-                  </span>
+                  </Link>
                 </Card.Actions>
               </Card>
             );
