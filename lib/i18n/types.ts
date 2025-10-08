@@ -46,10 +46,12 @@ export type HomeDictionary = {
     title: string;
     cards: {
       title: string;
-      description: string;
-      points: string[];
-      linkLabel: string;
-      href: string;
+      subtitle?: string;
+      body?: string;
+      description?: string;
+      points?: string[];
+      linkLabel?: string;
+      href?: string;
     }[];
   };
   characters: {
