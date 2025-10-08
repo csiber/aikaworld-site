@@ -10,7 +10,7 @@ export const enDictionary: Dictionary = {
       world: { label: 'World', href: '/lore/elyndra' },
       modes: { label: 'Modes', href: '/modes' },
       progression: { label: 'Progression', href: '/progression' },
-      devlog: { label: 'Devlog', href: '/devlog' },
+      devlog: { label: 'Dev Journal', href: '/dev-journal' },
       faq: { label: 'FAQ', href: '/faq' }
     },
     wishlistCta: 'Wishlist on Steam',
@@ -29,7 +29,7 @@ export const enDictionary: Dictionary = {
         { path: '/#world', label: 'World' },
         { path: '/modes', label: 'Modes' },
         { path: '/progression', label: 'Progression' },
-        { path: '/devlog', label: 'Devlog' },
+        { path: '/dev-journal', label: 'Dev Journal' },
         { path: '/faq', label: 'FAQ' }
       ],
       socialHeading: 'Community',
@@ -170,48 +170,49 @@ export const enDictionary: Dictionary = {
       }
     },
     community: {
-      title: 'Community hub',
-      description: 'Stay close to the squad with our flagship programs and upcoming challenges.',
+      title: 'Lore & Dev Archives',
+      description:
+        'AIKA World is a single-player narrative project. Explore preserved updates and story foundations.',
       cards: [
         {
-          id: 'playtests',
-          eyebrow: 'Hands-on access',
-          title: 'Playtests',
+          id: 'dev-journal',
+          eyebrow: 'Behind the build',
+          title: 'Dev Journal',
           description:
-            'Apply to hop into curated co-op sessions, share feedback directly with the team and help us fine-tune combat pacing.',
-          note: 'Invites roll out in planned waves.',
-          ctaLabel: 'Apply',
-          ctaHref: '/playtests'
+            'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA World.',
+          note: 'Updated around major milestones.',
+          ctaLabel: 'Read entries',
+          ctaHref: '/dev-journal'
         },
         {
-          id: 'creator-program',
-          eyebrow: 'Signal boost',
-          title: 'Creator Program',
+          id: 'lore-archive',
+          eyebrow: 'Mythic record',
+          title: 'Lore Archive',
           description:
-            'Creators get early briefings, capture tips and co-stream opportunities so you can spotlight AIKA World with confidence.',
-          note: 'Creator onboarding opens in planned waves.',
-          ctaLabel: 'Apply',
-          ctaHref: '/creator-program'
+            'Trace the factions, myths and key locations across Elyndra in curated, spoiler-light dossiers.',
+          note: 'Continually expanded as chapters lock.',
+          ctaLabel: 'Open lore',
+          ctaHref: '/lore/elyndra'
         },
         {
-          id: 'community-challenges',
-          eyebrow: 'Squad goals',
-          title: 'Community Challenges',
+          id: 'signals',
+          eyebrow: 'Stay in sync',
+          title: 'Signal Updates',
           description:
-            'Seasonal squad objectives, hub events and puzzle drops launch via Discord and the newsletter for coordinated play.',
-          note: 'Challenge briefings release in planned waves.',
-          ctaLabel: 'Read more',
+            'Receive email transmissions when we publish new Dev Journal entries or lore drops.',
+          note: 'Zero spam. Opt out anytime.',
+          ctaLabel: 'Join the list',
           ctaHref: '#community-newsletter'
         }
       ],
-      newsletterTitle: 'Stay notified',
-      newsletterDescription: 'Subscribe for playtest waves, creator beats and challenge announcements.'
+      newsletterTitle: 'Newsletter',
+      newsletterDescription: 'Receive Dev Journal pings and lore archive updates straight to your inbox.'
     },
     devlog: {
-      title: 'Latest devlog highlights',
-      description: 'Peek behind the curtain with new AIKA World development updates every sprint.',
-      viewAllLabel: 'Browse all entries',
-      readMoreLabel: 'Read more'
+      title: 'Latest Dev Journal entries',
+      description: 'Behind-the-scenes notes from the single-player AIKA World build.',
+      viewAllLabel: 'Open Dev Journal',
+      readMoreLabel: 'Read entry'
     },
     newsletter: {
       emailLabel: 'Email address',
@@ -319,101 +320,101 @@ export const enDictionary: Dictionary = {
       'Advance through memories and resonance echoes. Unlock fragments of AIKA’s past, new scenes, and altered perspectives.'
   },
   devlog: {
-    heading: 'Devlog timeline',
-    intro: 'Track how AIKA World evolves sprint by sprint straight from the development team.',
+    heading: 'Dev Journal',
+    intro: 'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA World.',
     list: {
-      timelineLabel: 'Development updates',
-      empty: 'No devlog entries are available yet. Check back soon!',
-      readMore: 'Read update'
+      timelineLabel: 'Dev Journal timeline',
+      empty: 'No Dev Journal entries are available yet. Check back soon!',
+      readMore: 'Read entry'
     },
     post: {
-      backToList: 'Back to devlog',
+      backToList: 'Back to Dev Journal',
       publishedOn: 'Published on'
     }
   },
   playtests: {
-    eyebrow: 'Hands-on squads',
-    title: 'AIKA World Playtests',
+    eyebrow: 'Archived program',
+    title: 'AIKA World Playtests (Archive)',
     intro:
-      'Apply to join curated co-op sessions that stress-test combat pacing, hub flow and onboarding. Selected squads explore focused builds with developer support, and invites ship in planned waves so everyone has room to report findings.',
+      'The community playtest initiative is currently inactive while AIKA World ships as a single-player narrative project. The structure below is preserved for archival reference.',
     sections: [
       {
         id: 'structure',
-        title: 'How sessions run',
+        title: 'How sessions ran',
         description:
-          'Each playtest wave targets a specific objective and pairs your squad with on-call support from the team.',
+          'Each historical playtest wave targeted a specific objective and paired squads with on-call support from the team.',
         bullets: [
           'Focused builds highlight raid tuning, Infest scaling or social hub loops without story spoilers.',
-          'Session briefs outline goals, success metrics and checklist moments to watch for.',
-          'Developers staff feedback channels during every wave to clarify mechanics in real time.'
+          'Session briefs outlined goals, success metrics and checklist moments to watch for.',
+          'Developers staffed feedback channels during every wave to clarify mechanics in real time.'
         ]
       },
       {
         id: 'expectations',
-        title: 'What we ask from testers',
-        description: 'We keep requirements lightweight, but we need actionable observations from each squad.',
+        title: 'What testers provided',
+        description: 'Archived requirements remain here for reference on how we collaborated with squads.',
         bullets: [
           'Play at least two sessions per wave and complete the quick debrief survey afterward.',
           'Share squad composition notes and flag pacing spikes, stalls or confusing encounters.',
-          'Log bugs or blockers with reproduction steps inside the testing portal so we can follow up.'
+          'Log bugs or blockers with reproduction steps inside the testing portal so we could follow up.'
         ]
       },
       {
         id: 'support',
         title: 'Tools & support',
         description:
-          'Every accepted squad gains access to private coordination spaces and structured reporting tools.',
+          'Accepted squads once gained access to private coordination spaces and structured reporting tools.',
         bullets: [
           'Private Discord channels with developer responders for live Q&A during test windows.',
-          'Template-based issue tracking that separates combat, UI and onboarding feedback.',
+          'Template-based issue tracking that separated combat, UI and onboarding feedback.',
           'Optional voice roundtables after each wave to prioritise hot topics for the next build.'
         ]
       }
     ],
-    faqTitle: 'Frequently asked questions',
+    faqTitle: 'Legacy questions',
     faqs: [
       {
-        question: 'Who can apply?',
+        question: 'Who could apply?',
         answer:
-          'Co-op players comfortable coordinating in English or Hungarian voice/text channels. We welcome friend groups and organised communities alike.'
+          'While the program is paused, the historical criteria remain for context: co-op players comfortable coordinating in English or Hungarian voice/text channels, including friend groups and organised communities.'
       },
       {
-        question: 'How are invites sent?',
+        question: 'How were invites sent?',
         answer:
-          'We review submissions regularly, group them by hardware, region and experience level, then email accepted squads in planned waves with timing and onboarding details.'
+          'Previously we grouped submissions by hardware, region and experience level, then emailed accepted squads in planned waves with timing and onboarding details.'
       },
       {
-        question: 'Do I need to stream or record?',
+        question: 'Did testers need to stream or record?',
         answer:
-          'Recordings are optional. Share clips or notes if you capture footage, but priority goes to clear written feedback through the provided forms.'
+          'Recordings were optional. Clear written feedback through the provided forms was the priority whenever the program was active.'
       }
     ],
     cta: {
-      label: 'Apply',
-      href: '#',
-      note: 'Application form placeholder — invite emails are dispatched in planned waves.'
+      label: 'Read the Dev Journal',
+      href: '/dev-journal',
+      note: 'Playtests are paused while AIKA World focuses on single-player storytelling.'
     }
   },
   creatorProgram: {
-    eyebrow: 'Share the resonance',
-    title: 'AIKA World Creator Program',
+    eyebrow: 'Archived program',
+    title: 'AIKA World Creator Program (Archive)',
     intro:
-      'Apply to collaborate on coverage, showcase Resonators and host co-op segments with direct studio support. We onboard creators in planned waves to keep every partnership personal.',
+      'We are not onboarding new creators at this time while AIKA World focuses on single-player storytelling. The information below remains available for historical context.',
     sections: [
       {
         id: 'who',
-        title: 'Who we partner with',
-        description: 'We prioritise storytellers who celebrate co-op energy and community vibes.',
+        title: 'Who we partnered with',
+        description: 'We prioritised storytellers who celebrated co-op energy and community vibes.',
         bullets: [
-          'You publish consistent co-op, anime or action RPG content on platforms like YouTube, Twitch, TikTok or podcasts.',
-          'You cultivate respectful communities that blend hype with constructive insight.',
-          'You can align uploads or streams with our planned beats while keeping surprises intact.'
+          'Creators publishing consistent co-op, anime or action RPG content on platforms like YouTube, Twitch, TikTok or podcasts.',
+          'Communities that blended hype with constructive insight and maintained respectful spaces.',
+          'Scheduling flexibility to align uploads or streams with planned beats while keeping surprises intact.'
         ]
       },
       {
         id: 'benefits',
-        title: 'What you receive',
-        description: 'Creators get resources that make producing AIKA World content faster and more expressive.',
+        title: 'What partners received',
+        description: 'Historical perks remain listed so returning collaborators know what to expect if the program resumes.',
         bullets: [
           'Early briefings with lore context, system breakdowns and challenge overviews.',
           'Capture kits, overlay packages and music beds cleared for streaming and editing.',
@@ -422,37 +423,37 @@ export const enDictionary: Dictionary = {
       },
       {
         id: 'collaboration',
-        title: 'How collaboration works',
-        description: 'We treat creator partnerships as ongoing dialogues built around community impact.',
+        title: 'How we supported creators',
+        description: 'Every partnership was treated as an ongoing dialogue built around community impact.',
         bullets: [
-          'Monthly sync calls to plan co-op segments, interviews or challenge coverage.',
-          'Shared content calendar highlighting planned waves for reveals and community events.',
-          'Direct access to a community manager who routes requests, assets and follow-up feedback.'
+          'Monthly sync calls helped plan co-op segments, interviews or challenge coverage.',
+          'Shared content calendar highlighted planned waves for reveals and community events.',
+          'Direct access to a community manager routed requests, assets and follow-up feedback.'
         ]
       }
     ],
-    faqTitle: 'Frequently asked questions',
+    faqTitle: 'Legacy questions',
     faqs: [
       {
-        question: 'What platforms qualify?',
+        question: 'Which platforms qualified?',
         answer:
-          'Any channel with consistent storytelling or analysis around co-op games, anime worlds or character-driven action—YouTube, Twitch, TikTok, newsletters and podcasts all count.'
+          'Any channel with consistent storytelling or analysis around co-op games, anime worlds or character-driven action—YouTube, Twitch, TikTok, newsletters and podcasts all counted while the program was active.'
       },
       {
-        question: 'What content can I publish?',
+        question: 'What content could creators publish?',
         answer:
-          'Guides, reaction segments, behind-the-scenes chats, community spotlights and co-op sessions are all welcome. We will flag spoiler-sensitive material ahead of time so you can plan safely.'
+          'Guides, reaction segments, behind-the-scenes chats, community spotlights and co-op sessions were all welcome. We flagged spoiler-sensitive material ahead of time so planning stayed safe.'
       },
       {
-        question: 'When will I hear back?',
+        question: 'When did creators hear back?',
         answer:
-          'We evaluate applications continuously and respond in planned waves via email. If we cannot onboard immediately we keep your details for the next wave.'
+          'We evaluated applications in planned waves via email. If we could not onboard immediately we kept details ready for the next opportunity.'
       }
     ],
     cta: {
-      label: 'Apply',
-      href: '#',
-      note: 'Application form placeholder — approvals roll out in planned waves.'
+      label: 'Explore the Lore Archive',
+      href: '/lore/elyndra',
+      note: 'Creator partnerships are paused while we focus on single-player storytelling.'
     }
   },
   faq: {
@@ -677,26 +678,26 @@ export const enDictionary: Dictionary = {
         ogAlt: 'AIKA narrates the myth of Elyndra'
       },
       devlog: {
-        title: 'Devlog – AIKA World',
-        description: 'Follow the AIKA World development timeline with sprint recaps, art drops and system previews.',
-        ogAlt: 'AIKA World devlog key art'
+        title: 'Dev Journal – AIKA World',
+        description: 'Behind-the-scenes notes, concepts and progress updates for the single-player AIKA World.',
+        ogAlt: 'AIKA World Dev Journal key art'
       },
       devlogPost: {
-        title: postTitle => `${postTitle} – Devlog | AIKA World`,
-        description: summary => summary || 'Latest AIKA World development update.',
-        ogAlt: postTitle => `${postTitle} devlog illustration`
+        title: postTitle => `${postTitle} – Dev Journal | AIKA World`,
+        description: summary => summary || 'Latest Dev Journal update for AIKA World.',
+        ogAlt: postTitle => `${postTitle} Dev Journal illustration`
       },
       playtests: {
-        title: 'Playtests – AIKA World',
+        title: 'Playtests archive – AIKA World',
         description:
-          'Apply for AIKA World playtests to join planned waves, share feedback and tune co-op combat with the dev team.',
-        ogAlt: 'AIKA World playtests program graphic'
+          'The community playtest initiative is currently inactive while AIKA World focuses on single-player storytelling. This page remains as an archive.',
+        ogAlt: 'AIKA World playtests archive graphic'
       },
       creatorProgram: {
-        title: 'Creator Program – AIKA World',
+        title: 'Creator Program archive – AIKA World',
         description:
-          'Join the AIKA World Creator Program for early briefings, capture kits and community spotlight opportunities released in planned waves.',
-        ogAlt: 'AIKA World creator program artwork'
+          'Creator partnerships are paused during the single-player production of AIKA World. Historical guidelines remain available for reference.',
+        ogAlt: 'AIKA World creator program archive artwork'
       },
       characters: {
         title: 'Resonators – AIKA World',

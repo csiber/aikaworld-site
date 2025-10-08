@@ -16,9 +16,9 @@
     <circle cx="980" cy="520" r="160" />
   </g>
   <g fill="#ffffff">
-    <text x="80" y="190" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="84" font-weight="700" letter-spacing="0.08em">Devlog</text>
-    <text x="80" y="270" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="48" font-weight="600" opacity="0.9">Build notes & art drops</text>
-    <text x="80" y="340" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="30" opacity="0.82">Track sprint updates straight from the studio.</text>
+    <text x="80" y="190" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="84" font-weight="700" letter-spacing="0.08em">Dev Journal</text>
+    <text x="80" y="270" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="48" font-weight="600" opacity="0.9">Behind-the-scenes notes & concepts</text>
+    <text x="80" y="340" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="30" opacity="0.82">Single-player AIKA World progress updates.</text>
   </g>
   <g transform="translate(80, 420)" fill="#ffffff" opacity="0.72">
     <text font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="22">AIKA WORLD</text>

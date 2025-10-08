@@ -12,10 +12,10 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
-  return createStaticPageMetadata(locale, dictionary, '/devlog', 'devlog');
+  return createStaticPageMetadata(locale, dictionary, '/dev-journal', 'devlog');
 }
 
-export default async function DevlogPage() {
+export default async function DevJournalPage() {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const posts = await getDevlogSummaries();
@@ -51,7 +51,7 @@ export default async function DevlogPage() {
                     <h2 className="mt-3 text-2xl font-semibold">{post.title}</h2>
                     <p className="mt-3 text-sm md:text-base opacity-80">{post.summary}</p>
                     <div className="mt-6 flex flex-wrap items-center gap-4 text-sm font-semibold text-accentB">
-                      <Link href={`${basePath}/devlog/${post.slug}`} className="hover:opacity-80">
+                      <Link href={`${basePath}/dev-journal/${post.slug}`} className="hover:opacity-80">
                         {dictionary.devlog.list.readMore}
                       </Link>
                     </div>

@@ -17,9 +17,9 @@ const factionIconClassNames = [
 ] as const;
 
 const communityIconStyles: Record<string, { label: string; className: string }> = {
-  playtests: { label: 'PT', className: 'bg-accentA/15 text-accentA dark:bg-accentA/25' },
-  'creator-program': { label: 'CP', className: 'bg-accentB/15 text-accentB dark:bg-accentB/25' },
-  'community-challenges': { label: 'CC', className: 'bg-accentD/15 text-accentD dark:bg-accentD/25' }
+  'dev-journal': { label: 'DJ', className: 'bg-accentA/15 text-accentA dark:bg-accentA/25' },
+  'lore-archive': { label: 'LA', className: 'bg-accentC/15 text-accentC dark:bg-accentC/25' },
+  signals: { label: 'SU', className: 'bg-accentD/15 text-accentD dark:bg-accentD/25' }
 };
 
 const createMonogram = (value: string) =>
@@ -320,7 +320,7 @@ export default function HomePage({
             <p className="text-sm md:text-base opacity-90">{dictionary.devlog.description}</p>
           </div>
           <Link
-            href={resolveLocalizedHref('/devlog')}
+            href={resolveLocalizedHref('/dev-journal')}
             className="inline-flex items-center gap-2 self-start rounded-full border border-white/20 px-4 py-2 text-sm font-semibold hover:bg-white/10"
           >
             {dictionary.devlog.viewAllLabel}
@@ -345,7 +345,7 @@ export default function HomePage({
                   <h3 className="text-xl font-semibold">{post.title}</h3>
                   <p className="text-sm md:text-base opacity-80">{post.summary}</p>
                   <Link
-                    href={resolveLocalizedHref(`/devlog/${post.slug}`)}
+                    href={resolveLocalizedHref(`/dev-journal/${post.slug}`)}
                     className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-accentB hover:opacity-80"
                   >
                     {dictionary.devlog.readMoreLabel}
