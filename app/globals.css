@@ -9,7 +9,11 @@
 html,
 body {
     height: 100%;
-    background: #0B0F17;
+    background-color: #05060A;
+    background-image: radial-gradient(120% 140% at 50% 0%, #1b2a3f 0%, #0b1424 38%, #05060a 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #E6EDF7;
 }
 
