@@ -186,23 +186,18 @@ export const huDictionary: Dictionary = {
     },
     roadmap: {
       title: 'Roadmap',
-      phases: [
-        {
-          badge: 'v1 – Raid + Infest',
-          title: 'Kooperatív PvE rajt',
-          description: 'Csapat alapú boss vadászat kozmetikai progresszióval.'
-        },
-        {
-          badge: 'v2 – Story Mode',
-          title: 'Narratív ív',
-          description: 'Slice-of-life hangulat, jelentős döntések és elágazó jelenetek.'
-        },
-        {
-          badge: 'v3 – MMO irány',
-          title: 'Megosztott világ fejlesztés',
-          description: 'Közösségi HUB, frakciók és perzisztens rendszer.'
-        }
-      ]
+      phase1: {
+        title: 'I. fejezet — Ébredés',
+        body: 'Az alap egyszemélyes történet, a fundamentális rendszerek és az első alászállás.'
+      },
+      phase2: {
+        title: 'II. fejezet — A magciklus',
+        body: 'Bővített narratív ívek, új találkozások, mélyebb visszhang mechanikák.'
+      },
+      phase3: {
+        title: 'Jövőbeli DLC — Különálló multiplayer',
+        body: 'Ha megjelenik, a multiplayer külön címként vagy DLC-ként érkezik. Nem része az alap sztori játéknak.'
+      }
     },
     community: {
       title: 'Közösségi központ',
@@ -349,41 +344,9 @@ export const huDictionary: Dictionary = {
     ]
   },
   progression: {
-    title: 'Fejlődés teaser',
-    intro: 'Spoilermentes ízelítő arról, hogyan fejlődik a csapat az AIKA Worldben.',
-    sections: [
-      {
-        id: 'resonance-skill',
-        title: 'Rezonancia-képesség',
-        summary: 'A szignatúra rezonancia végső koordinált játékkal mélyül, a teljes képességfa felfedése nélkül.',
-        bullets: [
-          'Fűzd össze a rezonancia ablakokat, hogy opcionális augment slotokat oldj fel és átformáld az ulti ritmusát.',
-          'Tökéletes teljesítésekből rezonancia-szikrákat gyűjtesz, amelyekkel küldetések között átírhatod a képességviselkedést.',
-          'Támogató katalizátorokkal kitolod a kombóidőt, és új befejező hatásokat hangolsz a csapatnak.'
-        ]
-      },
-      {
-        id: 'gear-evolution',
-        title: 'Felszerelés evolúció',
-        summary: 'A fegyverek és öltözékek moduláris kraftolással alkalmazkodnak, tier táblázatok nélkül.',
-        bullets: [
-          'Az expedíciós droppokból adaptív magokat finomítasz, amelyek aktivitásonként átrendezik a perk készletet.',
-          'Evolúciós lapkákat pattintasz a páncélra, hogy formát és mozgásbónuszokat válts statisztika-spoiler nélkül.',
-          'A duplikált leleteket kovácsműhely-szívességekre cseréled, így saját fegyverútvonalakat gyorsítasz.'
-        ]
-      },
-      {
-        id: 'hub-customization',
-        title: 'Hub testreszabás',
-        summary:
-          'A biztonságos hub hangulati elemekkel és hasznos funkciókkal bővül, ahogy mélyülnek a kötelékek – történetspoilerek nélkül.',
-        bullets: [
-          'Negyedszárnyakat rendezel be megszerzett dekor szettekkel, amelyek pihenési bónuszokat adnak.',
-          'Próbaszobákat nyitsz, ahol forgó közösségi buffok és mini edzések érhetők el.',
-          'Ambient zenéket és fény preseteket rendelsz meg, hogy sugározd a csapat identitását.'
-        ]
-      }
-    ]
+    title: 'Fejlődés',
+    body:
+      'Haladj emlékeken és rezonancia visszhangokon át. Tárd fel AIKA múltjának töredékeit, új jeleneteket és átírt perspektívákat.'
   },
   devlog: {
     heading: 'Devlog idővonal',

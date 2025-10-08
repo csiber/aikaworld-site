@@ -156,23 +156,18 @@ export const enDictionary: Dictionary = {
     },
     roadmap: {
       title: 'Roadmap',
-      phases: [
-        {
-          badge: 'v1 – Raid + Infest',
-          title: 'Co-op PvE launch',
-          description: 'Team-based boss hunts with cosmetic progression.'
-        },
-        {
-          badge: 'v2 – Story Mode',
-          title: 'Narrative arc',
-          description: 'Slice-of-life tone, meaningful choices and branching scenes.'
-        },
-        {
-          badge: 'v3 – Toward MMO',
-          title: 'Shared-world upgrade',
-          description: 'Social hub, factions and persistent community systems.'
-        }
-      ]
+      phase1: {
+        title: 'Chapter I — Awakening',
+        body: 'Core single-player story, foundational systems, first descent.'
+      },
+      phase2: {
+        title: 'Chapter II — The Core Loop',
+        body: 'Expanded narrative arcs, new encounters, deeper echo mechanics.'
+      },
+      phase3: {
+        title: 'Future DLC — Separate Multiplayer',
+        body: 'If released, multiplayer will be a separate title or DLC. Not part of the core story game.'
+      }
     },
     community: {
       title: 'Community hub',
@@ -319,40 +314,9 @@ export const enDictionary: Dictionary = {
     ]
   },
   progression: {
-    title: 'Progression teaser',
-    intro: 'A spoiler-free glimpse at how squads grow in AIKA World before full reveals.',
-    sections: [
-      {
-        id: 'resonance-skill',
-        title: 'Resonance skill',
-        summary: 'Signature resonance bursts deepen with coordinated play without exposing the complete skill web.',
-        bullets: [
-          'Chain resonance windows to unlock optional augment slots that alter your ultimate flow.',
-          'Earn resonance sparks from flawless clears to reroute ability behaviours between missions.',
-          'Blend support catalysts to extend combo uptime and rewrite finisher effects for the squad.'
-        ]
-      },
-      {
-        id: 'gear-evolution',
-        title: 'Gear evolution',
-        summary: 'Weapons and suits adapt through modular crafting loops instead of tier spreadsheets.',
-        bullets: [
-          'Refine expedition drops into adaptive cores that shift perk loadouts per activity.',
-          'Slot evolution plates to morph silhouettes and add traversal bonuses without revealing stats.',
-          'Trade duplicate finds for forge favours that fast-track bespoke weapon paths.'
-        ]
-      },
-      {
-        id: 'hub-customization',
-        title: 'Hub customization',
-        summary: 'Your safe hub grows with mood pieces and utilities as bonds deepen—no plot spoilers.',
-        bullets: [
-          'Curate district wings with earned decor sets that boost resting bonuses.',
-          'Unlock rehearsal rooms that rotate social buffs and mini training encounters.',
-          'Commission ambient tracks and lighting presets to broadcast your squad identity.'
-        ]
-      }
-    ]
+    title: 'Progression',
+    body:
+      'Advance through memories and resonance echoes. Unlock fragments of AIKA’s past, new scenes, and altered perspectives.'
   },
   devlog: {
     heading: 'Devlog timeline',
