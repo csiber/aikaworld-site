@@ -39,8 +39,6 @@ type SubscribeResponse = {
 };
 
 type HomePageProps = {
-  steamUrl: string | null;
-  discordUrl: string | null;
   locale: Locale;
   dictionary: HomeDictionary;
   lightboxDictionary: LightboxDictionary;
@@ -48,8 +46,6 @@ type HomePageProps = {
 };
 
 export default function HomePage({
-  steamUrl,
-  discordUrl,
   locale,
   dictionary,
   lightboxDictionary,
@@ -142,25 +138,17 @@ export default function HomePage({
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(255,106,61,0.25),transparent_60%)]" />
         <div className="mx-auto max-w-6xl px-4 py-24 md:py-32 text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-            {dictionary.hero.title}
-            <span className="text-accentB">{dictionary.hero.highlight}</span>
+            {dictionary.hero.tagline}
           </h1>
-          <p className="mt-5 text-lg md:text-xl opacity-90">
-            {dictionary.hero.description}
+          <p className="mt-6 text-lg md:text-xl opacity-90 italic">
+            {dictionary.hero.monologue}
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-            {steamUrl && (
-              <a className="px-5 py-3 rounded-lg bg-accentA hover:opacity-90 font-semibold" href={steamUrl}>
-                {dictionary.hero.wishlistCta}
-              </a>
-            )}
-            {discordUrl && (
-              <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href={discordUrl}>
-                {dictionary.hero.discordCta}
-              </a>
-            )}
-            <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20" href="#newsletter">
-              {dictionary.hero.subscribeCta}
+          <p className="mt-5 text-base md:text-lg text-slate-700 dark:text-slate-200">
+            {dictionary.hero.summary}
+          </p>
+          <div className="mt-8 flex justify-center">
+            <a className="px-5 py-3 rounded-lg bg-white/10 hover:bg-white/20 uppercase tracking-[0.2em] text-xs md:text-sm font-semibold" href="#newsletter">
+              {dictionary.hero.primaryCta}
             </a>
           </div>
           <div className="mt-10 aspect-video w-full rounded-2xl overflow-hidden border border-white/10">

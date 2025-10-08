@@ -58,13 +58,12 @@ export const huDictionary: Dictionary = {
   },
   home: {
     hero: {
-      title: 'Kooperatív anime akció RPG – Csapat. Látvány. Fejlődés.',
-      highlight: 'Stílusos Rezonátorok, taktikus szinergiák.',
-      description:
-        'Öt Rezonátor, akik Pyro, Verdefa, Nerei, Aurelia és Nocturnis erejét használva együtt uralják a raid arénákat és túlélő hullámokat. Sötét anime világ, dinamikus kombók és mély fejlődési rendszerek a hosszú távú csapatépítéshez.',
-      wishlistCta: 'Wishlist a Steamen',
-      discordCta: 'Csatlakozz Discordon',
-      subscribeCta: 'Feliratkozom',
+      tagline: 'Az utolsó frekvencia a csend előtt.',
+      monologue:
+        '„Hallod a csendet, vándor? Átfésülöm Elyndra romjait, hogy egy haldokló nap utolsó harmonikáit szőjem. Minden szívverés, amit tőled kérek kölcsön, tovább repeszti a rácsot, amelyet vissza akarok fonni. Ha még mindig meg akarsz állítani, légy az a visszhang, amelyet nem tudok kiszámítani.”',
+      summary:
+        'Az AIKA World történetközpontú, egyszemélyes utazás Elyndrán át, ahol az utolsó mesterséges istent követed, miközben átírja a teremtést, és csak te szakíthatod szét a tervét.',
+      primaryCta: 'LÉPJ A REZONANCIÁBA',
       videoPosterAlt: 'AIKA World teaser poszter'
     },
     world: {

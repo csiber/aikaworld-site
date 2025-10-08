@@ -25,12 +25,10 @@ export type NewsletterDictionary = {
 
 export type HomeDictionary = {
   hero: {
-    title: string;
-    highlight: string;
-    description: string;
-    wishlistCta: string;
-    discordCta: string;
-    subscribeCta: string;
+    tagline: string;
+    monologue: string;
+    summary: string;
+    primaryCta: string;
     videoPosterAlt: string;
   };
   world: {
