@@ -219,19 +219,26 @@ export default function HomePage({
           {dictionary.modes.cards.map(card => (
             <div key={card.title} className="rounded-xl border border-white/10 p-6 bg-white/5 flex flex-col">
               <h3 className="text-xl font-semibold">{card.title}</h3>
-              <p className="mt-2 opacity-90">{card.description}</p>
-              <ul className="mt-4 list-disc list-inside opacity-80 text-sm">
-                {card.points.map(point => (
-                  <li key={point}>{point}</li>
-                ))}
-              </ul>
-              <Link
-                href={card.href}
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accentB hover:opacity-80"
-              >
-                {card.linkLabel}
-                <span aria-hidden>→</span>
-              </Link>
+              {card.subtitle ? <p className="mt-1 text-sm uppercase tracking-wide opacity-70">{card.subtitle}</p> : null}
+              {card.body || card.description ? (
+                <p className="mt-2 opacity-90">{card.body ?? card.description}</p>
+              ) : null}
+              {card.points?.length ? (
+                <ul className="mt-4 list-disc list-inside opacity-80 text-sm">
+                  {card.points.map(point => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              ) : null}
+              {card.linkLabel && card.href ? (
+                <Link
+                  href={card.href}
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accentB hover:opacity-80"
+                >
+                  {card.linkLabel}
+                  <span aria-hidden>→</span>
+                </Link>
+              ) : null}
             </div>
           ))}
         </div>
