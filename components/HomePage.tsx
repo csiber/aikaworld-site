@@ -298,16 +298,15 @@ export default function HomePage({
       <section id="roadmap" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl md:text-3xl font-bold">{dictionary.roadmap.title}</h2>
         <ol className="mt-6 relative border-s border-white/10 ps-6">
-          {dictionary.roadmap.phases.map((phase, index) => (
-            <li key={phase.badge} className="mb-6 last:mb-0">
+          {[dictionary.roadmap.phase1, dictionary.roadmap.phase2, dictionary.roadmap.phase3].map((phase, index) => (
+            <li key={phase.title} className="mb-6 last:mb-0">
               <div
                 className={`absolute -start-[6px] mt-1.5 h-3 w-3 rounded-full ${
                   ['bg-accentA', 'bg-accentD', 'bg-accentB'][index % 3]
                 }`}
               />
-              <h3 className="font-semibold">{phase.badge}</h3>
-              <p className="opacity-80 text-sm">{phase.title}</p>
-              <p className="opacity-70 text-sm">{phase.description}</p>
+              <h3 className="font-semibold">{phase.title}</h3>
+              <p className="opacity-80 text-sm">{phase.body}</p>
             </li>
           ))}
         </ol>

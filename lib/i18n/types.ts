@@ -74,11 +74,18 @@ export type HomeDictionary = {
   };
   roadmap: {
     title: string;
-    phases: {
-      badge: string;
+    phase1: {
       title: string;
-      description: string;
-    }[];
+      body: string;
+    };
+    phase2: {
+      title: string;
+      body: string;
+    };
+    phase3: {
+      title: string;
+      body: string;
+    };
   };
   community: {
     title: string;
@@ -180,17 +187,9 @@ export type ModesDictionary = {
   }[];
 };
 
-export type ProgressionSectionDictionary = {
-  id: string;
-  title: string;
-  summary: string;
-  bullets: string[];
-};
-
 export type ProgressionDictionary = {
   title: string;
-  intro: string;
-  sections: ProgressionSectionDictionary[];
+  body: string;
 };
 
 export type CharactersDictionary = {
