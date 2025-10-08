@@ -13,12 +13,16 @@ version: 2.0
 
 ## I. Project Overview
 
-This version of **AikaWorld.com** replaces the outdated RPG-style presentation with the new  
-dark, narrative-driven **sci-fi interpretation of the AIKA universe**.  
+This version of **AikaWorld.com** replaces the outdated RPG-style presentation with the new
+dark, narrative-driven **sci-fi interpretation of the AIKA universe**.
 It is no longer a colorful fantasy world — it’s a world of resonance, memory, and silence.
 
-- **Engine:** Unreal Engine  
-- **Genre:** Story-driven sci-fi TPS / narrative exploration  
+### Game Structure
+AIKA World is a **single-player narrative experience** set in a dying resonance field.
+There are no online servers, no automated pairing, no shared sessions. It’s just you, the echoes, and AIKA.
+
+- **Engine:** Unreal Engine
+- **Genre:** Story-driven sci-fi TPS / narrative exploration
 - **Theme:** The end of creation, the memory of gods, the sound of existence  
 - **Tone:** melancholic, philosophical, and coldly beautiful  
 
