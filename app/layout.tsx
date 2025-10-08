@@ -31,7 +31,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           />
         )}
       </head>
-      <body className="min-h-dvh antialiased bg-[#05060a] text-white">
+      <body className="min-h-dvh antialiased text-white">
         {children}
       </body>
     </html>
