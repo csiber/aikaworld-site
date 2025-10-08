@@ -125,43 +125,13 @@ export const huDictionary: Dictionary = {
     title: 'Játékmódok',
     cards: [
       {
-        title: 'Raid Boss Arena',
-          description:
-            'Öt fős kooperatív boss aréna, ahol a pályák rétegről rétegre tárják fel a mechanikákat, spoilerek nélkül. Olvasd a teleket, kezeld a fázisváltásokat, és védd a csapatot a csapdáktól. A koordinált ultik, élesztések és pozíciócserék döntik el, hogy zsákmányolsz vagy wipe-olsz.',
-          points: [
-            'Öt fős co-op boss összecsapások',
-            'Rétegezett mechanikák spoiler nélkül',
-            'Megosztott loot és fejlődési jutalmak'
-          ],
-          linkLabel: 'See details',
-          href: '#'
-        },
-        {
-          title: 'Infest Survival',
-          description:
-            'Végtelen hullámok ellen tartod a frontot, miközben a korcs variánsok egyre keményebben tesztelik a túlélési rutinokat, spoiler nélkül. Minden elért mérföldkő checkpoint jutalmakat ad – ideiglenes buffok, craft loot vagy taktikák –, mielőtt az újabb raj eláraszt. Rotáld a szerepeket, menedzseld az erőforrásokat.',
-          points: [
-            'Végtelen hullám skálázódás',
-            'Checkpoint jutalmak bankolása',
-            'Kockázat vs. jutalom extrakció'
-          ],
-          linkLabel: 'See details',
-          href: '#'
-        },
-        {
-          title: 'Nyílt Világ Expedíció',
-          description:
-            'Fesztiválfényű nyílt világot jársz be a saját tempódban, felfedve biomeszegmenseket, hubokat és lore-morzsákat anélkül, hogy a nagy fordulatokat lelőnénk. Parkour útvonalak, mozgásfokozó eszközök és dinamikus időjárás alakítják az expedíciót. Kövesd az eseményeket, nyisd a rövidítéseket, gyűjts felderítési intelt a raidhez és infesthez.',
-          points: [
-            'Felfedezésközpontú tempó',
-            'Haladó mozgás és időjárás',
-            'Intel, ami a raidhez és infesthez táplál'
-          ],
-          linkLabel: 'See details',
-          href: '#'
-        }
-      ]
-    },
+        title: 'Story mód',
+        subtitle: 'Merülj egyedül',
+        body:
+          'Melankolikus, sötét sci-fi utazás, ahol AIKA-val és egy elveszett világ visszhangjaival nézel szembe. Nincs co-op. Nincs live service. Csak a történet.'
+      }
+    ]
+  },
     characters: {
       title: 'Rezonátorok',
       description:
