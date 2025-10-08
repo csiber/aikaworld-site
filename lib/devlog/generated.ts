@@ -8,10 +8,8 @@ export type DevlogEntrySource = {
 
 import devlog__2024_08_15_engine_updates from '../../content/devlog/2024-08-15-engine-updates.mdx?raw';
 import devlog__2024_09_05_combat_ai from '../../content/devlog/2024-09-05-combat-ai.mdx?raw';
-import devlog__2024_09_20_community_playtest from '../../content/devlog/2024-09-20-community-playtest.mdx?raw';
 
 export const devlogEntries: DevlogEntrySource[] = [
   { slug: '2024-08-15-engine-updates', source: devlog__2024_08_15_engine_updates },
-  { slug: '2024-09-05-combat-ai', source: devlog__2024_09_05_combat_ai },
-  { slug: '2024-09-20-community-playtest', source: devlog__2024_09_20_community_playtest }
+  { slug: '2024-09-05-combat-ai', source: devlog__2024_09_05_combat_ai }
 ];
