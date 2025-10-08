@@ -270,8 +270,7 @@ export const huDictionary: Dictionary = {
   },
   progression: {
     title: 'Fejlődés',
-    body:
-      'Haladj emlékeken és rezonancia visszhangokon át. Tárd fel AIKA múltjának töredékeit, új jeleneteket és átírt perspektívákat.'
+    body: 'AIKA emlékszik arra a rezonanciára, amelyet felébresztesz – minden döntés átállítja körülötted a világot.'
   },
   devlog: {
     heading: 'Fejlesztői napló',

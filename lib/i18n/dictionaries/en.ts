@@ -270,8 +270,7 @@ export const enDictionary: Dictionary = {
   },
   progression: {
     title: 'Progression',
-    body:
-      'Advance through memories and resonance echoes. Unlock fragments of AIKA’s past, new scenes, and altered perspectives.'
+    body: 'AIKA remembers the resonance you choose to awaken—every choice realigns the world around you.'
   },
   devlog: {
     heading: 'Dev Journal',
