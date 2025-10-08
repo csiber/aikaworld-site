@@ -36,6 +36,14 @@ export default async function PresskitPage() {
           <p className="mt-4 text-base md:text-lg opacity-90">{dictionary.presskit.description}</p>
         </section>
 
+        <section className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 space-y-4">
+          <h2 className="text-2xl font-semibold">{dictionary.presskit.about.title}</h2>
+          <p className="text-base md:text-lg opacity-90">{dictionary.presskit.about.intro}</p>
+          <p className="text-base md:text-lg opacity-80">{dictionary.presskit.about.keyMessage}</p>
+          <p className="text-sm md:text-base italic text-white/80">{dictionary.presskit.about.craft}</p>
+          <p className="text-base md:text-lg font-semibold text-accentB">{dictionary.presskit.about.tagline}</p>
+        </section>
+
         <section className="grid gap-6 md:grid-cols-2">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:col-span-2">
             <h2 className="text-xl font-semibold">{dictionary.presskit.factSheetTitle}</h2>

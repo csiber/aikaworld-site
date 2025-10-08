@@ -641,6 +641,14 @@ export const huDictionary: Dictionary = {
   presskit: {
     heading: 'AIKA World Presskit',
     description: 'Minden sajtó- és tartalomkészítői anyag egy helyen. Szabadon felhasználhatóak a lenti feltételek mellett.',
+    about: {
+      title: 'About the Game',
+      intro:
+        'AIKA World is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
+      keyMessage: 'No multiplayer. No loot. No ranking—only story, sound, and light.',
+      craft: 'Built with Unreal Engine. Composed by the Resonance.',
+      tagline: 'You don’t play AIKA World. You remember it.'
+    },
     factSheetTitle: 'Fact sheet',
     downloadsTitle: 'Letölthető anyagok',
     usageTitle: 'Felhasználási feltételek',
