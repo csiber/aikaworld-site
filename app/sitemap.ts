@@ -5,7 +5,7 @@ import { characterSlugs } from '../lib/content/characters';
 import { defaultLocale } from '../lib/i18n/config';
 import { buildAlternates } from '../lib/seo';
 
-const staticPaths = ['/', '/modes', '/characters', '/presskit', '/privacy', '/terms'];
+const staticPaths = ['/', '/lore/elyndra', '/modes', '/characters', '/presskit', '/privacy', '/terms'];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

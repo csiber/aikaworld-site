@@ -34,6 +34,7 @@ export type HomeDictionary = {
   world: {
     title: string;
     intro: string;
+    ctaHref: string;
     ctaLabel: string;
     factions: {
       name: string;
@@ -106,6 +107,27 @@ export type ProgramPageSectionDictionary = {
   title: string;
   description: string;
   bullets?: string[];
+};
+
+export type LorePageEntryDictionary = {
+  title: string;
+  body: string;
+};
+
+export type LorePageSectionDictionary = {
+  id: string;
+  title: string;
+  paragraphs: string[];
+  entries?: LorePageEntryDictionary[];
+};
+
+export type LorePageDictionary = {
+  breadcrumb: string;
+  title: string;
+  subtitle: string;
+  intro: string;
+  sections: LorePageSectionDictionary[];
+  closingQuote: string;
 };
 
 export type ProgramPageFaqDictionary = {
@@ -336,6 +358,7 @@ export type SeoDictionary = {
     home: { title: string; description: string; ogAlt: string };
     modes: { title: string; description: string; ogAlt: string };
     progression: { title: string; description: string; ogAlt: string };
+    loreElyndra: { title: string; description: string; ogAlt: string };
     playtests: { title: string; description: string; ogAlt: string };
     creatorProgram: { title: string; description: string; ogAlt: string };
     characters: { title: string; description: string; ogAlt: string };
@@ -374,6 +397,9 @@ export type Dictionary = {
   faq: FaqDictionary;
   charactersPage: CharactersDictionary;
   characterPage: CharacterPageDictionary;
+  lore: {
+    elyndra: LorePageDictionary;
+  };
   presskit: PresskitDictionary;
   privacy: LegalDocumentDictionary;
   terms: LegalDocumentDictionary;

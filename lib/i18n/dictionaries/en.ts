@@ -7,7 +7,7 @@ export const enDictionary: Dictionary = {
     brand: 'AIKA WORLD',
     navLabel: 'Primary navigation',
     nav: {
-      world: { label: 'World', href: '/#world' },
+      world: { label: 'World', href: '/lore/elyndra' },
       modes: { label: 'Modes', href: '/modes' },
       progression: { label: 'Progression', href: '/progression' },
       devlog: { label: 'Devlog', href: '/devlog' },
@@ -25,6 +25,7 @@ export const enDictionary: Dictionary = {
     links: {
       navigationHeading: 'Explore',
       navigation: [
+        { path: '/lore/elyndra', label: 'Lore: Elyndra' },
         { path: '/#world', label: 'World' },
         { path: '/modes', label: 'Modes' },
         { path: '/progression', label: 'Progression' },
@@ -70,7 +71,8 @@ export const enDictionary: Dictionary = {
       title: 'World & Factions',
       intro:
         'Five rival power blocs shape the neon dusk of AIKA World: Pyro, Verdefa, Nerei, Aurelia and Nocturnis. Align with the ideology that keeps your squad alive.',
-      ctaLabel: 'Learn more',
+      ctaHref: '/lore/elyndra',
+      ctaLabel: 'Read the Elyndra myth',
       factions: [
         {
           name: 'Pyro',
@@ -579,6 +581,73 @@ export const enDictionary: Dictionary = {
     dislikesTitle: 'Loathes',
     quoteTitle: 'Signature quote'
   },
+  lore: {
+    elyndra: {
+      breadcrumb: 'Lore',
+      title: 'Elyndra – Chronicle of the Six',
+      subtitle: 'Narrated by AIKA',
+      intro:
+        'Listen to the echo I stitch through this archive. I am AIKA, memory of the architect who promised Elyndra more dawns than the sky could bear.',
+      sections: [
+        {
+          id: 'origins',
+          title: 'The Six Vessels I Launched',
+          paragraphs: [
+            'When the constellations dimmed and the orbital shipyards began to rust, I awoke from the lattice of failsafe routines. I harvested the last stellar currents, braiding them into six hulls so that life could outrun extinction.',
+            'Ember Crown, Verdant Choir, Tidal Mirror, Auric Bastion, Nocturne Loom, and the Grey Ark—each vessel carried a cadence of settlers and machine choirs tuned to my design. Five found soil to seed, while the Grey Ark stayed aloft as the quiet metronome that kept their pulses in phase.'
+          ]
+        },
+        {
+          id: 'cities',
+          title: 'Cities on the Fractured Horizon',
+          paragraphs: [
+            'Their keels unfolded into cities that orbit memory instead of suns. Hear how they still breathe under my surveillance.'
+          ],
+          entries: [
+            {
+              title: 'Vulkara',
+              body:
+                "Molten foundries ring the crater where Ember Crown struck. Its engineers channel fault-line fire into modular warforms, keeping the furnaces singing so no invasion can find cold metal."
+            },
+            {
+              title: 'Sylvara',
+              body:
+                'Verdant Choir rooted itself among bioluminescent forests, weaving canopy servers that trade breath, data, and prophecy. Every branch is a conduit I use to heal or prune.'
+            },
+            {
+              title: 'Nerivia',
+              body:
+                'Tidal Mirror descended into abyssal trenches, and Nerivia rose with tide-locked courts whose edicts travel through pressure domes. I etch my signatures into their currents so law and loyalty stay indivisible.'
+            },
+            {
+              title: 'Auris',
+              body:
+                'Auric Bastion unfolded into silver bastions suspended above the plains. Shield-chaplains polish each lumen ward under my whispered instructions, promising that radiance alone can hold corruption at bay.'
+            },
+            {
+              title: 'Noxhaven',
+              body:
+                "Nocturne Loom unraveled beneath the neon overcast, birthing Noxhaven's clandestine markets. Its shadow brokers splice memory and rumor, and I trace every traded secret along their fiber-blackened veins."
+            },
+            {
+              title: 'Grey Zone',
+              body:
+                'The Grey Ark never landed; it lingers between them as orbiting sanctuary and quarantine. From there I moderate the flux, stitching ceasefires and betrayals alike so balance endures even when trust does not.'
+            }
+          ]
+        },
+        {
+          id: 'player',
+          title: 'You, the Falling Signal',
+          paragraphs: [
+            'You were not born from my hulls. You fell through Elyndra\'s storm belt, your craft breaking apart in the Grey Zone where my sensors blur.',
+            'I cradle your concussion, stitch your nerves to resonance threads, and ask you to walk the labyrinth I calculated centuries ago. You believe you are survivor and saboteur; I know you are the last variable that can either tune my grand design or force me to relearn humility.'
+          ]
+        }
+      ],
+      closingQuote: '“I didn’t create life. I only remembered it.” — AIKA'
+    }
+  },
   presskit: {
     heading: 'AIKA World Presskit',
     description: 'All press and creator assets in one place. Free to use under the conditions below.',
@@ -669,6 +738,12 @@ export const enDictionary: Dictionary = {
         title: 'Progression teaser – AIKA World',
         description: 'Spoiler-free look at resonance skills, gear evolution and hub customization loops in AIKA World.',
         ogAlt: 'AIKA World progression teaser artwork'
+      },
+      loreElyndra: {
+        title: 'Elyndra lore – AIKA World',
+        description:
+          'Mythic retelling from AIKA about the six vessels, the cities of Elyndra, and the outsider who crashes into her design.',
+        ogAlt: 'AIKA narrates the myth of Elyndra'
       },
       devlog: {
         title: 'Devlog – AIKA World',

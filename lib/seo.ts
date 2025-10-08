@@ -123,6 +123,7 @@ const STATIC_PAGE_IMAGE_VARIANTS: Partial<Record<StaticSeoPage, OgImageVariant>>
   home: 'home',
   modes: 'modes',
   progression: 'progression',
+  loreElyndra: 'default',
   playtests: 'playtests',
   creatorProgram: 'creator',
   characters: 'characters',
