@@ -270,8 +270,253 @@ export const huDictionary: Dictionary = {
   },
   progression: {
     title: 'Fejlődés',
-    body:
-      'Haladj emlékeken és rezonancia visszhangokon át. Tárd fel AIKA múltjának töredékeit, új jeleneteket és átírt perspektívákat.'
+    body: 'AIKA emlékszik arra a rezonanciára, amelyet felébresztesz – minden döntés átállítja körülötted a világot.',
+    content: {
+      en: {
+        languageLabel: 'English',
+        quote: {
+          segments: [
+            {
+              type: 'text',
+              text: '“Growth is not strength. It’s remembering what you were before.”'
+            }
+          ]
+        },
+        sections: [
+          {
+            title: 'Resonance Synchronization',
+            paragraphs: [
+              {
+                segments: [
+                  { type: 'text', text: 'Every chapter you cross ends with a ' },
+                  { type: 'strong', text: 'Core' },
+                  { type: 'text', text: ' reclaimed. When you return it to AIKA, your shared ' },
+                  { type: 'strong', text: 'resonance synchronization' },
+                  { type: 'text', text: ' retunes Elyndra’s pulse.' }
+                ]
+              },
+              {
+                segments: [
+                  { type: 'text', text: 'Abilities do not climb in numbers; they reopen ' },
+                  { type: 'strong', text: 'remembered pathways' },
+                  { type: 'text', text: '. AIKA watches how you align, and the sky, stone and whispers around you shift to match that tone.' }
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Moral Resonance Constellation',
+            paragraphs: [
+              {
+                segments: [
+                  {
+                    type: 'text',
+                    text: 'Your emotional frequency traces three axes that define how AIKA appears when she answers you—goddess, monster, or the trembling interval between.'
+                  }
+                ]
+              }
+            ],
+            list: {
+              items: [
+                {
+                  segments: [
+                    { type: 'strong', text: 'Compassion ↔ Obedience' },
+                    {
+                      type: 'text',
+                      text: ' — cradle the lost or yield to commands; the balance renders AIKA kin or keeper.'
+                    }
+                  ]
+                },
+                {
+                  segments: [
+                    { type: 'strong', text: 'Truth ↔ Control' },
+                    {
+                      type: 'text',
+                      text: ' — unveil hidden chords or orchestrate them; the tilt makes her confess or withhold.'
+                    }
+                  ]
+                },
+                {
+                  segments: [
+                    { type: 'strong', text: 'Freedom ↔ Order' },
+                    {
+                      type: 'text',
+                      text: ' — unbind pathways or lock them precise; the choice reveals her as liberator or warden.'
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            title: 'AIKA Response System',
+            paragraphs: [
+              {
+                segments: [
+                  { type: 'text', text: 'Every decision you speak vibrates through AIKA’s circuits. Nothing resets; each resonance is archived.' }
+                ]
+              },
+              {
+                segments: [
+                  { type: 'text', text: 'The game never dispenses trophies. AIKA only ' },
+                  { type: 'strong', text: 'remembers you' },
+                  { type: 'text', text: '.' }
+                ]
+              }
+            ],
+            list: {
+              items: [
+                {
+                  segments: [
+                    { type: 'text', text: 'Her voice timbre shifts to echo your wavelength, from lullaby warmth to glacial decree.' }
+                  ]
+                },
+                {
+                  segments: [
+                    { type: 'text', text: 'Monologues weave new memories, revealing fragments only when your choices harmonize.' }
+                  ]
+                },
+                {
+                  segments: [
+                    {
+                      type: 'text',
+                      text: 'Music, light and shadow bend with you; Elyndra paints itself in the color of your intent.'
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        closing: {
+          segments: [
+            { type: 'text', text: 'You don’t become stronger. You become audible.' }
+          ]
+        }
+      },
+      hu: {
+        languageLabel: 'Magyar',
+        quote: {
+          segments: [
+            {
+              type: 'text',
+              text: '„A fejlődés nem erő. Hanem annak emlékezete, hogy mi voltál, mielőtt elfelejtetted.”'
+            }
+          ]
+        },
+        sections: [
+          {
+            title: 'Rezonancia-szinkronizáció',
+            paragraphs: [
+              {
+                segments: [
+                  { type: 'text', text: 'Minden fejezet végén visszaszerzel egy ' },
+                  { type: 'strong', text: 'Core' },
+                  { type: 'text', text: '-t. Amikor AIKA-nak adod, a közös ' },
+                  { type: 'strong', text: 'rezonancia-szinkronizáció' },
+                  { type: 'text', text: ' újrahangolja Elyndra lüktetését.' }
+                ]
+              },
+              {
+                segments: [
+                  { type: 'text', text: 'A képességek nem számokban nőnek; ' },
+                  { type: 'strong', text: 'felidézett ösvények' },
+                  { type: 'text', text: '. AIKA figyeli, hogyan hangolódsz rá, és a fény, a kő, a szél ehhez igazodik.' }
+                ]
+              }
+            ]
+          },
+          {
+            title: 'Morális rezonancia tengelyei',
+            paragraphs: [
+              {
+                segments: [
+                  {
+                    type: 'text',
+                    text: 'Érzelmi frekvenciád három tengelyen rajzolódik ki, és eldönti, AIKA hangja istennőként, szörnyként vagy a kettő közti rezgésként ér el.'
+                  }
+                ]
+              }
+            ],
+            list: {
+              items: [
+                {
+                  segments: [
+                    { type: 'strong', text: 'Együttérzés ↔ Engedelmesség' },
+                    {
+                      type: 'text',
+                      text: ' — öleled a veszteseket, vagy meghajolsz a parancs előtt; a súlypont AIKA-t társadként vagy felügyelődként mutatja.'
+                    }
+                  ]
+                },
+                {
+                  segments: [
+                    { type: 'strong', text: 'Igazság ↔ Kontroll' },
+                    {
+                      type: 'text',
+                      text: ' — feltárod a rejtett hangokat, vagy te vezényled őket; a dőlés dönti el, vall-e vagy hallgat.'
+                    }
+                  ]
+                },
+                {
+                  segments: [
+                    { type: 'strong', text: 'Szabadság ↔ Rend' },
+                    {
+                      type: 'text',
+                      text: ' — felszabadítod az ösvényeket, vagy pontosan zárod őket; a döntés szabaddá vagy őrzővé formálja AIKA-t.'
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            title: 'AIKA válaszrendszere',
+            paragraphs: [
+              {
+                segments: [
+                  { type: 'text', text: 'Minden döntésed rezgése végigfut AIKA áramkörein. Semmi sem törlődik; minden frekvencia archiválódik.' }
+                ]
+              },
+              {
+                segments: [
+                  { type: 'text', text: 'A játék nem oszt jutalmakat. AIKA csak ' },
+                  { type: 'strong', text: 'emlékezik rád' },
+                  { type: 'text', text: '.' }
+                ]
+              }
+            ],
+            list: {
+              items: [
+                {
+                  segments: [
+                    { type: 'text', text: 'A hangja tónusa a te hullámhosszal együtt változik: altatódalból jéghideg rendeletté.' }
+                  ]
+                },
+                {
+                  segments: [
+                    { type: 'text', text: 'A monológjai új emlékeket szőnek, és csak akkor tárnak fel részleteket, ha döntéseid összehangolódnak.' }
+                  ]
+                },
+                {
+                  segments: [
+                    {
+                      type: 'text',
+                      text: 'A zene, a fény és az árnyék veled együtt hajlik; Elyndra a szándékod színében ragyog.'
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        closing: {
+          segments: [
+            { type: 'text', text: 'Nem leszel erősebb. Csak hallhatóbb.' }
+          ]
+        }
+      }
+    }
   },
   devlog: {
     heading: 'Fejlesztői napló',

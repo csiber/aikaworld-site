@@ -173,9 +173,39 @@ export type ModesDictionary = {
   }[];
 };
 
+export type RichTextSegment = {
+  type: 'text' | 'strong' | 'em';
+  text: string;
+};
+
+export type ProgressionParagraph = {
+  segments: RichTextSegment[];
+};
+
+export type ProgressionList = {
+  items: ProgressionParagraph[];
+};
+
+export type ProgressionSection = {
+  title: string;
+  paragraphs: ProgressionParagraph[];
+  list?: ProgressionList;
+};
+
+export type ProgressionLanguageContent = {
+  languageLabel: string;
+  quote: ProgressionParagraph;
+  sections: ProgressionSection[];
+  closing: ProgressionParagraph;
+};
+
 export type ProgressionDictionary = {
   title: string;
   body: string;
+  content: {
+    en: ProgressionLanguageContent;
+    hu: ProgressionLanguageContent;
+  };
 };
 
 export type CharactersDictionary = {
