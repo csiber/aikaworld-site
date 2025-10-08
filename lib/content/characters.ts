@@ -10,7 +10,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/akari-banner.png',
       heroImageAlt: 'Akari strides through a furnace-lit street with embers coiling around her blade.',
       description:
-        "Akari keeps Narukami's furnace heat caged beneath tempered armor. She drills her squad with metronome-perfect charges until the war cadence matches the city's roaring forges. Discipline fuels her hunt for the syndicate captains who scorched her home and called it collateral.",
+        "Akari keeps Narukami's furnace heat caged beneath tempered armor. She hones metronome-perfect charges until the war cadence matches the city's roaring forges. Discipline fuels her hunt for the syndicate captains who scorched her home and called it collateral.",
       quote: 'Akari: "Hold formation. The blaze obeys me, or it dies."'
     },
     {
@@ -72,7 +72,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       heroImage: 'https://media.aikaworld.com/akari-banner.png',
       heroImageAlt: 'Akari strides through a furnace-lit street with embers coiling around her blade.',
       description:
-        "Akari keeps Narukami's furnace heat caged beneath tempered armor. She drills her squad with metronome-perfect charges until the war cadence matches the city's roaring forges. Discipline fuels her hunt for the syndicate captains who scorched her home and called it collateral.",
+        "Akari keeps Narukami's furnace heat caged beneath tempered armor. She hones metronome-perfect charges until the war cadence matches the city's roaring forges. Discipline fuels her hunt for the syndicate captains who scorched her home and called it collateral.",
       quote: 'Akari: "Hold formation. The blaze obeys me, or it dies."'
     },
     {

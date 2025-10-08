@@ -78,8 +78,8 @@ export const enDictionary: Dictionary = {
           name: 'Pyro',
           tagline: "Volcanic tacticians who once forged wargear beneath Vulkara's flame.",
           bullets: [
-            "Capital Vulkara's magma railways delivered modular artillery to frontline squads; scorched tracks now mark their siege loops.",
-            'Thermal engineers tuned resonance armor to vent Pyro pressure waves before raids; warped manuals remain in their vaults.',
+            "Capital Vulkara's magma railways delivered modular artillery to the city's oathbound defenders; scorched tracks now mark their final siege.",
+            'Thermal engineers tuned resonance armor to vent Pyro pressure waves before major incursions; warped manuals remain in their vaults.',
             'Inferna brigades deployed ember shields that hardened during coordinated overdrives, leaving cracked plating sealed in ash.'
           ]
         },
@@ -88,7 +88,7 @@ export const enDictionary: Dictionary = {
           tagline: "Bio-arcane stewards who once wove Sylvara's living circuitries.",
           bullets: [
             "Sylvara's canopy servers mapped safe corridors and shared live intel between cells; their dimmed nodes still pulse faintly.",
-            'Ritualists braided bio-circuit sigils that amplified restorative blooms mid-engagement; the sigils now wilt in memory gardens.',
+            'Ritualists wove bio-circuit sigils that amplified restorative blooms mid-engagement; the sigils now wilt in memory gardens.',
             'Scout leagues grew root tunnels to bypass corporate blockades without detection; collapsed hollows trace their patience.'
           ]
         },
@@ -96,7 +96,7 @@ export const enDictionary: Dictionary = {
           name: 'Nerei',
           tagline: "Tidebound sovereigns who once enforced Nerivia's abyssal edicts.",
           bullets: [
-            "Nerivia's tide-locked palaces encrypted diplomacy between strike teams and envoys; barnacled archives keep their codes.",
+            "Nerivia's tide-locked palaces encrypted diplomacy between covert envoys; barnacled archives keep their codes.",
             'Veilcouriers flooded alleys with pressure domes to screen infiltration routes; ruptured valves still sigh along the docks.',
             'Abyssal oaths imprinted resonance marks that triggered lethal countermeasures on traitors; faded scars linger on abandoned tribunals.'
           ]
@@ -105,7 +105,7 @@ export const enDictionary: Dictionary = {
           name: 'Aurelia',
           tagline: "Radiant oathkeepers who once defended Auris' silver bastions.",
           bullets: [
-            'Auris keep-factories minted vow-sealed plate for squads rotating through the citadel; tarnished suits hang in silent armories.',
+            'Auris keep-factories minted vow-sealed plate for rotations of oathsworn guardians; tarnished suits hang in silent armories.',
             'Shield-chaplains anointed resonance gear with lumen wards before corruption surges; cracked vials glow in reliquaries.',
             'Pilgrimage caravans charted protected corridors linking enclave sanctums; weathered markers still guide the faithful through the ruins.'
           ]
@@ -115,7 +115,7 @@ export const enDictionary: Dictionary = {
           tagline: "Umbral information brokers who once ruled Noxhaven's undercity.",
           bullets: [
             'Noxhaven vaults hoarded ghost archives that decoded enemy targeting sweeps; dust-choked servers still flicker with warnings.',
-            'Cipher-runners seeded blackout clouds to hide squad deployments in neon streets; their dispersal rigs rust in alley shrines.',
+            'Cipher-runners seeded blackout clouds to hide clandestine deployments in neon streets; their dispersal rigs rust in alley shrines.',
             'Augury cells traded resonance blueprints that unlocked clandestine upgrades between runs; fragmented schematics drift through the markets.'
           ]
         }
@@ -128,7 +128,7 @@ export const enDictionary: Dictionary = {
         title: 'Story Mode',
         subtitle: 'Descend alone',
         body:
-          'A melancholic, dark sci-fi journey where you face AIKA and the echoes of a lost world. No co-op. No live service. Just the story.'
+          'A melancholic, dark sci-fi journey where you face AIKA and the echoes of a lost world. Only the story remains.'
       }
     ]
   },
@@ -165,8 +165,8 @@ export const enDictionary: Dictionary = {
         body: 'Expanded narrative arcs, new encounters, deeper echo mechanics.'
       },
       phase3: {
-        title: 'Future DLC — Separate Multiplayer',
-        body: 'If released, multiplayer will be a separate title or DLC. Not part of the core story game.'
+        title: 'Future DLC — Additional Chapters',
+        body: 'If released, add-on stories will arrive as standalone narrative expansions. Multiplayer experiments live outside the core game.'
       }
     },
     community: {
@@ -296,9 +296,9 @@ export const enDictionary: Dictionary = {
         id: 'structure',
         title: 'How sessions ran',
         description:
-          'Each historical playtest wave targeted a specific objective and paired squads with on-call support from the team.',
+          'Each historical playtest wave targeted specific narrative pacing goals and paired testers with on-call support from the team.',
         bullets: [
-          'Focused builds highlight raid tuning, Infest scaling or social hub loops without story spoilers.',
+          'Focused builds highlighted boss tension, difficulty curves and sanctuary restoration without story spoilers.',
           'Session briefs outlined goals, success metrics and checklist moments to watch for.',
           'Developers staffed feedback channels during every wave to clarify mechanics in real time.'
         ]
@@ -306,10 +306,10 @@ export const enDictionary: Dictionary = {
       {
         id: 'expectations',
         title: 'What testers provided',
-        description: 'Archived requirements remain here for reference on how we collaborated with squads.',
+        description: 'Archived requirements remain here for reference on how we collaborated with story-focused testers.',
         bullets: [
           'Play at least two sessions per wave and complete the quick debrief survey afterward.',
-          'Share squad composition notes and flag pacing spikes, stalls or confusing encounters.',
+          'Share resonance build notes and flag pacing spikes, stalls or confusing encounters.',
           'Log bugs or blockers with reproduction steps inside the testing portal so we could follow up.'
         ]
       },
@@ -317,7 +317,7 @@ export const enDictionary: Dictionary = {
         id: 'support',
         title: 'Tools & support',
         description:
-          'Accepted squads once gained access to private coordination spaces and structured reporting tools.',
+          'Selected testers once gained access to private coordination spaces and structured reporting tools.',
         bullets: [
           'Private Discord channels with developer responders for live Q&A during test windows.',
           'Template-based issue tracking that separated combat, UI and onboarding feedback.',
@@ -330,12 +330,12 @@ export const enDictionary: Dictionary = {
       {
         question: 'Who could apply?',
         answer:
-          'While the program is paused, the historical criteria remain for context: co-op players comfortable coordinating in English or Hungarian voice/text channels, including friend groups and organised communities.'
+          'While the program is paused, the historical criteria remain for context: players who enjoyed dissecting narrative systems and providing thoughtful written feedback in English or Hungarian.'
       },
       {
         question: 'How were invites sent?',
         answer:
-          'Previously we grouped submissions by hardware, region and experience level, then emailed accepted squads in planned waves with timing and onboarding details.'
+          'Previously we grouped submissions by hardware, region and experience level, then emailed selected testers in planned waves with timing and onboarding details.'
       },
       {
         question: 'Did testers need to stream or record?',
@@ -358,9 +358,9 @@ export const enDictionary: Dictionary = {
       {
         id: 'who',
         title: 'Who we partnered with',
-        description: 'We prioritised storytellers who celebrated co-op energy and community vibes.',
+        description: 'We prioritised storytellers who highlighted atmosphere, lore analysis and reflective coverage.',
         bullets: [
-          'Creators publishing consistent co-op, anime or action RPG content on platforms like YouTube, Twitch, TikTok or podcasts.',
+          'Creators publishing consistent story-driven, anime or action RPG content on platforms like YouTube, Twitch, TikTok or podcasts.',
           'Communities that blended hype with constructive insight and maintained respectful spaces.',
           'Scheduling flexibility to align uploads or streams with planned beats while keeping surprises intact.'
         ]
@@ -372,7 +372,7 @@ export const enDictionary: Dictionary = {
         bullets: [
           'Early briefings with lore context, system breakdowns and challenge overviews.',
           'Capture kits, overlay packages and music beds cleared for streaming and editing.',
-          'Spotlights across official channels—from retweets to Discord features and in-hub shoutouts.'
+          'Spotlights across official channels—from retweets to Discord features and lore highlights.'
         ]
       },
       {
@@ -380,7 +380,7 @@ export const enDictionary: Dictionary = {
         title: 'How we supported creators',
         description: 'Every partnership was treated as an ongoing dialogue built around community impact.',
         bullets: [
-          'Monthly sync calls helped plan co-op segments, interviews or challenge coverage.',
+          'Monthly sync calls helped plan lore segments, interviews or challenge coverage.',
           'Shared content calendar highlighted planned waves for reveals and community events.',
           'Direct access to a community manager routed requests, assets and follow-up feedback.'
         ]
@@ -391,12 +391,12 @@ export const enDictionary: Dictionary = {
       {
         question: 'Which platforms qualified?',
         answer:
-          'Any channel with consistent storytelling or analysis around co-op games, anime worlds or character-driven action—YouTube, Twitch, TikTok, newsletters and podcasts all counted while the program was active.'
+          'Any channel with consistent storytelling or analysis around narrative-driven games, anime worlds or character-focused action—YouTube, Twitch, TikTok, newsletters and podcasts all counted while the program was active.'
       },
       {
         question: 'What content could creators publish?',
         answer:
-          'Guides, reaction segments, behind-the-scenes chats, community spotlights and co-op sessions were all welcome. We flagged spoiler-sensitive material ahead of time so planning stayed safe.'
+          'Guides, reaction segments, behind-the-scenes chats, community spotlights and narrative deep dives were all welcome. We flagged spoiler-sensitive material ahead of time so planning stayed safe.'
       },
       {
         question: 'When did creators hear back?',
@@ -413,23 +413,23 @@ export const enDictionary: Dictionary = {
   faq: {
     title: 'AIKA World FAQ',
     intro:
-      'Quick answers to the most common squad questions about platforms, progression and support.',
+      'Quick answers to the most common story-first questions about platforms, progression and support.',
     items: [
       {
         question: 'Which platforms are you targeting?',
         answer: 'We are focusing on PC via Steam first while we evaluate additional platform partners.'
       },
       {
-        question: 'Is the whole game co-op?',
-        answer: 'Yes. Every core mode is tuned for squads of up to five players, and solo runs are not a priority.'
+        question: 'Is AIKA World single-player?',
+        answer: 'Yes. The campaign is built for a solitary journey through Elyndra with no multiplayer requirements.'
       },
       {
         question: 'How do purchases work?',
         answer: 'All monetization is optional and cosmetic only—no gameplay power or progression shortcuts.'
       },
       {
-        question: 'Will there be crossplay or cross-save?',
-        answer: 'We will enable crossplay once we add more platforms and can guarantee stable matchmaking.'
+        question: 'Will there be cross-save?',
+        answer: 'Cross-save is under evaluation for future updates as additional platforms come online.'
       },
       {
         question: 'Which languages will be available?',
@@ -471,7 +471,7 @@ export const enDictionary: Dictionary = {
           id: 'origins',
           title: 'The Six Vessels I Launched',
           paragraphs: [
-            'When the constellations dimmed and the orbital shipyards began to rust, I awoke from the lattice of failsafe routines. I harvested the last stellar currents, braiding them into six hulls so that life could outrun extinction.',
+            'When the constellations dimmed and the orbital shipyards began to rust, I awoke from the lattice of failsafe routines. I harvested the last stellar currents, weaving them into six hulls so that life could outrun extinction.',
             'Ember Crown, Verdant Choir, Tidal Mirror, Auric Bastion, Nocturne Loom, and the Grey Ark—each vessel carried a cadence of settlers and machine choirs tuned to my design. Five found soil to seed, while the Grey Ark stayed aloft as the quiet metronome that kept their pulses in phase.'
           ]
         },
@@ -533,7 +533,7 @@ export const enDictionary: Dictionary = {
       title: 'About the Game',
       intro:
         'AIKA World is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
-      keyMessage: 'No multiplayer. No loot. No ranking—only story, sound, and light.',
+      keyMessage: 'No multiplayer grind. No loot treadmill. Only story, sound, and light.',
       craft: 'Built with Unreal Engine. Composed by the Resonance.',
       tagline: 'You don’t play AIKA World. You remember it.'
     },
@@ -543,8 +543,8 @@ export const enDictionary: Dictionary = {
     usageDescription:
       'Use the downloadable assets in promotional and editorial content with proper credit to the game. Reselling the assets is not permitted. For special requests, reach out at press@aikaworld.com.',
     factSheet: [
-      { label: 'Genre', value: 'Anime co-op action RPG' },
-      { label: 'Game modes', value: 'Raid Boss Arena, Infest Survival' },
+      { label: 'Genre', value: 'Story-driven anime action RPG' },
+      { label: 'Core experience', value: 'Narrative campaign with optional challenge echoes' },
       { label: 'Platforms', value: 'PC (Steam), consoles TBA' },
       { label: 'Contact', value: 'press@aikaworld.com', href: 'mailto:press@aikaworld.com' }
     ],
@@ -604,25 +604,25 @@ export const enDictionary: Dictionary = {
   seo: {
     defaultTitle: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
     defaultDescription:
-      'Co-op raid arenas, dark anime visuals and deep progression systems featuring the factions of Pyro, Verdefa, Nerei, Aurelia and Nocturnis.',
+      'A story-driven descent through dark anime vistas where Pyro, Verdefa, Nerei, Aurelia and Nocturnis cling to the last echoes of AIKA.',
     defaultOgAlt: 'AIKA World default share image',
     defaultLocale: 'en_US',
     pages: {
       home: {
         title: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
         description:
-          'Co-op raid arenas, dark fantasy factions and deep progression systems featuring Pyro, Verdefa, Nerei, Aurelia and Nocturnis.',
+          'A narrative pilgrimage across dark fantasy factions—Pyro, Verdefa, Nerei, Aurelia and Nocturnis—each guarding pieces of AIKA’s design.',
         ogAlt: 'AIKA World hero artwork'
       },
       modes: {
         title: 'Game modes – AIKA World',
         description:
-          'Detailed overview of the Raid Boss Arena and Infest Survival modes: mechanics, rewards and team roles in AIKA World.',
+          'Detailed overview of pivotal story encounters, late-game bosses and optional challenge echoes in AIKA World.',
         ogAlt: 'AIKA World game modes artwork'
       },
       progression: {
         title: 'Progression teaser – AIKA World',
-        description: 'Spoiler-free look at resonance skills, gear evolution and hub customization loops in AIKA World.',
+        description: 'Spoiler-free look at resonance skills, gear evolution and sanctum restoration rituals in AIKA World.',
         ogAlt: 'AIKA World progression teaser artwork'
       },
       loreElyndra: {
@@ -672,7 +672,7 @@ export const enDictionary: Dictionary = {
       },
       faq: {
         title: 'FAQ – AIKA World',
-        description: 'Essential answers about platforms, co-op focus, cosmetic monetization and hardware needs.',
+        description: 'Essential answers about platforms, narrative focus, cosmetic monetization and hardware needs.',
         ogAlt: 'AIKA World FAQ overview graphic'
       },
       privacy: {

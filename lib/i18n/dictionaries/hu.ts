@@ -128,7 +128,7 @@ export const huDictionary: Dictionary = {
         title: 'Story mód',
         subtitle: 'Merülj egyedül',
         body:
-          'Melankolikus, sötét sci-fi utazás, ahol AIKA-val és egy elveszett világ visszhangjaival nézel szembe. Nincs co-op. Nincs live service. Csak a történet.'
+          'Melankolikus, sötét sci-fi utazás, ahol AIKA-val és egy elveszett világ visszhangjaival nézel szembe. Csak a történet maradt.'
       }
     ]
   },
@@ -165,8 +165,8 @@ export const huDictionary: Dictionary = {
         body: 'Bővített narratív ívek, új találkozások, mélyebb visszhang mechanikák.'
       },
       phase3: {
-        title: 'Jövőbeli DLC — Különálló multiplayer',
-        body: 'Ha megjelenik, a multiplayer külön címként vagy DLC-ként érkezik. Nem része az alap sztori játéknak.'
+        title: 'Jövőbeli DLC — További fejezetek',
+        body: 'Ha megjelenik, önálló történeti kiegészítők formájában érkezik. A többjátékos kísérletek külön projektként maradnak.'
       }
     },
     community: {
@@ -246,7 +246,7 @@ export const huDictionary: Dictionary = {
       {
         id: 'story',
         title: 'Story Mode',
-        tagline: 'Magányos narratív alászállás rezonáns harccal, jelentős döntésekkel és hub-helyreállítással.',
+        tagline: 'Magányos narratív alászállás rezonáns harccal, jelentős döntésekkel és szentély-helyreállítással.',
         mechanicsTitle: 'Fő elemek',
         rewardsTitle: 'Fejlődés',
         rolesTitle: 'Játékstílus fókusz',
@@ -257,7 +257,7 @@ export const huDictionary: Dictionary = {
         ],
         rewards: [
           'Story Essence a képesség konstellációk bővítéséhez és a filmszerű emlékek feloldásához.',
-          'Felújított hub létesítmények: crafting fülkék, meditációs terek és lore archívumok.',
+          'Felújított szentélylétesítmények: crafting fülkék, meditációs terek és lore archívumok.',
           'Narratív mérföldkövekhez és opcionális célokhoz kötött kozmetikai relikviák.'
         ],
         roles: [
@@ -295,10 +295,10 @@ export const huDictionary: Dictionary = {
       {
         id: 'structure',
         title: 'Hogyan zajlottak a sessionök',
-        description:
-          'Minden korábbi playtest hullám konkrét célt kapott, és a csapatokat közvetlenül elérhető fejlesztőkkel párosítottuk.',
+          description:
+            'Minden korábbi playtest hullám konkrét célt kapott, és a tesztelőket közvetlenül elérhető fejlesztőkkel párosítottuk.',
         bullets: [
-          'Fókusz buildek raid finomhangolást, Infest skálázást vagy hub loopokat vizsgáltak spoiler nélkül.',
+          'Fókusz buildek főellenfél-dinamikát, nehézségi ívet vagy szentély köröket vizsgáltak spoiler nélkül.',
           'A session brífek célokat, sikerkritériumokat és figyelendő pillanatokat adtak.',
           'A fejlesztők minden hullám alatt jelen voltak a visszajelző csatornákban, hogy azonnal tisztázzák a mechanikákat.'
         ]
@@ -309,15 +309,15 @@ export const huDictionary: Dictionary = {
         description: 'Az archív elvárások megmutatják, milyen együttműködés működött a program aktív időszakában.',
         bullets: [
           'Hullámonként legalább két sessiont játszottak és kitöltötték a gyors összegző kérdőívet.',
-          'Megosztották a squad összetételét, és jelezték, hol torpant vagy gyorsult túl a tempó.',
+          'Megosztották a rezonancia összeállításait, és jelezték, hol torpant vagy gyorsult túl a tempó.',
           'A hibákat vagy blokkolókat reprodukciós lépésekkel logolták a tesztelő portálon, hogy követni tudtuk.'
         ]
       },
       {
         id: 'support',
         title: 'Eszközök és támogatás',
-        description:
-          'Az elfogadott csapatok privát egyeztető tereket és strukturált riport eszközöket kaptak.',
+          description:
+            'Az elfogadott tesztelők privát egyeztető tereket és strukturált riport eszközöket kaptak.',
         bullets: [
           'Privát Discord csatornák fejlesztői válaszolókkal a teszt ablakok alatt.',
           'Sablonos hibajegy-kezelés, ami szétválasztotta a harc, UI és onboarding visszajelzéseket.',
@@ -329,13 +329,13 @@ export const huDictionary: Dictionary = {
     faqs: [
       {
         question: 'Kik jelentkezhettek?',
-        answer:
-          'A program szünetel, de a történelmi feltételek megmaradnak: kooperatív játékosok, akik angol vagy magyar voice/text csatornákon tudnak egyeztetni, legyenek baráti csapatok vagy szervezett közösségek.'
+          answer:
+            'A program szünetel, de a történelmi feltételek megmaradnak: olyan játékosok, akik szívesen elemezték a narratív rendszereket, és angolul vagy magyarul részletes írásos visszajelzést adtak.'
       },
       {
         question: 'Hogyan küldtétek ki a meghívókat?',
         answer:
-          'Heti rendszerességgel átnéztük a jelentkezéseket, hardver, régió és tapasztalat alapján csoportosítottunk, majd ütemezett hullámokban küldtünk e-mailt az elfogadott squadoknak az időzítéssel és onboarding infóval.'
+          'Heti rendszerességgel átnéztük a jelentkezéseket, hardver, régió és tapasztalat alapján csoportosítottunk, majd ütemezett hullámokban küldtünk e-mailt az elfogadott tesztelőknek az időzítéssel és onboarding infóval.'
       },
       {
         question: 'Kellett streamelni vagy felvenni?',
@@ -358,9 +358,9 @@ export const huDictionary: Dictionary = {
       {
         id: 'who',
         title: 'Kikkel dolgoztunk együtt',
-        description: 'Azokat részesítettük előnyben, akik a kooperatív energiát és a közösségi hangulatot emelték ki.',
+        description: 'Azokat részesítettük előnyben, akik a hangulatot, a lore elemzést és a reflektív történetmesélést emelték ki.',
         bullets: [
-          'Rendszeresen publikáltak kooperatív, anime vagy akció RPG tartalmat YouTube-on, Twitch-en, TikTokon vagy podcast formában.',
+          'Rendszeresen publikáltak történetközpontú, anime vagy akció RPG tartalmat YouTube-on, Twitch-en, TikTokon vagy podcast formában.',
           'Olyan közösséget építettek, ahol a hype és az építő kritika egyensúlyban maradt.',
           'A publikálást az ütemezett beatjeinkhez tudták igazítani anélkül, hogy lelőtték volna a meglepetéseket.'
         ]
@@ -372,7 +372,7 @@ export const huDictionary: Dictionary = {
         bullets: [
           'Előzetes brífek lore kontextussal, rendszer bontásokkal és kihívás áttekintésekkel.',
           'Felvételi csomagok, overlay szettek és streamelhető zenék, amelyeket szabadon használhattak.',
-          'Kiemelések az official csatornákon – retweetektől a Discord feature-ökig és hub shoutoutokig.'
+          'Kiemelések az official csatornákon – retweetektől a Discord feature-ökig és lore kiemelésekig.'
         ]
       },
       {
@@ -380,7 +380,7 @@ export const huDictionary: Dictionary = {
         title: 'Hogyan támogattuk a készítőket',
         description: 'Minden partneri kapcsolat folyamatos párbeszéd volt, amely a közösségi hatásra épült.',
         bullets: [
-          'Havi egyeztető hívások segítettek megtervezni a kooperatív blokkokat, interjúkat vagy kihívás coverage-et.',
+          'Havi egyeztető hívások segítettek megtervezni a narratív blokkokat, interjúkat vagy kihívás coverage-et.',
           'Megosztott tartalomnaptár jelezte a reveal-ek és közösségi események ütemezett hullámait.',
           'Közvetlen community manager intézte a kéréseket, asseteket és az utókövetést.'
         ]
@@ -390,13 +390,13 @@ export const huDictionary: Dictionary = {
     faqs: [
       {
         question: 'Milyen platformok számítottak?',
-        answer:
-          'Bármely csatorna, ahol következetes történetmesélés vagy elemzés volt kooperatív játékokról, anime világokról vagy karakterközpontú akcióról – YouTube, Twitch, TikTok, hírlevél és podcast egyaránt.'
+          answer:
+            'Bármely csatorna, ahol következetes történetmesélés vagy elemzés volt narratív játékokról, anime világokról vagy karakterközpontú akcióról – YouTube, Twitch, TikTok, hírlevél és podcast egyaránt.'
       },
       {
         question: 'Milyen tartalmat készíthettek a partnerek?',
         answer:
-          'Guide-ok, reakciók, backstage beszélgetések, közösségi spotlightok és co-op sessionök egyaránt belefértek. Előre jeleztük, ha spoilerérzékeny anyag közeledett, hogy biztonságosan tervezhessenek.'
+          'Guide-ok, reakciók, backstage beszélgetések, közösségi spotlightok és narratív élő bejátszások egyaránt belefértek. Előre jeleztük, ha spoilerérzékeny anyag közeledett, hogy biztonságosan tervezhessenek.'
       },
       {
         question: 'Mikor érkezett visszajelzés?',
@@ -413,15 +413,15 @@ export const huDictionary: Dictionary = {
   faq: {
     title: 'AIKA World GYIK',
     intro:
-      'Rövid válaszok a leggyakoribb platform, co-op és támogatási kérdésekre.',
+      'Rövid válaszok a leggyakoribb platform, történeti fókusz és támogatási kérdésekre.',
     items: [
       {
         question: 'Milyen platformokra céloztok?',
         answer: 'Elsőként PC-re (Steam) fókuszálunk, a további platformpartnereket folyamatosan értékeljük.'
       },
       {
-        question: 'A játék teljesen kooperatív?',
-        answer: 'Igen. Minden fő mód maximum öt fős csapatokra van hangolva, az egyszemélyes futam nem központi cél.'
+        question: 'A játék egyszemélyes?',
+        answer: 'Igen. Az AIKA World egy magányos utazás Elyndrát átívelő történettel, többjátékos követelmény nélkül.'
       },
       {
         question: 'Hogyan működik a monetizáció?',
@@ -429,7 +429,7 @@ export const huDictionary: Dictionary = {
       },
       {
         question: 'Lesz crossplay vagy cross-save?',
-        answer: 'Amint új platformok csatlakoznak és stabil a matchmaking, bekapcsoljuk a crossplay támogatást.'
+        answer: 'Amint új platformok csatlakoznak és stabilak a szolgáltatások, megvizsgáljuk a cross-save lehetőségét.'
       },
       {
         question: 'Milyen nyelvi támogatás várható?',
@@ -543,8 +543,8 @@ export const huDictionary: Dictionary = {
     usageDescription:
       'A letölthető anyagok promóciós és szerkesztőségi tartalmakban használhatók fel, a játék pontos megnevezésével és a forrás megjelölésével. Kereskedelmi továbbértékesítés nem engedélyezett. Egyedi kéréssel kapcsolatban írj a press@aikaworld.com címre.',
     factSheet: [
-      { label: 'Műfaj', value: 'Anime co-op akció RPG' },
-      { label: 'Játékmódok', value: 'Raid Boss Arena, Infest Survival' },
+      { label: 'Műfaj', value: 'Történetközpontú anime akció RPG' },
+      { label: 'Alapélmény', value: 'Narratív kampány opcionális kihívás visszhangokkal' },
       { label: 'Platformok', value: 'PC (Steam), konzolok bejelentés alatt' },
       { label: 'Kapcsolat', value: 'press@aikaworld.com', href: 'mailto:press@aikaworld.com' }
     ],
@@ -604,26 +604,26 @@ export const huDictionary: Dictionary = {
   seo: {
     defaultTitle: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
     defaultDescription:
-      'Kooperatív raid arénák, sötét anime látvány és mély fejlődési rendszerek Pyro, Verdefa, Nerei, Aurelia és Nocturnis frakcióival.',
+      'Történetközpontú alászállás sötét anime látvánnyal és mély fejlődési rendszerekkel Pyro, Verdefa, Nerei, Aurelia és Nocturnis frakcióival.',
     defaultOgAlt: 'AIKA World alap megosztási kép',
     defaultLocale: 'hu_HU',
     pages: {
       home: {
         title: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
         description:
-          'Co-op raid arénák, sötét fantasy frakciók és mély fejlődési rendszerek Pyro, Verdefa, Nerei, Aurelia és Nocturnis erejével.',
+          'Narratív küldetések, sötét fantasy frakciók és mély fejlődési rendszerek Pyro, Verdefa, Nerei, Aurelia és Nocturnis erejével.',
         ogAlt: 'AIKA World hős grafika'
       },
       modes: {
         title: 'Játékmódok – AIKA World',
         description:
-          'Részletes áttekintés a Raid Boss Arena és az Infest Survival módokról: mechanikák, jutalmak, csapat szerepek az AIKA Worldben.',
+          'Részletes áttekintés a kulcs történeti összecsapásokról, a késői főellenfelekről és az opcionális kihívás visszhangokról az AIKA Worldben.',
         ogAlt: 'AIKA World játékmódok grafika'
       },
       progression: {
         title: 'Fejlődés teaser – AIKA World',
         description:
-          'Spoilermentes betekintés a rezonancia-képességekbe, a felszerelés evolúciójába és a hub testreszabásába az AIKA Worldben.',
+          'Spoilermentes betekintés a rezonancia-képességekbe, a felszerelés evolúciójába és a szentély testreszabásába az AIKA Worldben.',
         ogAlt: 'AIKA World fejlődés teaser grafika'
       },
       loreElyndra: {
@@ -674,7 +674,7 @@ export const huDictionary: Dictionary = {
       },
       faq: {
         title: 'GYIK – AIKA World',
-        description: 'Válaszok a legfontosabb platform, co-op fókusz, kozmetikai monetizáció és gépigény kérdésekre.',
+        description: 'Válaszok a legfontosabb platform, narratív fókusz, kozmetikai monetizáció és gépigény kérdésekre.',
         ogAlt: 'AIKA World GYIK grafika'
       },
       privacy: {
