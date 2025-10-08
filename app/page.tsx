@@ -26,8 +26,6 @@ export default async function Page() {
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>
       <HomePage
-        steamUrl={serverEnv.steamUrl}
-        discordUrl={serverEnv.discordUrl}
         locale={locale}
         dictionary={dictionary.home}
         lightboxDictionary={dictionary.lightbox}

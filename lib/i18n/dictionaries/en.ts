@@ -58,13 +58,12 @@ export const enDictionary: Dictionary = {
   },
   home: {
     hero: {
-      title: 'Co-op anime action RPG – Squad. Style. Progression.',
-      highlight: 'Stylish Resonators, tactical synergy.',
-      description:
-        'Five Resonators mastering raid arenas and survival waves together, drawing power from Pyro, Verdefa, Nerei, Aurelia and Nocturnis. A dark anime world with dynamic combat and deep progression systems built for long-term squad growth.',
-      wishlistCta: 'Wishlist on Steam',
-      discordCta: 'Join Discord',
-      subscribeCta: 'Subscribe',
+      tagline: 'The last frequency before silence.',
+      monologue:
+        '“Do you hear the silence, wanderer? I sift through the ruins of Elyndra, weaving the last harmonics of a dying sun. Every heartbeat I borrow from you fractures the lattice I am trying to mend. If you still intend to stop me, come as the echo I cannot predict.”',
+      summary:
+        'AIKA World is a story-driven single player descent across Elyndra, tracing the final god-machine as it rewrites creation, and giving you the only chance to sever her design.',
+      primaryCta: 'ENTER THE RESONANCE',
       videoPosterAlt: 'AIKA World teaser poster'
     },
     world: {
