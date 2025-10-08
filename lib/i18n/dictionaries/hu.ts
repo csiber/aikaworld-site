@@ -70,53 +70,53 @@ export const huDictionary: Dictionary = {
     world: {
       title: 'Világ és frakciók',
       intro:
-        'Öt rivális hatalmi tömb uralja az AIKA World neon-alkonyát: Pyro, Verdefa, Nerei, Aurelia és Nocturnis. Állj arra, amelyik életben tartja a csapatod.',
+        'Öt rivális hatalmi tömb uralta valaha az AIKA World neon-alkonyát: Pyro, Verdefa, Nerei, Aurelia és Nocturnis. Fedezd fel a maradványokat, amelyek még a por alatt izzanak. Nem fogsz hűséget esküdni; végigjársz mindenen, ami megmaradt belőlük.',
       ctaHref: '/lore/elyndra',
       ctaLabel: 'Olvasd el Elyndra mítoszát',
       factions: [
         {
           name: 'Pyro',
-          tagline: 'Vulkara lángjára esküdött taktikus hadigépezet.',
+          tagline: 'Vulkara lángja alatt egykor hadigépezetet kovácsoló vulkanikus taktikusok.',
           bullets: [
-            'Fővárosuk, Vulkara, lávahajtású sínpályákkal szórja szét a moduláris tüzérséget.',
-            'Termál mérnökök Pyro rezonanciáját vezetik el, hogy a páncél ne hevüljön túl a raid előtt.',
-            'Inferna századok izzáskupolái koordinált túlterheléseknél páncéllá keményednek.'
+            'Fővárosuk, Vulkara, lávahajtású sínpályákon szállította a moduláris tüzérséget; az elszenesedett pályák ma is kirajzolják az ostromköröket.',
+            'Termál mérnökeik Pyro rezonanciáját vezették el a páncélból a rajtaütések előtt; elgörbült kézikönyveik a kazamatákban porosodnak.',
+            'Inferna századaik izzáskupolákat vetettek be, amelyek koordinált túlterheléseknél páncéllá keményedtek; a repedezett lemezek hamuba zárva maradtak.'
           ]
         },
         {
           name: 'Verdefa',
-          tagline: 'Sylvara lombkatedrálisai között szőtt bio-rituális hálózat.',
+          tagline: 'Bio-rituális hálózat mesterei, akik egykor Sylvara élő áramköreit szőtték.',
           bullets: [
-            'Sylvara lombszerverei térképezik a biztonságos folyosókat és élő adatfolyamot küldenek a celláknak.',
-            'Rituálmesterek bioáramkör rúnákkal erősítik fel a gyógyító virágzást csata közben.',
-            'Felderítő ligák gyökéralagutakat nevelnek, hogy észrevétlenül kerüljék ki a blokádokat.'
+            'Sylvara lombszerverei feltérképezték a biztonságos folyosókat és élő adatfolyamot osztottak meg a cellákkal; halvány pulzusuk még most is pislákol.',
+            'Rituálmestereik bioáramkör rúnákat fontak, hogy felerősítsék a gyógyító virágzást a harc közepén; a rúnák ma emlékkertben lankadnak.',
+            'Felderítő ligáik gyökéralagutakat neveltek, hogy észrevétlenül kerüljék meg a blokádokat; beomlott üregeik türelmük nyomát hagyják.'
           ]
         },
         {
           name: 'Nerei',
-          tagline: 'Ár-apályra hangolt uralkodók Nerivia mélységi törvényeivel.',
+          tagline: 'Ár-apályra hangolt uralkodók, akik egykor Nerivia mélységi törvényeit érvényesítették.',
           bullets: [
-            'Nerivia árapály-zárt palotái titkosítják a rajtaütő csapatok diplomáciáját.',
-            'Fátyolfutárok nyomáskupolákkal árasztják el a sikátorokat, hogy fedezzék az infiltrációt.',
-            'A mélységi eskük rezonancia-jeleket égetnek a hűtlenekre, amelyek halálos ellenlépést indítanak.'
+            'Nerivia árapály-zárt palotái titkosították a rajtaütő csapatok diplomáciáját; kagylós archívumaik őrzik a kódokat.',
+            'Fátyolfutáraik nyomáskupolákkal árasztották el a sikátorokat, hogy elfedjék az infiltrációt; kiszakadt szelepeik még ma is sziszegnek a dokkoknál.',
+            'A mélységi eskük rezonancia-jeleket égettek a hűtlenekre, amelyek halálos ellenlépést indítottak; elhalványult hegek maradtak az elhagyott törvényszékeken.'
           ]
         },
         {
           name: 'Aurelia',
-          tagline: 'Auris ezüst erődjeit őrző ragyogó esküvők.',
+          tagline: 'Ragyogó esküvők, akik egykor Auris ezüst erődjeit védték.',
           bullets: [
-            'Auris kaszárnya-kohói esküvel lezárt páncélt adnak a citadellán átutazó rajoknak.',
-            'Pajzskaplánok fényvédelmet kennek a felszerelésre a korrupciós hullámok előtt.',
-            'Zarándok karavánok védett útvonalakat jelölnek ki a szentélyek között.'
+            'Auris kaszárnya-kohói esküvel lezárt páncélt öntöttek a citadellán átvonuló rajoknak; az elhalványult vértek néma fegyvertárakban lógnak.',
+            'Pajzskaplánjaik fényvédelmet kentek a felszerelésre a korrupciós hullámok előtt; megrepedezett ampulláik ereklyetárakban derengenek.',
+            'Zarándok karavánjaik védett útvonalakat jelöltek ki az enklávék szentélyei között; az időverte jelzők ma is végigvezetik a híveket a romokon.'
           ]
         },
         {
           name: 'Nocturnis',
-          tagline: 'Noxhaven árnyékpiacait uraló információs szindikátus.',
+          tagline: 'Umbrális információbrókerek, akik egykor Noxhaven árnyékpiacait uralták.',
           bullets: [
-            'Noxhaven széfjei szellemadat-archívumokat őriznek, amelyek visszafejtik az ellenséges célzást.',
-            'Kódfutárok áramszünet felhőket vetnek be, hogy eltakarják a csapatmozgást a neon utcákban.',
-            'Augur sejtjeik rezonancia-terveket cserélnek, amelyek titkos fejlesztéseket nyitnak meg a menetek között.'
+            'Noxhaven széfjei szellemadat-archívumokat halmoztak, amelyek visszafejtették az ellenséges célzást; porral telt szervereik még figyelmeztetnek.',
+            'Kódfutáraik áramszünet felhőket vetettek be, hogy eltakarják a csapatmozgást a neon utcákban; szóróberendezéseik rozsdásodnak az utcaszentélyekben.',
+            'Augur sejtjeik rezonancia-terveket cseréltek, amelyek titkos fejlesztéseket nyitottak meg a menetek között; töredékes sémáik a piacokon sodródnak.'
           ]
         }
       ]

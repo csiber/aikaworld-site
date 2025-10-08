@@ -70,53 +70,53 @@ export const enDictionary: Dictionary = {
     world: {
       title: 'World & Factions',
       intro:
-        'Five rival power blocs shape the neon dusk of AIKA World: Pyro, Verdefa, Nerei, Aurelia and Nocturnis. Align with the ideology that keeps your squad alive.',
+        'Five rival power blocs once shaped the neon dusk of AIKA World: Pyro, Verdefa, Nerei, Aurelia and Nocturnis. Discover remnants that still glow beneath the dust. You won’t pledge allegiance; you will walk through what remains of them.',
       ctaHref: '/lore/elyndra',
       ctaLabel: 'Read the Elyndra myth',
       factions: [
         {
           name: 'Pyro',
-          tagline: "Volcanic tacticians forging wargear beneath Vulkara's flame.",
+          tagline: "Volcanic tacticians who once forged wargear beneath Vulkara's flame.",
           bullets: [
-            "Capital Vulkara's magma railways deliver modular artillery to frontline squads.",
-            'Thermal engineers tune resonance armor to vent Pyro pressure waves before raids.',
-            'Inferna brigades deploy ember shields that harden during coordinated overdrives.'
+            "Capital Vulkara's magma railways delivered modular artillery to frontline squads; scorched tracks now mark their siege loops.",
+            'Thermal engineers tuned resonance armor to vent Pyro pressure waves before raids; warped manuals remain in their vaults.',
+            'Inferna brigades deployed ember shields that hardened during coordinated overdrives, leaving cracked plating sealed in ash.'
           ]
         },
         {
           name: 'Verdefa',
-          tagline: "Bio-arcane stewards weaving Sylvara's living circuitries.",
+          tagline: "Bio-arcane stewards who once wove Sylvara's living circuitries.",
           bullets: [
-            "Sylvara's canopy servers map safe corridors and share live intel between cells.",
-            'Ritualists braid bio-circuit sigils that amplify restorative blooms mid-engagement.',
-            'Scout leagues grow root tunnels to bypass corporate blockades without detection.'
+            "Sylvara's canopy servers mapped safe corridors and shared live intel between cells; their dimmed nodes still pulse faintly.",
+            'Ritualists braided bio-circuit sigils that amplified restorative blooms mid-engagement; the sigils now wilt in memory gardens.',
+            'Scout leagues grew root tunnels to bypass corporate blockades without detection; collapsed hollows trace their patience.'
           ]
         },
         {
           name: 'Nerei',
-          tagline: "Tidebound sovereigns enforcing Nerivia's abyssal edicts.",
+          tagline: "Tidebound sovereigns who once enforced Nerivia's abyssal edicts.",
           bullets: [
-            "Nerivia's tide-locked palaces encrypt diplomacy between strike teams and envoys.",
-            'Veilcouriers flood alleys with pressure domes to screen infiltration routes.',
-            'Abyssal oaths imprint resonance marks that trigger lethal countermeasures on traitors.'
+            "Nerivia's tide-locked palaces encrypted diplomacy between strike teams and envoys; barnacled archives keep their codes.",
+            'Veilcouriers flooded alleys with pressure domes to screen infiltration routes; ruptured valves still sigh along the docks.',
+            'Abyssal oaths imprinted resonance marks that triggered lethal countermeasures on traitors; faded scars linger on abandoned tribunals.'
           ]
         },
         {
           name: 'Aurelia',
-          tagline: "Radiant oathkeepers defending Auris' silver bastions.",
+          tagline: "Radiant oathkeepers who once defended Auris' silver bastions.",
           bullets: [
-            'Auris keep-factories mint vow-sealed plate for squads rotating through the citadel.',
-            'Shield-chaplains anoint resonance gear with lumen wards before corruption surges.',
-            'Pilgrimage caravans chart protected corridors linking enclave sanctums.'
+            'Auris keep-factories minted vow-sealed plate for squads rotating through the citadel; tarnished suits hang in silent armories.',
+            'Shield-chaplains anointed resonance gear with lumen wards before corruption surges; cracked vials glow in reliquaries.',
+            'Pilgrimage caravans charted protected corridors linking enclave sanctums; weathered markers still guide the faithful through the ruins.'
           ]
         },
         {
           name: 'Nocturnis',
-          tagline: "Umbral information brokers ruling Noxhaven's undercity.",
+          tagline: "Umbral information brokers who once ruled Noxhaven's undercity.",
           bullets: [
-            'Noxhaven vaults hoard ghost archives that decode enemy targeting sweeps.',
-            'Cipher-runners seed blackout clouds to hide squad deployments in neon streets.',
-            'Augury cells trade resonance blueprints that unlock clandestine upgrades between runs.'
+            'Noxhaven vaults hoarded ghost archives that decoded enemy targeting sweeps; dust-choked servers still flicker with warnings.',
+            'Cipher-runners seeded blackout clouds to hide squad deployments in neon streets; their dispersal rigs rust in alley shrines.',
+            'Augury cells traded resonance blueprints that unlocked clandestine upgrades between runs; fragmented schematics drift through the markets.'
           ]
         }
       ]
