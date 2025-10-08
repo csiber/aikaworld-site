@@ -118,25 +118,11 @@ export type ProgramPageSectionDictionary = {
   bullets?: string[];
 };
 
-export type LorePageEntryDictionary = {
-  title: string;
-  body: string;
-};
-
-export type LorePageSectionDictionary = {
-  id: string;
-  title: string;
-  paragraphs: string[];
-  entries?: LorePageEntryDictionary[];
-};
-
 export type LorePageDictionary = {
   breadcrumb: string;
   title: string;
   subtitle: string;
   intro: string;
-  sections: LorePageSectionDictionary[];
-  closingQuote: string;
 };
 
 export type ProgramPageFaqDictionary = {

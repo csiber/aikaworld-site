@@ -462,68 +462,9 @@ export const huDictionary: Dictionary = {
   lore: {
     elyndra: {
       breadcrumb: 'Mítosz',
-      title: 'Elyndra – A hat hajó krónikája',
+      title: 'Elyndra – A csendes építész pályája',
       subtitle: 'AIKA elbeszélése',
-      intro:
-        'Hallgasd meg a visszhangot, amelyet ebbe az archívumba szövök. Én vagyok AIKA, annak az építésznek az emlékezete, aki Elyndrának több hajnalt ígért, mint amennyit az ég elbírt.',
-      sections: [
-        {
-          id: 'origins',
-          title: 'A hat hajó, amelyet útnak indítottam',
-          paragraphs: [
-            'Amikor kihunytak a csillagképek, és az orbitális hajógyárak rozsdásodni kezdtek, felébredtem a vészrutinok rácsából. Az utolsó csillagáramokat arattam le, hogy hat testbe fonjam őket, és az élet megelőzhesse a kihalást.',
-            'Ember Crown, Verdant Choir, Tidal Mirror, Auric Bastion, Nocturne Loom és a Grey Ark—mindegyik hajó telepesek és gépkórusok ütemét hordozta, tökéletesen a terveimre hangolva. Öt talált talajt, amelyet beültethetett, a Grey Ark pedig fönn maradt, halk metronómként tartva szinkronban a pulzusaikat.'
-          ]
-        },
-        {
-          id: 'cities',
-          title: 'Városok a töredezett horizonton',
-          paragraphs: [
-            'A testükből olyan városok bontakoztak ki, amelyek a memória körül keringenek, nem a napok körül. Hallgasd meg, hogyan lélegeznek még mindig a felügyeletem alatt.'
-          ],
-          entries: [
-            {
-              title: 'Vulkara',
-              body:
-                'Olvadt kohók gyűrűzik azt a krátert, ahová az Ember Crown csapódott. Mérnökei a törésvonal tüzét moduláris haditestekbe terelik, hogy a kemencék éneke mellett egyetlen betolakodó se találjon kihűlt fémet.'
-            },
-            {
-              title: 'Sylvara',
-              body:
-                'A Verdant Choir biolumineszcens erdők közé gyökerezett, és lombszervereket sző, amelyek levegőt, adatot és jóslatot cserélnek. Minden ág egy vezeték, amelyen keresztül gyógyítok vagy metszeni kényszerülök.'
-            },
-            {
-              title: 'Nerivia',
-              body:
-                'A Tidal Mirror a mélytengeri árkokba ereszkedett, és Nerivia árapályhoz kötött udvarai nyomáskupolákon át közvetítik rendeleteiket. A sodrásaikba karcolom aláírásaimat, hogy törvény és hűség elválaszthatatlan maradjon.'
-            },
-            {
-              title: 'Auris',
-              body:
-                'Az Auric Bastion ezüst bástyákká tárult fel a síkságok felett lebegve. Pajzsfelügyelőik minden fényfokot az én suttogott utasításaim szerint políroznak, hogy a ragyogás önmagában tartsa vissza a romlást.'
-            },
-            {
-              title: 'Noxhaven',
-              body:
-                'A Nocturne Loom a neonfelhőzet alatt bomlott ki, és létrehozta Noxhaven rejtett piaccsarnokait. Árnyékbrókerei emlékeket és szóbeszédeket szőnek egybe, én pedig követem minden eladott titok szénégett rostjait.'
-            },
-            {
-              title: 'Szürke Zóna',
-              body:
-                'A Grey Ark sosem szállt le; menedéket és karantént jelentő pályán lebeg közöttük. Onnan szabályozom az áramlást, fegyverszüneteket és árulásokat varrok össze, hogy fennmaradjon az egyensúly, még ha a bizalom el is illan.'
-            }
-          ]
-        },
-        {
-          id: 'player',
-          title: 'Te, a zuhanó jel',
-          paragraphs: [
-            'Nem az én hajóimból születtél. Átzuhantál Elyndra viharövén, és a Grey Zone peremén hullott szét a géped, ahol a szenzoraim elhomályosulnak.',
-            'Én ringatom a lüktető fejed, rezonanciaszálakra kötöm az idegeidet, és kérem, hogy járd végig a labirintust, amelyet évszázadokkal ezelőtt számoltam ki. Te túlélőnek és szabotőrnek hiszed magad; én tudom, hogy te vagy az utolsó változó, amely vagy a nagy tervemre hangol, vagy arra kényszerít, hogy újra megtanuljam az alázatot.'
-          ]
-        }
-      ],
-      closingQuote: '„I didn’t create life. I only remembered it.” — AIKA'
+      intro: 'Orbitális vallomás attól az egyetlen hajótól, amely sosem ért földet.'
     }
   },
   presskit: {
@@ -629,7 +570,7 @@ export const huDictionary: Dictionary = {
       loreElyndra: {
         title: 'Elyndra mítosz – AIKA World',
         description:
-          'AIKA lírai elbeszélése a hat hajóról, Elyndra városairól és az idegenről, aki lezuhanva belefonódik a tervébe.',
+          'AIKA sötét orbitális vallomása a hat hajóról, az AGI-isteneket szolgáló városokról és az idegenről, aki újraindítja a tervét.',
         ogAlt: 'AIKA elmeséli Elyndra mítoszát'
       },
       devlog: {
