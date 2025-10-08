@@ -8,7 +8,7 @@ export const enDictionary: Dictionary = {
     navLabel: 'Primary navigation',
     nav: {
       world: { label: 'World', href: '/lore/elyndra' },
-      modes: { label: 'Modes', href: '/modes' },
+      modes: { label: 'Story', href: '/modes' },
       progression: { label: 'Progression', href: '/progression' },
       devlog: { label: 'Dev Journal', href: '/dev-journal' },
       faq: { label: 'FAQ', href: '/faq' }
@@ -27,7 +27,7 @@ export const enDictionary: Dictionary = {
       navigation: [
         { path: '/lore/elyndra', label: 'Lore: Elyndra' },
         { path: '/#world', label: 'World' },
-        { path: '/modes', label: 'Modes' },
+        { path: '/modes', label: 'Story Mode' },
         { path: '/progression', label: 'Progression' },
         { path: '/dev-journal', label: 'Dev Journal' },
         { path: '/faq', label: 'FAQ' }
@@ -238,78 +238,32 @@ export const enDictionary: Dictionary = {
   },
   modes: {
     navLabel: 'Section navigation',
-    heading: 'AIKA World game modes',
+    heading: 'AIKA World Story Mode',
     intro:
-      'Immerse yourself in co-op challenges forged across Pyro, Verdefa, Nerei, Aurelia and Nocturnis: the Raid Boss Arena rewards precision, Infest Survival celebrates adaptive endurance, and Story Mode deepens narrative bonds. Use these guides to prepare your squad for every mode.',
+      'AIKA World is a solitary, narrative-driven descent across Elyndra. This guide gathers the key beats, rewards and playstyle notes so you can prepare for the journey on your own terms.',
     backToHome: 'Back to homepage',
     sections: [
       {
-        id: 'raid',
-        title: 'Raid Boss Arena',
-        tagline: 'Gargantuan bosses, multi-phase showdowns and raid-tier coordination.',
-        mechanicsTitle: 'Core mechanics',
-        rewardsTitle: 'Rewards',
-        rolesTitle: 'Team roles',
-        mechanics: [
-          'Dynamic boss phases with timed wipe mechanics and unique debuffs.',
-          'Arena modulators that add rotating environmental hazards each week.',
-          'Party-size scaling for three to five players with bespoke health and damage curves.'
-        ],
-        rewards: [
-          'Legendary loot tokens that craft the seasonal weapon skin.',
-          'Rank XP for the Raid Ladder with weekly resets and cosmetic frames.',
-          'Exclusive emotes and banner effects for flawless clears.'
-        ],
-        roles: [
-          'Vanguard (Tank): swap shields and anchor the boss away from ranged conduits.',
-          'Resonator (DPS): exploit burst windows during Resonance Chains and focus on mechanics.',
-          'Harmonics (Support): time cleanses and maintain overheal shields for raid-wide damage.'
-        ]
-      },
-      {
-        id: 'infest',
-        title: 'Infest Survival',
-        tagline: 'Escalating horde mode with adaptive AI and checkpoint-driven progression.',
-        mechanicsTitle: 'Core mechanics',
-        rewardsTitle: 'Rewards',
-        rolesTitle: 'Team roles',
-        mechanics: [
-          'Procedurally generated wave patterns that react to your squad composition.',
-          'Infest Alert level that accelerates mutants and injects special affixes.',
-          'Cooperative resource management: ammo routing, drone calls and fortification builds.'
-        ],
-        rewards: [
-          'Biomass caches that upgrade the camp module and unlock perk slots.',
-          'Checkpoint credits that allow mid-run exits without losing rewards.',
-          'Season pass XP boosts and weekly challenges for bonus cosmetic tokens.'
-        ],
-        roles: [
-          'Crowd Control Specialist: thins the swarm with AoE resonance and slows sprinters.',
-          'Objective Runner: agile character who activates relay points and retrieves supply drops.',
-          'Field Medic: fast revives and stim injections that stack defensive damage reduction.'
-        ]
-      },
-      {
         id: 'story',
         title: 'Story Mode',
-        tagline: 'Narrative co-op with impactful choices, character growth and hub building.',
-        mechanicsTitle: 'Core mechanics',
-        rewardsTitle: 'Rewards',
-        rolesTitle: 'Team roles',
+        tagline: 'Solo narrative descent with resonant combat, meaningful choices and hub restoration.',
+        mechanicsTitle: 'Core beats',
+        rewardsTitle: 'Progression',
+        rolesTitle: 'Playstyle focus',
         mechanics: [
-          'Branching dialogue that shapes Resonator relationships and the state of your hub.',
-          'Cooperative decision voting during pivotal moral-choice set pieces.',
-          'Tactical social encounters that leverage both combat builds and narrative stats.'
+          'Story chapters that branch through dialogue, exploration choices and memory recoveries.',
+          'Resonance combat encounters tuned for a single protagonist with adaptive difficulty shifts.',
+          'Hub rebuilding activities that unlock workstations, allies and new side stories.'
         ],
         rewards: [
-          'Story Essence used to unlock personal skill extensions and cinematic scenes.',
-          'Hub upgrade modules: new crafting stations, relaxation zones and interactive minigames.',
-          'Exclusive cosmetics and emotes reflecting the narrative paths you chose.'
+          'Story Essence to expand skill constellations and unlock cinematic memories.',
+          'Restored hub facilities such as crafting alcoves, meditation rooms and lore archives.',
+          'Cosmetic artifacts earned at key narrative milestones and optional objectives.'
         ],
         roles: [
-          'Narrative Lead: high empathy stat to steer conversations and open bonus dialogue branches.',
-          'Intel Specialist: scouts environments, gathers lore intel and uncovers hidden rewards.',
-          'Anchor Player: coordinates group decisions, tracks quest objectives and timing windows.'
+          'Explorer: chart every route to uncover echoes, lore caches and hidden upgrades.',
+          'Strategist: balance resonance builds, resources and timing for each encounter.',
+          'Archivist: piece together intel to unlock optional conversations and alternate endings.'
         ]
       }
     ]

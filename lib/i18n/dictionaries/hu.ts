@@ -8,7 +8,7 @@ export const huDictionary: Dictionary = {
     navLabel: 'Fő navigáció',
     nav: {
       world: { label: 'Világ', href: '/lore/elyndra' },
-      modes: { label: 'Játékmódok', href: '/modes' },
+      modes: { label: 'Story mód', href: '/modes' },
       progression: { label: 'Fejlődés', href: '/progression' },
       devlog: { label: 'Fejlesztői napló', href: '/dev-journal' },
       faq: { label: 'GYIK', href: '/faq' }
@@ -27,7 +27,7 @@ export const huDictionary: Dictionary = {
       navigation: [
         { path: '/lore/elyndra', label: 'Mítosz: Elyndra' },
         { path: '/#world', label: 'Világ' },
-        { path: '/modes', label: 'Játékmódok' },
+        { path: '/modes', label: 'Story mód' },
         { path: '/progression', label: 'Fejlődés' },
         { path: '/dev-journal', label: 'Fejlesztői napló' },
         { path: '/faq', label: 'GYIK' }
@@ -238,78 +238,32 @@ export const huDictionary: Dictionary = {
   },
   modes: {
     navLabel: 'Szöveges horgonyok',
-    heading: 'AIKA World játékmódok',
+    heading: 'AIKA World Story mód',
     intro:
-      'Merülj el Pyro, Verdefa, Nerei, Aurelia és Nocturnis kooperatív kihívásaiban: a Raid Boss Arena a precíz végrehajtást, az Infest Survival az adaptív túlélést jutalmazza, a Story Mode pedig mélyíti a narratívát és a karakterkapcsolatokat. Az alábbi útmutatók segítenek felkészülni mindegyik módra.',
+      'Az AIKA World egy magányos, narratív utazás Elyndra romjai között. Ez az útmutató összegyűjti a fő ritmusokat, jutalmakat és játékstílus fókuszokat, hogy a saját tempódban készülhess fel az útra.',
     backToHome: 'Vissza a főoldalra',
     sections: [
       {
-        id: 'raid',
-        title: 'Raid Boss Arena',
-        tagline: 'Óriási bossok, többfázisú összecsapások és raid-szintű koordináció.',
-        mechanicsTitle: 'Kulcsmechanikák',
-        rewardsTitle: 'Jutalmak',
-        rolesTitle: 'Csapat szerepek',
-        mechanics: [
-          'Dinamikus boss fázisok időzített wipe-mekanikákkal és egyedi debuffokkal.',
-          'Aréna modulátorok, amelyek minden héten extra környezeti veszélyt adnak hozzá.',
-          'Party-size skálázás 3–5 játékos között, külön HP és sebzés görbével.'
-        ],
-        rewards: [
-          'Legendary-tier loot tokenek, amelyekből craftolható a szezonális fegyver skin.',
-          'Rank XP a Raid Ladderhez, heti resetekkel és kozmetikai rangkeretekkel.',
-          'Egyedi emote-ok és banner effektusok a flawless (wipe nélküli) clearért.'
-        ],
-        roles: [
-          'Vanguard (Tank): pajzscsere és boss pozicionálás a távolsági kondivókon kívül.',
-          'Resonator (DPS): burst ablakok kihasználása Resonance Chainnél, mechanika fókuszban.',
-          'Harmonics (Support): cleanse időzítése, overheal pajzs fenntartása a raid-wide sebzésre.'
-        ]
-      },
-      {
-        id: 'infest',
-        title: 'Infest Survival',
-        tagline: 'Fokozódó horda mód adaptív AI-val és checkpoint alapú fejlődéssel.',
-        mechanicsTitle: 'Kulcsmechanikák',
-        rewardsTitle: 'Jutalmak',
-        rolesTitle: 'Csapat szerepek',
-        mechanics: [
-          'Procedurálisan generált wave-minták, amelyek reagálnak a squad buildjére.',
-          'Infest Alert szint, amely növeli a mutánsok sebességét és speciális affixeket hoz be.',
-          'Kooperatív erőforrás-menedzsment: ammo kiosztás, drón hívások és erődítés építés.'
-        ],
-        rewards: [
-          'Biomass cache-ek, amelyekből fejleszthető a tábor modul és új perk slotok nyílnak.',
-          'Checkpoint kreditek, amelyek lehetővé teszik a köztes kilépést jutalomvesztés nélkül.',
-          'Season pass XP boost és heti kihívások extra kozmetikai tokenekért.'
-        ],
-        roles: [
-          'Crowd Control Specialist: AoE rezgésekkel ritkítja a swarmot és lassítja a sprintereket.',
-          'Objective Runner: mozgékony karakter, aki aktiválja a relay pontokat és hozza a supply dropokat.',
-          'Field Medic: gyors revive és stimul injekció, amely stackelő sebzéscsökkentést ad a csapatnak.'
-        ]
-      },
-      {
         id: 'story',
         title: 'Story Mode',
-        tagline: 'Narratív kooperáció döntésekkel, karakterfejlődéssel és hub-építéssel.',
-        mechanicsTitle: 'Kulcsmechanikák',
-        rewardsTitle: 'Jutalmak',
-        rolesTitle: 'Csapat szerepek',
+        tagline: 'Magányos narratív alászállás rezonáns harccal, jelentős döntésekkel és hub-helyreállítással.',
+        mechanicsTitle: 'Fő elemek',
+        rewardsTitle: 'Fejlődés',
+        rolesTitle: 'Játékstílus fókusz',
         mechanics: [
-          'Branching dialógusok, amelyek befolyásolják a Resonatorok közötti kapcsolatokat és a hub állapotát.',
-          'Kooperatív döntéshozatal: a squad szavaz a kritikus moral choice jelenetekben.',
-          'Taktikai social encounters, amelyek a combat buildedet és a narratív statjaidat is használják.'
+          'Történeti fejezetek, amelyek párbeszédek, felfedezési döntések és emlékek visszaszerzése révén ágaznak el.',
+          'Rezonancia összecsapások, amelyeket egyetlen főhősre hangoltunk adaptív nehézségi váltásokkal.',
+          'Hub-újjáépítés, amely munkaállomásokat, szövetségeseket és új melléktörténeteket nyit meg.'
         ],
         rewards: [
-          'Story Essence, amely feloldja a személyes skill kiterjesztéseket és karakter cinematicokat.',
-          'Hub fejlesztési modulok: új crafting állomások, pihenő zónák és interaktív minijátékok.',
-          'Exkluzív vizuális kozmetikák és emote-ok, amelyek a történeti döntéseidet tükrözik.'
+          'Story Essence a képesség konstellációk bővítéséhez és a filmszerű emlékek feloldásához.',
+          'Felújított hub létesítmények: crafting fülkék, meditációs terek és lore archívumok.',
+          'Narratív mérföldkövekhez és opcionális célokhoz kötött kozmetikai relikviák.'
         ],
         roles: [
-          'Narrative Lead: magas empathy stattal moderálja a beszélgetéseket és extra dialógus ágakat nyit.',
-          'Intel Specialist: felderíti a környezetet, lore információkat gyűjt és rejtett jutalmakat fedez fel.',
-          'Anchor Player: koordinálja a kooperatív döntéseket, követi a quest célokat és időkereteket.'
+          'Felfedező: minden ösvényt bejár, hogy visszhangokat, lore cache-eket és rejtett fejlesztéseket találjon.',
+          'Stratéga: egyensúlyban tartja a rezonancia buildeket, az erőforrásokat és az összecsapások időzítését.',
+          'Archivista: összerakja az intel töredékeit, hogy extra párbeszédeket és alternatív befejezéseket nyisson meg.'
         ]
       }
     ]
