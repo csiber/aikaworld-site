@@ -203,11 +203,11 @@ export function createCharacterMetadata(
   const { locale: openGraphLocale, alternateLocales } = ogLocaleMap[locale] ?? ogLocaleMap[defaultLocale];
 
   return {
-    title: `${character.name} – ${character.title} | AIKA World`,
+    title: `${character.name} – ${character.element} | AIKA World`,
     description,
     alternates,
     openGraph: {
-      title: `${character.name} – ${character.title}`,
+      title: `${character.name} – ${character.element}`,
       description: ogDescription,
       url: canonical,
       siteName: 'AIKA World',
@@ -225,7 +225,7 @@ export function createCharacterMetadata(
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${character.name} – ${character.title}`,
+      title: `${character.name} – ${character.element}`,
       description,
       images: [character.heroImage]
     }

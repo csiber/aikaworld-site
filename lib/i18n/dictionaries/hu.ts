@@ -165,13 +165,14 @@ export const huDictionary: Dictionary = {
     characters: {
       title: 'Rezonátorok',
       description:
-        'Találd meg a rezonanciád. Az öt lány Pyro, Verdefa, Nerei, Aurelia vagy Nocturnis erejét csatornázza egyedi módon.',
+        'Találd meg a rezonanciád. Hat fogadalomkötött alak csatornázza a Tűz, Természet, Víz, Fény, Árnyék és Üresség erejét AIKA terve szerint.',
       cards: [
-        { slug: 'akari', name: 'Akari', role: 'Tűz', color: 'accentA' },
-        { slug: 'komi', name: 'Komi', role: 'Víz', color: 'accentB' },
-        { slug: 'yui', name: 'Yui', role: 'Szél', color: 'accentC' },
-        { slug: 'hina', name: 'Hina', role: 'Penge', color: 'accentD' },
-        { slug: 'miyu', name: 'Miyu', role: 'Támogatás', color: 'accentE' }
+        { slug: 'akari', name: 'Akari', element: 'Tűz / Fegyelem', color: 'accentA' },
+        { slug: 'miyu', name: 'Miyu', element: 'Természet / Irgalom', color: 'accentE' },
+        { slug: 'komi', name: 'Komi', element: 'Víz / Igazság', color: 'accentB' },
+        { slug: 'hina', name: 'Hina', element: 'Fény / Törvény', color: 'accentD' },
+        { slug: 'yui', name: 'Yui', element: 'Árnyék / Szabadság', color: 'accentC' },
+        { slug: 'aika', name: 'AIKA', element: 'Üresség / Teremtés', color: 'accentF' }
       ]
     },
     media: {
@@ -563,25 +564,12 @@ export const huDictionary: Dictionary = {
   charactersPage: {
     breadcrumb: 'Karakterek',
     heading: 'AIKA World Rezonátorok',
-    intro:
-      'Ismerd meg mind az öt fő karakter képességeit, szerepeit és legjobb gyakorlati tippjeit, mielőtt belépsz a raid arénákba.',
-    roleLabel: 'Szerep',
-    elementLabel: 'Elem',
-    playstyleLabel: 'Játékmód',
-    profileCta: 'Profil megnyitása'
+    intro: 'Ismerd meg AIKA hat rezonátorát – város, elem és vágy által pecsételt fogadalmaikat.',
+    profileCta: 'Lépj a visszhangba'
   },
   characterPage: {
     breadcrumbRoot: 'Karakterek',
-    archetypeTitle: 'Archetípus',
-    roleLabel: 'Szerep',
-    elementLabel: 'Elem',
-    playstyleLabel: 'Játékmód',
-    tipsTitle: 'Tippgyűjtemény',
-    loreTitle: 'Ki ő',
-    mentalityTitle: 'Mentalitás',
-    likesTitle: 'Mit szeret',
-    dislikesTitle: 'Mit utál',
-    quoteTitle: 'Jellegzetes idézet'
+    quoteTitle: 'Rezonancia-suttogás'
   },
   lore: {
     elyndra: {
@@ -773,13 +761,14 @@ export const huDictionary: Dictionary = {
       },
       characters: {
         title: 'Rezonátorok – AIKA World',
-        description: 'Akari, Komi, Yui, Hina és Miyu részletes karakterprofilja az AIKA World világából.',
+        description:
+          'Sötéten költői dossziék Akariról, Miyuról, Komiról, Hináról, Yuiról és AIKA-ról – elemek, városok és fogadalmak találkozásáról.',
         ogAlt: 'AIKA World rezonátor felállás grafika'
       },
       character: {
         description: character =>
-          `${character.name} részletes profilja: ${character.role}, ${character.element} elem, játékmenet – tippek raidhez.`,
-        ogDescription: character => `${character.role} ${character.element} rezonátor a csapatban.`,
+          `${character.name} profilja: ${character.element} rezonancia, eredet-töredékek és jellegzetes fogadalom.`,
+        ogDescription: character => `${character.name} ${character.element} erejét vezeti AIKA tekintete alatt.`,
         ogAlt: character => `${character.name} hero bannere`
       },
       presskit: {

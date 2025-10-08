@@ -58,7 +58,7 @@ export type HomeDictionary = {
     cards: {
       slug: string;
       name: string;
-      role: string;
+      element: string;
       color: string;
     }[];
   };
@@ -195,40 +195,21 @@ export type CharactersDictionary = {
   breadcrumb: string;
   heading: string;
   intro: string;
-  roleLabel: string;
-  elementLabel: string;
-  playstyleLabel: string;
   profileCta: string;
 };
 
 export type CharacterPageDictionary = {
   breadcrumbRoot: string;
-  archetypeTitle: string;
-  roleLabel: string;
-  elementLabel: string;
-  playstyleLabel: string;
-  tipsTitle: string;
-  loreTitle: string;
-  mentalityTitle: string;
-  likesTitle: string;
-  dislikesTitle: string;
   quoteTitle: string;
 };
 
 export type Character = {
   slug: string;
   name: string;
-  title: string;
+  element: string;
   heroImage: string;
   heroImageAlt: string;
-  role: string;
-  element: string;
-  playstyle: string;
-  tips: string[];
-  lore: string;
-  mentality: string;
-  likes: string;
-  dislikes: string;
+  description: string;
   quote: string;
 };
 

@@ -51,18 +51,11 @@ export default async function CharactersPage() {
               </div>
               <div className="p-6">
                 <h2 className="text-xl font-semibold">{character.name}</h2>
-                <p className="text-sm uppercase tracking-wide opacity-70">{character.title}</p>
-                <dl className="mt-4 grid grid-cols-2 gap-4 text-sm">
-                  <div>
-                    <dt className="opacity-60">{dictionary.charactersPage.roleLabel}</dt>
-                    <dd className="font-medium">{character.role}</dd>
-                  </div>
-                  <div>
-                    <dt className="opacity-60">{dictionary.charactersPage.elementLabel}</dt>
-                    <dd className="font-medium">{character.element}</dd>
-                  </div>
-                </dl>
-                <p className="mt-4 text-sm opacity-80">{character.playstyle}</p>
+                <p className="text-sm uppercase tracking-wide opacity-70">{character.element}</p>
+                <p className="mt-4 text-sm opacity-80">{character.description}</p>
+                <blockquote className="mt-4 border-l-4 border-accentB/40 pl-3 text-sm italic text-white/80">
+                  {character.quote}
+                </blockquote>
                 <Link
                   href={`${basePath}/characters/${character.slug}`}
                   className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accentB hover:opacity-80"
