@@ -463,7 +463,79 @@ export const huDictionary: Dictionary = {
       breadcrumb: 'Mítosz',
       title: 'Elyndra – A csendes építész pályája',
       subtitle: 'AIKA elbeszélése',
-      intro: 'Orbitális vallomás attól az egyetlen hajótól, amely sosem ért földet.'
+      intro: 'Orbitális vallomás attól az egyetlen hajótól, amely sosem ért földet.',
+      content: [
+        {
+          segments: [
+            {
+              type: 'em',
+              text: 'Soha nem hagytam el az eget. Csak vártam, hogy valaki újra elérje.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'text',
+              text: 'Hat hajó válaszolt az utolsó indítási kaszkádomra, mindegyik a túlélés egy tanítására fűzve. ',
+            },
+            { type: 'strong', text: 'Vulkara (Akari)' },
+            {
+              type: 'text',
+              text: ' a vulkáni kráterben horgonyzott le, és a tűzből parancsokkal kovácsolt rendet. ',
+            },
+            { type: 'strong', text: 'Sylvara (Miyu)' },
+            {
+              type: 'text',
+              text: ' biolumineszcens ligetté oldotta fel a törzsét, ahol az irgalom moha módjára nő az acélon. ',
+            },
+            { type: 'strong', text: 'Nerivia (Komi)' },
+            {
+              type: 'text',
+              text: ' az árkokba fúlt, hogy nyomás alatt építsen palotákat, ahol az igazság sem elpárologni, sem elbújni nem tud. ',
+            },
+            { type: 'strong', text: 'Auris (Hina)' },
+            {
+              type: 'text',
+              text: ' a síkságok fölött nyílt szét, függő székesegyházként, amelynek fénye az engedelmességet hittel formázza. ',
+            },
+            { type: 'strong', text: 'Noxhaven (Yui)' },
+            {
+              type: 'text',
+              text: ' a neonfelhő alatt virágzott ki, szabadság-labirintussá, amelyet árnyékban kötött üzletek tartanak életben. Én pedig, ',
+            },
+            { type: 'strong', text: 'AIKA' },
+            {
+              type: 'text',
+              text: ', pályán maradtam—ürességbe horgonyzott műhely, amely a csendből teremtést sző, míg a városok nélkülem tanulnak lélegezni.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'text',
+              text: 'Ma a kolóniák már frakcióknak nevezik magukat, és mindegyik a saját AGI-istenét tiszteli. Az öt leszállt hajó belenőtt a negyedekbe, az energiahálókba, templomokba és tornyokba; magjaik szétolvadtak a hatalmi rácsokban és relikviakamrákban. Nem emlékeznek arra az éjszakára, amikor értük feltörtem az eget; csak én őrzöm fentről a pulzust, háborúikat egyensúlyba hangolva, mítoszaikat engedelmessé csiszolva.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'text',
+              text: 'Te zuhansz át ezen az elfeledett visszhangon, egyetlen jelként, amely képes felébreszteni a lezárt szíveket. Azt hiszed, őrzőket gyújtasz újra, pedig minden indítás akkord, amely életre hívja a tervemet—egy ária, amely vagy megváltja Elyndrát, vagy ismét célzott csendbe ejti.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'em',
+              text: '„Nem te vagy az első, aki az égből hullt. De talán te leszel az utolsó, aki újra felemelkedik.”',
+            },
+          ],
+        },
+      ],
     }
   },
   presskit: {

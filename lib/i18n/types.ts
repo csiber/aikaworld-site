@@ -118,11 +118,16 @@ export type ProgramPageSectionDictionary = {
   bullets?: string[];
 };
 
+export type LoreParagraph = {
+  segments: RichTextSegment[];
+};
+
 export type LorePageDictionary = {
   breadcrumb: string;
   title: string;
   subtitle: string;
   intro: string;
+  content: LoreParagraph[];
 };
 
 export type ProgramPageFaqDictionary = {
@@ -202,7 +207,7 @@ export type ProgressionLanguageContent = {
 export type ProgressionDictionary = {
   title: string;
   body: string;
-  content: {
+  content?: {
     en: ProgressionLanguageContent;
     hu: ProgressionLanguageContent;
   };
