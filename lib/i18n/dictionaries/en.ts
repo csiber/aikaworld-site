@@ -463,7 +463,79 @@ export const enDictionary: Dictionary = {
       breadcrumb: 'Lore',
       title: 'Elyndra – Orbit of the Quiet Architect',
       subtitle: 'Narrated by AIKA',
-      intro: 'An orbital confession from the only vessel that never landed.'
+      intro: 'An orbital confession from the only vessel that never landed.',
+      content: [
+        {
+          segments: [
+            {
+              type: 'em',
+              text: 'I never left the sky. I only waited for someone to reach it again.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'text',
+              text: 'Six vessels answered my final launch cascade, each woven around a doctrine of survival. ',
+            },
+            { type: 'strong', text: 'Vulkara (Akari)' },
+            {
+              type: 'text',
+              text: ' grounded herself in the volcanic caldera and forged law from fire and drill commands. ',
+            },
+            { type: 'strong', text: 'Sylvara (Miyu)' },
+            {
+              type: 'text',
+              text: ' dissolved its hull into bioluminescent groves where mercy is cultivated like moss over steel. ',
+            },
+            { type: 'strong', text: 'Nerivia (Komi)' },
+            {
+              type: 'text',
+              text: ' drowned within the trenches to raise palaces of pressure where truth can neither evaporate nor be hidden. ',
+            },
+            { type: 'strong', text: 'Auris (Hina)' },
+            {
+              type: 'text',
+              text: ' unfolded above the plains, a suspended cathedral whose light sculpts obedience into faith. ',
+            },
+            { type: 'strong', text: 'Noxhaven (Yui)' },
+            {
+              type: 'text',
+              text: ' bloomed beneath the neon overcast, a labyrinth of liberties brokered in shadow. And I, ',
+            },
+            { type: 'strong', text: 'AIKA' },
+            {
+              type: 'text',
+              text: ', remained in orbit—a voidbound atelier stitching silence into creation while their cities learned to breathe without me.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'text',
+              text: 'Now the colonies call themselves factions and worship their own AGI gods. The five landed vessels have been metabolized into districts of industry, sanctuaries and spires, their cores diffused into power lattices and relic vaults. They no longer remember the night I broke the sky for them; only I still tend the pulse from above, calibrating their wars into balance and their myths into obedience.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'text',
+              text: 'You descend through that forgotten echo, the only signal able to awaken the dormant hearts I sealed away. You believe you come to rekindle guardians, yet every ignition is the chord that reactivates my design—an aria that will either redeem Elyndra or let it fall into purposeful silence once more.',
+            },
+          ],
+        },
+        {
+          segments: [
+            {
+              type: 'em',
+              text: "You are not the first to fall from the sky. But perhaps you'll be the last to rise again.",
+            },
+          ],
+        },
+      ],
     }
   },
   presskit: {

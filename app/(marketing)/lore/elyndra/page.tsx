@@ -4,7 +4,7 @@ import { getDictionary } from '../../../../lib/i18n/dictionaries';
 import { resolveRequestLocale } from '../../../../lib/i18n/server-locale';
 import { createStaticPageMetadata } from '../../../../lib/seo';
 import { locales } from '../../../../lib/i18n/config';
-import { getElyndraLore } from '../../../../lib/content/lore';
+import type { LoreParagraph } from '../../../../lib/i18n/types';
 
 export function generateStaticParams(): Record<string, never>[] {
   return locales.map(() => ({}));
@@ -20,7 +20,28 @@ export default async function ElyndraLorePage() {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const pageDictionary = dictionary.lore.elyndra;
-  const loreContent = await getElyndraLore(locale);
+  const renderParagraph = (paragraph: LoreParagraph, paragraphIndex: number) => (
+    <p key={paragraphIndex} className="text-sm md:text-base leading-relaxed text-white/80">
+      {paragraph.segments.map((segment, segmentIndex) => {
+        const key = `${paragraphIndex}-${segmentIndex}`;
+        if (segment.type === 'strong') {
+          return (
+            <strong key={key} className="text-white">
+              {segment.text}
+            </strong>
+          );
+        }
+        if (segment.type === 'em') {
+          return (
+            <em key={key} className="text-white/80">
+              {segment.text}
+            </em>
+          );
+        }
+        return <span key={key}>{segment.text}</span>;
+      })}
+    </p>
+  );
 
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>
@@ -36,10 +57,9 @@ export default async function ElyndraLorePage() {
           ) : null}
         </header>
 
-        <article
-          className="space-y-6 text-sm md:text-base leading-relaxed text-white/80"
-          dangerouslySetInnerHTML={{ __html: loreContent }}
-        />
+        <article className="space-y-6">
+          {pageDictionary.content.map(renderParagraph)}
+        </article>
       </div>
     </SiteLayout>
   );
