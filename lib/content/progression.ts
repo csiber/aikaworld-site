@@ -1,11 +1,9 @@
-import { readFile } from 'node:fs/promises';
-import path from 'node:path';
 import { cache } from 'react';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
 import type { Locale } from '../i18n/config';
+import progressionSource from '../../content/progression.mdx?raw';
 
-const PROGRESSION_PATH = path.join(process.cwd(), 'content', 'progression.md');
 const EN_MARKER = '<!-- EN -->';
 const HU_MARKER = '<!-- HU -->';
 
@@ -37,8 +35,7 @@ function extractSegments(source: string): { en: string; hu: string } {
 }
 
 const loadProgressionContent = cache(async () => {
-  const file = await readFile(PROGRESSION_PATH, 'utf8');
-  const segments = extractSegments(file);
+  const segments = extractSegments(progressionSource);
   const [en, hu] = await Promise.all([renderMarkdown(segments.en), renderMarkdown(segments.hu)]);
   return { en, hu };
 });
