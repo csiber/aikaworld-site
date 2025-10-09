@@ -7,7 +7,7 @@ import { createStaticPageMetadata } from '../../../lib/seo';
 import { locales } from '../../../lib/i18n/config';
 import { getProgressionContent } from '../../../lib/content/progression';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export function generateStaticParams(): Record<string, never>[] {
   return locales.map(() => ({}));
