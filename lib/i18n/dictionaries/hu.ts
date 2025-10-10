@@ -121,65 +121,65 @@ export const huDictionary: Dictionary = {
         }
       ]
     },
-  modes: {
-    title: 'Játékmódok',
-    cards: [
-      {
-        title: 'Story mód',
-        subtitle: 'Merülj egyedül',
-        body:
-          'Melankolikus, sötét sci-fi utazás, ahol AIKA-val és egy elveszett világ visszhangjaival nézel szembe. Csak a történet maradt.'
-      }
-    ]
-  },
+    modes: {
+      title: 'Játékmódok',
+      cards: [
+        {
+          title: 'Story mód',
+          subtitle: 'Merülj egyedül',
+          body:
+            'Melankolikus, sötét sci-fi utazás, ahol AIKA-val és egy elveszett világ visszhangjaival nézel szembe. Csak a történet maradt.'
+        }
+      ]
+    },
     characters: {
       title: 'Rezonátorok',
       description:
         'Találd meg a rezonanciád. Hat fogadalomkötött alak csatornázza a Tűz, Természet, Víz, Fény, Árnyék és Üresség erejét AIKA terve szerint.',
       cards: [
-      {
-        slug: 'akari',
-        name: 'Akari',
-        element: 'Tűz / Fegyelem',
-        color: 'accentA',
-        imageSrc: 'https://media.aikaworld.com/akari_profil.png',
-        imageAlt: 'Akari portréja'
-      },
-      {
-        slug: 'miyu',
-        name: 'Miyu',
-        element: 'Természet / Irgalom',
-        color: 'accentE',
-        imageSrc: 'https://media.aikaworld.com/miyu_profile.png',
-        imageAlt: 'Miyu portréja'
-      },
-      {
-        slug: 'komi',
-        name: 'Komi',
-        element: 'Víz / Igazság',
-        color: 'accentB',
-        imageSrc: 'https://media.aikaworld.com/komi_profile.png',
-        imageAlt: 'Komi portréja'
-      },
-      {
-        slug: 'hina',
-        name: 'Hina',
-        element: 'Fény / Törvény',
-        color: 'accentD',
-        imageSrc: 'https://media.aikaworld.com/hina_profile.png',
-        imageAlt: 'Hina portréja'
-      },
-      {
-        slug: 'yui',
-        name: 'Yui',
-        element: 'Árnyék / Szabadság',
-        color: 'accentC',
-        imageSrc: 'https://media.aikaworld.com/yui_profile.png',
-        imageAlt: 'Yui portréja'
-      },
-      { slug: 'aika', name: 'AIKA', element: 'Üresség / Teremtés', color: 'accentF' }
-    ]
-  },
+        {
+          slug: 'akari',
+          name: 'Akari',
+          element: 'Tűz / Fegyelem',
+          color: 'accentA',
+          imageSrc: 'https://media.aikaworld.com/akari_profil.png',
+          imageAlt: 'Akari portréja'
+        },
+        {
+          slug: 'miyu',
+          name: 'Miyu',
+          element: 'Természet / Irgalom',
+          color: 'accentE',
+          imageSrc: 'https://media.aikaworld.com/miyu_profile.png',
+          imageAlt: 'Miyu portréja'
+        },
+        {
+          slug: 'komi',
+          name: 'Komi',
+          element: 'Víz / Igazság',
+          color: 'accentB',
+          imageSrc: 'https://media.aikaworld.com/komi_profile.png',
+          imageAlt: 'Komi portréja'
+        },
+        {
+          slug: 'hina',
+          name: 'Hina',
+          element: 'Fény / Törvény',
+          color: 'accentD',
+          imageSrc: 'https://media.aikaworld.com/hina_profile.png',
+          imageAlt: 'Hina portréja'
+        },
+        {
+          slug: 'yui',
+          name: 'Yui',
+          element: 'Árnyék / Szabadság',
+          color: 'accentC',
+          imageSrc: 'https://media.aikaworld.com/yui_profile.png',
+          imageAlt: 'Yui portréja'
+        },
+        { slug: 'aika', name: 'AIKA', element: 'Üresség / Teremtés', color: 'accentF', imageSrc: 'https://media.aikaworld.com/aika_profile.png', }
+      ]
+    },
     media: {
       title: 'Média',
       description: 'Screenshotok, key artok, háttérképek.',
@@ -329,8 +329,8 @@ export const huDictionary: Dictionary = {
       {
         id: 'structure',
         title: 'Hogyan zajlottak a sessionök',
-          description:
-            'Minden korábbi playtest hullám konkrét célt kapott, és a tesztelőket közvetlenül elérhető fejlesztőkkel párosítottuk.',
+        description:
+          'Minden korábbi playtest hullám konkrét célt kapott, és a tesztelőket közvetlenül elérhető fejlesztőkkel párosítottuk.',
         bullets: [
           'Fókusz buildek főellenfél-dinamikát, nehézségi ívet vagy szentély köröket vizsgáltak spoiler nélkül.',
           'A session brífek célokat, sikerkritériumokat és figyelendő pillanatokat adtak.',
@@ -350,8 +350,8 @@ export const huDictionary: Dictionary = {
       {
         id: 'support',
         title: 'Eszközök és támogatás',
-          description:
-            'Az elfogadott tesztelők privát egyeztető tereket és strukturált riport eszközöket kaptak.',
+        description:
+          'Az elfogadott tesztelők privát egyeztető tereket és strukturált riport eszközöket kaptak.',
         bullets: [
           'Privát Discord csatornák fejlesztői válaszolókkal a teszt ablakok alatt.',
           'Sablonos hibajegy-kezelés, ami szétválasztotta a harc, UI és onboarding visszajelzéseket.',
@@ -363,8 +363,8 @@ export const huDictionary: Dictionary = {
     faqs: [
       {
         question: 'Kik jelentkezhettek?',
-          answer:
-            'A program szünetel, de a történelmi feltételek megmaradnak: olyan játékosok, akik szívesen elemezték a narratív rendszereket, és angolul vagy magyarul részletes írásos visszajelzést adtak.'
+        answer:
+          'A program szünetel, de a történelmi feltételek megmaradnak: olyan játékosok, akik szívesen elemezték a narratív rendszereket, és angolul vagy magyarul részletes írásos visszajelzést adtak.'
       },
       {
         question: 'Hogyan küldtétek ki a meghívókat?',
@@ -424,8 +424,8 @@ export const huDictionary: Dictionary = {
     faqs: [
       {
         question: 'Milyen platformok számítottak?',
-          answer:
-            'Bármely csatorna, ahol következetes történetmesélés vagy elemzés volt narratív játékokról, anime világokról vagy karakterközpontú akcióról – YouTube, Twitch, TikTok, hírlevél és podcast egyaránt.'
+        answer:
+          'Bármely csatorna, ahol következetes történetmesélés vagy elemzés volt narratív játékokról, anime világokról vagy karakterközpontú akcióról – YouTube, Twitch, TikTok, hírlevél és podcast egyaránt.'
       },
       {
         question: 'Milyen tartalmat készíthettek a partnerek?',

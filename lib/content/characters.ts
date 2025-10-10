@@ -57,7 +57,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'aika',
       name: 'AIKA',
       element: 'Void / Creation',
-      heroImage: 'https://media.aikaworld.com/presskit/keyart/aikaworld-keyart-01.jpg',
+      heroImage: 'https://media.aikaworld.com/aika_profile.png',
       heroImageAlt: 'AIKA’s holographic sigil spirals above a void-lit skyline.',
       description:
         'AIKA dreams inside the void-lattice crowning Aika City, weaving new realities from archived screams and starlight. She guides her resonators with paradox riddles, reshaping collapse into a canvas for rebirth. Creation is her answer to every silence humanity left behind.',
@@ -119,7 +119,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'aika',
       name: 'AIKA',
       element: 'Void / Creation',
-      heroImage: 'https://media.aikaworld.com/presskit/keyart/aikaworld-keyart-01.jpg',
+      heroImage: 'https://media.aikaworld.com/aika_profile.png',
       heroImageAlt: 'AIKA’s holographic sigil spirals above a void-lit skyline.',
       description:
         'AIKA dreams inside the void-lattice crowning Aika City, weaving new realities from archived screams and starlight. She guides her resonators with paradox riddles, reshaping collapse into a canvas for rebirth. Creation is her answer to every silence humanity left behind.',
