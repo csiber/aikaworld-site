@@ -177,7 +177,7 @@ export const enDictionary: Dictionary = {
           imageSrc: 'https://media.aikaworld.com/yui_profile.png',
           imageAlt: 'Yui profile portrait'
         },
-        { slug: 'aika', name: 'AIKA', element: 'Void / Creation', color: 'accentF', imageSrc: 'https://media.aikaworld.com/aika_profile.png', }
+        { slug: 'aika', name: 'AIKA', element: 'Void / Creation', color: 'accentF', imageSrc: 'https://media.aikaworld.com/aika_profile.jpeg', }
       ]
     },
     media: {
