@@ -7,7 +7,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'akari',
       name: 'Akari',
       element: 'Fire / Discipline',
-      heroImage: 'https://media.aikaworld.com/akari-banner.png',
+      heroImage: 'https://media.aikaworld.com/akari_profil.png',
       heroImageAlt: 'Akari strides through a furnace-lit street with embers coiling around her blade.',
       description:
         "Akari keeps Narukami's furnace heat caged beneath tempered armor. She hones metronome-perfect charges until the war cadence matches the city's roaring forges. Discipline fuels her hunt for the syndicate captains who scorched her home and called it collateral.",
@@ -17,7 +17,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'miyu',
       name: 'Miyu',
       element: 'Nature / Mercy',
-      heroImage: 'https://media.aikaworld.com/miyu-banner.png',
+      heroImage: 'https://media.aikaworld.com/miyu_profile.png',
       heroImageAlt: 'Miyu stands amid bioluminescent vines that curl around a radiant shield.',
       description:
         'Miyu tends the hanging gardens of Verdefa’s sanctuary towers, coaxing life through shattered plating. She binds wounds and foes alike with patient chlorophyll hymns that refuse to let rot win. Mercy means making the guilty feed the soil they poisoned.',
@@ -27,7 +27,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'komi',
       name: 'Komi',
       element: 'Water / Truth',
-      heroImage: 'https://media.aikaworld.com/komi-banner.png',
+      heroImage: 'https://media.aikaworld.com/komi_profile.png',
       heroImageAlt: 'Komi gazes over moonlit tides while spectral water threads coil around her hands.',
       description:
         'Komi charts the silent harbors of Shinkai where truth is weighed against drowned secrets. She lets tidal charts and mirrored eyes expose the lies of corporate admirals who silence witnesses. Each mission drags another shadow fleet into the sun.',
@@ -37,7 +37,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'hina',
       name: 'Hina',
       element: 'Light / Law',
-      heroImage: 'https://media.aikaworld.com/hina-banner.png',
+      heroImage: 'https://media.aikaworld.com/hina_profile.png',
       heroImageAlt: 'Hina raises her violin-sword amid stained-glass light scattering like shards.',
       description:
         'Hina wields Aurelia’s cathedral light like a blade drawn from a hymnal. She sentences tyrants through choreographed duels, every measure etched in sanctified ink and blood. Law is the last aria she gifts the guilty before silence takes them.',
@@ -47,7 +47,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'yui',
       name: 'Yui',
       element: 'Shadow / Freedom',
-      heroImage: 'https://media.aikaworld.com/yui-banner.png',
+      heroImage: 'https://media.aikaworld.com/yui_profile.png',
       heroImageAlt: 'Yui dives through a neon skyline trailing twin blades of violet light.',
       description:
         'Yui slips between the neon vents of Neo-Kyoto’s suspended bazaars. She cuts cartel chains mid-freefall so the street clans can breathe the night air again. Freedom is the rush that keeps her from ever landing.',
@@ -69,7 +69,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'akari',
       name: 'Akari',
       element: 'Fire / Discipline',
-      heroImage: 'https://media.aikaworld.com/akari-banner.png',
+      heroImage: 'https://media.aikaworld.com/akari_profil.png',
       heroImageAlt: 'Akari strides through a furnace-lit street with embers coiling around her blade.',
       description:
         "Akari keeps Narukami's furnace heat caged beneath tempered armor. She hones metronome-perfect charges until the war cadence matches the city's roaring forges. Discipline fuels her hunt for the syndicate captains who scorched her home and called it collateral.",
@@ -79,7 +79,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'miyu',
       name: 'Miyu',
       element: 'Nature / Mercy',
-      heroImage: 'https://media.aikaworld.com/miyu-banner.png',
+      heroImage: 'https://media.aikaworld.com/miyu_profile.png',
       heroImageAlt: 'Miyu stands amid bioluminescent vines that curl around a radiant shield.',
       description:
         'Miyu tends the hanging gardens of Verdefa’s sanctuary towers, coaxing life through shattered plating. She binds wounds and foes alike with patient chlorophyll hymns that refuse to let rot win. Mercy means making the guilty feed the soil they poisoned.',
@@ -89,7 +89,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'komi',
       name: 'Komi',
       element: 'Water / Truth',
-      heroImage: 'https://media.aikaworld.com/komi-banner.png',
+      heroImage: 'https://media.aikaworld.com/komi_profile.png',
       heroImageAlt: 'Komi gazes over moonlit tides while spectral water threads coil around her hands.',
       description:
         'Komi charts the silent harbors of Shinkai where truth is weighed against drowned secrets. She lets tidal charts and mirrored eyes expose the lies of corporate admirals who silence witnesses. Each mission drags another shadow fleet into the sun.',
@@ -99,7 +99,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'hina',
       name: 'Hina',
       element: 'Light / Law',
-      heroImage: 'https://media.aikaworld.com/hina-banner.png',
+      heroImage: 'https://media.aikaworld.com/hina_profile.png',
       heroImageAlt: 'Hina raises her violin-sword amid stained-glass light scattering like shards.',
       description:
         'Hina wields Aurelia’s cathedral light like a blade drawn from a hymnal. She sentences tyrants through choreographed duels, every measure etched in sanctified ink and blood. Law is the last aria she gifts the guilty before silence takes them.',
@@ -109,7 +109,7 @@ const charactersByLocale: Record<Locale, Character[]> = {
       slug: 'yui',
       name: 'Yui',
       element: 'Shadow / Freedom',
-      heroImage: 'https://media.aikaworld.com/yui-banner.png',
+      heroImage: 'https://media.aikaworld.com/yui_profile.png',
       heroImageAlt: 'Yui dives through a neon skyline trailing twin blades of violet light.',
       description:
         'Yui slips between the neon vents of Neo-Kyoto’s suspended bazaars. She cuts cartel chains mid-freefall so the street clans can breathe the night air again. Freedom is the rush that keeps her from ever landing.',
