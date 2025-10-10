@@ -62,6 +62,8 @@ export type HomeDictionary = {
       name: string;
       element: string;
       color: string;
+      imageSrc?: string;
+      imageAlt?: string;
     }[];
   };
   media: {

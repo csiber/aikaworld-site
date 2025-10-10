@@ -298,7 +298,18 @@ export default function HomePage({
                 href={`${basePath}/characters/${character.slug}`}
                 className="group block h-full rounded-2xl border border-white/10 bg-white/5 p-4 transition-transform duration-500 hover:-translate-y-1.5 hover:shadow-[0_35px_90px_-60px_rgba(236,72,153,0.7)]"
               >
-                <div className={`h-36 w-full rounded-xl bg-${character.color}`} />
+                {character.imageSrc ? (
+                  <div className="relative h-36 w-full overflow-hidden rounded-xl bg-black/20">
+                    <img
+                      src={character.imageSrc}
+                      alt={character.imageAlt ?? character.name}
+                      className="h-full w-full object-cover transition duration-300 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                  </div>
+                ) : (
+                  <div className={`h-36 w-full rounded-xl bg-${character.color}`} />
+                )}
                 <div className="mt-4 font-semibold text-white">{character.name}</div>
                 <div className="text-sm text-white/70">{character.element}</div>
               </Link>

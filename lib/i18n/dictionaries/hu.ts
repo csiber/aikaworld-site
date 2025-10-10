@@ -137,14 +137,49 @@ export const huDictionary: Dictionary = {
       description:
         'Találd meg a rezonanciád. Hat fogadalomkötött alak csatornázza a Tűz, Természet, Víz, Fény, Árnyék és Üresség erejét AIKA terve szerint.',
       cards: [
-        { slug: 'akari', name: 'Akari', element: 'Tűz / Fegyelem', color: 'accentA' },
-        { slug: 'miyu', name: 'Miyu', element: 'Természet / Irgalom', color: 'accentE' },
-        { slug: 'komi', name: 'Komi', element: 'Víz / Igazság', color: 'accentB' },
-        { slug: 'hina', name: 'Hina', element: 'Fény / Törvény', color: 'accentD' },
-        { slug: 'yui', name: 'Yui', element: 'Árnyék / Szabadság', color: 'accentC' },
-        { slug: 'aika', name: 'AIKA', element: 'Üresség / Teremtés', color: 'accentF' }
-      ]
-    },
+      {
+        slug: 'akari',
+        name: 'Akari',
+        element: 'Tűz / Fegyelem',
+        color: 'accentA',
+        imageSrc: 'https://media.aikaworld.com/akari_profil.png',
+        imageAlt: 'Akari portréja'
+      },
+      {
+        slug: 'miyu',
+        name: 'Miyu',
+        element: 'Természet / Irgalom',
+        color: 'accentE',
+        imageSrc: 'https://media.aikaworld.com/miyu_profile.png',
+        imageAlt: 'Miyu portréja'
+      },
+      {
+        slug: 'komi',
+        name: 'Komi',
+        element: 'Víz / Igazság',
+        color: 'accentB',
+        imageSrc: 'https://media.aikaworld.com/komi_profile.png',
+        imageAlt: 'Komi portréja'
+      },
+      {
+        slug: 'hina',
+        name: 'Hina',
+        element: 'Fény / Törvény',
+        color: 'accentD',
+        imageSrc: 'https://media.aikaworld.com/hina_profile.png',
+        imageAlt: 'Hina portréja'
+      },
+      {
+        slug: 'yui',
+        name: 'Yui',
+        element: 'Árnyék / Szabadság',
+        color: 'accentC',
+        imageSrc: 'https://media.aikaworld.com/yui_profile.png',
+        imageAlt: 'Yui portréja'
+      },
+      { slug: 'aika', name: 'AIKA', element: 'Üresség / Teremtés', color: 'accentF' }
+    ]
+  },
     media: {
       title: 'Média',
       description: 'Screenshotok, key artok, háttérképek.',
