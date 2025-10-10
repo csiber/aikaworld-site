@@ -137,11 +137,46 @@ export const enDictionary: Dictionary = {
     description:
       'Find your resonance. Six vowbound figures channel Fire, Nature, Water, Light, Shadow and Void under AIKA’s design.',
     cards: [
-      { slug: 'akari', name: 'Akari', element: 'Fire / Discipline', color: 'accentA' },
-      { slug: 'miyu', name: 'Miyu', element: 'Nature / Mercy', color: 'accentE' },
-      { slug: 'komi', name: 'Komi', element: 'Water / Truth', color: 'accentB' },
-      { slug: 'hina', name: 'Hina', element: 'Light / Law', color: 'accentD' },
-      { slug: 'yui', name: 'Yui', element: 'Shadow / Freedom', color: 'accentC' },
+      {
+        slug: 'akari',
+        name: 'Akari',
+        element: 'Fire / Discipline',
+        color: 'accentA',
+        imageSrc: 'https://media.aikaworld.com/akari_profil.png',
+        imageAlt: 'Akari profile portrait'
+      },
+      {
+        slug: 'miyu',
+        name: 'Miyu',
+        element: 'Nature / Mercy',
+        color: 'accentE',
+        imageSrc: 'https://media.aikaworld.com/miyu_profile.png',
+        imageAlt: 'Miyu profile portrait'
+      },
+      {
+        slug: 'komi',
+        name: 'Komi',
+        element: 'Water / Truth',
+        color: 'accentB',
+        imageSrc: 'https://media.aikaworld.com/komi_profile.png',
+        imageAlt: 'Komi profile portrait'
+      },
+      {
+        slug: 'hina',
+        name: 'Hina',
+        element: 'Light / Law',
+        color: 'accentD',
+        imageSrc: 'https://media.aikaworld.com/hina_profile.png',
+        imageAlt: 'Hina profile portrait'
+      },
+      {
+        slug: 'yui',
+        name: 'Yui',
+        element: 'Shadow / Freedom',
+        color: 'accentC',
+        imageSrc: 'https://media.aikaworld.com/yui_profile.png',
+        imageAlt: 'Yui profile portrait'
+      },
       { slug: 'aika', name: 'AIKA', element: 'Void / Creation', color: 'accentF' }
     ]
   },
