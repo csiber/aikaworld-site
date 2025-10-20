@@ -6,7 +6,7 @@ import type { Locale } from '../lib/i18n/config';
 import { getDictionary } from '../lib/i18n/dictionaries';
 
 const LOCALE_COOKIE = 'aika_locale';
-const HU_PREFIX = '/hu';
+const EN_PREFIX = '/en';
 
 function parseLocaleFromCookie(): Locale | null {
   if (typeof document === 'undefined') {
@@ -32,8 +32,8 @@ function parseLocaleFromCookie(): Locale | null {
 }
 
 function detectLocaleFromPath(pathname: string): Locale | null {
-  if (pathname === HU_PREFIX || pathname.startsWith(`${HU_PREFIX}/`)) {
-    return 'hu';
+  if (pathname === EN_PREFIX || pathname.startsWith(`${EN_PREFIX}/`)) {
+    return 'en';
   }
 
   return null;
@@ -81,7 +81,7 @@ function detectLocale(): Locale {
     return navigatorLocale;
   }
 
-  return 'en';
+  return 'hu';
 }
 
 type NotFoundContentProps = {
@@ -89,16 +89,16 @@ type NotFoundContentProps = {
 };
 
 export default function NotFoundContent({ discordUrl }: NotFoundContentProps) {
-  const [locale, setLocale] = useState<Locale>('en');
+  const [locale, setLocale] = useState<Locale>('hu');
 
   useEffect(() => {
     setLocale(detectLocale());
   }, []);
 
   const dictionary = getDictionary(locale);
-  const homeHref = locale === 'hu' ? '/hu' : '/';
-  const charactersHref = locale === 'hu' ? '/hu/characters' : '/characters';
-  const faqHref = locale === 'hu' ? '/hu/faq' : '/faq';
+  const homeHref = locale === 'en' ? '/en' : '/';
+  const charactersHref = locale === 'en' ? '/en/characters' : '/characters';
+  const faqHref = locale === 'en' ? '/en/faq' : '/faq';
   const contactEmail = dictionary.footer.contactEmail;
   const contactSubject = encodeURIComponent(dictionary.notFound.contactSubject);
   const contactHref = `mailto:${contactEmail}?subject=${contactSubject}`;

@@ -3,7 +3,7 @@ import pa11y from 'pa11y';
 const baseUrl = process.env.A11Y_BASE_URL ?? 'http://localhost:3000';
 const targetPaths = process.env.A11Y_PATHS
   ? process.env.A11Y_PATHS.split(',').map(path => path.trim()).filter(Boolean)
-  : ['/', '/hu', '/modes', '/hu/modes', '/characters', '/hu/characters'];
+  : ['/', '/en', '/modes', '/en/modes', '/characters', '/en/characters'];
 
 async function runCheck(path: string) {
   const url = new URL(path, baseUrl).toString();

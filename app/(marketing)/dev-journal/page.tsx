@@ -19,7 +19,7 @@ export default async function DevJournalPage() {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const posts = await getDevlogSummaries();
-  const basePath = locale === 'hu' ? '/hu' : '';
+  const basePath = locale === 'en' ? '/en' : '';
 
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>

@@ -6,8 +6,8 @@ const PUBLIC_FILE = /\.(.*)$/;
 const LOCALE_COOKIE = 'aika_locale';
 
 function detectLocaleFromPath(pathname: string) {
-  if (pathname === '/hu' || pathname.startsWith('/hu/')) {
-    return 'hu';
+  if (pathname === '/en' || pathname.startsWith('/en/')) {
+    return 'en';
   }
   return defaultLocale;
 }
@@ -52,18 +52,24 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
+  if (pathname === '/hu' || pathname.startsWith('/hu/')) {
+    const redirectUrl = request.nextUrl.clone();
+    redirectUrl.pathname = pathname.replace(/^\/hu/, '') || '/';
+    return NextResponse.redirect(redirectUrl);
+  }
+
   const currentLocale = detectLocaleFromPath(pathname);
 
-  const localePrefix = '/hu';
-  const shouldRewriteHu = currentLocale === 'hu';
+  const localePrefix = '/en';
+  const shouldRewriteEn = currentLocale === 'en';
 
-  const response = shouldRewriteHu
+  const response = shouldRewriteEn
     ? (() => {
         const rewriteUrl = request.nextUrl.clone();
         if (pathname === localePrefix || pathname === `${localePrefix}/`) {
           rewriteUrl.pathname = '/';
         } else {
-          rewriteUrl.pathname = pathname.replace(/^\/hu/, '') || '/';
+          rewriteUrl.pathname = pathname.replace(/^\/en/, '') || '/';
         }
         return NextResponse.rewrite(rewriteUrl);
       })()
@@ -83,10 +89,10 @@ export function middleware(request: NextRequest) {
       const preferredLocale = parsePreferredLocale(request.headers.get('accept-language'));
       if (preferredLocale && preferredLocale !== defaultLocale) {
         const targetPath = pathname === '/' ? '' : pathname;
-        const redirectUrl = new URL(`/hu${targetPath}${search}`, request.url);
+        const redirectUrl = new URL(`/en${targetPath}${search}`, request.url);
         const redirectResponse = NextResponse.redirect(redirectUrl);
-        redirectResponse.headers.set('x-aika-locale', 'hu');
-        redirectResponse.cookies.set(LOCALE_COOKIE, 'hu', {
+        redirectResponse.headers.set('x-aika-locale', 'en');
+        redirectResponse.cookies.set(LOCALE_COOKIE, 'en', {
           path: '/',
           maxAge: 60 * 60 * 24 * 365
         });

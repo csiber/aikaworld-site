@@ -2,7 +2,7 @@ import { headers } from 'next/headers';
 import type { Locale } from './config';
 import { defaultLocale, isLocale } from './config';
 
-const HU_PREFIX = '/hu';
+const EN_PREFIX = '/en';
 
 export async function resolveRequestLocale(): Promise<Locale> {
   const headerList = await headers();
@@ -17,8 +17,8 @@ export async function resolveRequestLocale(): Promise<Locale> {
   if (middlewareUrl) {
     try {
       const url = new URL(middlewareUrl);
-      if (url.pathname === HU_PREFIX || url.pathname.startsWith(`${HU_PREFIX}/`)) {
-        return 'hu';
+      if (url.pathname === EN_PREFIX || url.pathname.startsWith(`${EN_PREFIX}/`)) {
+        return 'en';
       }
     } catch (error) {
       // ignore
@@ -28,8 +28,8 @@ export async function resolveRequestLocale(): Promise<Locale> {
   const matchedPath =
     headerList.get('x-matched-path') ?? headerList.get('x-invoke-path') ?? headerList.get('x-next-pathname');
 
-  if (matchedPath && (matchedPath === HU_PREFIX || matchedPath.startsWith(`${HU_PREFIX}/`))) {
-    return 'hu';
+  if (matchedPath && (matchedPath === EN_PREFIX || matchedPath.startsWith(`${EN_PREFIX}/`))) {
+    return 'en';
   }
 
   return defaultLocale;

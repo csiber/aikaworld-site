@@ -3,10 +3,14 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Starfield from '../components/backgrounds/Starfield';
 import SmoothScrollProvider from '../components/providers/SmoothScrollProvider';
+import Footer from '../components/site/Footer';
 import { resolveRequestLocale } from '../lib/i18n/server-locale';
 import { serverEnv } from '../lib/server-config';
+import { getDictionary } from '../lib/i18n/dictionaries';
+import { baseMetadata } from '../lib/seo';
 
 export const metadata: Metadata = {
+  ...baseMetadata,
   icons: {
     icon: [
       { url: '/favicon.svg' },
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await resolveRequestLocale();
+  const dictionary = getDictionary(locale);
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -37,6 +42,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <SmoothScrollProvider />
         <Starfield />
         {children}
+        <Footer locale={locale} dictionary={dictionary} />
       </body>
     </html>
   );

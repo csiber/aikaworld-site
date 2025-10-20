@@ -16,7 +16,7 @@ export default async function CharactersPage() {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const characters = getCharacters(locale);
-  const basePath = locale === 'hu' ? '/hu' : '';
+  const basePath = locale === 'en' ? '/en' : '';
 
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>

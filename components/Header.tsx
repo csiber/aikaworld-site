@@ -21,7 +21,7 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const basePath = locale === 'hu' ? '/hu' : '';
+  const basePath = locale === 'en' ? '/en' : '';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,10 +38,10 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
       return;
     }
 
-    const normalizedPath = pathname.replace(/^\/hu(?=\/|$)/, '') || '/';
+    const normalizedPath = pathname.replace(/^\/en(?=\/|$)/, '') || '/';
     const targetPath =
-      nextLocale === 'hu'
-        ? normalizedPath === '/' ? '/hu' : `/hu${normalizedPath}`
+      nextLocale === 'en'
+        ? normalizedPath === '/' ? '/en' : `/en${normalizedPath}`
         : normalizedPath;
     const search = searchParams.toString();
     const destination = search ? `${targetPath}?${search}` : targetPath;
@@ -65,10 +65,12 @@ export default function Header({ steamUrl, discordUrl, locale, dictionary }: Hea
     () =>
       [
         dictionary.nav.world,
+        dictionary.nav.studio,
         dictionary.nav.modes,
         dictionary.nav.progression,
         dictionary.nav.devlog,
-        dictionary.nav.faq
+        dictionary.nav.faq,
+        dictionary.nav.about
       ],
     [dictionary.nav]
   );

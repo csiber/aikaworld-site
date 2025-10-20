@@ -16,11 +16,13 @@ function baseUrl() {
   return serverEnv.siteUrl.replace(/\/$/, '');
 }
 
+const DEFAULT_OG_IMAGE = {
+  en: '/og/aikaworld-default-en.svg',
+  hu: '/og/aikaworld-default-hu.svg'
+} as const;
+
 const OG_IMAGE_VARIANTS = {
-  default: {
-    en: '/og/aikaworld-default-en.svg',
-    hu: '/og/aikaworld-default-hu.svg'
-  },
+  default: DEFAULT_OG_IMAGE,
   home: {
     en: '/og/aikaworld-home-en.svg',
     hu: '/og/aikaworld-home-hu.svg'
@@ -92,9 +94,37 @@ function resolveOgImage(name: OgImageVariant = 'default', locale: Locale) {
   return `${baseUrl()}${OG_IMAGE_VARIANTS[name][imageKey]}`;
 }
 
+const defaultOgUrl = `${baseUrl()}${DEFAULT_OG_IMAGE[ogLocaleMap[defaultLocale].imageKey]}`;
+
+export const baseMetadata: Metadata = {
+  metadataBase: new URL(baseUrl()),
+  title: {
+    default: 'SyncNode Interactive – AIKA World',
+    template: '%s | AIKA World'
+  },
+  description:
+    'A SyncNode Interactive független fejlesztőstúdió az AIKA World univerzum mögött. Érzelemvezérelt történetmesélés modern Unreal Engine technológiával.',
+  openGraph: {
+    type: 'website',
+    siteName: 'AIKA World',
+    images: [
+      {
+        url: defaultOgUrl,
+        width: 1200,
+        height: 630,
+        alt: 'AIKA World – SyncNode Interactive alap előnézet'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [defaultOgUrl]
+  }
+};
+
 export function buildLocalizedUrl(locale: Locale, path: string): string {
   const normalized = normalizePath(path);
-  const prefix = locale === defaultLocale ? '' : '/hu';
+  const prefix = locale === defaultLocale ? '' : '/en';
   if (normalized === '/') {
     return `${baseUrl()}${prefix}`;
   }
@@ -128,6 +158,8 @@ const STATIC_PAGE_IMAGE_VARIANTS: Partial<Record<StaticSeoPage, OgImageVariant>>
   creatorProgram: 'creator',
   characters: 'characters',
   devlog: 'devlog',
+  studio: 'default',
+  about: 'default',
   faq: 'faq',
   presskit: 'presskit',
   privacy: 'privacy',
