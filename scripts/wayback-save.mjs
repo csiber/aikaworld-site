@@ -13,7 +13,7 @@ if (!siteUrl) {
 }
 
 const paths = ['/', '/privacy', '/terms', '/legal/copyright', '/legal/fan-content', '/legal/trademark', '/legal/changelog'];
-const prefixes = ['', '/hu'];
+const prefixes = ['', '/en'];
 
 const targets = new Set();
 

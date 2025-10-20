@@ -42,7 +42,7 @@ export default async function CharacterPage({ params }: CharacterPageProps) {
     notFound();
   }
 
-  const basePath = locale === 'hu' ? '/hu' : '';
+  const basePath = locale === 'en' ? '/en' : '';
 
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>

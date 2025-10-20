@@ -31,7 +31,7 @@ export default async function DevJournalPostPage({ params }: { params: Promise<D
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const post = await getDevlogPost(slug).catch(() => null);
-  const basePath = locale === 'hu' ? '/hu' : '';
+  const basePath = locale === 'en' ? '/en' : '';
 
   if (!post) {
     notFound();

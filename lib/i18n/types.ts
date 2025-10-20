@@ -319,10 +319,12 @@ export type HeaderDictionary = {
   navLabel: string;
   nav: {
     world: HeaderNavItem;
+    studio: HeaderNavItem;
     modes: HeaderNavItem;
     progression: HeaderNavItem;
     devlog: HeaderNavItem;
     faq: HeaderNavItem;
+    about: HeaderNavItem;
   };
   wishlistCta: string;
   discordCta: string;
@@ -359,6 +361,25 @@ export type FooterDictionary = {
   contactAddressLines: string[];
   copyrightNotice: string;
   lastBuildLabel: string;
+  syncNode: {
+    rights: string;
+    aikaBy: string;
+  };
+};
+
+export type StudioDictionary = {
+  title: string;
+  lead: string;
+  body: string;
+  project: {
+    title: string;
+    summary: string;
+  };
+};
+
+export type AboutPageDictionary = {
+  aikaLead: string;
+  aikaBody: string;
 };
 
 export type SeoDictionary = {
@@ -386,6 +407,8 @@ export type SeoDictionary = {
       ogAlt: (postTitle: string) => string;
     };
     presskit: { title: string; description: string; ogAlt: string };
+    studio: { title: string; description: string; ogAlt: string };
+    about: { title: string; description: string; ogAlt: string };
     faq: { title: string; description: string; ogAlt: string };
     privacy: { title: string; description: string; ogAlt: string };
     terms: { title: string; description: string; ogAlt: string };
@@ -425,6 +448,8 @@ export type Dictionary = {
   lightbox: LightboxDictionary;
   seo: SeoDictionary;
   devlog: DevlogDictionary;
+  studio: StudioDictionary;
+  aboutPage: AboutPageDictionary;
 };
 
 export type DevlogDictionary = {

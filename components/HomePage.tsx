@@ -62,7 +62,7 @@ export default function HomePage({
 
   const shouldReduceMotion = useReducedMotion();
 
-  const basePath = useMemo(() => (locale === 'hu' ? '/hu' : ''), [locale]);
+  const basePath = useMemo(() => (locale === 'en' ? '/en' : ''), [locale]);
 
   const resolveLocalizedHref = (href: string) => {
     if (!href) {

@@ -8,10 +8,12 @@ export const huDictionary: Dictionary = {
     navLabel: 'Fő navigáció',
     nav: {
       world: { label: 'Világ', href: '/lore/elyndra' },
+      studio: { label: 'Stúdió', href: '/studio' },
       modes: { label: 'Story mód', href: '/modes' },
       progression: { label: 'Fejlődés', href: '/progression' },
       devlog: { label: 'Fejlesztői napló', href: '/dev-journal' },
-      faq: { label: 'GYIK', href: '/faq' }
+      faq: { label: 'GYIK', href: '/faq' },
+      about: { label: 'Rólunk', href: '/about' }
     },
     wishlistCta: 'Wishlist a Steamen',
     discordCta: 'Csatlakozz Discordon',
@@ -55,7 +57,11 @@ export const huDictionary: Dictionary = {
     contactAddressLabel: 'Postai cím',
     contactAddressLines: ['AIKA World Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Magyarország'],
     copyrightNotice: '© 2025 AIKA World. Minden jog fenntartva.',
-    lastBuildLabel: 'Utolsó build'
+    lastBuildLabel: 'Utolsó build',
+    syncNode: {
+      rights: '© 2025 SyncNode Interactive. Minden jog fenntartva.',
+      aikaBy: 'Az AIKA: World a SyncNode Interactive eredeti Unreal Engine-projektje.'
+    }
   },
   home: {
     hero: {
@@ -702,6 +708,18 @@ export const huDictionary: Dictionary = {
           'A készítői partnerségek szünetelnek az egyszemélyes fejlesztési fókusz idején. A korábbi irányelvek tájékoztatásként maradnak.',
         ogAlt: 'AIKA World creator program archívum grafika'
       },
+      studio: {
+        title: 'SyncNode Interactive – AIKA World',
+        description:
+          'A SyncNode Interactive független fejlesztőstúdió az AIKA World univerzum mögött. Érzelemvezérelt történetmesélés modern Unreal Engine technológiával.',
+        ogAlt: 'SyncNode Interactive stúdió bemutató grafika'
+      },
+      about: {
+        title: 'Rólunk – AIKA World',
+        description:
+          'Az AIKA: World egy Unreal Engine 5.4 LTS alapú, egyjátékos open world prototípus, amely érzelmi történetmesélést és filmszerű jeleneteket ötvöz működő gameplay rendszerekkel. Készítette: SyncNode Interactive.',
+        ogAlt: 'AIKA World bemutatkozás grafika'
+      },
       characters: {
         title: 'Rezonátorok – AIKA World',
         description:
@@ -760,5 +778,20 @@ export const huDictionary: Dictionary = {
         ogAlt: 'AIKA World hiányzó rezonancia illusztráció'
       }
     }
+  },
+  studio: {
+    title: 'SyncNode Interactive',
+    lead: 'Független fejlesztőstúdió az AIKA World univerzum mögött.',
+    body:
+      'A SyncNode Interactive független fejlesztőstúdió, amely narratív-vezérelt, technológiailag innovatív világokat hoz létre. Célunk, hogy az AIKA World univerzumban az érzelmi történetmesélést modern interaktív rendszerekkel egyesítsük. Projektjeink az Unreal Engine 5-re épülnek, és ötvözik a legújabb látvány-, hang- és mesterségesintelligencia-megoldásokat.',
+    project: {
+      title: 'AIKA: World',
+      summary: 'Unreal Engine 5.4 LTS • Egyjátékos • Nyílt világ • Filmszerű történetmesélés'
+    }
+  },
+  aboutPage: {
+    aikaLead: 'Az AIKA: World egy Unreal Engine 5.4 LTS alapú, egyjátékos open world prototípus.',
+    aikaBody:
+      'Érzelmi történetmesélés és filmszerű jelenetek működő gameplay rendszerekkel. Készítette: SyncNode Interactive.'
   }
 };

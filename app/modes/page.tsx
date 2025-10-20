@@ -17,7 +17,7 @@ export default async function ModesPage() {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const sections = dictionary.modes.sections;
-  const homeHref = locale === 'hu' ? '/hu' : '/';
+  const homeHref = locale === 'en' ? '/en' : '/';
 
   return (
     <SiteLayout locale={locale} dictionary={dictionary}>

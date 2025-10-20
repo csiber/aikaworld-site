@@ -19,7 +19,7 @@ export default async function CreatorProgramPage() {
   const locale = await resolveRequestLocale();
   const dictionary = getDictionary(locale);
   const pageDictionary = dictionary.creatorProgram;
-  const basePath = locale === 'hu' ? '/hu' : '';
+  const basePath = locale === 'en' ? '/en' : '';
   const ctaHref = pageDictionary.cta.href.startsWith('/')
     ? `${basePath}${pageDictionary.cta.href}`
     : pageDictionary.cta.href;

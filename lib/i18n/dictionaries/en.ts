@@ -8,10 +8,12 @@ export const enDictionary: Dictionary = {
     navLabel: 'Primary navigation',
     nav: {
       world: { label: 'World', href: '/lore/elyndra' },
+      studio: { label: 'Studio', href: '/studio' },
       modes: { label: 'Story', href: '/modes' },
       progression: { label: 'Progression', href: '/progression' },
       devlog: { label: 'Dev Journal', href: '/dev-journal' },
-      faq: { label: 'FAQ', href: '/faq' }
+      faq: { label: 'FAQ', href: '/faq' },
+      about: { label: 'About', href: '/about' }
     },
     wishlistCta: 'Wishlist on Steam',
     discordCta: 'Join Discord',
@@ -55,7 +57,11 @@ export const enDictionary: Dictionary = {
     contactAddressLabel: 'Postal address',
     contactAddressLines: ['AIKA World Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Hungary'],
     copyrightNotice: '© 2025 AIKA World. All rights reserved.',
-    lastBuildLabel: 'Last build'
+    lastBuildLabel: 'Last build',
+    syncNode: {
+      rights: '© 2025 SyncNode Interactive. All rights reserved.',
+      aikaBy: 'AIKA: World is an original Unreal Engine project by SyncNode Interactive.'
+    }
   },
   home: {
     hero: {
@@ -700,6 +706,18 @@ export const enDictionary: Dictionary = {
           'Creator partnerships are paused during the single-player production of AIKA World. Historical guidelines remain available for reference.',
         ogAlt: 'AIKA World creator program archive artwork'
       },
+      studio: {
+        title: 'SyncNode Interactive – AIKA World',
+        description:
+          'SyncNode Interactive is the independent studio behind the AIKA World universe. Emotional storytelling meets cutting-edge Unreal Engine technology.',
+        ogAlt: 'SyncNode Interactive studio highlight graphic'
+      },
+      about: {
+        title: 'About – AIKA World',
+        description:
+          'AIKA: World is a UE 5.4 LTS single-player open-world prototype blending emotional storytelling, cinematic sequences, and working gameplay systems. Created by SyncNode Interactive.',
+        ogAlt: 'About AIKA World overview artwork'
+      },
       characters: {
         title: 'Resonators – AIKA World',
         description:
@@ -758,5 +776,20 @@ export const enDictionary: Dictionary = {
         ogAlt: 'AIKA World missing resonance illustration'
       }
     }
+  },
+  studio: {
+    title: 'SyncNode Interactive',
+    lead: 'Independent development studio behind the AIKA World universe.',
+    body:
+      'SyncNode Interactive is an independent development studio crafting narrative-driven, technologically advanced worlds. Within the AIKA World universe, we merge emotional storytelling with modern interactive systems. Built on Unreal Engine 5, our projects combine cutting-edge visuals, sound design, and AI systems.',
+    project: {
+      title: 'AIKA: World',
+      summary: 'Unreal Engine 5.4 LTS • Singleplayer • Open world • Cinematic storytelling'
+    }
+  },
+  aboutPage: {
+    aikaLead: 'AIKA: World is a UE 5.4 LTS single-player open-world prototype.',
+    aikaBody:
+      'Emotional storytelling and cinematic sequences with working gameplay systems. Created by SyncNode Interactive.'
   }
 };

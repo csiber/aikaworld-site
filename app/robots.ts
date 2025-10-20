@@ -12,7 +12,7 @@ export default function robots(): MetadataRoute.Robots {
     },
     sitemap: [
       buildLocalizedUrl(defaultLocale, '/sitemap.xml'),
-      buildLocalizedUrl('hu', '/sitemap.xml')
+      buildLocalizedUrl('en', '/sitemap.xml')
     ]
   };
 }
