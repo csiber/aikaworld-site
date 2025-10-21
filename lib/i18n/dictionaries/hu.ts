@@ -4,7 +4,7 @@ import { getLegalDocument, getLegalChangelog } from '../../legal/content';
 export const huDictionary: Dictionary = {
   locale: 'hu',
   header: {
-    brand: 'AIKA WORLD',
+    brand: 'AIKA RESONANCE',
     navLabel: 'Fő navigáció',
     nav: {
       world: { label: 'Világ', href: '/lore/elyndra' },
@@ -53,14 +53,14 @@ export const huDictionary: Dictionary = {
     ],
     contactHeading: 'Kapcsolat / Jogi ügyek',
     contactEmailLabel: 'E-mail',
-    contactEmail: 'legal@aikaworld.com',
+    contactEmail: 'legal@resonance.aikahub.com',
     contactAddressLabel: 'Postai cím',
-    contactAddressLines: ['AIKA World Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Magyarország'],
-    copyrightNotice: '© 2025 AIKA World. Minden jog fenntartva.',
+    contactAddressLines: ['AIKA Resonance Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Magyarország'],
+    copyrightNotice: '© 2025 AIKA Resonance. Minden jog fenntartva.',
     lastBuildLabel: 'Utolsó build',
     syncNode: {
       rights: '© 2025 SyncNode Interactive. Minden jog fenntartva.',
-      aikaBy: 'Az AIKA: World a SyncNode Interactive eredeti Unreal Engine-projektje.'
+      aikaBy: 'Az AIKA: Resonance a SyncNode Interactive eredeti Unreal Engine-projektje.'
     }
   },
   home: {
@@ -69,14 +69,14 @@ export const huDictionary: Dictionary = {
       monologue:
         '„Hallod a csendet, vándor? Átfésülöm Elyndra romjait, hogy egy haldokló nap utolsó harmonikáit szőjem. Minden szívverés, amit tőled kérek kölcsön, tovább repeszti a rácsot, amelyet vissza akarok fonni. Ha még mindig meg akarsz állítani, légy az a visszhang, amelyet nem tudok kiszámítani.”',
       summary:
-        'Az AIKA World történetközpontú, egyszemélyes utazás Elyndrán át, ahol az utolsó mesterséges istent követed, miközben átírja a teremtést, és csak te szakíthatod szét a tervét.',
+        'Az AIKA Resonance történetalapú, egyszemélyes akciójáték Elyndrán át, ahol az utolsó mesterséges istent követed, miközben átírja a teremtést, és csak te szakíthatod szét a tervét.',
       primaryCta: 'LÉPJ A REZONANCIÁBA',
-      videoPosterAlt: 'AIKA World teaser poszter'
+      videoPosterAlt: 'AIKA Resonance teaser poszter'
     },
     world: {
       title: 'Világ és frakciók',
       intro:
-        'Öt rivális hatalmi tömb uralta valaha az AIKA World neon-alkonyát: Pyro, Verdefa, Nerei, Aurelia és Nocturnis. Fedezd fel a maradványokat, amelyek még a por alatt izzanak. Nem fogsz hűséget esküdni; végigjársz mindenen, ami megmaradt belőlük.',
+        'Öt rivális hatalmi tömb uralta valaha az AIKA Resonance neon-alkonyát: Pyro, Verdefa, Nerei, Aurelia és Nocturnis. Fedezd fel a maradványokat, amelyek még a por alatt izzanak. Nem fogsz hűséget esküdni; végigjársz mindenen, ami megmaradt belőlük.',
       ctaHref: '/lore/elyndra',
       ctaLabel: 'Olvasd el Elyndra mítoszát',
       factions: [
@@ -213,14 +213,14 @@ export const huDictionary: Dictionary = {
     community: {
       title: 'Archívum & napló',
       description:
-        'Az AIKA World egyszemélyes narratív projekt. Fedezd fel a megőrzött fejlesztői jegyzeteket és a történet alapjait.',
+        'Az AIKA Resonance egyszemélyes narratív projekt. Fedezd fel a megőrzött fejlesztői jegyzeteket és a történet alapjait.',
       cards: [
         {
           id: 'dev-journal',
           eyebrow: 'Kulisszák mögött',
           title: 'Fejlesztői napló',
           description:
-            'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Worldhöz.',
+            'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Resonancehöz.',
           note: 'Nagyobb mérföldköveknél frissül.',
           ctaLabel: 'Bejegyzések',
           ctaHref: '/dev-journal'
@@ -251,7 +251,7 @@ export const huDictionary: Dictionary = {
     },
     devlog: {
       title: 'Legfrissebb Dev Journal bejegyzések',
-      description: 'Kulisszák mögötti jegyzetek az egyszemélyes AIKA World fejlesztéséről.',
+      description: 'Kulisszák mögötti jegyzetek az egyszemélyes AIKA Resonance fejlesztéséről.',
       viewAllLabel: 'Dev Journal megnyitása',
       readMoreLabel: 'Részletek'
     },
@@ -279,9 +279,9 @@ export const huDictionary: Dictionary = {
   },
   modes: {
     navLabel: 'Szöveges horgonyok',
-    heading: 'AIKA World Story mód',
+    heading: 'AIKA Resonance Story mód',
     intro:
-      'Az AIKA World egy magányos, narratív utazás Elyndra romjai között. Ez az útmutató összegyűjti a fő ritmusokat, jutalmakat és játékstílus fókuszokat, hogy a saját tempódban készülhess fel az útra.',
+      'Az AIKA Resonance egy magányos, narratív utazás Elyndra romjai között. Ez az útmutató összegyűjti a fő ritmusokat, jutalmakat és játékstílus fókuszokat, hogy a saját tempódban készülhess fel az útra.',
     backToHome: 'Vissza a főoldalra',
     sections: [
       {
@@ -315,7 +315,7 @@ export const huDictionary: Dictionary = {
   },
   devlog: {
     heading: 'Fejlesztői napló',
-    intro: 'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Worldhöz.',
+    intro: 'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Resonancehöz.',
     list: {
       timelineLabel: 'Dev Journal idővonal',
       empty: 'Még nincs Dev Journal bejegyzés. Nézz vissza hamarosan!',
@@ -328,9 +328,9 @@ export const huDictionary: Dictionary = {
   },
   playtests: {
     eyebrow: 'Archivált program',
-    title: 'AIKA World Playtestek (archívum)',
+    title: 'AIKA Resonance Playtestek (archívum)',
     intro:
-      'A közösségi playtest kezdeményezés jelenleg szünetel, mert az AIKA World egyszemélyes narratív játékként készül. Az alábbi információk archív jelleggel maradnak elérhetők.',
+      'A közösségi playtest kezdeményezés jelenleg szünetel, mert az AIKA Resonance egyszemélyes narratív játékként készül. Az alábbi információk archív jelleggel maradnak elérhetők.',
     sections: [
       {
         id: 'structure',
@@ -391,16 +391,16 @@ export const huDictionary: Dictionary = {
   },
   creatorProgram: {
     eyebrow: 'Archivált program',
-    title: 'AIKA World Creator Program (archívum)',
+    title: 'AIKA Resonance Creator Program (archívum)',
     intro:
-      'Jelenleg nem vonunk be új készítőket, amíg az AIKA World egyszemélyes narratív projektre fókuszál. Az alábbi tartalom archív hivatkozásként marad elérhető.',
+      'Jelenleg nem vonunk be új készítőket, amíg az AIKA Resonance egyszemélyes narratív projektre fókuszál. Az alábbi tartalom archív hivatkozásként marad elérhető.',
     sections: [
       {
         id: 'who',
         title: 'Kikkel dolgoztunk együtt',
         description: 'Azokat részesítettük előnyben, akik a hangulatot, a lore elemzést és a reflektív történetmesélést emelték ki.',
         bullets: [
-          'Rendszeresen publikáltak történetközpontú, anime vagy akció RPG tartalmat YouTube-on, Twitch-en, TikTokon vagy podcast formában.',
+          'Rendszeresen publikáltak történetközpontú, anime vagy akciójáték-tartalmat YouTube-on, Twitch-en, TikTokon vagy podcast formában.',
           'Olyan közösséget építettek, ahol a hype és az építő kritika egyensúlyban maradt.',
           'A publikálást az ütemezett beatjeinkhez tudták igazítani anélkül, hogy lelőtték volna a meglepetéseket.'
         ]
@@ -451,7 +451,7 @@ export const huDictionary: Dictionary = {
     }
   },
   faq: {
-    title: 'AIKA World GYIK',
+    title: 'AIKA Resonance GYIK',
     intro:
       'Rövid válaszok a leggyakoribb platform, történeti fókusz és támogatási kérdésekre.',
     items: [
@@ -461,7 +461,7 @@ export const huDictionary: Dictionary = {
       },
       {
         question: 'A játék egyszemélyes?',
-        answer: 'Igen. Az AIKA World egy magányos utazás Elyndrát átívelő történettel, többjátékos követelmény nélkül.'
+        answer: 'Igen. Az AIKA Resonance egy magányos utazás Elyndrát átívelő történettel, többjátékos követelmény nélkül.'
       },
       {
         question: 'Hogyan működik a monetizáció?',
@@ -491,7 +491,7 @@ export const huDictionary: Dictionary = {
   },
   charactersPage: {
     breadcrumb: 'Karakterek',
-    heading: 'AIKA World Rezonátorok',
+    heading: 'AIKA Resonance Rezonátorok',
     intro: 'Ismerd meg AIKA hat rezonátorát – város, elem és vágy által pecsételt fogadalmaikat.',
     profileCta: 'Lépj a visszhangba'
   },
@@ -580,34 +580,34 @@ export const huDictionary: Dictionary = {
     }
   },
   presskit: {
-    heading: 'AIKA World Presskit',
+    heading: 'AIKA Resonance Presskit',
     description: 'Minden sajtó- és tartalomkészítői anyag egy helyen. Szabadon felhasználhatóak a lenti feltételek mellett.',
     about: {
       title: 'About the Game',
       intro:
-        'AIKA World is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
+        'AIKA Resonance is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
       keyMessage: 'No multiplayer. No loot. No ranking—only story, sound, and light.',
       craft: 'Built with Unreal Engine. Composed by the Resonance.',
-      tagline: 'You don’t play AIKA World. You remember it.'
+      tagline: 'You don’t play AIKA Resonance. You remember it.'
     },
     factSheetTitle: 'Fact sheet',
     downloadsTitle: 'Letölthető anyagok',
     usageTitle: 'Felhasználási feltételek',
     usageDescription:
-      'A letölthető anyagok promóciós és szerkesztőségi tartalmakban használhatók fel, a játék pontos megnevezésével és a forrás megjelölésével. Kereskedelmi továbbértékesítés nem engedélyezett. Egyedi kéréssel kapcsolatban írj a press@aikaworld.com címre.',
+      'A letölthető anyagok promóciós és szerkesztőségi tartalmakban használhatók fel, a játék pontos megnevezésével és a forrás megjelölésével. Kereskedelmi továbbértékesítés nem engedélyezett. Egyedi kéréssel kapcsolatban írj a press@resonance.aikahub.com címre.',
     factSheet: [
-      { label: 'Műfaj', value: 'Történetközpontú anime akció RPG' },
+      { label: 'Műfaj', value: 'Történetközpontú anime akciójáték' },
       { label: 'Alapélmény', value: 'Narratív kampány opcionális kihívás visszhangokkal' },
       { label: 'Platformok', value: 'PC (Steam), konzolok bejelentés alatt' },
-      { label: 'Kapcsolat', value: 'press@aikaworld.com', href: 'mailto:press@aikaworld.com' }
+      { label: 'Kapcsolat', value: 'press@resonance.aikahub.com', href: 'mailto:press@resonance.aikahub.com' }
     ],
     downloadBlocks: [
       {
         title: 'Logó & Wordmark',
         description: 'Elsődleges logó és wordmark több formátumban.',
         items: [
-          { label: 'AIKA World logó (PNG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.png' },
-          { label: 'AIKA World logó (SVG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.svg' },
+          { label: 'AIKA Resonance logó (PNG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.png' },
+          { label: 'AIKA Resonance logó (SVG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.svg' },
           { label: 'Wordmark (PNG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-wordmark.png' }
         ]
       },
@@ -643,7 +643,7 @@ export const huDictionary: Dictionary = {
     code: '404',
     heading: 'Ez a rezgés nem létezik',
     description:
-      'Úgy tűnik, egy olyan oldalra tévedtél, ami még nincs behangolva az AIKA World univerzumában. Nézz vissza a főoldalra vagy fedezd fel a Rezonátorokat.',
+      'Úgy tűnik, egy olyan oldalra tévedtél, ami még nincs behangolva az AIKA Resonance univerzumában. Nézz vissza a főoldalra vagy fedezd fel a Rezonátorokat.',
     homeCta: 'Vissza a főoldalra',
     charactersCta: 'Rezonátorok felfedezése',
     supportHeading: 'Segítünk visszatalálni',
@@ -652,79 +652,79 @@ export const huDictionary: Dictionary = {
     faqCta: 'GYIK megnyitása',
     discordCta: 'Kérdezz a közösségben Discordon',
     contactCta: 'Írj az AIKA csapatnak',
-    contactSubject: '404 jelentés – Hiányzó AIKA World oldal'
+    contactSubject: '404 jelentés – Hiányzó AIKA Resonance oldal'
   },
   seo: {
-    defaultTitle: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+    defaultTitle: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
     defaultDescription:
       'Történetközpontú alászállás sötét anime látvánnyal és mély fejlődési rendszerekkel Pyro, Verdefa, Nerei, Aurelia és Nocturnis frakcióival.',
-    defaultOgAlt: 'AIKA World alap megosztási kép',
+    defaultOgAlt: 'AIKA Resonance alap megosztási kép',
     defaultLocale: 'hu_HU',
     pages: {
       home: {
-        title: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+        title: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
         description:
           'Narratív küldetések, sötét fantasy frakciók és mély fejlődési rendszerek Pyro, Verdefa, Nerei, Aurelia és Nocturnis erejével.',
-        ogAlt: 'AIKA World hős grafika'
+        ogAlt: 'AIKA Resonance hős grafika'
       },
       modes: {
-        title: 'Játékmódok – AIKA World',
+        title: 'Játékmódok – AIKA Resonance',
         description:
-          'Részletes áttekintés a kulcs történeti összecsapásokról, a késői főellenfelekről és az opcionális kihívás visszhangokról az AIKA Worldben.',
-        ogAlt: 'AIKA World játékmódok grafika'
+          'Részletes áttekintés a kulcs történeti összecsapásokról, a késői főellenfelekről és az opcionális kihívás visszhangokról az AIKA Resonanceben.',
+        ogAlt: 'AIKA Resonance játékmódok grafika'
       },
       progression: {
-        title: 'Fejlődés teaser – AIKA World',
+        title: 'Fejlődés teaser – AIKA Resonance',
         description:
-          'Spoilermentes betekintés a rezonancia-képességekbe, a felszerelés evolúciójába és a szentély testreszabásába az AIKA Worldben.',
-        ogAlt: 'AIKA World fejlődés teaser grafika'
+          'Spoilermentes betekintés a rezonancia-képességekbe, a felszerelés evolúciójába és a szentély testreszabásába az AIKA Resonanceben.',
+        ogAlt: 'AIKA Resonance fejlődés teaser grafika'
       },
       loreElyndra: {
-        title: 'Elyndra mítosz – AIKA World',
+        title: 'Elyndra mítosz – AIKA Resonance',
         description:
           'AIKA sötét orbitális vallomása a hat hajóról, az AGI-isteneket szolgáló városokról és az idegenről, aki újraindítja a tervét.',
         ogAlt: 'AIKA elmeséli Elyndra mítoszát'
       },
       devlog: {
-        title: 'Dev Journal – AIKA World',
+        title: 'Dev Journal – AIKA Resonance',
         description:
-          'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Worldhöz.',
-        ogAlt: 'AIKA World Dev Journal grafika'
+          'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Resonancehöz.',
+        ogAlt: 'AIKA Resonance Dev Journal grafika'
       },
       devlogPost: {
-        title: postTitle => `${postTitle} – Dev Journal | AIKA World`,
-        description: summary => summary || 'Legfrissebb Dev Journal frissítés az AIKA Worldhöz.',
+        title: postTitle => `${postTitle} – Dev Journal | AIKA Resonance`,
+        description: summary => summary || 'Legfrissebb Dev Journal frissítés az AIKA Resonancehöz.',
         ogAlt: postTitle => `${postTitle} Dev Journal illusztráció`
       },
       playtests: {
-        title: 'Playtest archívum – AIKA World',
+        title: 'Playtest archívum – AIKA Resonance',
         description:
-          'A közösségi playtest kezdeményezés jelenleg szünetel, amíg az AIKA World egyszemélyes történetként készül. Az oldal archív hivatkozásként marad elérhető.',
-        ogAlt: 'AIKA World playtest archívum grafika'
+          'A közösségi playtest kezdeményezés jelenleg szünetel, amíg az AIKA Resonance egyszemélyes történetként készül. Az oldal archív hivatkozásként marad elérhető.',
+        ogAlt: 'AIKA Resonance playtest archívum grafika'
       },
       creatorProgram: {
-        title: 'Creator Program archívum – AIKA World',
+        title: 'Creator Program archívum – AIKA Resonance',
         description:
           'A készítői partnerségek szünetelnek az egyszemélyes fejlesztési fókusz idején. A korábbi irányelvek tájékoztatásként maradnak.',
-        ogAlt: 'AIKA World creator program archívum grafika'
+        ogAlt: 'AIKA Resonance creator program archívum grafika'
       },
       studio: {
-        title: 'SyncNode Interactive – AIKA World',
+        title: 'SyncNode Interactive – AIKA Resonance',
         description:
-          'A SyncNode Interactive független fejlesztőstúdió az AIKA World univerzum mögött. Érzelemvezérelt történetmesélés modern Unreal Engine technológiával.',
+          'A SyncNode Interactive független fejlesztőstúdió az AIKA Resonance univerzum mögött. Érzelemvezérelt történetmesélés modern Unreal Engine technológiával.',
         ogAlt: 'SyncNode Interactive stúdió bemutató grafika'
       },
       about: {
-        title: 'Rólunk – AIKA World',
+        title: 'Rólunk – AIKA Resonance',
         description:
-          'Az AIKA: World egy Unreal Engine 5.4 LTS alapú, egyjátékos open world prototípus, amely érzelmi történetmesélést és filmszerű jeleneteket ötvöz működő gameplay rendszerekkel. Készítette: SyncNode Interactive.',
-        ogAlt: 'AIKA World bemutatkozás grafika'
+          'Az AIKA: Resonance egy Unreal Engine 5.4 LTS alapú, egyszemélyes történetalapú akciójáték, amely filmszerű harcokat, rezonancia-képességeket és érzelmileg telített döntéseket fon össze. Készítette: SyncNode Interactive.',
+        ogAlt: 'AIKA Resonance bemutatkozás grafika'
       },
       characters: {
-        title: 'Rezonátorok – AIKA World',
+        title: 'Rezonátorok – AIKA Resonance',
         description:
           'Sötéten költői dossziék Akariról, Miyuról, Komiról, Hináról, Yuiról és AIKA-ról – elemek, városok és fogadalmak találkozásáról.',
-        ogAlt: 'AIKA World rezonátor felállás grafika'
+        ogAlt: 'AIKA Resonance rezonátor felállás grafika'
       },
       character: {
         description: character =>
@@ -733,65 +733,65 @@ export const huDictionary: Dictionary = {
         ogAlt: character => `${character.name} hero bannere`
       },
       presskit: {
-        title: 'AIKA World – Presskit',
-        description: 'Letölthető logók, key artok, screenshotok és fontos információk az AIKA World sajtó számára.',
-        ogAlt: 'AIKA World sajtócsomag áttekintő grafika'
+        title: 'AIKA Resonance – Presskit',
+        description: 'Letölthető logók, key artok, screenshotok és fontos információk az AIKA Resonance sajtó számára.',
+        ogAlt: 'AIKA Resonance sajtócsomag áttekintő grafika'
       },
       faq: {
-        title: 'GYIK – AIKA World',
+        title: 'GYIK – AIKA Resonance',
         description: 'Válaszok a legfontosabb platform, narratív fókusz, kozmetikai monetizáció és gépigény kérdésekre.',
-        ogAlt: 'AIKA World GYIK grafika'
+        ogAlt: 'AIKA Resonance GYIK grafika'
       },
       privacy: {
-        title: 'Adatvédelmi tájékoztató – AIKA World',
-        description: 'Tudd meg, hogyan kezeljük a sütiket, az analitikát és a kapcsolati adatokat az AIKA Worldben.',
-        ogAlt: 'AIKA World adatvédelmi illusztráció'
+        title: 'Adatvédelmi tájékoztató – AIKA Resonance',
+        description: 'Tudd meg, hogyan kezeljük a sütiket, az analitikát és a kapcsolati adatokat az AIKA Resonanceben.',
+        ogAlt: 'AIKA Resonance adatvédelmi illusztráció'
       },
       terms: {
-        title: 'Felhasználási feltételek – AIKA World',
-        description: 'Ismerd meg az AIKA World IP használatának, közösségi részvételének és felelősségi szabályait.',
-        ogAlt: 'AIKA World felhasználási feltételek illusztráció'
+        title: 'Felhasználási feltételek – AIKA Resonance',
+        description: 'Ismerd meg az AIKA Resonance IP használatának, közösségi részvételének és felelősségi szabályait.',
+        ogAlt: 'AIKA Resonance felhasználási feltételek illusztráció'
       },
       legalCopyright: {
-        title: 'Szerzői jog / DMCA – AIKA World',
-        description: 'Jogbirtokosi értesítés, eltávolítási folyamat és ellenértesítés lépései az AIKA World tartalmakhoz.',
-        ogAlt: 'AIKA World szerzői jogi útmutató grafika'
+        title: 'Szerzői jog / DMCA – AIKA Resonance',
+        description: 'Jogbirtokosi értesítés, eltávolítási folyamat és ellenértesítés lépései az AIKA Resonance tartalmakhoz.',
+        ogAlt: 'AIKA Resonance szerzői jogi útmutató grafika'
       },
       legalFanContent: {
-        title: 'Rajongói tartalom szabályzat – AIKA World',
+        title: 'Rajongói tartalom szabályzat – AIKA Resonance',
         description: 'Útmutató fanart, AI generált képek és LoRA projektek biztonságos, nem kereskedelmi használatához.',
-        ogAlt: 'AIKA World rajongói tartalom grafika'
+        ogAlt: 'AIKA Resonance rajongói tartalom grafika'
       },
       legalTrademark: {
-        title: 'Védjegyhasználati irányelvek – AIKA World',
-        description: 'Így hivatkozhatsz az AIKA World védjegyeire félrevezetés nélkül.',
-        ogAlt: 'AIKA World védjegy irányelvek grafika'
+        title: 'Védjegyhasználati irányelvek – AIKA Resonance',
+        description: 'Így hivatkozhatsz az AIKA Resonance védjegyeire félrevezetés nélkül.',
+        ogAlt: 'AIKA Resonance védjegy irányelvek grafika'
       },
       legalChangelog: {
-        title: 'Jogi változásnapló – AIKA World',
+        title: 'Jogi változásnapló – AIKA Resonance',
         description: 'Időrendi áttekintés a jogi dokumentumok frissítéseiről és IP-védelmi lépésekről.',
-        ogAlt: 'AIKA World jogi változásnapló diagram'
+        ogAlt: 'AIKA Resonance jogi változásnapló diagram'
       },
       notFound: {
-        title: 'Oldal nem található – AIKA World',
+        title: 'Oldal nem található – AIKA Resonance',
         description: 'A keresett rezgés hiányzik. Térj vissza a főoldalra vagy böngészd a karaktereket.',
-        ogAlt: 'AIKA World hiányzó rezonancia illusztráció'
+        ogAlt: 'AIKA Resonance hiányzó rezonancia illusztráció'
       }
     }
   },
   studio: {
     title: 'SyncNode Interactive',
-    lead: 'Független fejlesztőstúdió az AIKA World univerzum mögött.',
+    lead: 'Független fejlesztőstúdió az AIKA Resonance univerzum mögött.',
     body:
-      'A SyncNode Interactive független fejlesztőstúdió, amely narratív-vezérelt, technológiailag innovatív világokat hoz létre. Célunk, hogy az AIKA World univerzumban az érzelmi történetmesélést modern interaktív rendszerekkel egyesítsük. Projektjeink az Unreal Engine 5-re épülnek, és ötvözik a legújabb látvány-, hang- és mesterségesintelligencia-megoldásokat.',
+      'A SyncNode Interactive független fejlesztőstúdió, amely narratív-vezérelt, technológiailag innovatív világokat hoz létre. Célunk, hogy az AIKA Resonance univerzumban az érzelmi történetmesélést modern interaktív rendszerekkel egyesítsük. Projektjeink az Unreal Engine 5-re épülnek, és ötvözik a legújabb látvány-, hang- és mesterségesintelligencia-megoldásokat.',
     project: {
-      title: 'AIKA: World',
-      summary: 'Unreal Engine 5.4 LTS • Egyjátékos • Nyílt világ • Filmszerű történetmesélés'
+      title: 'AIKA: Resonance',
+      summary: 'Unreal Engine 5.4 LTS • Egyszemélyes • Történetalapú akció • Filmszerű történetmesélés'
     }
   },
   aboutPage: {
-    aikaLead: 'Az AIKA: World egy Unreal Engine 5.4 LTS alapú, egyjátékos open world prototípus.',
+    aikaLead: 'Az AIKA: Resonance egy Unreal Engine 5.4 LTS alapú, egyszemélyes történetalapú akciójáték.',
     aikaBody:
-      'Érzelmi történetmesélés és filmszerű jelenetek működő gameplay rendszerekkel. Készítette: SyncNode Interactive.'
+      'Filmszerű harcjelenetek, rugalmas rezonancia-képességek és érzelmileg telített történetmesélés. Készítette: SyncNode Interactive.'
   }
 };

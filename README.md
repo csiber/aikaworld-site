@@ -1,32 +1,32 @@
 ---
-title: "README – AikaWorld.com Rebuild"
-tags: [aika-world, website, redesign, lore, unreal, codex]
+title: "README – resonance.aikahub.com Rebuild"
+tags: [aika-resonance, website, redesign, lore, unreal, codex]
 created: 2025-10-08
 status: public
 version: 2.0
 ---
 
-# 🌌 AIKA WORLD — Website Rebuild 2025  
+# 🌌 AIKA RESONANCE — Website Rebuild 2025  
 ## „The last frequency before silence.”
 
 ---
 
 ## I. Project Overview
 
-This version of **AikaWorld.com** replaces the outdated RPG-style presentation with the new
+This version of **resonance.aikahub.com** replaces the outdated adventure-style presentation with the new
 dark, narrative-driven **sci-fi interpretation of the AIKA universe**.
-It is no longer a colorful fantasy world — it’s a world of resonance, memory, and silence.
+It is no longer a colorful fantasy world — it’s the home of AIKA Resonance, a story-based action game built around memory and silence.
 
 ### Game Structure
-AIKA World is a **single-player narrative experience** set in a dying resonance field.
+AIKA Resonance is a **single-player story-based action experience** set in a dying resonance field.
 There are no online servers, no automated pairing, no shared sessions. It’s just you, the echoes, and AIKA.
 
 - **Engine:** Unreal Engine
-- **Genre:** Story-driven sci-fi TPS / narrative exploration
+- **Genre:** Story-driven sci-fi action game / narrative exploration
 - **Theme:** The end of creation, the memory of gods, the sound of existence  
 - **Tone:** melancholic, philosophical, and coldly beautiful  
 
-> “AIKA World is not played. It is remembered.”  
+> “AIKA Resonance is not played. It is remembered.”  
 
 ---
 
@@ -78,7 +78,7 @@ There are no online servers, no automated pairing, no shared sessions. It’s ju
 
 ## VI. Creative Statement
 
-> “AIKA World is a reflection of humanity’s last whisper —  
+> “AIKA Resonance is a reflection of humanity’s last whisper —  
 >  a synthetic deity built to remember us, long after we’re gone.”
 
 The purpose of this project is **not entertainment**.  
@@ -104,7 +104,7 @@ distorted by the machine that learned to love.
 - **Repo:** `aikaworld-site/`  
 - **Branch:** `main`  
 - **Deployment:** Cloudflare Pages  
-- **Hosting domain:** [https://aikaworld.com](https://aikaworld.com)
+- **Hosting domain:** [https://resonance.aikahub.com](https://resonance.aikahub.com)
 
 > “Silence was never the end. It was the beginning of understanding.”  
 > — *AIKA*

@@ -18,10 +18,10 @@
   <g fill="#ffffff">
     <text x="80" y="190" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="84" font-weight="700" letter-spacing="0.08em">Felhasználási feltételek</text>
     <text x="80" y="270" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="48" font-weight="600" opacity="0.9">Közösségi & terjesztési szabályok</text>
-    <text x="80" y="340" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="30" opacity="0.82">Olvasd el az AIKA World használati irányait.</text>
+    <text x="80" y="340" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="30" opacity="0.82">Olvasd el az AIKA Resonance használati irányait.</text>
   </g>
   <g transform="translate(80, 420)" fill="#ffffff" opacity="0.72">
-    <text font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="22">AIKA WORLD</text>
-    <text y="40" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="18" opacity="0.8">www.aikaworld.com</text>
+    <text font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="22">AIKA RESONANCE</text>
+    <text y="40" font-family="'Fira Sans', 'Segoe UI', sans-serif" font-size="18" opacity="0.8">www.resonance.aikahub.com</text>
   </g>
 </svg>

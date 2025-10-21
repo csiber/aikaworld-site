@@ -32,8 +32,8 @@ function resolveSiteUrl() {
     return 'http://localhost:3000';
   }
 
-  console.warn('[server-config] Missing SITE_URL environment variable. Falling back to https://aikaworld.com');
-  return 'https://aikaworld.com';
+  console.warn('[server-config] Missing SITE_URL environment variable. Falling back to https://resonance.aikahub.com');
+  return 'https://resonance.aikahub.com';
 }
 
 export const serverEnv = {
