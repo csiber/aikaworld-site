@@ -18,7 +18,7 @@ export default async function PresskitPage() {
   const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'AIKA World',
+    name: 'AIKA Resonance',
     url: siteUrl,
     logo: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.svg'
   } as const;

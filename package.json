@@ -2,7 +2,7 @@
     "name": "aikaworld-site",
     "private": true,
     "version": "0.1.0",
-    "author": "Aika World",
+    "author": "Aika Resonance",
     "license": "MIT",
     "scripts": {
         "generate:build-info": "node ./scripts/generate-build-info.mjs",

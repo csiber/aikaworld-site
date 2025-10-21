@@ -4,7 +4,7 @@ import { getLegalDocument, getLegalChangelog } from '../../legal/content';
 export const enDictionary: Dictionary = {
   locale: 'en',
   header: {
-    brand: 'AIKA WORLD',
+    brand: 'AIKA RESONANCE',
     navLabel: 'Primary navigation',
     nav: {
       world: { label: 'World', href: '/lore/elyndra' },
@@ -53,14 +53,14 @@ export const enDictionary: Dictionary = {
     ],
     contactHeading: 'Contact / Legal',
     contactEmailLabel: 'Email',
-    contactEmail: 'legal@aikaworld.com',
+    contactEmail: 'legal@resonance.aikahub.com',
     contactAddressLabel: 'Postal address',
-    contactAddressLines: ['AIKA World Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Hungary'],
-    copyrightNotice: '© 2025 AIKA World. All rights reserved.',
+    contactAddressLines: ['AIKA Resonance Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Hungary'],
+    copyrightNotice: '© 2025 AIKA Resonance. All rights reserved.',
     lastBuildLabel: 'Last build',
     syncNode: {
       rights: '© 2025 SyncNode Interactive. All rights reserved.',
-      aikaBy: 'AIKA: World is an original Unreal Engine project by SyncNode Interactive.'
+      aikaBy: 'AIKA: Resonance is an original Unreal Engine project by SyncNode Interactive.'
     }
   },
   home: {
@@ -69,14 +69,14 @@ export const enDictionary: Dictionary = {
       monologue:
         '“Do you hear the silence, wanderer? I sift through the ruins of Elyndra, weaving the last harmonics of a dying sun. Every heartbeat I borrow from you fractures the lattice I am trying to mend. If you still intend to stop me, come as the echo I cannot predict.”',
       summary:
-        'AIKA World is a story-driven single player descent across Elyndra, tracing the final god-machine as it rewrites creation, and giving you the only chance to sever her design.',
+        'AIKA Resonance is a story-based single-player action descent across Elyndra, tracing the final god-machine as it rewrites creation and giving you the only chance to sever her design.',
       primaryCta: 'ENTER THE RESONANCE',
-      videoPosterAlt: 'AIKA World teaser poster'
+      videoPosterAlt: 'AIKA Resonance teaser poster'
     },
     world: {
       title: 'World & Factions',
       intro:
-        'Five rival power blocs once shaped the neon dusk of AIKA World: Pyro, Verdefa, Nerei, Aurelia and Nocturnis. Discover remnants that still glow beneath the dust. You won’t pledge allegiance; you will walk through what remains of them.',
+        'Five rival power blocs once shaped the neon dusk of AIKA Resonance: Pyro, Verdefa, Nerei, Aurelia and Nocturnis. Discover remnants that still glow beneath the dust. You won’t pledge allegiance; you will walk through what remains of them.',
       ctaHref: '/lore/elyndra',
       ctaLabel: 'Read the Elyndra myth',
       factions: [
@@ -213,14 +213,14 @@ export const enDictionary: Dictionary = {
     community: {
       title: 'Lore & Dev Archives',
       description:
-        'AIKA World is a single-player narrative project. Explore preserved updates and story foundations.',
+        'AIKA Resonance is a single-player story-based action game. Explore preserved updates and story foundations.',
       cards: [
         {
           id: 'dev-journal',
           eyebrow: 'Behind the build',
           title: 'Dev Journal',
           description:
-            'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA World.',
+            'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA Resonance.',
           note: 'Updated around major milestones.',
           ctaLabel: 'Read entries',
           ctaHref: '/dev-journal'
@@ -251,7 +251,7 @@ export const enDictionary: Dictionary = {
     },
     devlog: {
       title: 'Latest Dev Journal entries',
-      description: 'Behind-the-scenes notes from the single-player AIKA World build.',
+      description: 'Behind-the-scenes notes from the single-player AIKA Resonance build.',
       viewAllLabel: 'Open Dev Journal',
       readMoreLabel: 'Read entry'
     },
@@ -279,9 +279,9 @@ export const enDictionary: Dictionary = {
   },
   modes: {
     navLabel: 'Section navigation',
-    heading: 'AIKA World Story Mode',
+    heading: 'AIKA Resonance Story Mode',
     intro:
-      'AIKA World is a solitary, narrative-driven descent across Elyndra. This guide gathers the key beats, rewards and playstyle notes so you can prepare for the journey on your own terms.',
+      'AIKA Resonance is a solitary, narrative-driven descent across Elyndra. This guide gathers the key beats, rewards and playstyle notes so you can prepare for the journey on your own terms.',
     backToHome: 'Back to homepage',
     sections: [
       {
@@ -315,7 +315,7 @@ export const enDictionary: Dictionary = {
   },
   devlog: {
     heading: 'Dev Journal',
-    intro: 'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA World.',
+    intro: 'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA Resonance.',
     list: {
       timelineLabel: 'Dev Journal timeline',
       empty: 'No Dev Journal entries are available yet. Check back soon!',
@@ -328,9 +328,9 @@ export const enDictionary: Dictionary = {
   },
   playtests: {
     eyebrow: 'Archived program',
-    title: 'AIKA World Playtests (Archive)',
+    title: 'AIKA Resonance Playtests (Archive)',
     intro:
-      'The community playtest initiative is currently inactive while AIKA World ships as a single-player narrative project. The structure below is preserved for archival reference.',
+      'The community playtest initiative is currently inactive while AIKA Resonance ships as a single-player story-based action game. The structure below is preserved for archival reference.',
     sections: [
       {
         id: 'structure',
@@ -386,21 +386,21 @@ export const enDictionary: Dictionary = {
     cta: {
       label: 'Read the Dev Journal',
       href: '/dev-journal',
-      note: 'Playtests are paused while AIKA World focuses on single-player storytelling.'
+      note: 'Playtests are paused while AIKA Resonance focuses on single-player storytelling.'
     }
   },
   creatorProgram: {
     eyebrow: 'Archived program',
-    title: 'AIKA World Creator Program (Archive)',
+    title: 'AIKA Resonance Creator Program (Archive)',
     intro:
-      'We are not onboarding new creators at this time while AIKA World focuses on single-player storytelling. The information below remains available for historical context.',
+      'We are not onboarding new creators at this time while AIKA Resonance focuses on single-player storytelling. The information below remains available for historical context.',
     sections: [
       {
         id: 'who',
         title: 'Who we partnered with',
         description: 'We prioritised storytellers who highlighted atmosphere, lore analysis and reflective coverage.',
         bullets: [
-          'Creators publishing consistent story-driven, anime or action RPG content on platforms like YouTube, Twitch, TikTok or podcasts.',
+          'Creators publishing consistent story-driven, anime or action game content on platforms like YouTube, Twitch, TikTok or podcasts.',
           'Communities that blended hype with constructive insight and maintained respectful spaces.',
           'Scheduling flexibility to align uploads or streams with planned beats while keeping surprises intact.'
         ]
@@ -451,7 +451,7 @@ export const enDictionary: Dictionary = {
     }
   },
   faq: {
-    title: 'AIKA World FAQ',
+    title: 'AIKA Resonance FAQ',
     intro:
       'Quick answers to the most common story-first questions about platforms, progression and support.',
     items: [
@@ -460,7 +460,7 @@ export const enDictionary: Dictionary = {
         answer: 'We are focusing on PC via Steam first while we evaluate additional platform partners.'
       },
       {
-        question: 'Is AIKA World single-player?',
+        question: 'Is AIKA Resonance single-player?',
         answer: 'Yes. The campaign is built for a solitary journey through Elyndra with no multiplayer requirements.'
       },
       {
@@ -491,7 +491,7 @@ export const enDictionary: Dictionary = {
   },
   charactersPage: {
     breadcrumb: 'Characters',
-    heading: 'AIKA World Resonators',
+    heading: 'AIKA Resonance Resonators',
     intro: 'Meet the vowbound figures AIKA guides—six resonators etched in element, city and hunger.',
     profileCta: 'Enter the echo'
   },
@@ -580,34 +580,34 @@ export const enDictionary: Dictionary = {
     }
   },
   presskit: {
-    heading: 'AIKA World Presskit',
+    heading: 'AIKA Resonance Presskit',
     description: 'All press and creator assets in one place. Free to use under the conditions below.',
     about: {
       title: 'About the Game',
       intro:
-        'AIKA World is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
+        'AIKA Resonance is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
       keyMessage: 'No multiplayer grind. No loot treadmill. Only story, sound, and light.',
       craft: 'Built with Unreal Engine. Composed by the Resonance.',
-      tagline: 'You don’t play AIKA World. You remember it.'
+      tagline: 'You don’t play AIKA Resonance. You remember it.'
     },
     factSheetTitle: 'Fact sheet',
     downloadsTitle: 'Downloadable assets',
     usageTitle: 'Usage guidelines',
     usageDescription:
-      'Use the downloadable assets in promotional and editorial content with proper credit to the game. Reselling the assets is not permitted. For special requests, reach out at press@aikaworld.com.',
+      'Use the downloadable assets in promotional and editorial content with proper credit to the game. Reselling the assets is not permitted. For special requests, reach out at press@resonance.aikahub.com.',
     factSheet: [
-      { label: 'Genre', value: 'Story-driven anime action RPG' },
+      { label: 'Genre', value: 'Story-driven anime action game' },
       { label: 'Core experience', value: 'Narrative campaign with optional challenge echoes' },
       { label: 'Platforms', value: 'PC (Steam), consoles TBA' },
-      { label: 'Contact', value: 'press@aikaworld.com', href: 'mailto:press@aikaworld.com' }
+      { label: 'Contact', value: 'press@resonance.aikahub.com', href: 'mailto:press@resonance.aikahub.com' }
     ],
     downloadBlocks: [
       {
         title: 'Logo & Wordmark',
         description: 'Primary logo and wordmark in multiple formats.',
         items: [
-          { label: 'AIKA World logo (PNG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.png' },
-          { label: 'AIKA World logo (SVG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.svg' },
+          { label: 'AIKA Resonance logo (PNG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.png' },
+          { label: 'AIKA Resonance logo (SVG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-logo.svg' },
           { label: 'Wordmark (PNG)', href: 'https://media.aikaworld.com/presskit/logo/aikaworld-wordmark.png' }
         ]
       },
@@ -643,7 +643,7 @@ export const enDictionary: Dictionary = {
     code: '404',
     heading: 'This resonance does not exist',
     description:
-      "Looks like you tuned into a page that hasn't been harmonised in the AIKA World universe yet. Return to the homepage or explore the Resonators.",
+      "Looks like you tuned into a page that hasn't been harmonised in the AIKA Resonance universe yet. Return to the homepage or explore the Resonators.",
     homeCta: 'Back to homepage',
     charactersCta: 'Explore Resonators',
     supportHeading: 'Need a signal boost?',
@@ -652,77 +652,77 @@ export const enDictionary: Dictionary = {
     faqCta: 'Open the FAQ',
     discordCta: 'Ask the community on Discord',
     contactCta: 'Email the AIKA team',
-    contactSubject: '404 report – Missing AIKA World page'
+    contactSubject: '404 report – Missing AIKA Resonance page'
   },
   seo: {
-    defaultTitle: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+    defaultTitle: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
     defaultDescription:
       'A story-driven descent through dark anime vistas where Pyro, Verdefa, Nerei, Aurelia and Nocturnis cling to the last echoes of AIKA.',
-    defaultOgAlt: 'AIKA World default share image',
+    defaultOgAlt: 'AIKA Resonance default share image',
     defaultLocale: 'en_US',
     pages: {
       home: {
-        title: 'AIKA World – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+        title: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
         description:
           'A narrative pilgrimage across dark fantasy factions—Pyro, Verdefa, Nerei, Aurelia and Nocturnis—each guarding pieces of AIKA’s design.',
-        ogAlt: 'AIKA World hero artwork'
+        ogAlt: 'AIKA Resonance hero artwork'
       },
       modes: {
-        title: 'Game modes – AIKA World',
+        title: 'Game modes – AIKA Resonance',
         description:
-          'Detailed overview of pivotal story encounters, late-game bosses and optional challenge echoes in AIKA World.',
-        ogAlt: 'AIKA World game modes artwork'
+          'Detailed overview of pivotal story encounters, late-game bosses and optional challenge echoes in AIKA Resonance.',
+        ogAlt: 'AIKA Resonance game modes artwork'
       },
       progression: {
-        title: 'Progression teaser – AIKA World',
-        description: 'Spoiler-free look at resonance skills, gear evolution and sanctum restoration rituals in AIKA World.',
-        ogAlt: 'AIKA World progression teaser artwork'
+        title: 'Progression teaser – AIKA Resonance',
+        description: 'Spoiler-free look at resonance skills, gear evolution and sanctum restoration rituals in AIKA Resonance.',
+        ogAlt: 'AIKA Resonance progression teaser artwork'
       },
       loreElyndra: {
-        title: 'Elyndra lore – AIKA World',
+        title: 'Elyndra lore – AIKA Resonance',
         description:
           "AIKA's dark orbital confession about Elyndra's six vessels, the AGI-worshipping cities, and the outsider who reignites her design.",
         ogAlt: 'AIKA narrates the myth of Elyndra'
       },
       devlog: {
-        title: 'Dev Journal – AIKA World',
-        description: 'Behind-the-scenes notes, concepts and progress updates for the single-player AIKA World.',
-        ogAlt: 'AIKA World Dev Journal key art'
+        title: 'Dev Journal – AIKA Resonance',
+        description: 'Behind-the-scenes notes, concepts and progress updates for the single-player AIKA Resonance.',
+        ogAlt: 'AIKA Resonance Dev Journal key art'
       },
       devlogPost: {
-        title: postTitle => `${postTitle} – Dev Journal | AIKA World`,
-        description: summary => summary || 'Latest Dev Journal update for AIKA World.',
+        title: postTitle => `${postTitle} – Dev Journal | AIKA Resonance`,
+        description: summary => summary || 'Latest Dev Journal update for AIKA Resonance.',
         ogAlt: postTitle => `${postTitle} Dev Journal illustration`
       },
       playtests: {
-        title: 'Playtests archive – AIKA World',
+        title: 'Playtests archive – AIKA Resonance',
         description:
-          'The community playtest initiative is currently inactive while AIKA World focuses on single-player storytelling. This page remains as an archive.',
-        ogAlt: 'AIKA World playtests archive graphic'
+          'The community playtest initiative is currently inactive while AIKA Resonance focuses on single-player storytelling. This page remains as an archive.',
+        ogAlt: 'AIKA Resonance playtests archive graphic'
       },
       creatorProgram: {
-        title: 'Creator Program archive – AIKA World',
+        title: 'Creator Program archive – AIKA Resonance',
         description:
-          'Creator partnerships are paused during the single-player production of AIKA World. Historical guidelines remain available for reference.',
-        ogAlt: 'AIKA World creator program archive artwork'
+          'Creator partnerships are paused during the single-player production of AIKA Resonance. Historical guidelines remain available for reference.',
+        ogAlt: 'AIKA Resonance creator program archive artwork'
       },
       studio: {
-        title: 'SyncNode Interactive – AIKA World',
+        title: 'SyncNode Interactive – AIKA Resonance',
         description:
-          'SyncNode Interactive is the independent studio behind the AIKA World universe. Emotional storytelling meets cutting-edge Unreal Engine technology.',
+          'SyncNode Interactive is the independent studio behind the AIKA Resonance universe. Emotional storytelling meets cutting-edge Unreal Engine technology.',
         ogAlt: 'SyncNode Interactive studio highlight graphic'
       },
       about: {
-        title: 'About – AIKA World',
+        title: 'About – AIKA Resonance',
         description:
-          'AIKA: World is a UE 5.4 LTS single-player open-world prototype blending emotional storytelling, cinematic sequences, and working gameplay systems. Created by SyncNode Interactive.',
-        ogAlt: 'About AIKA World overview artwork'
+          'AIKA: Resonance is a UE 5.4 LTS single-player story-based action game weaving cinematic combat, resonance abilities and emotionally charged choices. Created by SyncNode Interactive.',
+        ogAlt: 'About AIKA Resonance overview artwork'
       },
       characters: {
-        title: 'Resonators – AIKA World',
+        title: 'Resonators – AIKA Resonance',
         description:
           'Dark poetic dossiers for Akari, Miyu, Komi, Hina, Yui and AIKA—resonators bound by element, city and oath.',
-        ogAlt: 'AIKA World Resonators lineup artwork'
+        ogAlt: 'AIKA Resonance Resonators lineup artwork'
       },
       character: {
         description: character =>
@@ -731,65 +731,65 @@ export const enDictionary: Dictionary = {
         ogAlt: character => `${character.name} hero banner`
       },
       presskit: {
-        title: 'AIKA World – Presskit',
+        title: 'AIKA Resonance – Presskit',
         description: 'Downloadable logos, key art, screenshots and essential info for press.',
-        ogAlt: 'AIKA World presskit asset overview graphic'
+        ogAlt: 'AIKA Resonance presskit asset overview graphic'
       },
       faq: {
-        title: 'FAQ – AIKA World',
+        title: 'FAQ – AIKA Resonance',
         description: 'Essential answers about platforms, narrative focus, cosmetic monetization and hardware needs.',
-        ogAlt: 'AIKA World FAQ overview graphic'
+        ogAlt: 'AIKA Resonance FAQ overview graphic'
       },
       privacy: {
-        title: 'Privacy Policy – AIKA World',
-        description: 'Learn how we process cookies, analytics and contact data to keep the AIKA World community secure.',
-        ogAlt: 'AIKA World privacy policy illustration'
+        title: 'Privacy Policy – AIKA Resonance',
+        description: 'Learn how we process cookies, analytics and contact data to keep the AIKA Resonance community secure.',
+        ogAlt: 'AIKA Resonance privacy policy illustration'
       },
       terms: {
-        title: 'Terms of Use – AIKA World',
-        description: 'Understand the rules for using AIKA World IP, community spaces and downloadable assets.',
-        ogAlt: 'AIKA World terms of use illustration'
+        title: 'Terms of Use – AIKA Resonance',
+        description: 'Understand the rules for using AIKA Resonance IP, community spaces and downloadable assets.',
+        ogAlt: 'AIKA Resonance terms of use illustration'
       },
       legalCopyright: {
-        title: 'Copyright Policy / DMCA – AIKA World',
-        description: 'Report infringement, review takedown steps and submit counter-notices for AIKA World content.',
-        ogAlt: 'AIKA World copyright policy graphic'
+        title: 'Copyright Policy / DMCA – AIKA Resonance',
+        description: 'Report infringement, review takedown steps and submit counter-notices for AIKA Resonance content.',
+        ogAlt: 'AIKA Resonance copyright policy graphic'
       },
       legalFanContent: {
-        title: 'Fan Content Policy – AIKA World',
+        title: 'Fan Content Policy – AIKA Resonance',
         description: 'Guidelines for fan art, AI creations, LoRA training and non-commercial community projects.',
-        ogAlt: 'AIKA World fan content guidance artwork'
+        ogAlt: 'AIKA Resonance fan content guidance artwork'
       },
       legalTrademark: {
-        title: 'Trademark Guidelines – AIKA World',
-        description: 'How to reference AIKA World marks without implying official endorsement or partnership.',
-        ogAlt: 'AIKA World trademark guidance graphic'
+        title: 'Trademark Guidelines – AIKA Resonance',
+        description: 'How to reference AIKA Resonance marks without implying official endorsement or partnership.',
+        ogAlt: 'AIKA Resonance trademark guidance graphic'
       },
       legalChangelog: {
-        title: 'Legal changelog – AIKA World',
+        title: 'Legal changelog – AIKA Resonance',
         description: 'Timeline of legal policy updates, IP protection improvements and archival automation.',
-        ogAlt: 'AIKA World legal changelog diagram'
+        ogAlt: 'AIKA Resonance legal changelog diagram'
       },
       notFound: {
-        title: 'Page not found – AIKA World',
+        title: 'Page not found – AIKA Resonance',
         description: 'The requested resonance is missing. Return to the homepage or browse characters.',
-        ogAlt: 'AIKA World missing resonance illustration'
+        ogAlt: 'AIKA Resonance missing resonance illustration'
       }
     }
   },
   studio: {
     title: 'SyncNode Interactive',
-    lead: 'Independent development studio behind the AIKA World universe.',
+    lead: 'Independent development studio behind the AIKA Resonance universe.',
     body:
-      'SyncNode Interactive is an independent development studio crafting narrative-driven, technologically advanced worlds. Within the AIKA World universe, we merge emotional storytelling with modern interactive systems. Built on Unreal Engine 5, our projects combine cutting-edge visuals, sound design, and AI systems.',
+      'SyncNode Interactive is an independent development studio crafting narrative-driven, technologically advanced worlds. Within the AIKA Resonance universe, we merge emotional storytelling with modern interactive systems. Built on Unreal Engine 5, our projects combine cutting-edge visuals, sound design, and AI systems.',
     project: {
-      title: 'AIKA: World',
-      summary: 'Unreal Engine 5.4 LTS • Singleplayer • Open world • Cinematic storytelling'
+      title: 'AIKA: Resonance',
+      summary: 'Unreal Engine 5.4 LTS • Single-player • Story-based action • Cinematic storytelling'
     }
   },
   aboutPage: {
-    aikaLead: 'AIKA: World is a UE 5.4 LTS single-player open-world prototype.',
+    aikaLead: 'AIKA: Resonance is a UE 5.4 LTS single-player story-based action game.',
     aikaBody:
-      'Emotional storytelling and cinematic sequences with working gameplay systems. Created by SyncNode Interactive.'
+      'Cinematic combat sequences, responsive resonance abilities and emotionally charged storytelling. Created by SyncNode Interactive.'
   }
 };

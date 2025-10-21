@@ -3,17 +3,17 @@ import type { LegalChangelogDictionary, LegalDocumentDictionary } from '../i18n/
 
 type LegalDocumentKey = 'terms' | 'privacy' | 'copyright' | 'fanContent' | 'trademark';
 
-const LEGAL_EMAIL = 'legal@aikaworld.com';
+const LEGAL_EMAIL = 'legal@resonance.aikahub.com';
 
 const POSTAL_ADDRESS_EN = [
-  'AIKA World Studio',
+  'AIKA Resonance Studio',
   'Bajcsy-Zsilinszky út 12.',
   '1054 Budapest',
   'Hungary'
 ].join(', ');
 
 const POSTAL_ADDRESS_HU = [
-  'AIKA World Studio',
+  'AIKA Resonance Studio',
   'Bajcsy-Zsilinszky út 12.',
   '1054 Budapest',
   'Magyarország'
@@ -25,19 +25,19 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Terms of Use',
       lastUpdated: 'Last updated: 2025-01-25',
       intro:
-        'By accessing aikaworld.com, our community spaces or any downloadable assets, you agree to follow these Terms of Use. They exist to protect the AIKA World universe, its creators and our community.',
+        'By accessing resonance.aikahub.com, our community spaces or any downloadable assets, you agree to follow these Terms of Use. They exist to protect the AIKA Resonance universe, its creators and our community.',
       sections: [
         {
           title: '1. Scope and Acceptance',
           paragraphs: [
             'These Terms cover the public website, newsletters, official social channels and any digital goods we provide. Using any of these services means you accept the Terms and our Privacy Policy.',
-            'If you are under the age of majority in your jurisdiction, you need permission from a parent or legal guardian before engaging with AIKA World content.'
+            'If you are under the age of majority in your jurisdiction, you need permission from a parent or legal guardian before engaging with AIKA Resonance content.'
           ]
         },
         {
           title: '2. Intellectual Property',
           paragraphs: [
-            'All AIKA World content is protected by copyright, trademark and other intellectual property laws. This includes but is not limited to:'
+            'All AIKA Resonance content is protected by copyright, trademark and other intellectual property laws. This includes but is not limited to:'
           ],
           lists: [
             {
@@ -52,7 +52,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             }
           ],
           afterParagraphs: [
-            'You may not remove watermarks, copyright notices or metadata that identify AIKA World as the owner of the materials.'
+            'You may not remove watermarks, copyright notices or metadata that identify AIKA Resonance as the owner of the materials.'
           ]
         },
         {
@@ -74,9 +74,9 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'Selling or monetising AIKA World assets, characters or lore without a signed agreement.',
+                'Selling or monetising AIKA Resonance assets, characters or lore without a signed agreement.',
                 'Publishing unofficial games, merchandise or digital collections that could be mistaken for official releases.',
-                'Impersonating AIKA World staff or misrepresenting partnerships.',
+                'Impersonating AIKA Resonance staff or misrepresenting partnerships.',
                 'Uploading malicious code, scraping large portions of the site or interfering with our services.',
                 'Using our platforms to harass, discriminate or promote hate.'
               ]
@@ -86,8 +86,8 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
         {
           title: '6. Disclaimers and Liability',
           paragraphs: [
-            'AIKA World is provided “as is.” We do not guarantee uninterrupted access, future feature releases or that content will remain available forever.',
-            'To the maximum extent permitted by law, AIKA World Studio is not liable for any indirect, incidental or consequential damages arising from your use of the site, downloadable assets or community features.'
+            'AIKA Resonance is provided “as is.” We do not guarantee uninterrupted access, future feature releases or that content will remain available forever.',
+            'To the maximum extent permitted by law, AIKA Resonance Studio is not liable for any indirect, incidental or consequential damages arising from your use of the site, downloadable assets or community features.'
           ]
         },
         {
@@ -103,19 +103,19 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Felhasználási feltételek',
       lastUpdated: 'Utolsó frissítés: 2025-01-25',
       intro:
-        'Az aikaworld.com weboldal, a közösségi felületeink és a letölthető anyagok használatával elfogadod a jelen Felhasználási feltételeket. Céljuk, hogy megvédjék az AIKA World világát, az alkotókat és a közösségünket.',
+        'Az resonance.aikahub.com weboldal, a közösségi felületeink és a letölthető anyagok használatával elfogadod a jelen Felhasználási feltételeket. Céljuk, hogy megvédjék az AIKA Resonance világát, az alkotókat és a közösségünket.',
       sections: [
         {
           title: '1. Hatály és elfogadás',
           paragraphs: [
             'A feltételek vonatkoznak a nyilvános weboldalra, a hírlevelekre, a hivatalos közösségi csatornákra és minden digitális tartalomra, amit elérhetővé teszünk. Ezek bármelyikének használatával elfogadod a Feltételeket és az Adatkezelési tájékoztatót.',
-            'Ha nem töltötted be a nagykorúságot a saját joghatóságodban, akkor az AIKA World tartalmak használatához szülői vagy törvényes képviselői engedély szükséges.'
+            'Ha nem töltötted be a nagykorúságot a saját joghatóságodban, akkor az AIKA Resonance tartalmak használatához szülői vagy törvényes képviselői engedély szükséges.'
           ]
         },
         {
           title: '2. Szellemi tulajdon',
           paragraphs: [
-            'Az AIKA World minden tartalmát szerzői jog, védjegy és egyéb szellemi tulajdonjogi szabályok védik. Ide tartoznak többek között:'
+            'Az AIKA Resonance minden tartalmát szerzői jog, védjegy és egyéb szellemi tulajdonjogi szabályok védik. Ide tartoznak többek között:'
           ],
           lists: [
             {
@@ -130,7 +130,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             }
           ],
           afterParagraphs: [
-            'Tilos eltávolítani a vízjeleket, szerzői jogi megjelöléseket vagy a metaadatokat, amelyek az AIKA World tulajdonjogát jelzik.'
+            'Tilos eltávolítani a vízjeleket, szerzői jogi megjelöléseket vagy a metaadatokat, amelyek az AIKA Resonance tulajdonjogát jelzik.'
           ]
         },
         {
@@ -152,9 +152,9 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'AIKA World eszközök, karakterek vagy lore értékesítése, monetizálása aláírt megállapodás nélkül.',
+                'AIKA Resonance eszközök, karakterek vagy lore értékesítése, monetizálása aláírt megállapodás nélkül.',
                 'Nem hivatalos játékok, merchandise vagy digitális gyűjtemények kiadása, amelyek hivatalos megjelenésnek tűnhetnek.',
-                'AIKA World munkatársak megszemélyesítése vagy partnerkapcsolat hamis bemutatása.',
+                'AIKA Resonance munkatársak megszemélyesítése vagy partnerkapcsolat hamis bemutatása.',
                 'Kártékony kód feltöltése, a webhely tömeges lekaparása vagy a szolgáltatásaink megzavarása.',
                 'Közösségi felületeink használata zaklatásra, diszkriminációra vagy gyűlöletkeltésre.'
               ]
@@ -164,8 +164,8 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
         {
           title: '6. Felelősségkorlátozás',
           paragraphs: [
-            'Az AIKA World szolgáltatások „ahogy van” állapotban érhetők el. Nem vállalunk garanciát a folyamatos elérhetőségre, jövőbeli funkciókra vagy arra, hogy a tartalom örökre hozzáférhető marad.',
-            'A jogszabályok által megengedett legnagyobb mértékben az AIKA World Studio nem vállal felelősséget a weboldal, a letölthető anyagok vagy a közösségi funkciók használatából eredő közvetett, járulékos vagy következményes károkért.'
+            'Az AIKA Resonance szolgáltatások „ahogy van” állapotban érhetők el. Nem vállalunk garanciát a folyamatos elérhetőségre, jövőbeli funkciókra vagy arra, hogy a tartalom örökre hozzáférhető marad.',
+            'A jogszabályok által megengedett legnagyobb mértékben az AIKA Resonance Studio nem vállal felelősséget a weboldal, a letölthető anyagok vagy a közösségi funkciók használatából eredő közvetett, járulékos vagy következményes károkért.'
           ]
         },
         {
@@ -183,11 +183,11 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Privacy Policy',
       lastUpdated: 'Last updated: 2025-01-25',
       intro:
-        'This Privacy Policy describes how we collect, use and safeguard personal data when you interact with aikaworld.com, our newsletters and contact forms.',
+        'This Privacy Policy describes how we collect, use and safeguard personal data when you interact with resonance.aikahub.com, our newsletters and contact forms.',
       sections: [
         {
           title: '1. Data Controller',
-          paragraphs: ['AIKA World Studio, based in Budapest, Hungary, is responsible for processing your personal data. You can reach us at the contact details provided at the end of this policy.']
+          paragraphs: ['AIKA Resonance Studio, based in Budapest, Hungary, is responsible for processing your personal data. You can reach us at the contact details provided at the end of this policy.']
         },
         {
           title: '2. Data We Collect',
@@ -222,7 +222,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
         {
           title: '4. Storage and Retention',
           paragraphs: [
-            'Personal data is stored on secure servers located in the European Union. Access is limited to authorised AIKA World team members.',
+            'Personal data is stored on secure servers located in the European Union. Access is limited to authorised AIKA Resonance team members.',
             'Newsletter subscription data is retained until you unsubscribe. Contact form submissions are kept for up to 24 months for reference and compliance. Aggregated analytics data may be stored indefinitely in anonymised form.'
           ]
         },
@@ -259,11 +259,11 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Adatkezelési tájékoztató',
       lastUpdated: 'Utolsó frissítés: 2025-01-25',
       intro:
-        'Az Adatkezelési tájékoztató ismerteti, hogyan gyűjtjük, használjuk és védjük a személyes adatokat, amikor az aikaworld.com weboldalon, a hírlevelünkön vagy a kapcsolatfelvételi űrlapokon keresztül interakcióba lépsz velünk.',
+        'Az Adatkezelési tájékoztató ismerteti, hogyan gyűjtjük, használjuk és védjük a személyes adatokat, amikor az resonance.aikahub.com weboldalon, a hírlevelünkön vagy a kapcsolatfelvételi űrlapokon keresztül interakcióba lépsz velünk.',
       sections: [
         {
           title: '1. Adatkezelő',
-          paragraphs: ['Az adatkezelő az AIKA World Studio, székhelye Budapest, Magyarország. Az adatkezeléssel kapcsolatos kérdéseiddel a dokumentum végén feltüntetett elérhetőségeinken kereshetsz minket.']
+          paragraphs: ['Az adatkezelő az AIKA Resonance Studio, székhelye Budapest, Magyarország. Az adatkezeléssel kapcsolatos kérdéseiddel a dokumentum végén feltüntetett elérhetőségeinken kereshetsz minket.']
         },
         {
           title: '2. Gyűjtött adatok',
@@ -298,7 +298,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
         {
           title: '4. Tárolás és megőrzés',
           paragraphs: [
-            'Az adatokat az Európai Unió területén található biztonságos szervereken tároljuk. A hozzáférés kizárólag az arra jogosult AIKA World munkatársak számára engedélyezett.',
+            'Az adatokat az Európai Unió területén található biztonságos szervereken tároljuk. A hozzáférés kizárólag az arra jogosult AIKA Resonance munkatársak számára engedélyezett.',
             'A hírlevél-feliratkozási adatokat mindaddig megőrizzük, amíg le nem iratkozol. A kapcsolatfelvételi űrlapok beérkezett üzeneteit legfeljebb 24 hónapig tároljuk referenciaként és jogi megfelelés céljából. Az összesített, anonimizált analitikai adatokat korlátlan ideig megőrizhetjük.'
           ]
         },
@@ -342,7 +342,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
         {
           title: '1. Submitting a Copyright Notice',
           paragraphs: [
-            'If you believe your work has been used on AIKA World platforms without authorisation, send a written notice that includes the following:'
+            'If you believe your work has been used on AIKA Resonance platforms without authorisation, send a written notice that includes the following:'
           ],
           lists: [
             {
@@ -396,7 +396,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
         {
           title: '1. Jogbirtokosi értesítés benyújtása',
           paragraphs: [
-            'Ha úgy gondolod, hogy a műved engedély nélkül került fel az AIKA World felületeire, írásos értesítést kell küldened az alábbi adatokkal:'
+            'Ha úgy gondolod, hogy a műved engedély nélkül került fel az AIKA Resonance felületeire, írásos értesítést kell küldened az alábbi adatokkal:'
           ],
           lists: [
             {
@@ -447,7 +447,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Fan Content Policy',
       lastUpdated: 'Last updated: 2025-01-25',
       intro:
-        'AIKA World thrives on community creativity. This policy clarifies how you may create and share fan-made works while keeping our IP safe.',
+        'AIKA Resonance thrives on community creativity. This policy clarifies how you may create and share fan-made works while keeping our IP safe.',
       sections: [
         {
           title: '1. Permitted Fan Creations',
@@ -456,13 +456,13 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'Illustrations, comics, cosplay and written stories based on AIKA World.',
+                'Illustrations, comics, cosplay and written stories based on AIKA Resonance.',
                 'AI-generated images, models or LoRA training sets, provided they follow the attribution rules.',
-                'Videos, streams and remixes that do not monetise AIKA World assets directly (ad revenue on commentary videos is acceptable).'
+                'Videos, streams and remixes that do not monetise AIKA Resonance assets directly (ad revenue on commentary videos is acceptable).'
               ]
             }
           ],
-          afterParagraphs: ['Always credit using the format “AIKA World by [Your Name/Entity]”.']
+          afterParagraphs: ['Always credit using the format “AIKA Resonance by [Your Name/Entity]”.']
         },
         {
           title: '2. Attribution Requirements',
@@ -476,7 +476,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'Using AIKA World logos or branding in a way that implies official endorsement.',
+                'Using AIKA Resonance logos or branding in a way that implies official endorsement.',
                 'Publishing fan projects as if they were official releases or merchandise.',
                 'Creating NSFW content featuring minors or characters depicted as minors.',
                 'Producing hateful, harassing or extremist material.'
@@ -506,7 +506,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Fan Content Policy',
       lastUpdated: 'Utolsó frissítés: 2025-01-25',
       intro:
-        'Az AIKA World közössége a kreativitásból építkezik. Ez a szabályzat tisztázza, hogyan készíthetsz és oszthatsz meg rajongói tartalmakat úgy, hogy közben megóvjuk a szellemi tulajdont.',
+        'Az AIKA Resonance közössége a kreativitásból építkezik. Ez a szabályzat tisztázza, hogyan készíthetsz és oszthatsz meg rajongói tartalmakat úgy, hogy közben megóvjuk a szellemi tulajdont.',
       sections: [
         {
           title: '1. Engedélyezett rajongói alkotások',
@@ -515,13 +515,13 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'Illusztrációk, képregények, cosplay és AIKA World ihlette történetek.',
+                'Illusztrációk, képregények, cosplay és AIKA Resonance ihlette történetek.',
                 'AI által generált képek, modellek vagy LoRA tréningkészletek, ha betartod a forrásmegjelölési szabályokat.',
-                'Videók, streamek és remixek, amennyiben nem közvetlenül monetizálják az AIKA World eszközöket (kommentár videókon megjelenő hirdetés elfogadható).'
+                'Videók, streamek és remixek, amennyiben nem közvetlenül monetizálják az AIKA Resonance eszközöket (kommentár videókon megjelenő hirdetés elfogadható).'
               ]
             }
           ],
-          afterParagraphs: ['Mindig használd a „AIKA World by [Your Name/Entity]” megjelölést.']
+          afterParagraphs: ['Mindig használd a „AIKA Resonance by [Your Name/Entity]” megjelölést.']
         },
         {
           title: '2. Forrásmegjelölés',
@@ -535,7 +535,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'Az AIKA World logók vagy arculati elemek olyan módon történő használata, ami hivatalos jóváhagyást sugall.',
+                'Az AIKA Resonance logók vagy arculati elemek olyan módon történő használata, ami hivatalos jóváhagyást sugall.',
                 'Rajongói projektek hivatalos megjelenésként vagy merchandise-ként történő publikálása.',
                 'Kiskorúakat vagy kiskorúként ábrázolt szereplőket tartalmazó NSFW tartalom.',
                 'Gyűlöletkeltő, zaklató vagy szélsőséges anyagok készítése.'
@@ -565,12 +565,12 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Trademark Guidelines',
       lastUpdated: 'Last updated: 2025-01-25',
       intro:
-        'These guidelines explain how to reference AIKA World trademarks without causing confusion about official affiliation.',
+        'These guidelines explain how to reference AIKA Resonance trademarks without causing confusion about official affiliation.',
       sections: [
         {
           title: '1. Protected Marks',
           paragraphs: [
-            'The names “AIKA World”, “Resonator”, character names, logos and any related insignia are protected trademarks of AIKA World Studio.'
+            'The names “AIKA Resonance”, “Resonator”, character names, logos and any related insignia are protected trademarks of AIKA Resonance Studio.'
           ]
         },
         {
@@ -579,9 +579,9 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'Referencing AIKA World in news, reviews or commentary that is clearly descriptive.',
+                'Referencing AIKA Resonance in news, reviews or commentary that is clearly descriptive.',
                 'Using the name in fan content titles when paired with descriptors like “fan-made” or “unofficial”.',
-                'Linking to our official website or social channels when discussing AIKA World.'
+                'Linking to our official website or social channels when discussing AIKA Resonance.'
               ]
             }
           ],
@@ -595,13 +595,13 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
               type: 'bullet',
               items: [
                 'Domain names such as aika-world-official.com or resonatorgame.net.',
-                'App titles like “AIKA World Companion” or “AIKA World Loot Tracker”.',
-                'Business names that start with “AIKA World” or imply partnership.'
+                'App titles like “AIKA Resonance Companion” or “AIKA Resonance Loot Tracker”.',
+                'Business names that start with “AIKA Resonance” or imply partnership.'
               ]
             }
           ],
           afterParagraphs: [
-            'Acceptable alternatives include descriptive titles like “Unofficial AIKA World Fan Wiki” or “Resonator Build Planner (Fan-Made)”. When in doubt, contact us.'
+            'Acceptable alternatives include descriptive titles like “Unofficial AIKA Resonance Fan Wiki” or “Resonator Build Planner (Fan-Made)”. When in doubt, contact us.'
           ]
         },
         {
@@ -614,11 +614,11 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
       heading: 'Védjegyhasználati irányelvek',
       lastUpdated: 'Utolsó frissítés: 2025-01-25',
       intro:
-        'Az irányelvek segítenek abban, hogyan hivatkozhatsz az AIKA World védjegyeire anélkül, hogy hivatalos kapcsolatot sugallnál.',
+        'Az irányelvek segítenek abban, hogyan hivatkozhatsz az AIKA Resonance védjegyeire anélkül, hogy hivatalos kapcsolatot sugallnál.',
       sections: [
         {
           title: '1. Védett megjelölések',
-          paragraphs: ['Az „AIKA World”, a „Resonator”, a karakternevek, a logók és minden kapcsolódó embléma az AIKA World Studio védjegye.']
+          paragraphs: ['Az „AIKA Resonance”, a „Resonator”, a karakternevek, a logók és minden kapcsolódó embléma az AIKA Resonance Studio védjegye.']
         },
         {
           title: '2. Engedélyezett felhasználások',
@@ -626,9 +626,9 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
             {
               type: 'bullet',
               items: [
-                'Az AIKA World említése hírekben, ismertetőkben vagy kommentárokban, ahol egyértelmű a leíró jelleg.',
+                'Az AIKA Resonance említése hírekben, ismertetőkben vagy kommentárokban, ahol egyértelmű a leíró jelleg.',
                 'A név használata rajongói tartalmak címében, ha mellé teszed a „fan-made” vagy „nem hivatalos” jelölést.',
-                'Hivatalos weboldalunkra vagy közösségi csatornáinkra mutató linkek elhelyezése, amikor AIKA World témáról írsz.'
+                'Hivatalos weboldalunkra vagy közösségi csatornáinkra mutató linkek elhelyezése, amikor AIKA Resonance témáról írsz.'
               ]
             }
           ],
@@ -642,13 +642,13 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
               type: 'bullet',
               items: [
                 'Olyan domainek, mint az aika-world-official.com vagy a resonatorgame.net.',
-                'Olyan alkalmazásnevek, mint az „AIKA World Companion” vagy az „AIKA World Loot Tracker”.',
-                'Olyan cégnév, amely az „AIKA World” kifejezéssel kezdődik vagy partnerséget sugall.'
+                'Olyan alkalmazásnevek, mint az „AIKA Resonance Companion” vagy az „AIKA Resonance Loot Tracker”.',
+                'Olyan cégnév, amely az „AIKA Resonance” kifejezéssel kezdődik vagy partnerséget sugall.'
               ]
             }
           ],
           afterParagraphs: [
-            'Elfogadható alternatíva például a „Nem hivatalos AIKA World rajongói wiki” vagy a „Resonator Build Planner (rajongói projekt)”. Kétség esetén vedd fel velünk a kapcsolatot.'
+            'Elfogadható alternatíva például a „Nem hivatalos AIKA Resonance rajongói wiki” vagy a „Resonator Build Planner (rajongói projekt)”. Kétség esetén vedd fel velünk a kapcsolatot.'
           ]
         },
         {
@@ -663,7 +663,7 @@ const legalDocuments: Record<LegalDocumentKey, Record<Locale, LegalDocumentDicti
 const legalChangelog: Record<Locale, LegalChangelogDictionary> = {
   en: {
     heading: 'Changelog',
-    intro: 'Key updates to AIKA World legal policies and protective measures.',
+    intro: 'Key updates to AIKA Resonance legal policies and protective measures.',
     entries: [
       {
         version: '2025.01 – Legal Protection Suite',
@@ -688,7 +688,7 @@ const legalChangelog: Record<Locale, LegalChangelogDictionary> = {
   },
   hu: {
     heading: 'Változásnapló',
-    intro: 'Az AIKA World jogi dokumentációjának és védelmi intézkedéseinek fontosabb frissítései.',
+    intro: 'Az AIKA Resonance jogi dokumentációjának és védelmi intézkedéseinek fontosabb frissítései.',
     entries: [
       {
         version: '2025.01 – Jogi védelmi csomag',

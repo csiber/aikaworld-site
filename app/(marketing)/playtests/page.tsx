@@ -28,7 +28,7 @@ export default async function PlaytestsPage() {
     <SiteLayout locale={locale} dictionary={dictionary}>
       <div className="mx-auto max-w-5xl px-4 py-16 space-y-16">
         <p className="rounded-2xl border border-white/10 bg-white/5 p-4 text-sm italic text-white/80">
-          This program is currently inactive. AIKA World is a single-player narrative project.
+          This program is currently inactive. AIKA Resonance is a single-player story-based action game.
         </p>
         <header className="space-y-4">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-accentB">

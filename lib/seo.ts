@@ -99,20 +99,20 @@ const defaultOgUrl = `${baseUrl()}${DEFAULT_OG_IMAGE[ogLocaleMap[defaultLocale].
 export const baseMetadata: Metadata = {
   metadataBase: new URL(baseUrl()),
   title: {
-    default: 'SyncNode Interactive – AIKA World',
-    template: '%s | AIKA World'
+    default: 'SyncNode Interactive – AIKA Resonance',
+    template: '%s | AIKA Resonance'
   },
   description:
-    'A SyncNode Interactive független fejlesztőstúdió az AIKA World univerzum mögött. Érzelemvezérelt történetmesélés modern Unreal Engine technológiával.',
+    'A SyncNode Interactive független fejlesztőstúdió az AIKA Resonance univerzum mögött. Érzelemvezérelt történetmesélés modern Unreal Engine technológiával.',
   openGraph: {
     type: 'website',
-    siteName: 'AIKA World',
+    siteName: 'AIKA Resonance',
     images: [
       {
         url: defaultOgUrl,
         width: 1200,
         height: 630,
-        alt: 'AIKA World – SyncNode Interactive alap előnézet'
+        alt: 'AIKA Resonance – SyncNode Interactive alap előnézet'
       }
     ]
   },
@@ -198,7 +198,7 @@ export function createStaticPageMetadata(
       title: pageSeo.title,
       description: pageSeo.description,
       url: canonical,
-      siteName: 'AIKA World',
+      siteName: 'AIKA Resonance',
       locale: openGraphLocale,
       alternateLocale: alternateLocales,
       type: 'website',
@@ -235,14 +235,14 @@ export function createCharacterMetadata(
   const { locale: openGraphLocale, alternateLocales } = ogLocaleMap[locale] ?? ogLocaleMap[defaultLocale];
 
   return {
-    title: `${character.name} – ${character.element} | AIKA World`,
+    title: `${character.name} – ${character.element} | AIKA Resonance`,
     description,
     alternates,
     openGraph: {
       title: `${character.name} – ${character.element}`,
       description: ogDescription,
       url: canonical,
-      siteName: 'AIKA World',
+      siteName: 'AIKA Resonance',
       locale: openGraphLocale,
       alternateLocale: alternateLocales,
       type: 'article',
@@ -286,7 +286,7 @@ export function createDevlogPostMetadata(
       title,
       description,
       url: canonical,
-      siteName: 'AIKA World',
+      siteName: 'AIKA Resonance',
       locale: openGraphLocale,
       alternateLocale: alternateLocales,
       type: 'article',
