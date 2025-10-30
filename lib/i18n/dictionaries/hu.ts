@@ -190,12 +190,22 @@ export const huDictionary: Dictionary = {
         ]
       },
       {
-        title: 'Állóképek',
-        description: 'Stills a Harmonic Wake kulcs epizódjaiból.',
+        title: 'Epizód állóképek',
+        description:
+          'Filmszerű anime állóképek a Harmonic Wake kulcs epizódjaiból – szerkesztőségi cikkekhez és kiemelésekhez optimalizálva.',
         items: [
-          { label: 'Still #1', href: 'https://media.aikaworld.com/presskit/screenshots/aikaworld-screenshot-01.jpg' },
-          { label: 'Still #2', href: 'https://media.aikaworld.com/presskit/screenshots/aikaworld-screenshot-02.jpg' },
-          { label: 'Still #3', href: 'https://media.aikaworld.com/presskit/screenshots/aikaworld-screenshot-03.jpg' }
+          {
+            label: 'Epizód állókép – Hídindítás (WebP)',
+            href: 'https://media.kitsu.io/anime/cover_images/41370/webp/large.webp'
+          },
+          {
+            label: 'Epizód állókép – Elyndra pályasodrás (WebP)',
+            href: 'https://media.kitsu.io/anime/cover_images/42472/webp/large.webp'
+          },
+          {
+            label: 'Epizód állókép – Jelek kórusa (WebP)',
+            href: 'https://media.kitsu.io/anime/poster_images/44078/webp/big.webp'
+          }
         ]
       }
     ]
