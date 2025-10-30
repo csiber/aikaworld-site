@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import matter from 'gray-matter';
 
 const repoRoot = path.resolve(process.cwd());
 const contentDir = path.join(repoRoot, 'content', 'devlog');
@@ -11,11 +12,22 @@ async function ensureDirectoryExists(filePath) {
   await fs.mkdir(dir, { recursive: true });
 }
 
-function createIdentifier(filename) {
-  const base = filename.replace(/\.mdx$/i, '');
-  const cleaned = base.replace(/[^a-zA-Z0-9]+/g, '_');
-  const identifier = cleaned.replace(/^(\d)/, '_$1');
-  return `devlog_${identifier}`;
+function escapeString(value) {
+  return JSON.stringify(value);
+}
+
+function formatFrontmatter(frontmatter, indent = 4) {
+  const baseIndent = ' '.repeat(indent);
+  const innerIndent = ' '.repeat(indent + 2);
+  const entries = [
+    `${innerIndent}title: ${escapeString(frontmatter.title ?? null)}`,
+    `${innerIndent}date: ${escapeString(frontmatter.date ?? null)}`,
+    `${innerIndent}summary: ${escapeString(frontmatter.summary ?? null)}`,
+    `${innerIndent}cover: ${escapeString(frontmatter.cover ?? null)}`
+  ];
+  return `{
+${entries.join(',\n')}
+${baseIndent}}`;
 }
 
 async function generate() {
@@ -28,28 +40,45 @@ async function generate() {
 
   const mdxFiles = entries.filter(entry => entry.endsWith('.mdx')).sort();
 
-  const imports = [];
-  const mapping = [];
+  const mapping = await Promise.all(
+    mdxFiles.map(async file => {
+      const absolutePath = path.join(contentDir, file);
+      const source = await fs.readFile(absolutePath, 'utf8');
+      const { data, content } = matter(source);
 
-  for (const file of mdxFiles) {
-    const identifier = createIdentifier(file);
-    const relativePath = `../../content/devlog/${file}?raw`;
-    imports.push(`import ${identifier} from '${relativePath}';`);
-    const slug = file.replace(/\.mdx$/i, '');
-    mapping.push(`  { slug: '${slug}', source: ${identifier} }`);
-  }
+      const normalizedFrontmatter = {
+        title: typeof data.title === 'string' ? data.title : null,
+        date: typeof data.date === 'string' ? data.date : null,
+        summary: typeof data.summary === 'string' ? data.summary : null,
+        cover: typeof data.cover === 'string' ? data.cover : null
+      };
+
+      const slug = file.replace(/\.mdx$/i, '');
+      return `  {
+    slug: ${escapeString(slug)},
+    frontmatter: ${formatFrontmatter(normalizedFrontmatter, 4)},
+    content: ${escapeString(content)}
+  }`;
+    })
+  );
 
   const fileContents = `// Ez a fájl automatikusan generálódik a scripts/generate-devlog-manifest.mjs futtatásával.
 // NE szerkeszd kézzel, mert a következő generálás felülírja.
 
-export type DevlogEntrySource = {
-  slug: string;
-  source: string;
+export type DevlogEntryFrontmatter = {
+  title: string | null;
+  date: string | null;
+  summary: string | null;
+  cover: string | null;
 };
 
-${imports.join('\n')}
+export type DevlogEntry = {
+  slug: string;
+  frontmatter: DevlogEntryFrontmatter;
+  content: string;
+};
 
-export const devlogEntries: DevlogEntrySource[] = [
+export const devlogEntries: DevlogEntry[] = [
 ${mapping.join(',\n')}
 ];
 `;

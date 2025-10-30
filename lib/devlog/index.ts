@@ -1,10 +1,9 @@
 'use server';
 
-import matter from 'gray-matter';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
 import { cache } from 'react';
-import { devlogEntries } from './generated';
+import { devlogEntries, type DevlogEntryFrontmatter } from './generated';
 
 export type DevlogPostFrontmatter = {
   title: string;
@@ -21,8 +20,9 @@ export type DevlogPost = DevlogPostSummary & {
   content: string;
 };
 
-function parseFrontmatter(frontmatter: Record<string, unknown>): DevlogPostFrontmatter {
+function parseFrontmatter(frontmatter: DevlogEntryFrontmatter): DevlogPostFrontmatter {
   const { title, date, summary, cover } = frontmatter;
+
   if (typeof title !== 'string' || !title.trim()) {
     throw new Error('A devlog bejegyzés frontmatterjében kötelező a title mező.');
   }
@@ -49,8 +49,7 @@ function parseFrontmatter(frontmatter: Record<string, unknown>): DevlogPostFront
 
 export const getDevlogSummaries = cache(async (): Promise<DevlogPostSummary[]> => {
   const posts = devlogEntries.map(entry => {
-    const { data } = matter(entry.source);
-    const parsed = parseFrontmatter(data as Record<string, unknown>);
+    const parsed = parseFrontmatter(entry.frontmatter);
     return { ...parsed, slug: entry.slug } satisfies DevlogPostSummary;
   });
 
@@ -65,9 +64,8 @@ export const getDevlogPost = cache(async (slug: string): Promise<DevlogPost> => 
     throw new Error(`A "${slug}" azonosítójú devlog bejegyzés nem található.`);
   }
 
-  const { content, data } = matter(entry.source);
-  const parsed = parseFrontmatter(data as Record<string, unknown>);
-  const rendered = await remark().use(remarkHtml).process(content);
+  const parsed = parseFrontmatter(entry.frontmatter);
+  const rendered = await remark().use(remarkHtml).process(entry.content);
   return { ...parsed, slug, content: rendered.toString().trim() };
 });
 
