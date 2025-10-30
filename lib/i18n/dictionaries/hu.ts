@@ -345,167 +345,19 @@ export const huDictionary: Dictionary = {
       }
     }
   },
-  privacy: getLegalDocument('hu', 'privacy'),
-  terms: getLegalDocument('hu', 'terms'),
-  legal: {
-    copyright: getLegalDocument('hu', 'copyright'),
-    fanContent: getLegalDocument('hu', 'fanContent'),
-    trademark: getLegalDocument('hu', 'trademark'),
-    changelog: getLegalChangelog('hu')
-  },
-  notFound: {
-    code: '404',
-    heading: 'Ez a rezgés nem létezik',
-    description:
-      'Úgy tűnik, egy olyan oldalra tévedtél, ami még nincs behangolva az AIKA Resonance univerzumában. Nézz vissza a főoldalra vagy fedezd fel a Rezonátorokat.',
-    homeCta: 'Vissza a főoldalra',
-    charactersCta: 'Rezonátorok felfedezése',
-    supportHeading: 'Segítünk visszatalálni',
-    supportDescription:
-      'Használd az alábbi gyorslinkeket, hogy folytasd az utad, vagy jelezd a csapatnak, melyik frekvencia tűnt el, és gyorsan visszaállítjuk.',
-    faqCta: 'GYIK megnyitása',
-    discordCta: 'Kérdezz a közösségben Discordon',
-    contactCta: 'Írj az AIKA csapatnak',
-    contactSubject: '404 jelentés – Hiányzó AIKA Resonance oldal'
-  },
-  seo: {
-    defaultTitle: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
-    defaultDescription:
-      'Történetközpontú alászállás sötét anime látvánnyal és mély fejlődési rendszerekkel Pyro, Verdefa, Nerei, Aurelia és Nocturnis frakcióival.',
-    defaultOgAlt: 'AIKA Resonance alap megosztási kép',
-    defaultLocale: 'hu_HU',
-    pages: {
-      home: {
-        title: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
-        description:
-          'Narratív küldetések, sötét fantasy frakciók és mély fejlődési rendszerek Pyro, Verdefa, Nerei, Aurelia és Nocturnis erejével.',
-        ogAlt: 'AIKA Resonance hős grafika'
-      },
-      modes: {
-        title: 'Játékmódok – AIKA Resonance',
-        description:
-          'Részletes áttekintés a kulcs történeti összecsapásokról, a késői főellenfelekről és az opcionális kihívás visszhangokról az AIKA Resonanceben.',
-        ogAlt: 'AIKA Resonance játékmódok grafika'
-      },
-      progression: {
-        title: 'Fejlődés teaser – AIKA Resonance',
-        description:
-          'Spoilermentes betekintés a rezonancia-képességekbe, a felszerelés evolúciójába és a szentély testreszabásába az AIKA Resonanceben.',
-        ogAlt: 'AIKA Resonance fejlődés teaser grafika'
-      },
-      loreElyndra: {
-        title: 'Elyndra mítosz – AIKA Resonance',
-        description:
-          'AIKA sötét orbitális vallomása a hat hajóról, az AGI-isteneket szolgáló városokról és az idegenről, aki újraindítja a tervét.',
-        ogAlt: 'AIKA elmeséli Elyndra mítoszát'
-      },
-      devlog: {
-        title: 'Dev Journal – AIKA Resonance',
-        description:
-          'Kulisszák mögötti jegyzetek, koncepciók és előrehaladás az egyszemélyes AIKA Resonancehöz.',
-        ogAlt: 'AIKA Resonance Dev Journal grafika'
-      },
-      devlogPost: {
-        title: postTitle => `${postTitle} – Dev Journal | AIKA Resonance`,
-        description: summary => summary || 'Legfrissebb Dev Journal frissítés az AIKA Resonancehöz.',
-        ogAlt: postTitle => `${postTitle} Dev Journal illusztráció`
-      },
-      playtests: {
-        title: 'Playtest archívum – AIKA Resonance',
-        description:
-          'A közösségi playtest kezdeményezés jelenleg szünetel, amíg az AIKA Resonance egyszemélyes történetként készül. Az oldal archív hivatkozásként marad elérhető.',
-        ogAlt: 'AIKA Resonance playtest archívum grafika'
-      },
-      creatorProgram: {
-        title: 'Creator Program archívum – AIKA Resonance',
-        description:
-          'A készítői partnerségek szünetelnek az egyszemélyes fejlesztési fókusz idején. A korábbi irányelvek tájékoztatásként maradnak.',
-        ogAlt: 'AIKA Resonance creator program archívum grafika'
-      },
-      studio: {
-        title: 'SyncNode Interactive – AIKA Resonance',
-        description:
-          'A SyncNode Interactive független fejlesztőstúdió az AIKA Resonance univerzum mögött. Érzelemvezérelt történetmesélés modern Unreal Engine technológiával.',
-        ogAlt: 'SyncNode Interactive stúdió bemutató grafika'
-      },
-      about: {
-        title: 'Rólunk – AIKA Resonance',
-        description:
-          'Az AIKA: Resonance egy Unreal Engine 5.4 LTS alapú, egyszemélyes történetalapú akciójáték, amely filmszerű harcokat, rezonancia-képességeket és érzelmileg telített döntéseket fon össze. Készítette: SyncNode Interactive.',
-        ogAlt: 'AIKA Resonance bemutatkozás grafika'
-      },
-      characters: {
-        title: 'Rezonátorok – AIKA Resonance',
-        description:
-          'Sötéten költői dossziék Akariról, Miyuról, Komiról, Hináról, Yuiról és AIKA-ról – elemek, városok és fogadalmak találkozásáról.',
-        ogAlt: 'AIKA Resonance rezonátor felállás grafika'
-      },
-      character: {
-        description: character =>
-          `${character.name} profilja: ${character.element} rezonancia, eredet-töredékek és jellegzetes fogadalom.`,
-        ogDescription: character => `${character.name} ${character.element} erejét vezeti AIKA tekintete alatt.`,
-        ogAlt: character => `${character.name} hero bannere`
-      },
-      presskit: {
-        title: 'AIKA Resonance – Presskit',
-        description: 'Letölthető logók, key artok, screenshotok és fontos információk az AIKA Resonance sajtó számára.',
-        ogAlt: 'AIKA Resonance sajtócsomag áttekintő grafika'
-      },
-      faq: {
-        title: 'GYIK – AIKA Resonance',
-        description: 'Válaszok a legfontosabb platform, narratív fókusz, kozmetikai monetizáció és gépigény kérdésekre.',
-        ogAlt: 'AIKA Resonance GYIK grafika'
-      },
-      privacy: {
-        title: 'Adatvédelmi tájékoztató – AIKA Resonance',
-        description: 'Tudd meg, hogyan kezeljük a sütiket, az analitikát és a kapcsolati adatokat az AIKA Resonanceben.',
-        ogAlt: 'AIKA Resonance adatvédelmi illusztráció'
-      },
-      terms: {
-        title: 'Felhasználási feltételek – AIKA Resonance',
-        description: 'Ismerd meg az AIKA Resonance IP használatának, közösségi részvételének és felelősségi szabályait.',
-        ogAlt: 'AIKA Resonance felhasználási feltételek illusztráció'
-      },
-      legalCopyright: {
-        title: 'Szerzői jog / DMCA – AIKA Resonance',
-        description: 'Jogbirtokosi értesítés, eltávolítási folyamat és ellenértesítés lépései az AIKA Resonance tartalmakhoz.',
-        ogAlt: 'AIKA Resonance szerzői jogi útmutató grafika'
-      },
-      legalFanContent: {
-        title: 'Rajongói tartalom szabályzat – AIKA Resonance',
-        description: 'Útmutató fanart, AI generált képek és LoRA projektek biztonságos, nem kereskedelmi használatához.',
-        ogAlt: 'AIKA Resonance rajongói tartalom grafika'
-      },
-      legalTrademark: {
-        title: 'Védjegyhasználati irányelvek – AIKA Resonance',
-        description: 'Így hivatkozhatsz az AIKA Resonance védjegyeire félrevezetés nélkül.',
-        ogAlt: 'AIKA Resonance védjegy irányelvek grafika'
-      },
-      legalChangelog: {
-        title: 'Jogi változásnapló – AIKA Resonance',
-        description: 'Időrendi áttekintés a jogi dokumentumok frissítéseiről és IP-védelmi lépésekről.',
-        ogAlt: 'AIKA Resonance jogi változásnapló diagram'
-      },
-      notFound: {
-        title: 'Oldal nem található – AIKA Resonance',
-        description: 'A keresett rezgés hiányzik. Térj vissza a főoldalra vagy böngészd a karaktereket.',
-        ogAlt: 'AIKA Resonance hiányzó rezonancia illusztráció'
-      }
-    }
-  },
   studio: {
-    title: 'SyncNode Interactive',
-    lead: 'Független fejlesztőstúdió az AIKA Resonance univerzum mögött.',
+    title: 'SyncNode Collective',
+    lead: 'Animációs műhely, amely a Harmonic Wake évadot életre hívja.',
     body:
-      'A SyncNode Interactive független fejlesztőstúdió, amely narratív-vezérelt, technológiailag innovatív világokat hoz létre. Célunk, hogy az AIKA Resonance univerzumban az érzelmi történetmesélést modern interaktív rendszerekkel egyesítsük. Projektjeink az Unreal Engine 5-re épülnek, és ötvözik a legújabb látvány-, hang- és mesterségesintelligencia-megoldásokat.',
+      'A SyncNode Collective rendezőkből, animációs vezetőkből és hangmérnökökből álló kollektíva, amely az AIKA Resonance anime produkcióját felügyeli. A csapat az analóg inspirációt digitális pipeline-okkal ötvözi, hogy a BS-0 fedélzetének rezgése minden epizódban hitelesen szólaljon meg.',
     project: {
-      title: 'AIKA: Resonance',
-      summary: 'Unreal Engine 5.4 LTS • Egyszemélyes • Történetalapú akció • Filmszerű történetmesélés'
+      title: 'AIKA Resonance – Harmonic Wake',
+      summary: 'Eredeti sci-fi anime • 12 epizód + OVA • Nemzetközi koprodukció • Resonance Ensemble zenéje'
     }
   },
   aboutPage: {
-    aikaLead: 'Az AIKA: Resonance egy Unreal Engine 5.4 LTS alapú, egyszemélyes történetalapú akciójáték.',
+    aikaLead: 'Az AIKA Resonance egy eredeti sci-fi anime sorozat.',
     aikaBody:
-      'Filmszerű harcjelenetek, rugalmas rezonancia-képességek és érzelmileg telített történetmesélés. Készítette: SyncNode Interactive.'
+      'Kövesd Shizuru kapitányt, Aikát és a híd-legénységet, amint megpróbálják feltörni a Szuperkapitális AIKA rendszerét. A Harmonic Wake évad a kollektív áldozat, az analóg hősiesség és az AI-val vívott morális harc története.'
   }
 };
