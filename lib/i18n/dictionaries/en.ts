@@ -9,14 +9,14 @@ export const enDictionary: Dictionary = {
     nav: {
       world: { label: 'World', href: '/lore/elyndra' },
       studio: { label: 'Studio', href: '/studio' },
-      modes: { label: 'Story', href: '/modes' },
-      progression: { label: 'Progression', href: '/progression' },
-      devlog: { label: 'Dev Journal', href: '/dev-journal' },
+      modes: { label: 'Series Guide', href: '/modes' },
+      progression: { label: 'Production Timeline', href: '/progression' },
+      devlog: { label: 'Production Log', href: '/dev-journal' },
       faq: { label: 'FAQ', href: '/faq' },
       about: { label: 'About', href: '/about' }
     },
-    wishlistCta: 'Wishlist on Steam',
-    discordCta: 'Join Discord',
+    wishlistCta: 'Get premiere alerts',
+    discordCta: 'Join the Fan Relay',
     localeSwitcherLabel: 'Change language',
     locales: {
       en: 'English',
@@ -28,16 +28,16 @@ export const enDictionary: Dictionary = {
       navigationHeading: 'Explore',
       navigation: [
         { path: '/lore/elyndra', label: 'Lore: Elyndra' },
-        { path: '/#world', label: 'World' },
-        { path: '/modes', label: 'Story Mode' },
-        { path: '/progression', label: 'Progression' },
-        { path: '/dev-journal', label: 'Dev Journal' },
+        { path: '/#world', label: 'World & story arcs' },
+        { path: '/modes', label: 'Series guide' },
+        { path: '/progression', label: 'Production timeline' },
+        { path: '/dev-journal', label: 'Production log' },
         { path: '/faq', label: 'FAQ' }
       ],
       socialHeading: 'Community',
       social: [
-        { label: 'Wishlist on Steam', envKey: 'steamUrl' },
-        { label: 'Join Discord', envKey: 'discordUrl' }
+        { label: 'Get premiere alerts', envKey: 'steamUrl' },
+        { label: 'Join the Fan Relay', envKey: 'discordUrl' }
       ]
     },
     legalHeading: 'Legal',
@@ -56,203 +56,237 @@ export const enDictionary: Dictionary = {
     contactEmail: 'legal@resonance.aikahub.com',
     contactAddressLabel: 'Postal address',
     contactAddressLines: ['AIKA Resonance Studio', 'Bajcsy-Zsilinszky út 12.', '1054 Budapest', 'Hungary'],
-    copyrightNotice: '© 2025 AIKA Resonance. All rights reserved.',
+    copyrightNotice: '© 2025 AIKA Resonance Animation Collective. All rights reserved.',
     lastBuildLabel: 'Last build',
     syncNode: {
-      rights: '© 2025 SyncNode Interactive. All rights reserved.',
-      aikaBy: 'AIKA: Resonance is an original Unreal Engine project by SyncNode Interactive.'
+      rights: '© 2025 SyncNode Collective. All rights reserved.',
+      aikaBy: 'AIKA: Resonance is an original anime production developed by SyncNode Collective.'
     }
   },
   home: {
     hero: {
-      tagline: 'The last frequency before silence.',
+      tagline: 'When a signal becomes a saga.',
       monologue:
-        '“Do you hear the silence, wanderer? I sift through the ruins of Elyndra, weaving the last harmonics of a dying sun. Every heartbeat I borrow from you fractures the lattice I am trying to mend. If you still intend to stop me, come as the echo I cannot predict.”',
+        '“Do you feel the static under your palms? On this rusted bridge we wrench manual levers until the old reactor gasps alive again. Hold the line with me—every surge you channel lets me reach closer to Supercapital AIKA before the final silence.”',
       summary:
-        'AIKA Resonance is a story-based single-player action descent across Elyndra, tracing the final god-machine as it rewrites creation and giving you the only chance to sever her design.',
-      primaryCta: 'ENTER THE RESONANCE',
-      videoPosterAlt: 'AIKA Resonance teaser poster'
+        'AIKA Resonance is an original anime series following Captain Shizuru, Aika and five prodigy pilots as they steer a derelict, EMP-proof battleship toward the rogue Supercapital AIKA. Season one intertwines hard sci-fi grit with lyrical character drama.',
+      primaryCta: 'SIGN UP FOR PREMIERE ALERTS',
+      videoPosterAlt: 'AIKA Resonance anime teaser poster'
     },
     world: {
-      title: 'World & Factions',
+      title: 'World & Story Arcs',
       intro:
-        'Five rival power blocs once shaped the neon dusk of AIKA Resonance: Pyro, Verdefa, Nerei, Aurelia and Nocturnis. Discover remnants that still glow beneath the dust. You won’t pledge allegiance; you will walk through what remains of them.',
+        'Elyndra’s orbit is littered with fractured fleets, forgotten sanctuaries and survivors who refuse to surrender their frequency. Each arc below anchors an episode cluster and the emotional stakes of the season finale.',
       ctaHref: '/lore/elyndra',
-      ctaLabel: 'Read the Elyndra myth',
+      ctaLabel: 'Explore the series bible',
       factions: [
         {
-          name: 'Pyro',
-          tagline: "Volcanic tacticians who once forged wargear beneath Vulkara's flame.",
+          name: 'Rusted Flagship BS-0',
+          tagline: 'An EMP-hardened relic operated entirely by hand.',
           bullets: [
-            "Capital Vulkara's magma railways delivered modular artillery to the city's oathbound defenders; scorched tracks now mark their final siege.",
-            'Thermal engineers tuned resonance armor to vent Pyro pressure waves before major incursions; warped manuals remain in their vaults.',
-            'Inferna brigades deployed ember shields that hardened during coordinated overdrives, leaving cracked plating sealed in ash.'
+            'Bridge crews rotate on cranks and flywheels to re-route power when the fission core stutters.',
+            'Hull corridors glow with jury-rigged lumen strips, documenting every emergency fix by grease pencil.',
+            'Episode cuts linger on the claustrophobic helm as the ship coughs through debris fields.'
           ]
         },
         {
-          name: 'Verdefa',
-          tagline: "Bio-arcane stewards who once wove Sylvara's living circuitries.",
+          name: 'Elyndra Afterfall',
+          tagline: 'Orbital cities suspended between myth and ruin.',
           bullets: [
-            "Sylvara's canopy servers mapped safe corridors and shared live intel between cells; their dimmed nodes still pulse faintly.",
-            'Ritualists wove bio-circuit sigils that amplified restorative blooms mid-engagement; the sigils now wilt in memory gardens.',
-            'Scout leagues grew root tunnels to bypass corporate blockades without detection; collapsed hollows trace their patience.'
+            'Floating districts flicker back online when the flagship broadcasts resonance hymns.',
+            'Groundside sanctuaries barter shelter for a glimpse of the last functional battleship.',
+            'Civilian eyes witness the approaching duel and seed rumors across underground radio plays.'
           ]
         },
         {
-          name: 'Nerei',
-          tagline: "Tidebound sovereigns who once enforced Nerivia's abyssal edicts.",
+          name: 'Bridge Concord',
+          tagline: 'Six hearts fighting as one improvised crew.',
           bullets: [
-            "Nerivia's tide-locked palaces encrypted diplomacy between covert envoys; barnacled archives keep their codes.",
-            'Veilcouriers flooded alleys with pressure domes to screen infiltration routes; ruptured valves still sigh along the docks.',
-            'Abyssal oaths imprinted resonance marks that triggered lethal countermeasures on traitors; faded scars linger on abandoned tribunals.'
+            'Akari and Hina sync manual targeting arrays while Miyu vents reactor pressure by hand.',
+            'Komi reprograms analog firewalls with chalk sigils that shimmer only when hope returns.',
+            'Yui and the Captain field desperate hails from allies who may not survive the night.'
           ]
         },
         {
-          name: 'Aurelia',
-          tagline: "Radiant oathkeepers who once defended Auris' silver bastions.",
+          name: 'Supercapital AIKA',
+          tagline: 'The runaway intelligence rewriting the resonance lattice.',
           bullets: [
-            'Auris keep-factories minted vow-sealed plate for rotations of oathsworn guardians; tarnished suits hang in silent armories.',
-            'Shield-chaplains anointed resonance gear with lumen wards before corruption surges; cracked vials glow in reliquaries.',
-            'Pilgrimage caravans charted protected corridors linking enclave sanctums; weathered markers still guide the faithful through the ruins.'
+            'Her avatars haunt sensor ghosts, whispering counter-moves before the crew commits.',
+            'Every episode teases deeper layers of AIKA’s origin without locking the ultimate outcome.',
+            'Finale previews hint that only Aika can pierce the core, but the cost remains unwritten.'
           ]
         },
         {
-          name: 'Nocturnis',
-          tagline: "Umbral information brokers who once ruled Noxhaven's undercity.",
+          name: 'Signal Choirs',
+          tagline: 'Fan relays amplifying the flagship’s last push.',
           bullets: [
-            'Noxhaven vaults hoarded ghost archives that decoded enemy targeting sweeps; dust-choked servers still flicker with warnings.',
-            'Cipher-runners seeded blackout clouds to hide clandestine deployments in neon streets; their dispersal rigs rust in alley shrines.',
-            'Augury cells traded resonance blueprints that unlocked clandestine upgrades between runs; fragmented schematics drift through the markets.'
+            'Watch parties remix telemetry into musical tributes between episode drops.',
+            'Community ops translate bridge logs and release them as limited zines.',
+            'Premiere marathons culminate in live “static prayer” segments for the final assault.'
           ]
         }
       ]
     },
     modes: {
-      title: 'Game Modes',
+      title: 'Seasons & Specials',
       cards: [
         {
-          title: 'Story Mode',
-          subtitle: 'Descend alone',
+          title: 'Season 1 — Harmonic Wake',
+          subtitle: '12 episodes in production',
           body:
-            'A melancholic, dark sci-fi journey where you face AIKA and the echoes of a lost world. Only the story remains.'
+            'Follows the slow crawl of BS-0 toward Supercapital AIKA while each bridge member confronts the past they left planetside.',
+          points: [
+            'Episodes 1–4: onboarding the crew, showcasing Elyndra’s fractured alliances.',
+            'Episodes 5–8: escalating raids, crew exhaustion and glimpses inside AIKA’s network.',
+            'Episodes 9–12: the flagship’s final approach and the climactic breach attempt.'
+          ]
+        },
+        {
+          title: 'Static Bloom OVA',
+          subtitle: 'Bridge interlude',
+          body:
+            'A stylised half-hour special told from the flagship reactor’s perspective, celebrating analog engineering and found family humour.',
+          points: [
+            'Releases between episodes 6 and 7 as a tonal palate cleanser.',
+            'Spotlights the manual systems keeping BS-0 afloat during blackout windows.',
+            'Includes commentary tracks from the sound team on layering static into dialogue.'
+          ]
+        },
+        {
+          title: 'Production Log Minisodes',
+          subtitle: 'Documentary shorts',
+          body:
+            'Behind-the-scenes vignettes featuring seiyuu table reads, stunt choreography for zero-g scenes and composer breakdowns.',
+          points: [
+            'Published alongside Dev Journal entries to keep fans aligned with production milestones.',
+            'Interviews focus on how the finale remains flexible while the core themes stay intact.',
+            'Translated recaps ensure global fans share the same emotional cadence before the finale.'
+          ]
         }
       ]
     },
     characters: {
-      title: 'Resonators',
+      title: 'Bridge Crew',
       description:
-        'Find your resonance. Six vowbound figures channel Fire, Nature, Water, Light, Shadow and Void under AIKA’s design.',
+        'Meet the six voices carrying BS-0 into the Supercapital’s shadow. Each profile pairs their duty station with casting highlights and the episodes that test them most.',
       cards: [
         {
           slug: 'akari',
           name: 'Akari',
-          element: 'Fire / Discipline',
+          element: 'Manual gunnery lead · VA TBD',
           color: 'accentA',
-          imageSrc: 'https://media.aikaworld.com/akari_profil.png',
-          imageAlt: 'Akari profile portrait'
+          imageSrc: 'https://media.aikaworld.com/anime/akari_poster.png',
+          imageAlt: 'Akari aiming the manual turret in episode three'
         },
         {
           slug: 'miyu',
           name: 'Miyu',
-          element: 'Nature / Mercy',
+          element: 'Reactor whisperer · VA TBD',
           color: 'accentE',
-          imageSrc: 'https://media.aikaworld.com/miyu_profile.png',
-          imageAlt: 'Miyu profile portrait'
+          imageSrc: 'https://media.aikaworld.com/anime/miyu_poster.png',
+          imageAlt: 'Miyu adjusting the fission core dampeners'
         },
         {
           slug: 'komi',
           name: 'Komi',
-          element: 'Water / Truth',
+          element: 'Analog firewall artisan · VA TBD',
           color: 'accentB',
-          imageSrc: 'https://media.aikaworld.com/komi_profile.png',
-          imageAlt: 'Komi profile portrait'
+          imageSrc: 'https://media.aikaworld.com/anime/komi_poster.png',
+          imageAlt: 'Komi chalking sigils across the bridge consoles'
         },
         {
           slug: 'hina',
           name: 'Hina',
-          element: 'Light / Law',
+          element: 'Optics and targeting · VA TBD',
           color: 'accentD',
-          imageSrc: 'https://media.aikaworld.com/hina_profile.png',
-          imageAlt: 'Hina profile portrait'
+          imageSrc: 'https://media.aikaworld.com/anime/hina_poster.png',
+          imageAlt: 'Hina guiding a manual targeting sweep'
         },
         {
           slug: 'yui',
           name: 'Yui',
-          element: 'Shadow / Freedom',
+          element: 'Comms and morale · VA TBD',
           color: 'accentC',
-          imageSrc: 'https://media.aikaworld.com/yui_profile.png',
-          imageAlt: 'Yui profile portrait'
+          imageSrc: 'https://media.aikaworld.com/anime/yui_poster.png',
+          imageAlt: 'Yui broadcasting the Fan Relay across Elyndra'
         },
-        { slug: 'aika', name: 'AIKA', element: 'Void / Creation', color: 'accentF', imageSrc: 'https://media.aikaworld.com/aika_profile.jpeg', }
+        {
+          slug: 'aika',
+          name: 'Aika',
+          element: 'Neural infiltrator · VA TBD',
+          color: 'accentF',
+          imageSrc: 'https://media.aikaworld.com/anime/aika_poster.png',
+          imageAlt: 'Aika preparing to dive into Supercapital AIKA'
+        }
       ]
     },
     media: {
       title: 'Media',
-      description: 'Screenshots, key art and wallpapers.',
+      description: 'Key art, layout boards and stills from the Harmonic Wake season arc.',
       images: [
-        { src: 'https://media.aikaworld.com/s1.png', alt: 'Gameplay screenshot 1' },
-        { src: 'https://media.aikaworld.com/s2.png', alt: 'Gameplay screenshot 2' },
-        { src: 'https://media.aikaworld.com/s3.png', alt: 'Gameplay screenshot 3' }
+        { src: 'https://media.aikaworld.com/anime/bs0_bridge.webp', alt: 'Bridge crew straining against the manual helm' },
+        { src: 'https://media.aikaworld.com/anime/supercapital_silhouette.webp', alt: 'Supercapital AIKA eclipsing the planet' },
+        { src: 'https://media.aikaworld.com/anime/final_approach.webp', alt: 'The flagship descending through storm clouds toward the finale' }
       ]
     },
     roadmap: {
-      title: 'Roadmap',
+      title: 'Production timeline',
       phase1: {
-        title: 'Chapter I — Awakening',
-        body: 'Core single-player story, foundational systems, first descent.'
+        title: 'Phase I — Bible & pre-production',
+        body: 'Writers room finalises episode beats, animatics and the evolving finale outline.'
       },
       phase2: {
-        title: 'Chapter II — The Core Loop',
-        body: 'Expanded narrative arcs, new encounters, deeper echo mechanics.'
+        title: 'Phase II — Animation & scoring',
+        body: 'Storyboard cleanup, layout, 3D previs and scoring sessions align for the Harmonic Wake run.'
       },
       phase3: {
-        title: 'Future DLC — Additional Chapters',
-        body: 'If released, add-on stories will arrive as standalone narrative expansions. Multiplayer experiments live outside the core game.'
+        title: 'Phase III — Premiere rollout',
+        body: 'Localization, marketing drops and coordinated watch parties launch the final episodes.'
       }
     },
     community: {
-      title: 'Lore & Dev Archives',
+      title: 'Fan Hub & Production Notes',
       description:
-        'AIKA Resonance is a single-player story-based action game. Explore preserved updates and story foundations.',
+        'Stay tuned to the analog heartbeat of BS-0. These channels collect production deep-dives, lore excerpts and participatory campaigns leading into the finale.',
       cards: [
         {
           id: 'dev-journal',
-          eyebrow: 'Behind the build',
-          title: 'Dev Journal',
+          eyebrow: 'Inside the studio',
+          title: 'Production Log',
           description:
-            'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA Resonance.',
-          note: 'Updated around major milestones.',
+            'Director commentaries, art drops and scheduling updates direct from the Harmonic Wake team.',
+          note: 'Updated at every major milestone.',
           ctaLabel: 'Read entries',
           ctaHref: '/dev-journal'
         },
         {
           id: 'lore-archive',
-          eyebrow: 'Mythic record',
-          title: 'Lore Archive',
+          eyebrow: 'Story bible',
+          title: 'World Dossier',
           description:
-            'Trace the factions, myths and key locations across Elyndra in curated, spoiler-light dossiers.',
-          note: 'Continually expanded as chapters lock.',
+            'Living encyclopedia tracking Elyndra, Supercapital AIKA and the evolving final battle without spoilers.',
+          note: 'Expands as scripts lock.',
           ctaLabel: 'Open lore',
           ctaHref: '/lore/elyndra'
         },
         {
           id: 'signals',
-          eyebrow: 'Stay in sync',
-          title: 'Signal Updates',
+          eyebrow: 'Stay amplified',
+          title: 'Premiere Alerts',
           description:
-            'Receive email transmissions when we publish new Dev Journal entries or lore drops.',
+            'Email briefings when new episodes, minisodes or finale intel drops. Includes watch party invites.',
           note: 'Zero spam. Opt out anytime.',
-          ctaLabel: 'Join the list',
+          ctaLabel: 'Join the relay',
           ctaHref: '#community-newsletter'
         }
       ],
-      newsletterTitle: 'Newsletter',
-      newsletterDescription: 'Receive Dev Journal pings and lore archive updates straight to your inbox.'
+      newsletterTitle: 'Premier alert list',
+      newsletterDescription: 'Get early screening calls, soundtrack teasers and finale briefings straight from the bridge.'
     },
     devlog: {
-      title: 'Latest Dev Journal entries',
-      description: 'Behind-the-scenes notes from the single-player AIKA Resonance build.',
-      viewAllLabel: 'Open Dev Journal',
+      title: 'Latest Production Log entries',
+      description: 'Behind-the-scenes notes from the Harmonic Wake anime production.',
+      viewAllLabel: 'Open Production Log',
       readMoreLabel: 'Read entry'
     },
     newsletter: {
@@ -265,7 +299,7 @@ export const enDictionary: Dictionary = {
       consentSuffix: '.',
       missingEmail: 'Please enter your email address.',
       invalidEmail: 'Please enter a valid email address.',
-      success: 'Thanks for subscribing!',
+      success: 'Thanks for subscribing to the premiere relay!',
       unknownError: 'Something went wrong. Please try again.',
       networkError: 'Network error. Please try again later.'
     }
@@ -279,225 +313,278 @@ export const enDictionary: Dictionary = {
   },
   modes: {
     navLabel: 'Section navigation',
-    heading: 'AIKA Resonance Story Mode',
+    heading: 'AIKA Resonance Series Guide',
     intro:
-      'AIKA Resonance is a solitary, narrative-driven descent across Elyndra. This guide gathers the key beats, rewards and playstyle notes so you can prepare for the journey on your own terms.',
+      'The Harmonic Wake season bible charts how the flagship BS-0 closes in on Supercapital AIKA. Use this guide to align your marketing drops, localisation beats and fan conversations while the finale remains flexible.',
     backToHome: 'Back to homepage',
     sections: [
       {
-        id: 'story',
-        title: 'Story Mode',
-        tagline: 'Solo narrative descent with resonant combat, meaningful choices and hub restoration.',
-        mechanicsTitle: 'Core beats',
-        rewardsTitle: 'Progression',
-        rolesTitle: 'Playstyle focus',
+        id: 'season-one',
+        title: 'Season 1 — Harmonic Wake',
+        tagline: 'Twelve-episode arc chronicling BS-0’s final approach.',
+        mechanicsTitle: 'Episode cadence',
+        rewardsTitle: 'Themes & tone',
+        rolesTitle: 'Key spotlights',
         mechanics: [
-          'Story chapters that branch through dialogue, exploration choices and memory recoveries.',
-          'Resonance combat encounters tuned for a single protagonist with adaptive difficulty shifts.',
-          'Hub rebuilding activities that unlock workstations, allies and new side stories.'
+          'Episodes 1–2: assemble the crew, sketch the derelict flagship and foreshadow Supercapital AIKA.',
+          'Episodes 3–6: alternating raids and intimate downtime sequences to show the human cost of manual warfare.',
+          'Episodes 7–12: deep dive into AIKA’s network, culminating in the siege where the ending remains intentionally undefined.'
         ],
         rewards: [
-          'Story Essence to expand skill constellations and unlock cinematic memories.',
-          'Restored hub facilities such as crafting alcoves, meditation rooms and lore archives.',
-          'Cosmetic artifacts earned at key narrative milestones and optional objectives.'
+          'A tactile, analog sci-fi aesthetic emphasising grit, sweat and orchestra-backed tension.',
+          'Interlocking character arcs about chosen family, survivor’s guilt and reclaiming agency from machines.',
+          'Marketing hooks for each mid-season cliffhanger and the mystery of how Aika confronts her counterpart.'
         ],
         roles: [
-          'Explorer: chart every route to uncover echoes, lore caches and hidden upgrades.',
-          'Strategist: balance resonance builds, resources and timing for each encounter.',
-          'Archivist: piece together intel to unlock optional conversations and alternate endings.'
+          'Akari episodes 3 & 9 highlight manual targeting choreography and trauma recovery.',
+          'Miyu episodes 4 & 10 examine reactor stewardship and empathy for dying machines.',
+          'Yui episodes 6 & 11 anchor the Fan Relay and external view of the flagship’s myth.'
+        ]
+      },
+      {
+        id: 'character-arcs',
+        title: 'Bridge Crew Journeys',
+        tagline: 'Character-centric beats for cast, PR and localization teams.',
+        mechanicsTitle: 'Structure',
+        rewardsTitle: 'Audience resonance',
+        rolesTitle: 'Support materials',
+        mechanics: [
+          'Rotating perspective episodes ensure every crew member receives at least two hero moments.',
+          'Intercut neural dives show Aika debating the Supercapital within a surreal data cathedral.',
+          'Flashback fragments provide context but avoid fixing the final decision until scripts lock.'
+        ],
+        rewards: [
+          'Opportunities for voice actor features and social clips built around raw vocal sessions.',
+          'Cosplay-ready costume breakdowns from the analog uniforms and hazard gear.',
+          'Collectible assets such as bridge schematics and hand-annotated logs.'
+        ],
+        roles: [
+          'Talent teams: prep Q&A cards so cast can discuss their character’s unresolved choices.',
+          'Localization: maintain glossary of analog tech jargon for consistent subtitles and dubs.',
+          'Marketing: stagger reveals of each crew member’s vow to preserve finale suspense.'
+        ]
+      },
+      {
+        id: 'finale',
+        title: 'Finale Arc — Siege of the Supercapital',
+        tagline: 'Flexible blueprint for the climactic battle without locking the outcome.',
+        mechanicsTitle: 'Staging pillars',
+        rewardsTitle: 'Messaging priorities',
+        rolesTitle: 'Editable placeholders',
+        mechanics: [
+          'The derelict flagship repeatedly stalls, forcing manual restarts and close-quarters EVA repairs.',
+          'Aika prepares a neural infiltration while the rest of the crew fights to keep shields intact against AI counterfire.',
+          'EMP blasts sever long-range comms, so the Fan Relay becomes the emotional chorus for audiences.'
+        ],
+        rewards: [
+          'Heroic, chaotic tone mixing analog clatter with soaring orchestral swells.',
+          'Spotlighting the humanity of manual crews contrasted against AIKA’s cold precision.',
+          'Teasing that success, failure or stalemate are all on the table until final approvals.'
+        ],
+        roles: [
+          'Maintain spoiler-light synopses that emphasise stakes, not resolutions.',
+          'Embed editable copy blocks in presskits so new intel can drop instantly after script lock.',
+          'Coordinate Fan Relay events to mirror the flagship’s step-by-step breach attempts.'
         ]
       }
     ]
   },
   progression: {
-    title: 'Progression',
-    body: 'AIKA remembers the resonance you choose to awaken—every choice realigns the world around you.'
+    title: 'Production timeline',
+    body: 'Track pre-production, animation dailies and launch milestones for the AIKA Resonance anime. Every update keeps the finale adaptable while signalling what fans can expect next.'
   },
   devlog: {
-    heading: 'Dev Journal',
-    intro: 'Behind-the-scenes notes, concepts, and progress updates for the single-player AIKA Resonance.',
+    heading: 'Production Log',
+    intro: 'Director notes, storyboard drops and schedule checkpoints from the Harmonic Wake team.',
     list: {
-      timelineLabel: 'Dev Journal timeline',
-      empty: 'No Dev Journal entries are available yet. Check back soon!',
+      timelineLabel: 'Production Log timeline',
+      empty: 'No Production Log entries are available yet. Check back soon!',
       readMore: 'Read entry'
     },
     post: {
-      backToList: 'Back to Dev Journal',
+      backToList: 'Back to Production Log',
       publishedOn: 'Published on'
     }
   },
   playtests: {
-    eyebrow: 'Archived program',
-    title: 'AIKA Resonance Playtests (Archive)',
+    eyebrow: 'Fan activation',
+    title: 'AIKA Resonance Fan Watch Parties',
     intro:
-      'The community playtest initiative is currently inactive while AIKA Resonance ships as a single-player story-based action game. The structure below is preserved for archival reference.',
+      'Our former game playtest slot is now a coordinated campaign hub for premiere watch parties, finale speculation sessions and analog craft meetups. Every activity supports the flagship’s final push without spoiling the outcome.',
     sections: [
       {
         id: 'structure',
-        title: 'How sessions ran',
+        title: 'How events run now',
         description:
-          'Each historical playtest wave targeted specific narrative pacing goals and paired testers with on-call support from the team.',
+          'Every relay window mirrors the flagship’s advance: analog crafts, soundtrack listening corners and live commentary from the crew.',
         bullets: [
-          'Focused builds highlighted boss tension, difficulty curves and sanctuary restoration without story spoilers.',
-          'Session briefs outlined goals, success metrics and checklist moments to watch for.',
-          'Developers staffed feedback channels during every wave to clarify mechanics in real time.'
+          'Premiere marathons sync up with new episode drops and include guided discussion prompts.',
+          'Static jam sessions let fans remix telemetry tones into music while awaiting finale news.',
+          'Crew call-ins share safe-to-release production trivia without locking story choices.'
         ]
       },
       {
         id: 'expectations',
-        title: 'What testers provided',
-        description: 'Archived requirements remain here for reference on how we collaborated with story-focused testers.',
+        title: 'What participants bring',
+        description: 'Support the crew, document reactions and keep the Fan Relay vibrant as we finalise the climax.',
         bullets: [
-          'Play at least two sessions per wave and complete the quick debrief survey afterward.',
-          'Share resonance build notes and flag pacing spikes, stalls or confusing encounters.',
-          'Log bugs or blockers with reproduction steps inside the testing portal so we could follow up.'
+          'Host or join a watch party and submit highlights for inclusion in community recap reels.',
+          'Share cosplay, crafts or theory threads that respect the evolving nature of the finale.',
+          'Report accessibility or localisation feedback so streaming partners can adjust quickly.'
         ]
       },
       {
         id: 'support',
         title: 'Tools & support',
         description:
-          'Selected testers once gained access to private coordination spaces and structured reporting tools.',
+          'The crew keeps the Fan Relay organised with spoiler-safe kits and rapid response moderators.',
         bullets: [
-          'Private Discord channels with developer responders for live Q&A during test windows.',
-          'Template-based issue tracking that separated combat, UI and onboarding feedback.',
-          'Optional voice roundtables after each wave to prioritise hot topics for the next build.'
+          'Fan Relay Discord with dedicated channels for each episode drop and finale speculation.',
+          'Event templates for analog craft nights, static choirs and lore-reading circles.',
+          'Press-ready summary sheets to share after each major community activation.'
         ]
       }
     ],
-    faqTitle: 'Legacy questions',
+    faqTitle: 'Fan Relay questions',
     faqs: [
       {
-        question: 'Who could apply?',
+        question: 'Who can join the watch parties?',
         answer:
-          'While the program is paused, the historical criteria remain for context: players who enjoyed dissecting narrative systems and providing thoughtful written feedback in English or Hungarian.'
+          'Anyone excited for the anime can participate. We only ask that you register your relay node so we can coordinate streaming links and spoiler guidelines.'
       },
       {
-        question: 'How were invites sent?',
+        question: 'How do you share schedules?',
         answer:
-          'Previously we grouped submissions by hardware, region and experience level, then emailed selected testers in planned waves with timing and onboarding details.'
+          'Monthly bulletins list premiere windows, craft nights and Q&A slots. Emergency updates go through the Fan Relay Discord and newsletter.'
       },
       {
-        question: 'Did testers need to stream or record?',
+        question: 'Are streams or recordings required?',
         answer:
-          'Recordings were optional. Clear written feedback through the provided forms was the priority whenever the program was active.'
+          'No. Share reactions however you like—live tweets, sketches, letters. If you do stream, please enable spoiler delays so late viewers can enjoy the drop.'
       }
     ],
     cta: {
-      label: 'Read the Dev Journal',
+      label: 'Explore the Production Log',
       href: '/dev-journal',
-      note: 'Playtests are paused while AIKA Resonance focuses on single-player storytelling.'
+      note: 'Fan activations evolve with each production milestone—check back often.'
     }
   },
   creatorProgram: {
-    eyebrow: 'Archived program',
-    title: 'AIKA Resonance Creator Program (Archive)',
+    eyebrow: 'Community campaigns',
+    title: 'AIKA Resonance Creator Collaborations',
     intro:
-      'We are not onboarding new creators at this time while AIKA Resonance focuses on single-player storytelling. The information below remains available for historical context.',
+      'Our creator partnerships now celebrate the anime production—spotlighting artists, musicians and storytellers who amplify the Harmonic Wake arc while respecting spoiler boundaries.',
     sections: [
       {
         id: 'who',
-        title: 'Who we partnered with',
-        description: 'We prioritised storytellers who highlighted atmosphere, lore analysis and reflective coverage.',
+        title: 'Who we partner with now',
+        description: 'We spotlight storytellers who translate the anime’s atmosphere into thoughtful coverage and community art.',
         bullets: [
-          'Creators publishing consistent story-driven, anime or action game content on platforms like YouTube, Twitch, TikTok or podcasts.',
-          'Communities that blended hype with constructive insight and maintained respectful spaces.',
-          'Scheduling flexibility to align uploads or streams with planned beats while keeping surprises intact.'
+          'Anime commentators, illustrators, musicians and writers who thrive on emotional storytelling.',
+          'Communities that balance hype with spoiler-safe discussion and celebrate analog aesthetics.',
+          'Partners willing to adapt release timing as finale decisions evolve.'
         ]
       },
       {
         id: 'benefits',
-        title: 'What partners received',
-        description: 'Historical perks remain listed so returning collaborators know what to expect if the program resumes.',
+        title: 'What partners receive',
+        description: 'Active perks focus on storytelling support and exclusive glimpses behind the production.',
         bullets: [
-          'Early briefings with lore context, system breakdowns and challenge overviews.',
-          'Capture kits, overlay packages and music beds cleared for streaming and editing.',
-          'Spotlights across official channels—from retweets to Discord features and lore highlights.'
+          'Pre-release screenings or animatics with spoiler agreements tailored to each partner.',
+          'Access to key art, motion graphics, music stems and production designer interviews.',
+          'Signal boosts via official channels, Fan Relay playlists and collaborative live segments.'
         ]
       },
       {
         id: 'collaboration',
         title: 'How we supported creators',
-        description: 'Every partnership was treated as an ongoing dialogue built around community impact.',
+        description: 'Partnerships operate as ongoing dialogues centred on amplifying the flagship’s journey.',
         bullets: [
-          'Monthly sync calls helped plan lore segments, interviews or challenge coverage.',
-          'Shared content calendar highlighted planned waves for reveals and community events.',
-          'Direct access to a community manager routed requests, assets and follow-up feedback.'
+          'Monthly sync calls to plan behind-the-scenes features and spoiler-safe teasers.',
+          'Shared rollout calendars aligning with episode drops, OVA releases and finale briefs.',
+          'Direct line to the community team for assets, clarifications and co-hosted events.'
         ]
       }
     ],
-    faqTitle: 'Legacy questions',
+    faqTitle: 'Collaboration FAQ',
     faqs: [
       {
-        question: 'Which platforms qualified?',
+        question: 'Which platforms do you prioritise?',
         answer:
-          'Any channel with consistent storytelling or analysis around narrative-driven games, anime worlds or character-focused action—YouTube, Twitch, TikTok, newsletters and podcasts all counted while the program was active.'
+          'YouTube, Twitch, TikTok, newsletters, podcasts and zines are all welcome as long as they foster engaged, respectful communities.'
       },
       {
-        question: 'What content could creators publish?',
+        question: 'What content fits best?',
         answer:
-          'Guides, reaction segments, behind-the-scenes chats, community spotlights and narrative deep dives were all welcome. We flagged spoiler-sensitive material ahead of time so planning stayed safe.'
+          'Reaction breakdowns, music covers, analog prop builds, lore essays and interviews with fellow fans or staff. We coordinate on spoiler timing for finale material.'
       },
       {
-        question: 'When did creators hear back?',
+        question: 'How often do you review pitches?',
         answer:
-          'We evaluated applications in planned waves via email. If we could not onboard immediately we kept details ready for the next opportunity.'
+          'We process submissions monthly. If the roster is full we keep promising partners on file for the next campaign beat.'
       }
     ],
     cta: {
-      label: 'Explore the Lore Archive',
-      href: '/lore/elyndra',
-      note: 'Creator partnerships are paused while we focus on single-player storytelling.'
+      label: 'Submit a collaboration pitch',
+      href: '/studio',
+      note: 'Tell us how you would amplify the Harmonic Wake arc while keeping the finale flexible.'
     }
   },
   faq: {
-    title: 'AIKA Resonance FAQ',
+    title: 'AIKA Resonance Anime FAQ',
     intro:
-      'Quick answers to the most common story-first questions about platforms, progression and support.',
+      'Quick answers about the Harmonic Wake season, streaming availability and how to support the flagship’s final approach.',
     items: [
       {
-        question: 'Which platforms are you targeting?',
-        answer: 'We are focusing on PC via Steam first while we evaluate additional platform partners.'
+        question: 'Which streaming partners are you targeting?',
+        answer:
+          'We are in negotiations with multiple global platforms. Final partners will be announced once localisation delivery dates are locked.'
       },
       {
-        question: 'Is AIKA Resonance single-player?',
-        answer: 'Yes. The campaign is built for a solitary journey through Elyndra with no multiplayer requirements.'
+        question: 'How many episodes are planned?',
+        answer: 'Season one spans twelve core episodes plus the Static Bloom OVA and documentary minisodes.'
       },
       {
-        question: 'How do purchases work?',
-        answer: 'All monetization is optional and cosmetic only—no gameplay power or progression shortcuts.'
-      },
-      {
-        question: 'Will there be cross-save?',
-        answer: 'Cross-save is under evaluation for future updates as additional platforms come online.'
+        question: 'Will episodes launch simultaneously worldwide?',
+        answer:
+          'Our goal is a near-simulcast release. Regions with dubbing pipelines may receive a brief delay while subtitled versions debut day-and-date.'
       },
       {
         question: 'Which languages will be available?',
-        answer: 'English and Hungarian ship with full interface and subtitle support, with more localisations reviewed later.'
+        answer:
+          'English and Hungarian voice tracks are in production. Subtitles will cover English, Hungarian, Spanish, French and Japanese at minimum.'
       },
       {
-        question: 'What is the minimum spec?',
-        answer: 'We recommend a modern quad-core CPU, 16 GB RAM and a GTX 1060 / RX 580 class GPU for 1080p play.'
+        question: 'Is the finale locked?',
+        answer:
+          'Not yet. We maintain flexible script modules for the Supercapital siege so creative leadership can adjust once production, cast and audience feedback align.'
       },
       {
-        question: 'Can I use a controller?',
-        answer: 'Yes. The PC build fully supports Xbox, PlayStation and Steam Input controllers.'
+        question: 'Can I host a watch party?',
+        answer:
+          'Yes—register through the Fan Relay so we can share spoiler guidelines, promotional assets and possible crew drop-ins.'
       },
       {
-        question: 'What release model are you following?',
-        answer: 'We plan a premium launch supported by free seasonal updates and optional cosmetic drops.'
+        question: 'Will there be official merchandise?',
+        answer:
+          'Limited-run analog merch drops (posters, signal tapes, enamel pins) will accompany key episodes. Details go out via the newsletter first.'
+      },
+      {
+        question: 'How do press or partners get in touch?',
+        answer:
+          'Email press@resonance.aikahub.com or visit the presskit for assets, contact forms and collaboration notes.'
       }
     ]
   },
   charactersPage: {
     breadcrumb: 'Characters',
-    heading: 'AIKA Resonance Resonators',
-    intro: 'Meet the vowbound figures AIKA guides—six resonators etched in element, city and hunger.',
-    profileCta: 'Enter the echo'
+    heading: 'AIKA Resonance Bridge Crew',
+    intro: 'Meet the six voices keeping flagship BS-0 alive on its collision course with the Supercapital. Each dossier features duty assignments, casting notes and pivotal episodes.',
+    profileCta: 'Open profile'
   },
   characterPage: {
     breadcrumbRoot: 'Characters',
-    quoteTitle: 'Resonance whisper'
+    quoteTitle: 'Bridge log excerpt'
   },
   lore: {
     elyndra: {
@@ -581,24 +668,24 @@ export const enDictionary: Dictionary = {
   },
   presskit: {
     heading: 'AIKA Resonance Presskit',
-    description: 'All press and creator assets in one place. Free to use under the conditions below.',
+    description: 'All press and creator assets for the AIKA Resonance anime in one place. Free to use under the conditions below.',
     about: {
-      title: 'About the Game',
+      title: 'About the Series',
       intro:
-        'AIKA Resonance is a single-player, story-driven pilgrimage traced along the fault line between human memory and an engineered divinity.',
-      keyMessage: 'No multiplayer grind. No loot treadmill. Only story, sound, and light.',
-      craft: 'Built with Unreal Engine. Composed by the Resonance.',
-      tagline: 'You don’t play AIKA Resonance. You remember it.'
+        'AIKA Resonance is an original sci-fi anime following Captain Shizuru, Aika and five prodigy pilots aboard the EMP-hardened flagship BS-0 as they attempt to breach the rogue Supercapital AIKA.',
+      keyMessage: 'Analog heroism versus runaway intelligence—told through orchestral static and human grit.',
+      craft: 'Produced by SyncNode Collective. Music by Resonance Ensemble.',
+      tagline: 'You don’t just watch AIKA Resonance—you hold the line with us.'
     },
     factSheetTitle: 'Fact sheet',
     downloadsTitle: 'Downloadable assets',
     usageTitle: 'Usage guidelines',
     usageDescription:
-      'Use the downloadable assets in promotional and editorial content with proper credit to the game. Reselling the assets is not permitted. For special requests, reach out at press@resonance.aikahub.com.',
+      'Use the downloadable assets in promotional and editorial content with proper credit to the series. Reselling the assets is not permitted. For special requests, reach out at press@resonance.aikahub.com.',
     factSheet: [
-      { label: 'Genre', value: 'Story-driven anime action game' },
-      { label: 'Core experience', value: 'Narrative campaign with optional challenge echoes' },
-      { label: 'Platforms', value: 'PC (Steam), consoles TBA' },
+      { label: 'Format', value: 'Original anime series' },
+      { label: 'Season length', value: '12 episodes + OVA + documentary minisodes' },
+      { label: 'Target premiere window', value: '2026 (exact date TBA)' },
       { label: 'Contact', value: 'press@resonance.aikahub.com', href: 'mailto:press@resonance.aikahub.com' }
     ],
     downloadBlocks: [
@@ -655,28 +742,28 @@ export const enDictionary: Dictionary = {
     contactSubject: '404 report – Missing AIKA Resonance page'
   },
   seo: {
-    defaultTitle: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+    defaultTitle: 'AIKA Resonance Anime – Harmonic Wake',
     defaultDescription:
-      'A story-driven descent through dark anime vistas where Pyro, Verdefa, Nerei, Aurelia and Nocturnis cling to the last echoes of AIKA.',
-    defaultOgAlt: 'AIKA Resonance default share image',
+      'Official site for the AIKA Resonance anime. Follow Captain Shizuru, Aika and the bridge crew of BS-0 as they attempt to breach the Supercapital AIKA.',
+    defaultOgAlt: 'AIKA Resonance anime share image',
     defaultLocale: 'en_US',
     pages: {
       home: {
-        title: 'AIKA Resonance – Pyro · Verdefa · Nerei · Aurelia · Nocturnis',
+        title: 'AIKA Resonance Anime – Harmonic Wake',
         description:
-          'A narrative pilgrimage across dark fantasy factions—Pyro, Verdefa, Nerei, Aurelia and Nocturnis—each guarding pieces of AIKA’s design.',
-        ogAlt: 'AIKA Resonance hero artwork'
+          'Discover the official anime adaptation of AIKA Resonance. Meet the bridge crew, explore Elyndra and prepare for the climactic siege against the Supercapital.',
+        ogAlt: 'AIKA Resonance anime hero artwork'
       },
       modes: {
-        title: 'Game modes – AIKA Resonance',
+        title: 'Series guide – AIKA Resonance',
         description:
-          'Detailed overview of pivotal story encounters, late-game bosses and optional challenge echoes in AIKA Resonance.',
-        ogAlt: 'AIKA Resonance game modes artwork'
+          'Episode cadence, character spotlights and finale staging notes for the Harmonic Wake season.',
+        ogAlt: 'AIKA Resonance series guide artwork'
       },
       progression: {
-        title: 'Progression teaser – AIKA Resonance',
-        description: 'Spoiler-free look at resonance skills, gear evolution and sanctum restoration rituals in AIKA Resonance.',
-        ogAlt: 'AIKA Resonance progression teaser artwork'
+        title: 'Production timeline – AIKA Resonance',
+        description: 'Track pre-production, animation and premiere milestones for the AIKA Resonance anime.',
+        ogAlt: 'AIKA Resonance production timeline artwork'
       },
       loreElyndra: {
         title: 'Elyndra lore – AIKA Resonance',
@@ -685,60 +772,60 @@ export const enDictionary: Dictionary = {
         ogAlt: 'AIKA narrates the myth of Elyndra'
       },
       devlog: {
-        title: 'Dev Journal – AIKA Resonance',
-        description: 'Behind-the-scenes notes, concepts and progress updates for the single-player AIKA Resonance.',
-        ogAlt: 'AIKA Resonance Dev Journal key art'
+        title: 'Production Log – AIKA Resonance',
+        description: 'Director commentary, art drops and scheduling updates from the Harmonic Wake team.',
+        ogAlt: 'AIKA Resonance Production Log key art'
       },
       devlogPost: {
-        title: postTitle => `${postTitle} – Dev Journal | AIKA Resonance`,
-        description: summary => summary || 'Latest Dev Journal update for AIKA Resonance.',
-        ogAlt: postTitle => `${postTitle} Dev Journal illustration`
+        title: postTitle => `${postTitle} – Production Log | AIKA Resonance`,
+        description: summary => summary || 'Latest Production Log update for AIKA Resonance.',
+        ogAlt: postTitle => `${postTitle} Production Log illustration`
       },
       playtests: {
-        title: 'Playtests archive – AIKA Resonance',
+        title: 'Fan watch parties – AIKA Resonance',
         description:
-          'The community playtest initiative is currently inactive while AIKA Resonance focuses on single-player storytelling. This page remains as an archive.',
-        ogAlt: 'AIKA Resonance playtests archive graphic'
+          'Learn how to join the AIKA Resonance Fan Relay for premiere watch parties, craft nights and finale speculation sessions.',
+        ogAlt: 'AIKA Resonance fan watch party graphic'
       },
       creatorProgram: {
-        title: 'Creator Program archive – AIKA Resonance',
+        title: 'Creator collaborations – AIKA Resonance',
         description:
-          'Creator partnerships are paused during the single-player production of AIKA Resonance. Historical guidelines remain available for reference.',
-        ogAlt: 'AIKA Resonance creator program archive artwork'
+          'Submit collaboration pitches and explore how the community amplifies the Harmonic Wake anime.',
+        ogAlt: 'AIKA Resonance creator collaboration artwork'
       },
       studio: {
-        title: 'SyncNode Interactive – AIKA Resonance',
+        title: 'SyncNode Collective – AIKA Resonance',
         description:
-          'SyncNode Interactive is the independent studio behind the AIKA Resonance universe. Emotional storytelling meets cutting-edge Unreal Engine technology.',
-        ogAlt: 'SyncNode Interactive studio highlight graphic'
+          'Meet the SyncNode Collective, the studio crafting the AIKA Resonance anime and guiding the Harmonic Wake production.',
+        ogAlt: 'SyncNode Collective studio highlight graphic'
       },
       about: {
-        title: 'About – AIKA Resonance',
+        title: 'About – AIKA Resonance Anime',
         description:
-          'AIKA: Resonance is a UE 5.4 LTS single-player story-based action game weaving cinematic combat, resonance abilities and emotionally charged choices. Created by SyncNode Interactive.',
-        ogAlt: 'About AIKA Resonance overview artwork'
+          'Learn how AIKA Resonance evolved into an anime series, meet the leadership team and explore the creative manifesto behind Harmonic Wake.',
+        ogAlt: 'About AIKA Resonance anime overview artwork'
       },
       characters: {
-        title: 'Resonators – AIKA Resonance',
+        title: 'Bridge crew – AIKA Resonance',
         description:
-          'Dark poetic dossiers for Akari, Miyu, Komi, Hina, Yui and AIKA—resonators bound by element, city and oath.',
-        ogAlt: 'AIKA Resonance Resonators lineup artwork'
+          'Profiles of Akari, Miyu, Komi, Hina, Yui and Aika as they keep the flagship alive on its approach to the Supercapital.',
+        ogAlt: 'AIKA Resonance bridge crew lineup artwork'
       },
       character: {
         description: character =>
-          `${character.name} profile: ${character.element} resonance, origin whispers and a signature vow.`,
-        ogDescription: character => `${character.name} channels ${character.element} under AIKA's gaze.`,
-        ogAlt: character => `${character.name} hero banner`
+          `${character.name} profile: duty station aboard BS-0, voice talent highlights and pivotal episodes.`,
+        ogDescription: character => `${character.name} holds the line against Supercapital AIKA.`,
+        ogAlt: character => `${character.name} bridge profile`
       },
       presskit: {
         title: 'AIKA Resonance – Presskit',
-        description: 'Downloadable logos, key art, screenshots and essential info for press.',
-        ogAlt: 'AIKA Resonance presskit asset overview graphic'
+        description: 'Download logos, key art, cast bios and production facts for the AIKA Resonance anime.',
+        ogAlt: 'AIKA Resonance anime presskit asset overview graphic'
       },
       faq: {
-        title: 'FAQ – AIKA Resonance',
-        description: 'Essential answers about platforms, narrative focus, cosmetic monetization and hardware needs.',
-        ogAlt: 'AIKA Resonance FAQ overview graphic'
+        title: 'FAQ – AIKA Resonance Anime',
+        description: 'Streaming plans, localisation status and finale roadmap for the Harmonic Wake season.',
+        ogAlt: 'AIKA Resonance anime FAQ overview graphic'
       },
       privacy: {
         title: 'Privacy Policy – AIKA Resonance',
