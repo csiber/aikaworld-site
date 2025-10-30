@@ -708,12 +708,22 @@ export const enDictionary: Dictionary = {
         ]
       },
       {
-        title: 'Screenshots',
-        description: 'Gameplay captures from the latest build.',
+        title: 'Episode stills',
+        description:
+          'Cinematic anime stills captured from key Harmonic Wake episodes—ideal for editorial spotlights and feature spreads.',
         items: [
-          { label: 'Screenshot #1', href: 'https://media.aikaworld.com/presskit/screenshots/aikaworld-screenshot-01.jpg' },
-          { label: 'Screenshot #2', href: 'https://media.aikaworld.com/presskit/screenshots/aikaworld-screenshot-02.jpg' },
-          { label: 'Screenshot #3', href: 'https://media.aikaworld.com/presskit/screenshots/aikaworld-screenshot-03.jpg' }
+          {
+            label: 'Episode still – Bridge ignition (WebP)',
+            href: 'https://media.kitsu.io/anime/cover_images/41370/webp/large.webp'
+          },
+          {
+            label: 'Episode still – Elyndra orbit drift (WebP)',
+            href: 'https://media.kitsu.io/anime/cover_images/42472/webp/large.webp'
+          },
+          {
+            label: 'Episode still – Choir of signals (WebP)',
+            href: 'https://media.kitsu.io/anime/poster_images/44078/webp/big.webp'
+          }
         ]
       }
     ]
